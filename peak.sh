@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Быстрый замер потолков всех движков без лимита RPS на одинаковых ресурсах (DB_CPUS=4, RAM как в матрице).
-# На каждую БД три прогона (~7 мин на БД, ~1 час на все):
+# На каждую БД три прогона (~4–7 мин на БД, ~1 час на все 9):
 #   write  — 1 минута записи одиночными задачами, 256 писателей;
 #   batch  — 1 минута записи пачками по 100 (COPY у PG, UNLOGGED BATCH у CQL, insertMany, pipeline, ...), 64 писателя;
 #   read   — prefill DRAIN_N задач пачками по 500 (это ещё и потолок батчевой записи) и вычитка на максимальной скорости.
@@ -11,7 +11,7 @@
 cd "$(dirname "$0")"
 D=${PEAK_DURATION:-1m}
 ts=${PEAK_TS:-$(date +%m%d-%H%M)}
-for db in ${DBS:-scylla cassandra postgres redis mongodb tarantool rabbitmq rocketmq}; do
+for db in ${DBS:-scylla cassandra postgres redis mongodb tarantool rabbitmq rocketmq kafka}; do
   extra=()
   drain_n=${DRAIN_N:-5000000}
   case $db in

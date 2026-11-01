@@ -676,3 +676,69 @@ DB resources (tb-kafka, CPU% = 100 на ядро): {"cpu_avg": 124.8, "cpu_max":
 2026/11/01 09:07:13 SUMMARY kafka [DRAIN workers=4 page=1000 payload=5120-10240B ring=1h0m0s partitions=4]: prefill=708363 (84815/s) written=0 (0/s, p99=0.0ms) read=708363 (avg 122595/s, peak 143538/s, 139 q/s, p99=5238.8ms) max_lag=363800s(virt) errs w=0 r=0 size_max: kafka_rows=516489 
 2026/11/01 09:07:13 saved /results/peak-big-1101-1204-kafka-read.json
 DB resources (tb-kafka, CPU% = 100 на ядро): {"cpu_avg": 153.1, "cpu_max": 311.3, "mem_max_mb": 569, "disk_max_mb": 5214}
+ Image test-bench-kafka Building 
+ Image test-bench-kafka Built 
+ Volume test_kafka-data Creating 
+ Volume test_kafka-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_kafka-data Created 
+ Volume test_kafka-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-kafka Creating 
+ Container tb-kafka Created 
+ Container tb-kafka Starting 
+ Container tb-kafka Started 
+ Container tb-kafka Waiting 
+ Container tb-kafka Healthy 
+ Container tb-kafka Running 
+ Container tb-kafka Waiting 
+ Container tb-kafka Healthy 
+ Container test-bench-kafka-run-8bfa3b9aa855 Creating 
+ Container test-bench-kafka-run-8bfa3b9aa855 Created 
+2026/11/01 20:27:15 prefill: 1000092 tasks, 174247 rows/s
+2026/11/01 20:27:18 prefill: 2000074 tasks, 229896 rows/s
+2026/11/01 20:27:18 prefill: 3000193 tasks, 316145 rows/s
+2026/11/01 20:27:19 prefill: 4000202 tasks, 381877 rows/s
+2026/11/01 20:27:21 prefill: 5000248 tasks, 405518 rows/s
+2026/11/01 20:27:22 prefill: 6000348 tasks, 454602 rows/s
+2026/11/01 20:27:27 prefill: 7000136 tasks, 374837 rows/s
+2026/11/01 20:27:29 prefill: 8000327 tasks, 393321 rows/s
+2026/11/01 20:27:30 prefill: 9000092 tasks, 420773 rows/s
+2026/11/01 20:27:31 prefill: 10000150 tasks, 452463 rows/s
+2026/11/01 20:27:31 prefill done: 10201863 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 22s, 459533 rows/s (batch=500), size: kafka_rows=10201863 
+2026/11/01 20:27:31 run=kafka-20261101-232641 backend=kafka role=both virtual_start=2026-11-01 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/11/01 20:27:41 vt=11-01 07:35 | W    4711 rows/s   4711 calls/s p50=0.6ms p99=5.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10248971 lag=0s(virt) | kafka_rows=10249038 
+2026/11/01 20:27:51 vt=11-01 07:40 | W    5001 rows/s   5001 calls/s p50=0.6ms p99=5.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10298979 lag=0s(virt) | kafka_rows=10299030 
+2026/11/01 20:28:01 vt=11-01 07:45 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=4.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10348975 lag=0s(virt) | kafka_rows=10349018 
+2026/11/01 20:28:11 vt=11-01 07:50 | W    5001 rows/s   5001 calls/s p50=0.6ms p99=4.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10398982 lag=0s(virt) | kafka_rows=10399034 
+2026/11/01 20:28:21 vt=11-01 07:55 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=3.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10448980 lag=0s(virt) | kafka_rows=10449005 
+2026/11/01 20:28:31 vt=11-01 08:00 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10498983 lag=0s(virt) | kafka_rows=10499005 
+2026/11/01 20:28:41 vt=11-01 08:05 | W    5000 rows/s   5000 calls/s p50=0.5ms p99=3.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10548982 lag=0s(virt) | kafka_rows=10548994 
+2026/11/01 20:28:51 vt=11-01 08:10 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=5.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10598983 lag=0s(virt) | kafka_rows=10599015 
+2026/11/01 20:29:01 vt=11-01 08:15 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10648981 lag=0s(virt) | kafka_rows=10649001 
+2026/11/01 20:29:11 vt=11-01 08:20 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=4.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10698978 lag=0s(virt) | kafka_rows=10699042 
+2026/11/01 20:29:21 vt=11-01 08:25 | W    5000 rows/s   5000 calls/s p50=0.5ms p99=3.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10748980 lag=0s(virt) | kafka_rows=10749038 
+2026/11/01 20:29:31 vt=11-01 08:30 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=2.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10798976 lag=0s(virt) | kafka_rows=10799003 
+2026/11/01 20:29:41 vt=11-01 08:35 | W    5001 rows/s   5001 calls/s p50=0.6ms p99=2.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10848989 lag=0s(virt) | kafka_rows=10849009 
+2026/11/01 20:29:51 vt=11-01 08:40 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=3.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10898985 lag=0s(virt) | kafka_rows=10899015 
+2026/11/01 20:30:01 vt=11-01 08:45 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=3.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10948990 lag=0s(virt) | kafka_rows=10949020 
+2026/11/01 20:30:11 vt=11-01 08:50 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=4.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10998994 lag=0s(virt) | kafka_rows=10999065 
+2026/11/01 20:30:21 vt=11-01 08:55 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=5.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11048990 lag=0s(virt) | kafka_rows=11049036 
+2026/11/01 20:30:31 vt=11-01 09:00 | W    5001 rows/s   5001 calls/s p50=0.6ms p99=3.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11099000 lag=0s(virt) | kafka_rows=11099048 
+2026/11/01 20:30:41 vt=11-01 09:05 | W    4999 rows/s   4999 calls/s p50=0.6ms p99=4.0ms err=0 | R  102995 rows/s      5 q/s p50=60817.4ms p99=119668.7ms err=0 | backlog=10119045 lag=3634s(virt) | kafka_rows=10119094 
+2026/11/01 20:30:51 vt=11-01 09:10 | W    5001 rows/s   5001 calls/s p50=0.6ms p99=4.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10169059 lag=0s(virt) | kafka_rows=10169082 
+2026/11/01 20:31:01 vt=11-01 09:15 | W    4998 rows/s   4998 calls/s p50=0.6ms p99=3.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10219043 lag=0s(virt) | kafka_rows=10219096 
+2026/11/01 20:31:11 vt=11-01 09:20 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=6.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10269045 lag=0s(virt) | kafka_rows=10269100 
+2026/11/01 20:31:21 vt=11-01 09:25 | W    5002 rows/s   5002 calls/s p50=0.6ms p99=4.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10319066 lag=0s(virt) | kafka_rows=10319093 
+2026/11/01 20:31:31 vt=11-01 09:30 | W    4998 rows/s   4998 calls/s p50=0.6ms p99=3.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10369044 lag=0s(virt) | kafka_rows=10369081 
+2026/11/01 20:31:41 vt=11-01 09:35 | W    5000 rows/s   5000 calls/s p50=0.6ms p99=3.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10419040 lag=0s(virt) | kafka_rows=10419078 
+2026/11/01 20:31:51 vt=11-01 09:40 | W    5000 rows/s   5000 calls/s p50=0.7ms p99=4.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10469038 lag=0s(virt) | kafka_rows=10469072 
+2026/11/01 20:32:01 vt=11-01 09:45 | W    4999 rows/s   4999 calls/s p50=0.7ms p99=4.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10519030 lag=0s(virt) | kafka_rows=10519081 
+2026/11/01 20:32:11 vt=11-01 09:50 | W    5002 rows/s   5002 calls/s p50=0.7ms p99=5.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10569048 lag=0s(virt) | kafka_rows=10569060 
+2026/11/01 20:32:21 vt=11-01 09:55 | W    5000 rows/s   5000 calls/s p50=0.7ms p99=6.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10619048 lag=0s(virt) | kafka_rows=10619098 
+2026/11/01 20:32:31 vt=11-01 10:00 | W    4999 rows/s   4999 calls/s p50=0.6ms p99=4.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10669043 lag=0s(virt) | kafka_rows=10669053 
+2026/11/01 20:32:31 SUMMARY kafka [batch=1 payload=random ring=1h0m0s partitions=4]: prefill=10201863 (459533/s) written=1497136 (4990/s, p99=4.1ms) read=1029946 (avg 3433/s, peak 102995/s, 0 q/s, p99=119668.7ms) max_lag=3634s(virt) errs w=0 r=0 size_max: kafka_rows=11099048 
+2026/11/01 20:32:31 saved /results/kafka-20261101-232641.json
+DB resources (tb-kafka, CPU% = 100 на ядро): {"cpu_avg": 67.0, "cpu_max": 240.3, "mem_max_mb": 625, "disk_max_mb": 3472}

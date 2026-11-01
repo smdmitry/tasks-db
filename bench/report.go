@@ -27,10 +27,8 @@ func report(args []string) {
 		var s Summary
 		if json.Unmarshal(data, &s) == nil && s.Backend != "" {
 			if s.Config.Role == "producer" {
-				s.Variant = fmt.Sprintf("MAXWRITE writers=%d", s.Config.Writers)
-				if s.Config.PayloadRandom {
-					s.Variant += " payload=random"
-				}
+				// исходный variant сохраняет batch, размер payload и режим бэкенда
+				s.Variant = fmt.Sprintf("MAXWRITE writers=%d %s", s.Config.Writers, s.Variant)
 			}
 			all = append(all, s)
 		}

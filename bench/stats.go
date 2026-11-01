@@ -16,8 +16,9 @@ type Lat struct {
 
 func NewLat() *Lat {
 	return &Lat{
-		total: hdrhistogram.New(1, 60_000_000, 3),
-		win:   hdrhistogram.New(1, 60_000_000, 3),
+		// до 2 ч: опоздание доставки у кольца Kafka по часу при SPEED=30 доходит до 120 с реального времени
+		total: hdrhistogram.New(1, 7_200_000_000, 3),
+		win:   hdrhistogram.New(1, 7_200_000_000, 3),
 	}
 }
 

@@ -22,7 +22,7 @@ maxw()   { run "$1" DURATION=$RUN_DURATION ROLE=producer PREFILL=0 WRITE_RPS=0 W
 # drain останавливается, как только всё вычитано; 5 минут — верхняя граница
 drain()  { run "$1" DURATION=$RUN_DURATION ROLE=drain SPEED=100000 PREFILL=$DRAIN_N REPORT_INTERVAL=2s "${@:2}"; }
 
-for db in ${DBS:-scylla cassandra postgres redis mongodb tarantool rabbitmq rocketmq}; do
+for db in ${DBS:-scylla cassandra postgres redis mongodb tarantool rabbitmq rocketmq kafka}; do
   case $db in
   # ScyllaDB и Cassandra (один CQL-код): одиночные инсерты vs батчи по партиции; чтение с TTL vs partition delete
   scylla|cassandra)
