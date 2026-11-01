@@ -1,0 +1,659 @@
+{
+  "run_id": "peak-big-1101-1024-tarantool-read",
+  "backend": "tarantool",
+  "variant": "DRAIN workers=4 page=1000 payload=5120-10240B vinyl consume=drop",
+  "config": {
+    "Backend": "tarantool",
+    "Role": "drain",
+    "RunID": "peak-big-1101-1024-tarantool-read",
+    "Duration": 60000000000,
+    "ReportInterval": 2000000000,
+    "ResultsDir": "/results",
+    "Speed": 100000,
+    "VirtualStart": "2026-11-01T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 5000,
+    "WriteBatch": 1,
+    "Writers": 64,
+    "PayloadBytes": 5120,
+    "PayloadMax": 10240,
+    "PayloadRandom": true,
+    "Shards": 16,
+    "MaxWrites": 1000000,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false,
+    "MongoURI": "mongodb://mongodb:27017",
+    "MongoPool": 64,
+    "MongoConsumeMode": "drop",
+    "TarantoolAddr": "tarantool:3301",
+    "TarantoolConns": 8,
+    "TarantoolConsumeMode": "drop",
+    "RabbitURL": "amqp://guest:guest@rabbitmq:5672/",
+    "RabbitConns": 8,
+    "RocketNamesrv": "rocketmq-namesrv:9876",
+    "RocketBroker": "rocketmq:10911",
+    "RocketQueues": 16,
+    "PrefillETA": 180000000000
+  },
+  "seconds": 37.959163101,
+  "prefilled": 708604,
+  "prefill_rps": 9081.824502586129,
+  "prefill_errs": 0,
+  "written": 0,
+  "read": 708604,
+  "write_rps_avg": 0,
+  "read_rps_avg": 18667.534848294177,
+  "read_rps_peak": 33340.97986204816,
+  "read_qps_avg": 371.6889111190207,
+  "write_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "read_lat": {
+    "count": 14109,
+    "p50_ms": 4.263,
+    "p95_ms": 31.919,
+    "p99_ms": 102.143,
+    "p999_ms": 401.919,
+    "max_ms": 793.087
+  },
+  "bucket_lat": {
+    "count": 14109,
+    "p50_ms": 4.267,
+    "p95_ms": 32.063,
+    "p99_ms": 102.143,
+    "p999_ms": 401.919,
+    "max_ms": 793.087
+  },
+  "max_lag_virtual_s": 3554088.5961,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {
+    "tt_disk_bytes": 5536612511,
+    "tt_mem_bytes": 39416443,
+    "tt_rows": 720950
+  },
+  "rows": [
+    {
+      "elapsed_s": 2.000013291,
+      "virtual_time": "11-03 15:11",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6551.45646229608,
+      "read_qps": 328.9978136450294,
+      "read_lat": {
+        "count": 658,
+        "p50_ms": 0.173,
+        "p95_ms": 59.935,
+        "p99_ms": 174.975,
+        "p999_ms": 262.399,
+        "max_ms": 272.127
+      },
+      "backlog": 695501,
+      "lag_virtual_s": 198051.6653,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 5470264599,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 712387
+      }
+    },
+    {
+      "elapsed_s": 4.000015167,
+      "virtual_time": "11-05 22:42",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6347.994045581586,
+      "read_qps": 87.499917925077,
+      "read_lat": {
+        "count": 175,
+        "p50_ms": 14.375,
+        "p95_ms": 136.703,
+        "p99_ms": 346.111,
+        "p999_ms": 401.919,
+        "max_ms": 401.919
+      },
+      "backlog": 682805,
+      "lag_virtual_s": 397229.2153,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 5536612511,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 720950
+      }
+    },
+    {
+      "elapsed_s": 6.000014416,
+      "virtual_time": "11-08 06:12",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 8469.003180110694,
+      "read_qps": 116.00004355801636,
+      "read_lat": {
+        "count": 232,
+        "p50_ms": 20.367,
+        "p95_ms": 120.319,
+        "p99_ms": 171.135,
+        "p999_ms": 179.071,
+        "max_ms": 179.071
+      },
+      "backlog": 665867,
+      "lag_virtual_s": 596118.5571,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 8.000009249,
+      "virtual_time": "11-10 13:48",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 8206.021200255771,
+      "read_qps": 111.5002880609942,
+      "read_lat": {
+        "count": 223,
+        "p50_ms": 14.887,
+        "p95_ms": 55.583,
+        "p99_ms": 708.095,
+        "p999_ms": 711.167,
+        "max_ms": 711.167
+      },
+      "backlog": 649455,
+      "lag_virtual_s": 795480.8772,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 10.000021917,
+      "virtual_time": "11-13 02:00",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 5862.962863993219,
+      "read_qps": 80.99948694924966,
+      "read_lat": {
+        "count": 162,
+        "p50_ms": 21.535,
+        "p95_ms": 179.199,
+        "p99_ms": 357.375,
+        "p999_ms": 465.407,
+        "max_ms": 465.407
+      },
+      "backlog": 637729,
+      "lag_virtual_s": 1011591.8379,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 12.000014042,
+      "virtual_time": "11-15 05:12",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 7085.027897297346,
+      "read_qps": 101.0003976890659,
+      "read_lat": {
+        "count": 202,
+        "p50_ms": 17.855,
+        "p95_ms": 142.207,
+        "p99_ms": 503.295,
+        "p999_ms": 520.447,
+        "max_ms": 520.447
+      },
+      "backlog": 623559,
+      "lag_virtual_s": 1195082.8704,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 5063234075,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 659192
+      }
+    },
+    {
+      "elapsed_s": 14.000010583,
+      "virtual_time": "11-17 12:25",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 13111.522676378469,
+      "read_qps": 189.50032774081683,
+      "read_lat": {
+        "count": 379,
+        "p50_ms": 8.111,
+        "p95_ms": 88.575,
+        "p99_ms": 123.647,
+        "p999_ms": 177.535,
+        "max_ms": 177.535
+      },
+      "backlog": 597336,
+      "lag_virtual_s": 1392537.0142,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 4908525306,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 639208
+      }
+    },
+    {
+      "elapsed_s": 16.000008958,
+      "virtual_time": "11-19 19:57",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 13036.510592164856,
+      "read_qps": 187.00015193762343,
+      "read_lat": {
+        "count": 374,
+        "p50_ms": 7.595,
+        "p95_ms": 33.663,
+        "p99_ms": 44.095,
+        "p999_ms": 793.087,
+        "max_ms": 793.087
+      },
+      "backlog": 571263,
+      "lag_virtual_s": 1591008.7557,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 18.000010208,
+      "virtual_time": "11-22 03:34",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6707.995807502621,
+      "read_qps": 100.49993718753926,
+      "read_lat": {
+        "count": 201,
+        "p50_ms": 21.919,
+        "p95_ms": 154.623,
+        "p99_ms": 229.503,
+        "p999_ms": 234.495,
+        "max_ms": 234.495
+      },
+      "backlog": 557847,
+      "lag_virtual_s": 1790506.3966,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 4395607798,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 572374
+      }
+    },
+    {
+      "elapsed_s": 20.000009875,
+      "virtual_time": "11-24 11:03",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 22046.00367065961,
+      "read_qps": 331.50005519475917,
+      "read_lat": {
+        "count": 663,
+        "p50_ms": 7.291,
+        "p95_ms": 36.703,
+        "p99_ms": 48.511,
+        "p999_ms": 52.159,
+        "max_ms": 61.567
+      },
+      "backlog": 513755,
+      "lag_virtual_s": 1987722.726,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 4395607798,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 572374
+      }
+    },
+    {
+      "elapsed_s": 22.000011416,
+      "virtual_time": "11-26 18:38",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 28634.9779367495,
+      "read_qps": 447.99965481626595,
+      "read_lat": {
+        "count": 896,
+        "p50_ms": 6.211,
+        "p95_ms": 20.463,
+        "p99_ms": 27.807,
+        "p999_ms": 37.535,
+        "max_ms": 37.663
+      },
+      "backlog": 456485,
+      "lag_virtual_s": 2184502.7172,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 3898396426,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 507611
+      }
+    },
+    {
+      "elapsed_s": 24.000009125,
+      "virtual_time": "11-29 02:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 29715.53403914424,
+      "read_qps": 489.0005601501416,
+      "read_lat": {
+        "count": 978,
+        "p50_ms": 4.459,
+        "p95_ms": 21.631,
+        "p99_ms": 27.967,
+        "p999_ms": 52.447,
+        "max_ms": 52.639
+      },
+      "backlog": 397054,
+      "lag_virtual_s": 2380710.2129,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 26.000010333,
+      "virtual_time": "12-01 09:44",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 33340.97986204816,
+      "read_qps": 581.4996487742121,
+      "read_lat": {
+        "count": 1163,
+        "p50_ms": 3.993,
+        "p95_ms": 18.159,
+        "p99_ms": 28.287,
+        "p999_ms": 36.127,
+        "max_ms": 36.607
+      },
+      "backlog": 330372,
+      "lag_virtual_s": 2576370.0125,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 2565449516,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 334014
+      }
+    },
+    {
+      "elapsed_s": 28.000009042,
+      "virtual_time": "12-03 17:22",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 30861.01992078836,
+      "read_qps": 572.0003692262384,
+      "read_lat": {
+        "count": 1144,
+        "p50_ms": 3.601,
+        "p95_ms": 17.839,
+        "p99_ms": 24.735,
+        "p999_ms": 38.015,
+        "max_ms": 44.735
+      },
+      "backlog": 268650,
+      "lag_virtual_s": 2772394.8043,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 30.000010333,
+      "virtual_time": "12-06 00:51",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 23824.98462097243,
+      "read_qps": 475.4996930649482,
+      "read_lat": {
+        "count": 951,
+        "p50_ms": 4.343,
+        "p95_ms": 21.039,
+        "p99_ms": 27.631,
+        "p999_ms": 33.279,
+        "max_ms": 33.343
+      },
+      "backlog": 221000,
+      "lag_virtual_s": 2968516.9505,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "tt_disk_bytes": 1786443885,
+        "tt_mem_bytes": 39416443,
+        "tt_rows": 232582
+      }
+    },
+    {
+      "elapsed_s": 32.000009791,
+      "virtual_time": "12-08 08:23",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 24873.506740720328,
+      "read_qps": 526.5001426815387,
+      "read_lat": {
+        "count": 1053,
+        "p50_ms": 3.901,
+        "p95_ms": 22.095,
+        "p99_ms": 30.911,
+        "p999_ms": 33.823,
+        "max_ms": 34.047
+      },
+      "backlog": 171253,
+      "lag_virtual_s": 3164554.0797,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 34.000009,
+      "virtual_time": "12-10 16:02",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 30911.512225503087,
+      "read_qps": 711.5002813983614,
+      "read_lat": {
+        "count": 1423,
+        "p50_ms": 2.925,
+        "p95_ms": 16.175,
+        "p99_ms": 19.727,
+        "p999_ms": 24.671,
+        "max_ms": 25.199
+      },
+      "backlog": 109430,
+      "lag_virtual_s": 3359567.0084,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    },
+    {
+      "elapsed_s": 36.000010083,
+      "virtual_time": "12-12 23:33",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 27493.985112007063,
+      "read_qps": 713.9996133692094,
+      "read_lat": {
+        "count": 1428,
+        "p50_ms": 2.359,
+        "p95_ms": 16.247,
+        "p99_ms": 27.023,
+        "p999_ms": 127.615,
+        "max_ms": 127.999
+      },
+      "backlog": 54442,
+      "lag_virtual_s": 3554088.5961,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    }
+  ]
+}

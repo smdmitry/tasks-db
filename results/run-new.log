@@ -1,0 +1,1006 @@
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-2b7338967b4e Creating 
+ Container test-bench-mongodb-run-2b7338967b4e Created 
+2026/10/31 07:02:54 prefill: 1000150 tasks, 318529 rows/s
+2026/10/31 07:03:03 prefill: 2000127 tasks, 174863 rows/s
+2026/10/31 07:03:12 prefill: 3000137 tasks, 146130 rows/s
+2026/10/31 07:03:23 prefill: 4000289 tasks, 125154 rows/s
+2026/10/31 07:03:38 prefill: 5000274 tasks, 106473 rows/s
+2026/10/31 07:03:56 prefill: 6000363 tasks, 92916 rows/s
+2026/10/31 07:04:15 prefill: 7000127 tasks, 83580 rows/s
+2026/10/31 07:04:35 prefill: 8000262 tasks, 77040 rows/s
+2026/10/31 07:04:57 prefill: 9000226 tasks, 71560 rows/s
+2026/10/31 07:05:21 prefill: 10000091 tasks, 66941 rows/s
+2026/10/31 07:05:26 prefill done: 10199933 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 2m34s, 66079 rows/s (batch=500), size: mongo_storage_bytes=3692.4MB mongo_index_bytes=423.7MB mongo_docs=10199933 
+2026/10/31 07:05:26 run=mongodb-20261031-100246 backend=mongodb role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:05:36 vt=10-31 07:35 | W    5050 rows/s   5050 calls/s p50=0.2ms p99=1.6ms err=0 | R       0 rows/s      6 q/s p50=0.2ms p99=21.4ms err=0 | backlog=10250430 lag=0s(virt) | mongo_storage_bytes=3731.1MB mongo_index_bytes=425.0MB mongo_docs=10250442 
+2026/10/31 07:05:46 vt=10-31 07:40 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=1.8ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=1.6ms err=0 | backlog=10300427 lag=0s(virt) | mongo_storage_bytes=3750.3MB mongo_index_bytes=425.6MB mongo_docs=10300436 
+2026/10/31 07:05:56 vt=10-31 07:45 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=1.7ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=0.6ms err=0 | backlog=10350416 lag=0s(virt) | mongo_storage_bytes=3765.3MB mongo_index_bytes=428.6MB mongo_docs=10350438 
+2026/10/31 07:06:06 vt=10-31 07:50 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.0ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=0.9ms err=0 | backlog=10400426 lag=0s(virt) | mongo_storage_bytes=3775.2MB mongo_index_bytes=437.3MB mongo_docs=10400446 
+2026/10/31 07:06:16 vt=10-31 07:55 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=1.9ms err=0 | R       0 rows/s      8 q/s p50=0.1ms p99=0.5ms err=0 | backlog=10450412 lag=0s(virt) | mongo_storage_bytes=3791.7MB mongo_index_bytes=438.4MB mongo_docs=10450437 
+2026/10/31 07:06:26 vt=10-31 08:00 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=1.5ms err=0 | R       0 rows/s      8 q/s p50=0.1ms p99=0.4ms err=0 | backlog=10500418 lag=0s(virt) | mongo_storage_bytes=3807.9MB mongo_index_bytes=439.2MB mongo_docs=10500441 
+2026/10/31 07:06:36 vt=10-31 08:05 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.0ms err=0 | R    6804 rows/s     14 q/s p50=2.5ms p99=65.6ms err=0 | backlog=10482394 lag=0s(virt) | mongo_storage_bytes=3835.3MB mongo_index_bytes=440.4MB mongo_docs=10550443 
+2026/10/31 07:06:46 vt=10-31 08:10 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.0ms err=0 | R    8574 rows/s     16 q/s p50=5.5ms p99=32.3ms err=0 | backlog=10446657 lag=0s(virt) | mongo_storage_bytes=3853.7MB mongo_index_bytes=441.5MB mongo_docs=10600440 
+2026/10/31 07:06:56 vt=10-31 08:15 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=1.9ms err=0 | R    8587 rows/s     16 q/s p50=5.8ms p99=30.3ms err=0 | backlog=10410787 lag=0s(virt) | mongo_storage_bytes=3866.8MB mongo_index_bytes=443.6MB mongo_docs=10650440 
+2026/10/31 07:07:06 vt=10-31 08:20 | W    5002 rows/s   5002 calls/s p50=0.2ms p99=2.2ms err=0 | R    8576 rows/s     16 q/s p50=5.5ms p99=26.6ms err=0 | backlog=10375040 lag=0s(virt) | mongo_storage_bytes=3885.8MB mongo_index_bytes=450.3MB mongo_docs=10700459 
+2026/10/31 07:07:16 vt=10-31 08:25 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=1.8ms err=0 | R    8599 rows/s     16 q/s p50=5.9ms p99=28.6ms err=0 | backlog=10339042 lag=0s(virt) | mongo_storage_bytes=3905.9MB mongo_index_bytes=451.8MB mongo_docs=10750453 
+2026/10/31 07:07:26 vt=10-31 08:30 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.2ms err=0 | R    8557 rows/s     16 q/s p50=4.9ms p99=37.1ms err=0 | backlog=10303472 lag=0s(virt) | mongo_storage_bytes=3925.2MB mongo_index_bytes=452.6MB mongo_docs=10800445 
+2026/10/31 07:07:36 vt=10-31 08:35 | W    4998 rows/s   4998 calls/s p50=0.2ms p99=1.9ms err=0 | R    8551 rows/s     16 q/s p50=5.1ms p99=15.6ms err=0 | backlog=10267949 lag=0s(virt) | mongo_storage_bytes=3942.2MB mongo_index_bytes=453.9MB mongo_docs=10850445 
+2026/10/31 07:07:46 vt=10-31 08:40 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.2ms err=0 | R    8542 rows/s     16 q/s p50=5.3ms p99=28.6ms err=0 | backlog=10232545 lag=0s(virt) | mongo_storage_bytes=3961.7MB mongo_index_bytes=455.1MB mongo_docs=10900442 
+2026/10/31 07:07:56 vt=10-31 08:45 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.5ms err=0 | R    8538 rows/s     16 q/s p50=6.2ms p99=28.2ms err=0 | backlog=10197170 lag=0s(virt) | mongo_storage_bytes=4012.9MB mongo_index_bytes=468.7MB mongo_docs=10950443 
+2026/10/31 07:08:06 vt=10-31 08:50 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.8ms err=0 | R    8584 rows/s     16 q/s p50=6.3ms p99=26.1ms err=0 | backlog=10161333 lag=0s(virt) | mongo_storage_bytes=4014.1MB mongo_index_bytes=475.0MB mongo_docs=11000443 
+2026/10/31 07:08:16 vt=10-31 08:55 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=2.1ms err=0 | R    8579 rows/s     16 q/s p50=6.3ms p99=29.4ms err=0 | backlog=10125534 lag=0s(virt) | mongo_storage_bytes=4020.2MB mongo_index_bytes=475.7MB mongo_docs=11050449 
+2026/10/31 07:08:26 vt=10-31 09:00 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=2.1ms err=0 | R    8559 rows/s     16 q/s p50=7.2ms p99=29.5ms err=0 | backlog=10089935 lag=0s(virt) | mongo_storage_bytes=4036.8MB mongo_index_bytes=476.1MB mongo_docs=11100444 
+2026/10/31 07:08:36 vt=10-31 09:05 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=1.9ms err=0 | R    8545 rows/s     16 q/s p50=7.2ms p99=126.0ms err=0 | backlog=10054501 lag=0s(virt) | mongo_storage_bytes=3678.5MB mongo_index_bytes=433.5MB mongo_docs=10122888 
+2026/10/31 07:08:46 vt=10-31 09:10 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=2.2ms err=0 | R    8568 rows/s     16 q/s p50=6.9ms p99=27.0ms err=0 | backlog=10018812 lag=0s(virt) | mongo_storage_bytes=3698.0MB mongo_index_bytes=434.2MB mongo_docs=10172882 
+2026/10/31 07:08:56 vt=10-31 09:15 | W    5002 rows/s   5002 calls/s p50=0.2ms p99=2.1ms err=0 | R    8570 rows/s     16 q/s p50=5.6ms p99=20.7ms err=0 | backlog=9983127 lag=0s(virt) | mongo_storage_bytes=3715.2MB mongo_index_bytes=435.2MB mongo_docs=10222883 
+2026/10/31 07:09:06 vt=10-31 09:20 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=2.4ms err=0 | R    8495 rows/s     16 q/s p50=5.2ms p99=29.2ms err=0 | backlog=9948172 lag=0s(virt) | mongo_storage_bytes=3730.9MB mongo_index_bytes=441.7MB mongo_docs=10272888 
+2026/10/31 07:09:16 vt=10-31 09:25 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.5ms err=0 | R    8585 rows/s     16 q/s p50=6.1ms p99=33.2ms err=0 | backlog=9912327 lag=0s(virt) | mongo_storage_bytes=3750.6MB mongo_index_bytes=442.9MB mongo_docs=10322885 
+2026/10/31 07:09:26 vt=10-31 09:30 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.3ms err=0 | R    8575 rows/s     16 q/s p50=5.6ms p99=26.5ms err=0 | backlog=9876576 lag=0s(virt) | mongo_storage_bytes=3770.7MB mongo_index_bytes=443.5MB mongo_docs=10372899 
+2026/10/31 07:09:36 vt=10-31 09:35 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=1.5ms err=0 | R    8544 rows/s     16 q/s p50=5.4ms p99=21.8ms err=0 | backlog=9841124 lag=0s(virt) | mongo_storage_bytes=3788.1MB mongo_index_bytes=444.0MB mongo_docs=10422888 
+2026/10/31 07:09:46 vt=10-31 09:40 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.6ms err=0 | R    8555 rows/s     16 q/s p50=6.8ms p99=23.8ms err=0 | backlog=9805586 lag=0s(virt) | mongo_storage_bytes=3806.2MB mongo_index_bytes=444.6MB mongo_docs=10472896 
+2026/10/31 07:09:56 vt=10-31 09:45 | W    4999 rows/s   4999 calls/s p50=0.2ms p99=2.8ms err=0 | R    8593 rows/s     16 q/s p50=5.8ms p99=25.9ms err=0 | backlog=9769652 lag=0s(virt) | mongo_storage_bytes=3826.0MB mongo_index_bytes=445.6MB mongo_docs=10522902 
+2026/10/31 07:10:06 vt=10-31 09:50 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.7ms err=0 | R    8585 rows/s     16 q/s p50=5.3ms p99=27.5ms err=0 | backlog=9733813 lag=0s(virt) | mongo_storage_bytes=3843.2MB mongo_index_bytes=450.9MB mongo_docs=10572902 
+2026/10/31 07:10:16 vt=10-31 09:55 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.8ms err=0 | R    8520 rows/s     16 q/s p50=6.4ms p99=28.0ms err=0 | backlog=9698609 lag=0s(virt) | mongo_storage_bytes=3863.2MB mongo_index_bytes=451.8MB mongo_docs=10622896 
+2026/10/31 07:10:26 vt=10-31 10:00 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.3ms err=0 | R    8615 rows/s     16 q/s p50=5.4ms p99=16.8ms err=0 | backlog=9662456 lag=0s(virt) | mongo_storage_bytes=3880.5MB mongo_index_bytes=452.3MB mongo_docs=10672880 
+2026/10/31 07:10:26 SUMMARY mongodb [batch=1 payload=random consume=drop]: prefill=10199933 (66079/s) written=1500507 (5002/s, p99=2.1ms) read=2037984 (avg 6793/s, peak 8615/s, 14 q/s, p99=31.5ms) max_lag=0s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=4036.8MB mongo_index_bytes=476.1MB mongo_docs=11100444 
+2026/10/31 07:10:26 saved /results/mongodb-20261031-100246.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 194.4, "cpu_max": 436.9, "mem_max_mb": 1420, "disk_max_mb": 4790}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-f403ac29a270 Creating 
+ Container test-bench-mongodb-run-f403ac29a270 Created 
+2026/10/31 07:10:37 prefill: 1000237 tasks, 323800 rows/s
+2026/10/31 07:10:43 prefill: 2000139 tasks, 207999 rows/s
+2026/10/31 07:10:53 prefill: 3000251 tasks, 158620 rows/s
+2026/10/31 07:11:05 prefill: 4000255 tasks, 125864 rows/s
+2026/10/31 07:11:21 prefill: 5000213 tasks, 105997 rows/s
+2026/10/31 07:11:38 prefill: 6000109 tasks, 92922 rows/s
+2026/10/31 07:11:58 prefill: 7000342 tasks, 83118 rows/s
+2026/10/31 07:12:20 prefill: 8000093 tasks, 75407 rows/s
+2026/10/31 07:12:42 prefill: 9000110 tasks, 70156 rows/s
+2026/10/31 07:13:06 prefill: 10000338 tasks, 65823 rows/s
+2026/10/31 07:13:10 prefill done: 10198095 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 2m36s, 65214 rows/s (batch=500), size: mongo_storage_bytes=3685.1MB mongo_index_bytes=466.9MB mongo_docs=10198095 
+2026/10/31 07:13:10 run=mongodb-20261031-101027 backend=mongodb role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:13:20 vt=10-31 07:35 | W    5039 rows/s     50 calls/s p50=4.2ms p99=1218.6ms err=0 | R       0 rows/s      6 q/s p50=0.2ms p99=38.7ms err=0 | backlog=10248495 lag=0s(virt) | mongo_storage_bytes=3723.0MB mongo_index_bytes=468.2MB mongo_docs=10248495 
+2026/10/31 07:13:30 vt=10-31 07:40 | W    5000 rows/s     50 calls/s p50=2.3ms p99=10.4ms err=0 | R       0 rows/s      8 q/s p50=0.1ms p99=0.4ms err=0 | backlog=10298495 lag=0s(virt) | mongo_storage_bytes=3741.7MB mongo_index_bytes=469.0MB mongo_docs=10298517 
+2026/10/31 07:13:40 vt=10-31 07:45 | W    5000 rows/s     50 calls/s p50=2.2ms p99=9.9ms err=0 | R       0 rows/s      8 q/s p50=0.1ms p99=0.9ms err=0 | backlog=10348495 lag=0s(virt) | mongo_storage_bytes=3757.4MB mongo_index_bytes=457.6MB mongo_docs=10348520 
+2026/10/31 07:13:50 vt=10-31 07:50 | W    5000 rows/s     50 calls/s p50=2.3ms p99=10.7ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=0.7ms err=0 | backlog=10398495 lag=0s(virt) | mongo_storage_bytes=3768.3MB mongo_index_bytes=458.9MB mongo_docs=10398518 
+2026/10/31 07:14:00 vt=10-31 07:55 | W    5000 rows/s     50 calls/s p50=2.2ms p99=9.9ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=1.3ms err=0 | backlog=10448495 lag=0s(virt) | mongo_storage_bytes=3782.5MB mongo_index_bytes=459.6MB mongo_docs=10448533 
+2026/10/31 07:14:10 vt=10-31 08:00 | W    5000 rows/s     50 calls/s p50=2.3ms p99=63.0ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=0.6ms err=0 | backlog=10498495 lag=0s(virt) | mongo_storage_bytes=3802.3MB mongo_index_bytes=460.3MB mongo_docs=10498548 
+2026/10/31 07:14:20 vt=10-31 08:05 | W    5000 rows/s     50 calls/s p50=2.3ms p99=10.3ms err=0 | R    6856 rows/s     14 q/s p50=3.1ms p99=203.3ms err=0 | backlog=10479936 lag=0s(virt) | mongo_storage_bytes=3829.0MB mongo_index_bytes=461.2MB mongo_docs=10548518 
+2026/10/31 07:14:30 vt=10-31 08:10 | W    5010 rows/s     50 calls/s p50=2.2ms p99=11.2ms err=0 | R    8567 rows/s     16 q/s p50=6.2ms p99=26.2ms err=0 | backlog=10444364 lag=0s(virt) | mongo_storage_bytes=3846.5MB mongo_index_bytes=461.8MB mongo_docs=10598595 
+2026/10/31 07:14:40 vt=10-31 08:15 | W    4990 rows/s     50 calls/s p50=2.1ms p99=8.9ms err=0 | R    8533 rows/s     16 q/s p50=5.1ms p99=22.7ms err=0 | backlog=10408934 lag=0s(virt) | mongo_storage_bytes=3861.3MB mongo_index_bytes=462.7MB mongo_docs=10648518 
+2026/10/31 07:14:50 vt=10-31 08:20 | W    5000 rows/s     50 calls/s p50=2.6ms p99=10.4ms err=0 | R    8640 rows/s     16 q/s p50=5.3ms p99=22.2ms err=0 | backlog=10372539 lag=0s(virt) | mongo_storage_bytes=3877.1MB mongo_index_bytes=464.1MB mongo_docs=10698524 
+2026/10/31 07:15:00 vt=10-31 08:25 | W    5006 rows/s     50 calls/s p50=2.3ms p99=11.8ms err=0 | R    8546 rows/s     16 q/s p50=5.3ms p99=25.6ms err=0 | backlog=10337113 lag=0s(virt) | mongo_storage_bytes=3897.4MB mongo_index_bytes=464.9MB mongo_docs=10748595 
+2026/10/31 07:15:10 vt=10-31 08:30 | W    4994 rows/s     50 calls/s p50=2.3ms p99=13.1ms err=0 | R    8534 rows/s     16 q/s p50=5.9ms p99=28.3ms err=0 | backlog=10301746 lag=0s(virt) | mongo_storage_bytes=3913.9MB mongo_index_bytes=465.6MB mongo_docs=10798582 
+2026/10/31 07:15:20 vt=10-31 08:35 | W    5000 rows/s     50 calls/s p50=2.3ms p99=11.3ms err=0 | R    8562 rows/s     16 q/s p50=5.0ms p99=23.1ms err=0 | backlog=10266121 lag=0s(virt) | mongo_storage_bytes=3932.4MB mongo_index_bytes=466.4MB mongo_docs=10848506 
+2026/10/31 07:15:30 vt=10-31 08:40 | W    5000 rows/s     50 calls/s p50=2.5ms p99=11.5ms err=0 | R    8576 rows/s     16 q/s p50=5.4ms p99=24.2ms err=0 | backlog=10230362 lag=0s(virt) | mongo_storage_bytes=3966.0MB mongo_index_bytes=467.0MB mongo_docs=10898504 
+2026/10/31 07:15:40 vt=10-31 08:45 | W    5000 rows/s     50 calls/s p50=2.5ms p99=11.3ms err=0 | R    8582 rows/s     16 q/s p50=5.4ms p99=21.4ms err=0 | backlog=10194545 lag=0s(virt) | mongo_storage_bytes=4006.4MB mongo_index_bytes=474.7MB mongo_docs=10948514 
+2026/10/31 07:15:50 vt=10-31 08:50 | W    5000 rows/s     50 calls/s p50=2.9ms p99=10.6ms err=0 | R    8550 rows/s     16 q/s p50=5.4ms p99=22.7ms err=0 | backlog=10159046 lag=0s(virt) | mongo_storage_bytes=4007.8MB mongo_index_bytes=475.4MB mongo_docs=10998546 
+2026/10/31 07:16:00 vt=10-31 08:55 | W    5000 rows/s     50 calls/s p50=2.4ms p99=12.0ms err=0 | R    8612 rows/s     16 q/s p50=5.3ms p99=26.3ms err=0 | backlog=10122925 lag=0s(virt) | mongo_storage_bytes=4012.8MB mongo_index_bytes=476.1MB mongo_docs=11048499 
+2026/10/31 07:16:10 vt=10-31 09:00 | W    5000 rows/s     50 calls/s p50=2.3ms p99=11.0ms err=0 | R    8594 rows/s     16 q/s p50=4.9ms p99=21.2ms err=0 | backlog=10086987 lag=0s(virt) | mongo_storage_bytes=4030.4MB mongo_index_bytes=476.9MB mongo_docs=11098500 
+2026/10/31 07:16:20 vt=10-31 09:05 | W    5000 rows/s     50 calls/s p50=2.5ms p99=9.8ms err=0 | R    8569 rows/s     16 q/s p50=6.1ms p99=358.7ms err=0 | backlog=10051294 lag=0s(virt) | mongo_storage_bytes=3672.8MB mongo_index_bytes=430.1MB mongo_docs=10119777 
+2026/10/31 07:16:30 vt=10-31 09:10 | W    5000 rows/s     50 calls/s p50=3.0ms p99=11.5ms err=0 | R    8570 rows/s     16 q/s p50=7.9ms p99=29.6ms err=0 | backlog=10015590 lag=0s(virt) | mongo_storage_bytes=3688.0MB mongo_index_bytes=431.0MB mongo_docs=10169760 
+2026/10/31 07:16:40 vt=10-31 09:15 | W    5000 rows/s     50 calls/s p50=2.5ms p99=11.0ms err=0 | R    8539 rows/s     16 q/s p50=7.0ms p99=30.8ms err=0 | backlog=9980198 lag=0s(virt) | mongo_storage_bytes=3708.8MB mongo_index_bytes=439.7MB mongo_docs=10219769 
+2026/10/31 07:16:50 vt=10-31 09:20 | W    5000 rows/s     50 calls/s p50=2.8ms p99=10.1ms err=0 | R    8618 rows/s     16 q/s p50=5.6ms p99=30.2ms err=0 | backlog=9944014 lag=0s(virt) | mongo_storage_bytes=3728.8MB mongo_index_bytes=440.3MB mongo_docs=10269790 
+2026/10/31 07:17:00 vt=10-31 09:25 | W    5010 rows/s     50 calls/s p50=2.4ms p99=13.6ms err=0 | R    8573 rows/s     16 q/s p50=6.1ms p99=28.8ms err=0 | backlog=9908387 lag=0s(virt) | mongo_storage_bytes=3747.1MB mongo_index_bytes=441.0MB mongo_docs=10319851 
+2026/10/31 07:17:10 vt=10-31 09:30 | W    4990 rows/s     50 calls/s p50=2.5ms p99=10.9ms err=0 | R    8587 rows/s     16 q/s p50=6.0ms p99=19.4ms err=0 | backlog=9872417 lag=0s(virt) | mongo_storage_bytes=3766.0MB mongo_index_bytes=441.8MB mongo_docs=10369761 
+2026/10/31 07:17:20 vt=10-31 09:35 | W    5000 rows/s     50 calls/s p50=2.5ms p99=12.9ms err=0 | R    8576 rows/s     16 q/s p50=5.9ms p99=27.9ms err=0 | backlog=9836656 lag=0s(virt) | mongo_storage_bytes=3783.7MB mongo_index_bytes=442.5MB mongo_docs=10419757 
+2026/10/31 07:17:30 vt=10-31 09:40 | W    5010 rows/s     50 calls/s p50=2.1ms p99=12.7ms err=0 | R    8583 rows/s     16 q/s p50=6.4ms p99=24.6ms err=0 | backlog=9800930 lag=0s(virt) | mongo_storage_bytes=3802.9MB mongo_index_bytes=443.1MB mongo_docs=10469851 
+2026/10/31 07:17:40 vt=10-31 09:45 | W    4990 rows/s     50 calls/s p50=2.4ms p99=10.7ms err=0 | R    8617 rows/s     16 q/s p50=6.6ms p99=23.2ms err=0 | backlog=9764656 lag=0s(virt) | mongo_storage_bytes=3821.7MB mongo_index_bytes=444.7MB mongo_docs=10519767 
+2026/10/31 07:17:50 vt=10-31 09:50 | W    5000 rows/s     50 calls/s p50=2.5ms p99=15.8ms err=0 | R    8603 rows/s     16 q/s p50=6.1ms p99=28.9ms err=0 | backlog=9728631 lag=0s(virt) | mongo_storage_bytes=3839.4MB mongo_index_bytes=447.1MB mongo_docs=10569759 
+2026/10/31 07:18:00 vt=10-31 09:55 | W    5010 rows/s     50 calls/s p50=2.4ms p99=12.4ms err=0 | R    8563 rows/s     16 q/s p50=5.7ms p99=29.2ms err=0 | backlog=9693105 lag=0s(virt) | mongo_storage_bytes=3856.5MB mongo_index_bytes=448.0MB mongo_docs=10619851 
+2026/10/31 07:18:10 vt=10-31 10:00 | W    4990 rows/s     50 calls/s p50=2.5ms p99=12.7ms err=0 | R    8602 rows/s     16 q/s p50=5.3ms p99=21.6ms err=0 | backlog=9656981 lag=0s(virt) | mongo_storage_bytes=3877.7MB mongo_index_bytes=448.9MB mongo_docs=10669751 
+2026/10/31 07:18:10 SUMMARY mongodb [batch=100 payload=random consume=drop]: prefill=10198095 (65214/s) written=1500400 (5001/s, p99=14.3ms) read=2041514 (avg 6805/s, peak 8640/s, 14 q/s, p99=29.6ms) max_lag=0s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=4030.4MB mongo_index_bytes=476.9MB mongo_docs=11098500 
+2026/10/31 07:18:10 saved /results/mongodb-20261031-101027.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 160.7, "cpu_max": 438.3, "mem_max_mb": 1366, "disk_max_mb": 4914}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-adbaf8354685 Creating 
+ Container test-bench-mongodb-run-adbaf8354685 Created 
+2026/10/31 07:18:20 prefill: 1000154 tasks, 502219 rows/s
+2026/10/31 07:18:23 prefill: 2000048 tasks, 441657 rows/s
+2026/10/31 07:18:27 prefill: 3000237 tasks, 361241 rows/s
+2026/10/31 07:18:34 prefill: 4000232 tasks, 257644 rows/s
+2026/10/31 07:18:47 prefill: 5000351 tasks, 174209 rows/s
+2026/10/31 07:19:11 prefill: 6000062 tasks, 114918 rows/s
+2026/10/31 07:19:58 prefill: 7000135 tasks, 70333 rows/s
+2026/10/31 07:21:02 prefill: 8000081 tasks, 48933 rows/s
+2026/10/31 07:22:23 prefill: 9000009 tasks, 36719 rows/s
+2026/10/31 07:24:05 prefill: 10000057 tasks, 28810 rows/s
+2026/10/31 07:24:24 prefill done: 10198775 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 6m5s, 27912 rows/s (batch=500), size: mongo_storage_bytes=3809.6MB mongo_index_bytes=515.7MB mongo_docs=10198775 
+2026/10/31 07:24:24 run=mongodb-20261031-101812 backend=mongodb role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:24:34 vt=10-31 07:35 | W    5010 rows/s   5010 calls/s p50=0.2ms p99=3.5ms err=0 | R       0 rows/s      6 q/s p50=0.2ms p99=27.3ms err=0 | backlog=10248872 lag=0s(virt) | mongo_storage_bytes=3830.1MB mongo_index_bytes=516.2MB mongo_docs=10248881 
+2026/10/31 07:24:44 vt=10-31 07:40 | W    5001 rows/s   5001 calls/s p50=0.2ms p99=2.5ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=1.4ms err=0 | backlog=10298879 lag=0s(virt) | mongo_storage_bytes=3848.8MB mongo_index_bytes=517.0MB mongo_docs=10298885 
+2026/10/31 07:24:54 vt=10-31 07:45 | W    4999 rows/s   4999 calls/s p50=0.1ms p99=2.2ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=1.8ms err=0 | backlog=10348873 lag=0s(virt) | mongo_storage_bytes=3862.8MB mongo_index_bytes=517.7MB mongo_docs=10348884 
+2026/10/31 07:25:04 vt=10-31 07:50 | W    5000 rows/s   5000 calls/s p50=0.2ms p99=2.4ms err=0 | R       0 rows/s      8 q/s p50=0.1ms p99=6.5ms err=0 | backlog=10398872 lag=0s(virt) | mongo_storage_bytes=3881.8MB mongo_index_bytes=518.1MB mongo_docs=10398879 
+2026/10/31 07:25:14 vt=10-31 07:55 | W    4873 rows/s   4873 calls/s p50=0.2ms p99=3.2ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=2.7ms err=0 | backlog=10447605 lag=0s(virt) | mongo_storage_bytes=3901.4MB mongo_index_bytes=518.8MB mongo_docs=10447616 
+2026/10/31 07:25:24 vt=10-31 08:00 | W    4424 rows/s   4424 calls/s p50=0.2ms p99=8.2ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=1.7ms err=0 | backlog=10491845 lag=0s(virt) | mongo_storage_bytes=3918.9MB mongo_index_bytes=519.6MB mongo_docs=10491862 
+2026/10/31 07:25:34 vt=10-31 08:05 | W    4851 rows/s   4851 calls/s p50=0.2ms p99=40.3ms err=0 | R    3110 rows/s      7 q/s p50=71.8ms p99=954.4ms err=0 | backlog=10509263 lag=175s(virt) | mongo_storage_bytes=4799.2MB mongo_index_bytes=649.1MB mongo_docs=10509271 
+2026/10/31 07:25:44 vt=10-31 08:10 | W    2602 rows/s   2602 calls/s p50=0.5ms p99=448.3ms err=0 | R    2564 rows/s      5 q/s p50=308.7ms p99=846.3ms err=0 | backlog=10509649 lag=355s(virt) | mongo_storage_bytes=5391.5MB mongo_index_bytes=654.5MB mongo_docs=10509667 
+2026/10/31 07:25:54 vt=10-31 08:15 | W    3558 rows/s   3558 calls/s p50=0.3ms p99=50.1ms err=0 | R    4073 rows/s      7 q/s p50=354.3ms p99=864.3ms err=0 | backlog=10504501 lag=535s(virt) | mongo_storage_bytes=6102.8MB mongo_index_bytes=655.2MB mongo_docs=10504508 
+2026/10/31 07:26:04 vt=10-31 08:20 | W    3334 rows/s   3334 calls/s p50=0.3ms p99=175.6ms err=0 | R    3768 rows/s      7 q/s p50=328.7ms p99=1131.5ms err=0 | backlog=10500170 lag=715s(virt) | mongo_storage_bytes=6534.1MB mongo_index_bytes=655.4MB mongo_docs=10503769 
+2026/10/31 07:26:14 vt=10-31 08:25 | W    1778 rows/s   1778 calls/s p50=0.5ms p99=1086.5ms err=0 | R     856 rows/s      2 q/s p50=73.4ms p99=805.9ms err=0 | backlog=10509393 lag=955s(virt) | mongo_storage_bytes=6688.7MB mongo_index_bytes=655.4MB mongo_docs=10509405 
+2026/10/31 07:26:24 vt=10-31 08:30 | W    3287 rows/s   3287 calls/s p50=0.4ms p99=320.8ms err=0 | R    2366 rows/s      4 q/s p50=633.9ms p99=2125.8ms err=0 | backlog=10518598 lag=1195s(virt) | mongo_storage_bytes=6903.8MB mongo_index_bytes=692.8MB mongo_docs=10519041 
+2026/10/31 07:26:34 vt=10-31 08:35 | W    1649 rows/s   1649 calls/s p50=0.7ms p99=856.6ms err=0 | R    2145 rows/s      4 q/s p50=507.1ms p99=1638.4ms err=0 | backlog=10513633 lag=1435s(virt) | mongo_storage_bytes=6903.8MB mongo_index_bytes=692.8MB mongo_docs=10517741 
+2026/10/31 07:26:44 vt=10-31 08:40 | W    3644 rows/s   3644 calls/s p50=0.3ms p99=50.7ms err=0 | R    3412 rows/s      6 q/s p50=109.2ms p99=891.4ms err=0 | backlog=10515949 lag=1615s(virt) | mongo_storage_bytes=6903.8MB mongo_index_bytes=692.8MB mongo_docs=10517443 
+2026/10/31 07:26:54 vt=10-31 08:45 | W    4898 rows/s   4898 calls/s p50=0.3ms p99=47.8ms err=0 | R    4815 rows/s      9 q/s p50=351.0ms p99=1523.7ms err=0 | backlog=10516781 lag=1735s(virt) | mongo_storage_bytes=6903.8MB mongo_index_bytes=692.8MB mongo_docs=10518546 
+2026/10/31 07:27:04 vt=10-31 08:50 | W    4788 rows/s   4788 calls/s p50=0.3ms p99=48.9ms err=0 | R    5849 rows/s     11 q/s p50=286.5ms p99=1588.2ms err=0 | backlog=10506170 lag=1795s(virt) | mongo_storage_bytes=6903.8MB mongo_index_bytes=692.8MB mongo_docs=10507801 
+2026/10/31 07:27:14 vt=10-31 08:55 | W    3997 rows/s   3997 calls/s p50=0.4ms p99=53.4ms err=0 | R    4802 rows/s      9 q/s p50=260.6ms p99=1087.5ms err=0 | backlog=10498128 lag=1975s(virt) | mongo_storage_bytes=7201.1MB mongo_index_bytes=692.8MB mongo_docs=10501755 
+2026/10/31 07:27:24 vt=10-31 09:00 | W    4342 rows/s   4342 calls/s p50=0.3ms p99=60.2ms err=0 | R    3980 rows/s      7 q/s p50=286.0ms p99=1528.8ms err=0 | backlog=10501748 lag=2096s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10501834 
+2026/10/31 07:27:34 vt=10-31 09:05 | W    4615 rows/s   4615 calls/s p50=0.4ms p99=55.6ms err=0 | R    3100 rows/s      6 q/s p50=268.8ms p99=1503.2ms err=0 | backlog=10516900 lag=2335s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10518335 
+2026/10/31 07:27:44 vt=10-31 09:10 | W    2918 rows/s   2918 calls/s p50=0.3ms p99=429.8ms err=0 | R    2044 rows/s      4 q/s p50=660.0ms p99=1612.8ms err=0 | backlog=10525647 lag=2515s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10525663 
+2026/10/31 07:27:54 vt=10-31 09:15 | W    4809 rows/s   4809 calls/s p50=0.2ms p99=42.9ms err=0 | R    3973 rows/s      7 q/s p50=198.1ms p99=1489.9ms err=0 | backlog=10534005 lag=2695s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10534021 
+2026/10/31 07:28:04 vt=10-31 09:20 | W    3165 rows/s   3165 calls/s p50=0.2ms p99=51.0ms err=0 | R    2151 rows/s      4 q/s p50=364.5ms p99=1556.5ms err=0 | backlog=10544142 lag=2935s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10547046 
+2026/10/31 07:28:14 vt=10-31 09:25 | W    4595 rows/s   4595 calls/s p50=0.2ms p99=52.0ms err=0 | R    3422 rows/s      6 q/s p50=300.5ms p99=1536.0ms err=0 | backlog=10555876 lag=3115s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10555889 
+2026/10/31 07:28:24 vt=10-31 09:30 | W    2970 rows/s   2970 calls/s p50=0.3ms p99=47.7ms err=0 | R    3761 rows/s      7 q/s p50=291.8ms p99=901.1ms err=0 | backlog=10547959 lag=3295s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10549034 
+2026/10/31 07:28:34 vt=10-31 09:35 | W    3605 rows/s   3605 calls/s p50=0.5ms p99=77.7ms err=0 | R    4923 rows/s      9 q/s p50=272.4ms p99=1280.0ms err=0 | backlog=10534784 lag=3415s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10537713 
+2026/10/31 07:28:44 vt=10-31 09:40 | W    4538 rows/s   4538 calls/s p50=0.3ms p99=54.4ms err=0 | R    4082 rows/s      8 q/s p50=263.2ms p99=1311.7ms err=0 | backlog=10539345 lag=3595s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10539358 
+2026/10/31 07:28:54 vt=10-31 09:45 | W    3268 rows/s   3268 calls/s p50=0.3ms p99=77.1ms err=0 | R    2548 rows/s      5 q/s p50=700.9ms p99=2240.5ms err=0 | backlog=10546551 lag=3775s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10549592 
+2026/10/31 07:29:04 vt=10-31 09:50 | W    3138 rows/s   3138 calls/s p50=0.8ms p99=249.7ms err=0 | R    5128 rows/s     10 q/s p50=224.4ms p99=538.1ms err=0 | backlog=10526649 lag=3895s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10527735 
+2026/10/31 07:29:14 vt=10-31 09:55 | W    3099 rows/s   3099 calls/s p50=0.6ms p99=204.7ms err=0 | R    5362 rows/s     10 q/s p50=202.1ms p99=657.4ms err=0 | backlog=10504021 lag=4015s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10505030 
+2026/10/31 07:29:24 finish bucket: connection(mongodb:27017[-37]) incomplete read of message header: context deadline exceeded: client timed out waiting for server response: read tcp 192.168.97.3:49570->192.168.97.2:27017: i/o timeout
+2026/10/31 07:29:24 read h=498173 m=49 s=10: operation not sent to server, as Timeout would be exceeded: context deadline exceeded: network round-trip time stats: moving avg: 767.203µs, min: 212.5µs, moving stddev: 2.697857ms
+2026/10/31 07:29:24 finish bucket: connection(mongodb:27017[-44]) incomplete read of message header: context deadline exceeded: client timed out waiting for server response: read tcp 192.168.97.3:49616->192.168.97.2:27017: i/o timeout
+2026/10/31 07:29:24 read h=498173 m=50 s=12: operation not sent to server, as Timeout would be exceeded: context deadline exceeded: network round-trip time stats: moving avg: 767.203µs, min: 212.5µs, moving stddev: 2.697857ms
+2026/10/31 07:29:24 vt=10-31 10:00 | W    2155 rows/s   2155 calls/s p50=0.8ms p99=543.2ms err=0 | R    3769 rows/s      7 q/s p50=155.9ms p99=501.2ms err=0 | backlog=10487885 lag=4195s(virt) | mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10489285 
+2026/10/31 07:29:24 SUMMARY mongodb [batch=1 payload=random consume=delete]: prefill=10198775 (27912/s) written=1149109 (3829/s, p99=55.6ms) read=859999 (avg 2866/s, peak 5849/s, 7 q/s, p99=1523.7ms) max_lag=4195s(virt) errs w=0 r=2 size_max: mongo_storage_bytes=7456.5MB mongo_index_bytes=692.8MB mongo_docs=10555889 
+2026/10/31 07:29:24 saved /results/mongodb-20261031-101812.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 294.3, "cpu_max": 520.4, "mem_max_mb": 1260, "disk_max_mb": 8073}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-28f168a5425b Creating 
+ Container test-bench-mongodb-run-28f168a5425b Created 
+2026/10/31 07:29:33 run=mongodb-20261031-102926 backend=mongodb role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=5m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 07:29:43 vt=10-31 07:40 | W   83611 rows/s  83611 calls/s p50=1.3ms p99=51.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=836112 lag=0s(virt) | mongo_storage_bytes=290.9MB mongo_index_bytes=22.0MB mongo_docs=836366 
+2026/10/31 07:29:53 vt=10-31 07:50 | W   58279 rows/s  58279 calls/s p50=1.5ms p99=63.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1418898 lag=0s(virt) | mongo_storage_bytes=485.0MB mongo_index_bytes=37.7MB mongo_docs=1419182 
+2026/10/31 07:30:03 vt=10-31 08:00 | W   48130 rows/s  48130 calls/s p50=1.9ms p99=60.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1900203 lag=0s(virt) | mongo_storage_bytes=661.6MB mongo_index_bytes=47.3MB mongo_docs=1900321 
+2026/10/31 07:30:13 vt=10-31 08:10 | W   46516 rows/s  46516 calls/s p50=2.1ms p99=62.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2365363 lag=0s(virt) | mongo_storage_bytes=830.1MB mongo_index_bytes=59.1MB mongo_docs=2365551 
+2026/10/31 07:30:23 vt=10-31 08:20 | W   44805 rows/s  44805 calls/s p50=2.2ms p99=62.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2813413 lag=0s(virt) | mongo_storage_bytes=995.0MB mongo_index_bytes=72.4MB mongo_docs=2813458 
+2026/10/31 07:30:33 vt=10-31 08:30 | W   45337 rows/s  45337 calls/s p50=2.0ms p99=61.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3266788 lag=0s(virt) | mongo_storage_bytes=1182.7MB mongo_index_bytes=126.7MB mongo_docs=3267254 
+2026/10/31 07:30:43 vt=10-31 08:40 | W   42153 rows/s  42153 calls/s p50=2.1ms p99=62.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3688314 lag=0s(virt) | mongo_storage_bytes=1332.8MB mongo_index_bytes=134.5MB mongo_docs=3688403 
+2026/10/31 07:30:53 vt=10-31 08:50 | W   41104 rows/s  41104 calls/s p50=2.2ms p99=63.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4099358 lag=0s(virt) | mongo_storage_bytes=1481.9MB mongo_index_bytes=147.2MB mongo_docs=4099569 
+2026/10/31 07:31:03 vt=10-31 09:00 | W   38716 rows/s  38716 calls/s p50=2.3ms p99=65.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4486522 lag=0s(virt) | mongo_storage_bytes=1623.3MB mongo_index_bytes=156.7MB mongo_docs=4486572 
+2026/10/31 07:31:13 vt=10-31 09:10 | W   40219 rows/s  40219 calls/s p50=2.2ms p99=64.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4888716 lag=0s(virt) | mongo_storage_bytes=1772.7MB mongo_index_bytes=168.2MB mongo_docs=4888869 
+2026/10/31 07:31:23 vt=10-31 09:20 | W   38784 rows/s  38784 calls/s p50=2.4ms p99=62.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5276553 lag=0s(virt) | mongo_storage_bytes=1914.7MB mongo_index_bytes=183.7MB mongo_docs=5276628 
+2026/10/31 07:31:33 vt=10-31 09:30 | W   37613 rows/s  37613 calls/s p50=2.5ms p99=63.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5652683 lag=0s(virt) | mongo_storage_bytes=2059.0MB mongo_index_bytes=257.2MB mongo_docs=5652908 
+2026/10/31 07:31:43 vt=10-31 09:40 | W   35796 rows/s  35796 calls/s p50=2.8ms p99=62.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6010643 lag=0s(virt) | mongo_storage_bytes=2187.7MB mongo_index_bytes=261.7MB mongo_docs=6010850 
+2026/10/31 07:31:53 vt=10-31 09:50 | W   36610 rows/s  36610 calls/s p50=2.7ms p99=63.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6376745 lag=0s(virt) | mongo_storage_bytes=2319.8MB mongo_index_bytes=266.8MB mongo_docs=6376875 
+2026/10/31 07:32:03 vt=10-31 10:00 | W   35667 rows/s  35667 calls/s p50=2.7ms p99=62.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6733415 lag=0s(virt) | mongo_storage_bytes=2447.6MB mongo_index_bytes=271.5MB mongo_docs=6733481 
+2026/10/31 07:32:13 vt=10-31 10:10 | W   37904 rows/s  37904 calls/s p50=2.6ms p99=62.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7112454 lag=0s(virt) | mongo_storage_bytes=2589.1MB mongo_index_bytes=277.3MB mongo_docs=7112589 
+2026/10/31 07:32:23 vt=10-31 10:20 | W   36353 rows/s  36353 calls/s p50=2.7ms p99=63.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7475988 lag=0s(virt) | mongo_storage_bytes=2718.2MB mongo_index_bytes=282.9MB mongo_docs=7476058 
+2026/10/31 07:32:33 vt=10-31 10:30 | W   33335 rows/s  33335 calls/s p50=2.8ms p99=66.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7809339 lag=0s(virt) | mongo_storage_bytes=2848.2MB mongo_index_bytes=374.5MB mongo_docs=7809417 
+2026/10/31 07:32:43 vt=10-31 10:40 | W   34565 rows/s  34565 calls/s p50=2.8ms p99=65.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8154988 lag=0s(virt) | mongo_storage_bytes=2962.2MB mongo_index_bytes=378.7MB mongo_docs=8155188 
+2026/10/31 07:32:53 vt=10-31 10:50 | W   33210 rows/s  33210 calls/s p50=2.9ms p99=66.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8487089 lag=0s(virt) | mongo_storage_bytes=3075.6MB mongo_index_bytes=383.8MB mongo_docs=8487158 
+2026/10/31 07:33:03 vt=10-31 11:00 | W   31253 rows/s  31253 calls/s p50=3.1ms p99=67.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8799623 lag=0s(virt) | mongo_storage_bytes=3192.6MB mongo_index_bytes=388.0MB mongo_docs=8799710 
+2026/10/31 07:33:13 vt=10-31 11:10 | W   33882 rows/s  33882 calls/s p50=2.9ms p99=65.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9138442 lag=0s(virt) | mongo_storage_bytes=3314.3MB mongo_index_bytes=393.2MB mongo_docs=9138557 
+2026/10/31 07:33:23 vt=10-31 11:20 | W   30927 rows/s  30927 calls/s p50=3.1ms p99=68.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9447717 lag=0s(virt) | mongo_storage_bytes=3425.9MB mongo_index_bytes=397.7MB mongo_docs=9447904 
+2026/10/31 07:33:33 vt=10-31 11:30 | W   31861 rows/s  31861 calls/s p50=3.1ms p99=66.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9766328 lag=0s(virt) | mongo_storage_bytes=3567.7MB mongo_index_bytes=457.7MB mongo_docs=9766444 
+2026/10/31 07:33:43 vt=10-31 11:40 | W   24791 rows/s  24791 calls/s p50=3.2ms p99=94.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10014238 lag=0s(virt) | mongo_storage_bytes=3634.1MB mongo_index_bytes=465.7MB mongo_docs=10014365 
+2026/10/31 07:33:53 vt=10-31 11:50 | W   31071 rows/s  31071 calls/s p50=3.1ms p99=67.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10324950 lag=0s(virt) | mongo_storage_bytes=3751.1MB mongo_index_bytes=470.1MB mongo_docs=10325229 
+2026/10/31 07:34:03 vt=10-31 12:00 | W   30750 rows/s  30750 calls/s p50=3.0ms p99=68.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10632452 lag=0s(virt) | mongo_storage_bytes=3857.5MB mongo_index_bytes=474.1MB mongo_docs=10632552 
+2026/10/31 07:34:13 vt=10-31 12:10 | W   30905 rows/s  30905 calls/s p50=3.0ms p99=68.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10941501 lag=0s(virt) | mongo_storage_bytes=3973.3MB mongo_index_bytes=478.5MB mongo_docs=10941594 
+2026/10/31 07:34:23 vt=10-31 12:20 | W   33472 rows/s  33472 calls/s p50=2.9ms p99=64.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11276218 lag=0s(virt) | mongo_storage_bytes=4097.8MB mongo_index_bytes=483.4MB mongo_docs=11276516 
+2026/10/31 07:34:33 vt=10-31 12:30 | W   33070 rows/s  33070 calls/s p50=3.0ms p99=64.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11606919 lag=0s(virt) | mongo_storage_bytes=4216.4MB mongo_index_bytes=489.1MB mongo_docs=11607023 
+2026/10/31 07:34:33 SUMMARY mongodb [batch=1 payload=random consume=drop]: prefill=0 (0/s) written=11606919 (38688/s, p99=63.8ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=4216.4MB mongo_index_bytes=489.1MB mongo_docs=11607023 
+2026/10/31 07:34:33 saved /results/mongodb-20261031-102926.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 386.6, "cpu_max": 445.0, "mem_max_mb": 1202, "disk_max_mb": 5548}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-b1933bb2a830 Creating 
+ Container test-bench-mongodb-run-b1933bb2a830 Created 
+2026/10/31 07:34:50 prefill: 1000259 tasks, 201813 rows/s
+2026/10/31 07:34:59 prefill: 2000017 tasks, 142170 rows/s
+2026/10/31 07:35:10 prefill: 3000303 tasks, 120809 rows/s
+2026/10/31 07:35:21 prefill: 4000253 tasks, 111016 rows/s
+2026/10/31 07:35:37 prefill: 5000201 tasks, 96121 rows/s
+2026/10/31 07:35:55 prefill: 6000310 tasks, 85703 rows/s
+2026/10/31 07:36:14 prefill: 7000178 tasks, 78700 rows/s
+2026/10/31 07:36:16 prefill done: 7082520 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 1m30s, 78411 rows/s (batch=500), size: mongo_storage_bytes=2566.0MB mongo_index_bytes=266.7MB mongo_docs=7082520 
+2026/10/31 07:36:16 run=mongodb-20261031-103439 backend=mongodb role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:36:18 vt=11-02 15:08 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  697180 rows/s   1218 q/s p50=2.6ms p99=15.3ms err=0 | backlog=5688151 lag=191156s(virt) | mongo_storage_bytes=2082.1MB mongo_index_bytes=214.4MB mongo_docs=5712774 
+2026/10/31 07:36:20 vt=11-04 22:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  626166 rows/s    965 q/s p50=3.1ms p99=14.3ms err=0 | backlog=4435818 lag=383653s(virt) | mongo_storage_bytes=1622.7MB mongo_index_bytes=167.4MB mongo_docs=4464159 
+2026/10/31 07:36:22 vt=11-07 06:15 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  474790 rows/s    802 q/s p50=4.4ms p99=14.9ms err=0 | backlog=3486238 lag=577968s(virt) | mongo_storage_bytes=1412.3MB mongo_index_bytes=146.3MB mongo_docs=3882266 
+2026/10/31 07:36:24 vt=11-09 13:45 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  611765 rows/s   1156 q/s p50=2.5ms p99=13.2ms err=0 | backlog=2262709 lag=769023s(virt) | mongo_storage_bytes=845.2MB mongo_index_bytes=87.7MB mongo_docs=2321566 
+2026/10/31 07:36:26 vt=11-11 21:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  615810 rows/s   1373 q/s p50=2.2ms p99=10.3ms err=0 | backlog=1031090 lag=958827s(virt) | mongo_storage_bytes=521.0MB mongo_index_bytes=55.0MB mongo_docs=1427819 
+2026/10/31 07:36:27 SUMMARY mongodb [DRAIN workers=4 page=1000 payload=random consume=drop]: prefill=7082520 (78411/s) written=0 (0/s, p99=0.0ms) read=7082520 (avg 610340/s, peak 697180/s, 1224 q/s, p99=13.3ms) max_lag=958827s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=2082.1MB mongo_index_bytes=214.4MB mongo_docs=5712774 
+2026/10/31 07:36:27 saved /results/mongodb-20261031-103439.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 331.2, "cpu_max": 444.6, "mem_max_mb": 1525, "disk_max_mb": 3902}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-89958ad376a5 Creating 
+ Container test-bench-mongodb-run-89958ad376a5 Created 
+2026/10/31 07:36:40 prefill: 1000168 tasks, 170558 rows/s
+2026/10/31 07:36:43 prefill: 2000209 tasks, 228728 rows/s
+2026/10/31 07:36:48 prefill: 3000014 tasks, 228279 rows/s
+2026/10/31 07:36:54 prefill: 4000131 tasks, 200300 rows/s
+2026/10/31 07:37:05 prefill: 5000310 tasks, 165900 rows/s
+2026/10/31 07:37:22 prefill: 6000070 tasks, 127475 rows/s
+2026/10/31 07:38:08 prefill: 7000256 tasks, 75054 rows/s
+2026/10/31 07:38:13 prefill done: 7083216 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 1m38s, 72239 rows/s (batch=500), size: mongo_storage_bytes=2636.5MB mongo_index_bytes=332.3MB mongo_docs=7083216 
+2026/10/31 07:38:13 run=mongodb-20261031-103628 backend=mongodb role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:38:15 vt=11-02 15:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4356 rows/s    246 q/s p50=0.1ms p99=440.8ms err=0 | backlog=7074504 lag=198238s(virt) | mongo_storage_bytes=2843.9MB mongo_index_bytes=393.9MB mongo_docs=7074546 
+2026/10/31 07:38:17 vt=11-04 22:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4367 rows/s      6 q/s p50=382.2ms p99=910.8ms err=0 | backlog=7065770 lag=398206s(virt) | mongo_storage_bytes=3096.8MB mongo_index_bytes=413.2MB mongo_docs=7065770 
+2026/10/31 07:38:19 vt=11-07 06:15 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3982 rows/s      5 q/s p50=758.8ms p99=1049.6ms err=0 | backlog=7057806 lag=598370s(virt) | mongo_storage_bytes=3233.7MB mongo_index_bytes=416.1MB mongo_docs=7058629 
+2026/10/31 07:38:21 vt=11-09 13:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    1836 rows/s      2 q/s p50=974.3ms p99=1572.9ms err=0 | backlog=7054134 lag=798214s(virt) | mongo_storage_bytes=3352.4MB mongo_index_bytes=416.9MB mongo_docs=7054134 
+2026/10/31 07:38:23 vt=11-11 21:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4303 rows/s      6 q/s p50=756.7ms p99=1136.6ms err=0 | backlog=7045528 lag=998096s(virt) | mongo_storage_bytes=3482.5MB mongo_index_bytes=417.3MB mongo_docs=7047045 
+2026/10/31 07:38:25 vt=11-14 04:51 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4367 rows/s      6 q/s p50=462.3ms p99=646.7ms err=0 | backlog=7036793 lag=1198010s(virt) | mongo_storage_bytes=3666.3MB mongo_index_bytes=417.4MB mongo_docs=7036793 
+2026/10/31 07:38:27 vt=11-16 12:24 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4389 rows/s      6 q/s p50=508.4ms p99=866.3ms err=0 | backlog=7028016 lag=1397943s(virt) | mongo_storage_bytes=3804.1MB mongo_index_bytes=417.4MB mongo_docs=7028016 
+2026/10/31 07:38:29 vt=11-18 19:59 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4014 rows/s      5 q/s p50=491.3ms p99=816.1ms err=0 | backlog=7019988 lag=1598031s(virt) | mongo_storage_bytes=3916.2MB mongo_index_bytes=417.4MB mongo_docs=7019988 
+2026/10/31 07:38:31 vt=11-21 03:34 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3672 rows/s      5 q/s p50=675.8ms p99=817.7ms err=0 | backlog=7012643 lag=1798052s(virt) | mongo_storage_bytes=4002.8MB mongo_index_bytes=417.4MB mongo_docs=7012643 
+2026/10/31 07:38:33 vt=11-23 11:05 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4321 rows/s      6 q/s p50=676.4ms p99=825.9ms err=0 | backlog=7004002 lag=1997929s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=7004002 
+2026/10/31 07:38:35 vt=11-25 18:39 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4059 rows/s      5 q/s p50=439.8ms p99=590.8ms err=0 | backlog=6995884 lag=2197899s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6997436 
+2026/10/31 07:38:37 vt=11-28 02:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     366 rows/s      0 q/s p50=2613.2ms p99=2613.2ms err=0 | backlog=6995152 lag=2398534s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6997226 
+2026/10/31 07:38:39 vt=11-30 09:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    1480 rows/s      2 q/s p50=433.7ms p99=446.7ms err=0 | backlog=6992193 lag=2597932s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6992607 
+2026/10/31 07:38:41 vt=12-02 17:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4331 rows/s      6 q/s p50=544.3ms p99=657.4ms err=0 | backlog=6983530 lag=2797784s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6983530 
+2026/10/31 07:38:43 vt=12-05 00:54 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3349 rows/s      4 q/s p50=695.8ms p99=817.7ms err=0 | backlog=6976832 lag=2997857s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6977292 
+2026/10/31 07:38:45 vt=12-07 08:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3249 rows/s      5 q/s p50=850.9ms p99=1028.6ms err=0 | backlog=6970335 lag=3198516s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6970769 
+2026/10/31 07:38:47 vt=12-09 15:59 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3928 rows/s      5 q/s p50=697.3ms p99=796.2ms err=0 | backlog=6962478 lag=3397691s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6962478 
+2026/10/31 07:38:49 vt=12-11 23:32 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    1465 rows/s      2 q/s p50=1296.4ms p99=1341.4ms err=0 | backlog=6959547 lag=3597675s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6959547 
+2026/10/31 07:38:51 vt=12-14 07:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2865 rows/s      4 q/s p50=965.1ms p99=1473.5ms err=0 | backlog=6953816 lag=3797508s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6953816 
+2026/10/31 07:38:53 vt=12-16 14:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3700 rows/s      5 q/s p50=704.5ms p99=1078.3ms err=0 | backlog=6946416 lag=3997505s(virt) | mongo_storage_bytes=4105.6MB mongo_index_bytes=441.0MB mongo_docs=6946416 
+2026/10/31 07:38:55 vt=12-18 22:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3961 rows/s      6 q/s p50=451.1ms p99=577.0ms err=0 | backlog=6938495 lag=4197449s(virt) | mongo_storage_bytes=4151.7MB mongo_index_bytes=441.0MB mongo_docs=6938495 
+2026/10/31 07:38:57 vt=12-21 05:45 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    1485 rows/s      2 q/s p50=920.1ms p99=2109.4ms err=0 | backlog=6935524 lag=4397573s(virt) | mongo_storage_bytes=4152.0MB mongo_index_bytes=441.0MB mongo_docs=6938275 
+2026/10/31 07:38:59 vt=12-23 13:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2932 rows/s      4 q/s p50=396.0ms p99=1086.5ms err=0 | backlog=6929659 lag=4597542s(virt) | mongo_storage_bytes=4245.6MB mongo_index_bytes=441.0MB mongo_docs=6931003 
+2026/10/31 07:39:01 vt=12-25 20:51 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2522 rows/s      4 q/s p50=422.1ms p99=1742.8ms err=0 | backlog=6924616 lag=4797468s(virt) | mongo_storage_bytes=4328.3MB mongo_index_bytes=441.0MB mongo_docs=6924984 
+2026/10/31 07:39:03 vt=12-28 04:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2547 rows/s      3 q/s p50=972.3ms p99=1232.9ms err=0 | backlog=6919521 lag=4997471s(virt) | mongo_storage_bytes=4382.9MB mongo_index_bytes=441.0MB mongo_docs=6919521 
+2026/10/31 07:39:05 vt=12-30 12:01 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3348 rows/s      5 q/s p50=982.0ms p99=1261.6ms err=0 | backlog=6912825 lag=5197592s(virt) | mongo_storage_bytes=4453.2MB mongo_index_bytes=441.0MB mongo_docs=6912825 
+2026/10/31 07:39:07 vt=01-01 19:32 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    6185 rows/s      8 q/s p50=402.9ms p99=830.5ms err=0 | backlog=6900454 lag=5397362s(virt) | mongo_storage_bytes=4556.7MB mongo_index_bytes=441.0MB mongo_docs=6900629 
+2026/10/31 07:39:09 vt=01-04 03:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    5456 rows/s      8 q/s p50=260.2ms p99=1121.3ms err=0 | backlog=6889543 lag=5597222s(virt) | mongo_storage_bytes=4652.2MB mongo_index_bytes=441.0MB mongo_docs=6889543 
+2026/10/31 07:39:11 vt=01-06 11:28 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3003 rows/s      4 q/s p50=711.2ms p99=958.5ms err=0 | backlog=6883536 lag=5800294s(virt) | mongo_storage_bytes=4699.1MB mongo_index_bytes=441.0MB mongo_docs=6883536 
+2026/10/31 07:39:13 vt=01-08 18:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3220 rows/s      5 q/s p50=954.9ms p99=1258.5ms err=0 | backlog=6877097 lag=5997155s(virt) | mongo_storage_bytes=4738.5MB mongo_index_bytes=441.0MB mongo_docs=6877097 
+2026/10/31 07:39:15 vt=01-11 01:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    6277 rows/s      9 q/s p50=416.0ms p99=764.4ms err=0 | backlog=6864543 lag=6197098s(virt) | mongo_storage_bytes=4814.4MB mongo_index_bytes=441.0MB mongo_docs=6864543 
+2026/10/31 07:39:17 vt=01-13 09:26 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    6389 rows/s      9 q/s p50=301.3ms p99=825.3ms err=0 | backlog=6851764 lag=6397586s(virt) | mongo_storage_bytes=4868.9MB mongo_index_bytes=441.0MB mongo_docs=6853184 
+2026/10/31 07:39:19 vt=01-15 16:51 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    5067 rows/s      7 q/s p50=379.4ms p99=985.6ms err=0 | backlog=6841630 lag=6597007s(virt) | mongo_storage_bytes=4919.6MB mongo_index_bytes=441.0MB mongo_docs=6841630 
+2026/10/31 07:39:21 vt=01-18 00:26 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    5116 rows/s      7 q/s p50=426.8ms p99=709.6ms err=0 | backlog=6831397 lag=6797093s(virt) | mongo_storage_bytes=4955.4MB mongo_index_bytes=441.0MB mongo_docs=6832720 
+2026/10/31 07:39:23 vt=01-20 08:01 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2497 rows/s      4 q/s p50=120.5ms p99=986.6ms err=0 | backlog=6826404 lag=6997192s(virt) | mongo_storage_bytes=4982.5MB mongo_index_bytes=441.0MB mongo_docs=6826404 
+2026/10/31 07:39:25 vt=01-22 15:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    7307 rows/s     10 q/s p50=323.8ms p99=814.6ms err=0 | backlog=6811790 lag=7196818s(virt) | mongo_storage_bytes=5025.1MB mongo_index_bytes=441.0MB mongo_docs=6811790 
+2026/10/31 07:39:27 vt=01-24 23:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11037 rows/s     15 q/s p50=181.1ms p99=518.1ms err=0 | backlog=6789716 lag=7396719s(virt) | mongo_storage_bytes=5080.4MB mongo_index_bytes=441.0MB mongo_docs=6789716 
+2026/10/31 07:39:29 vt=01-27 06:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    6172 rows/s      8 q/s p50=410.6ms p99=734.2ms err=0 | backlog=6777371 lag=7596696s(virt) | mongo_storage_bytes=5098.0MB mongo_index_bytes=441.0MB mongo_docs=6778962 
+2026/10/31 07:39:31 vt=01-29 14:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6777371 lag=7796610s(virt) | mongo_storage_bytes=5098.0MB mongo_index_bytes=441.0MB mongo_docs=6778962 
+2026/10/31 07:39:33 vt=01-31 21:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     363 rows/s      0 q/s p50=2930.7ms p99=2930.7ms err=0 | backlog=6776644 lag=7996770s(virt) | mongo_storage_bytes=5098.7MB mongo_index_bytes=441.0MB mongo_docs=6778792 
+2026/10/31 07:39:35 vt=02-03 05:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     368 rows/s      0 q/s p50=165.8ms p99=165.8ms err=0 | backlog=6775907 lag=8196623s(virt) | mongo_storage_bytes=5103.5MB mongo_index_bytes=454.9MB mongo_docs=6775907 
+2026/10/31 07:39:37 vt=02-05 12:53 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9682 rows/s     14 q/s p50=165.2ms p99=328.2ms err=0 | backlog=6756543 lag=8396761s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6757598 
+2026/10/31 07:39:39 vt=02-07 20:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     372 rows/s      0 q/s p50=670.2ms p99=670.2ms err=0 | backlog=6755799 lag=8596696s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6757478 
+2026/10/31 07:39:41 vt=02-10 04:01 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6755799 lag=8796780s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6757378 
+2026/10/31 07:39:43 vt=02-12 11:32 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9840 rows/s     14 q/s p50=71.3ms p99=97.0ms err=0 | backlog=6736120 lag=8996525s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6738044 
+2026/10/31 07:39:45 vt=02-14 19:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   19566 rows/s     27 q/s p50=67.6ms p99=108.4ms err=0 | backlog=6696988 lag=9196296s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6697089 
+2026/10/31 07:39:47 vt=02-17 02:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   21527 rows/s     29 q/s p50=49.4ms p99=114.4ms err=0 | backlog=6653933 lag=9396066s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6655241 
+2026/10/31 07:39:49 vt=02-19 10:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9184 rows/s     13 q/s p50=28.4ms p99=67.5ms err=0 | backlog=6635565 lag=9595902s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6635565 
+2026/10/31 07:39:51 vt=02-21 17:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   23291 rows/s     32 q/s p50=40.0ms p99=177.4ms err=0 | backlog=6588984 lag=9795647s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6590564 
+2026/10/31 07:39:53 vt=02-24 01:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    8098 rows/s     11 q/s p50=46.4ms p99=96.6ms err=0 | backlog=6572788 lag=9995679s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6574725 
+2026/10/31 07:39:55 vt=02-26 08:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15382 rows/s     21 q/s p50=26.4ms p99=61.9ms err=0 | backlog=6542025 lag=10195414s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6543376 
+2026/10/31 07:39:57 vt=02-28 16:27 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   24080 rows/s     33 q/s p50=26.2ms p99=45.8ms err=0 | backlog=6493865 lag=10395381s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6494287 
+2026/10/31 07:39:59 vt=03-02 23:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   22336 rows/s     30 q/s p50=26.7ms p99=187.0ms err=0 | backlog=6449192 lag=10595012s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6449979 
+2026/10/31 07:40:01 vt=03-05 07:33 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   21437 rows/s     29 q/s p50=27.5ms p99=242.9ms err=0 | backlog=6406318 lag=10794908s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6407105 
+2026/10/31 07:40:03 vt=03-07 15:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9562 rows/s     13 q/s p50=42.8ms p99=258.2ms err=0 | backlog=6387195 lag=10994692s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6388092 
+2026/10/31 07:40:05 vt=03-09 22:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17450 rows/s     25 q/s p50=27.4ms p99=531.5ms err=0 | backlog=6352294 lag=11194502s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6352826 
+2026/10/31 07:40:07 vt=03-12 06:26 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9132 rows/s     13 q/s p50=163.5ms p99=272.9ms err=0 | backlog=6334029 lag=11395317s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6336629 
+2026/10/31 07:40:09 vt=03-14 13:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17099 rows/s     25 q/s p50=26.9ms p99=326.4ms err=0 | backlog=6299831 lag=11594139s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6299831 
+2026/10/31 07:40:11 vt=03-16 21:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   16647 rows/s     24 q/s p50=92.7ms p99=262.7ms err=0 | backlog=6266537 lag=11794034s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6267117 
+2026/10/31 07:40:13 vt=03-19 04:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11180 rows/s     16 q/s p50=183.6ms p99=424.2ms err=0 | backlog=6244177 lag=11993846s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6244874 
+2026/10/31 07:40:15 vt=03-21 12:34 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   12689 rows/s     18 q/s p50=26.6ms p99=223.0ms err=0 | backlog=6218798 lag=12194352s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6220887 
+2026/10/31 07:40:17 vt=03-23 19:57 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   10326 rows/s     15 q/s p50=30.5ms p99=484.1ms err=0 | backlog=6198147 lag=12393623s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6199174 
+2026/10/31 07:40:19 vt=03-26 03:33 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15583 rows/s     22 q/s p50=23.5ms p99=342.3ms err=0 | backlog=6166981 lag=12593639s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6168141 
+2026/10/31 07:40:21 vt=03-28 11:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     698 rows/s      1 q/s p50=1467.4ms p99=1516.5ms err=0 | backlog=6165586 lag=12793849s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6168051 
+2026/10/31 07:40:23 vt=03-30 18:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    5538 rows/s      8 q/s p50=21.5ms p99=44.0ms err=0 | backlog=6154509 lag=12993379s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6155774 
+2026/10/31 07:40:25 vt=04-02 02:13 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   22418 rows/s     32 q/s p50=24.3ms p99=169.7ms err=0 | backlog=6109672 lag=13193312s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6111012 
+2026/10/31 07:40:27 vt=04-04 09:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    7221 rows/s     11 q/s p50=44.7ms p99=289.8ms err=0 | backlog=6095231 lag=13393202s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6095231 
+2026/10/31 07:40:29 vt=04-06 17:20 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3139 rows/s      4 q/s p50=50.9ms p99=138.2ms err=0 | backlog=6088952 lag=13593256s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6090147 
+2026/10/31 07:40:31 vt=04-09 00:54 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6088952 lag=13793236s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6090067 
+2026/10/31 07:40:33 vt=04-11 08:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14741 rows/s     21 q/s p50=26.8ms p99=144.5ms err=0 | backlog=6059470 lag=13993005s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6060437 
+2026/10/31 07:40:35 vt=04-13 15:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14696 rows/s     21 q/s p50=53.3ms p99=331.5ms err=0 | backlog=6030079 lag=14192790s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=6031264 
+2026/10/31 07:40:37 vt=04-15 23:31 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15927 rows/s     23 q/s p50=80.4ms p99=245.9ms err=0 | backlog=5998224 lag=14392581s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=5998224 
+2026/10/31 07:40:39 vt=04-18 07:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9474 rows/s     13 q/s p50=62.7ms p99=229.0ms err=0 | backlog=5979276 lag=14592783s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=5979276 
+2026/10/31 07:40:41 vt=04-20 14:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14747 rows/s     21 q/s p50=71.2ms p99=291.8ms err=0 | backlog=5949782 lag=14792327s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=5950034 
+2026/10/31 07:40:43 vt=04-22 22:13 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15428 rows/s     22 q/s p50=42.7ms p99=187.0ms err=0 | backlog=5918925 lag=14992294s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=5920207 
+2026/10/31 07:40:46 vt=04-25 05:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    5576 rows/s      8 q/s p50=22.2ms p99=1609.7ms err=0 | backlog=5907774 lag=15192080s(virt) | mongo_storage_bytes=5296.3MB mongo_index_bytes=491.4MB mongo_docs=5908170 
+2026/10/31 07:40:47 vt=04-27 13:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11960 rows/s     17 q/s p50=19.1ms p99=1175.6ms err=0 | backlog=5883853 lag=15392011s(virt) | mongo_storage_bytes=5332.5MB mongo_index_bytes=491.3MB mongo_docs=5885025 
+2026/10/31 07:40:49 vt=04-29 21:01 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   19853 rows/s     28 q/s p50=26.0ms p99=66.2ms err=0 | backlog=5844147 lag=15592356s(virt) | mongo_storage_bytes=5964.0MB mongo_index_bytes=492.4MB mongo_docs=5844590 
+2026/10/31 07:40:51 vt=05-02 04:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14345 rows/s     21 q/s p50=75.7ms p99=853.0ms err=0 | backlog=5815457 lag=15791557s(virt) | mongo_storage_bytes=6271.9MB mongo_index_bytes=492.4MB mongo_docs=5815457 
+2026/10/31 07:40:53 vt=05-04 11:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17353 rows/s     25 q/s p50=67.1ms p99=570.9ms err=0 | backlog=5780751 lag=15991468s(virt) | mongo_storage_bytes=6518.9MB mongo_index_bytes=492.4MB mongo_docs=5781776 
+2026/10/31 07:40:55 vt=05-06 19:33 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    1733 rows/s      3 q/s p50=1070.1ms p99=1388.5ms err=0 | backlog=5777285 lag=16191541s(virt) | mongo_storage_bytes=6530.7MB mongo_index_bytes=492.4MB mongo_docs=5779794 
+2026/10/31 07:40:57 vt=05-09 03:06 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5777285 lag=16391480s(virt) | mongo_storage_bytes=6531.8MB mongo_index_bytes=492.4MB mongo_docs=5779634 
+2026/10/31 07:40:59 vt=05-11 10:40 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11179 rows/s     16 q/s p50=45.3ms p99=334.3ms err=0 | backlog=5754927 lag=16591398s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5755592 
+2026/10/31 07:41:01 vt=05-13 18:11 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14967 rows/s     21 q/s p50=41.6ms p99=863.2ms err=0 | backlog=5724992 lag=16791179s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5725712 
+2026/10/31 07:41:03 vt=05-16 01:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14435 rows/s     22 q/s p50=64.9ms p99=472.3ms err=0 | backlog=5696122 lag=16990928s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5696907 
+2026/10/31 07:41:05 vt=05-18 09:32 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4963 rows/s      7 q/s p50=28.2ms p99=56.7ms err=0 | backlog=5686196 lag=17191748s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5686196 
+2026/10/31 07:41:07 vt=05-20 16:55 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17687 rows/s     26 q/s p50=33.7ms p99=1668.1ms err=0 | backlog=5650822 lag=17390985s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5650822 
+2026/10/31 07:41:09 vt=05-23 00:32 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9563 rows/s     15 q/s p50=100.1ms p99=414.2ms err=0 | backlog=5631696 lag=17591089s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5631696 
+2026/10/31 07:41:11 vt=05-25 08:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9890 rows/s     15 q/s p50=26.3ms p99=1063.9ms err=0 | backlog=5611917 lag=17790888s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5612914 
+2026/10/31 07:41:13 vt=05-27 15:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     653 rows/s      1 q/s p50=2177.0ms p99=2191.4ms err=0 | backlog=5610611 lag=17990439s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5612734 
+2026/10/31 07:41:15 vt=05-29 23:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9263 rows/s     14 q/s p50=22.2ms p99=64.5ms err=0 | backlog=5592085 lag=18190364s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5592498 
+2026/10/31 07:41:17 vt=06-01 06:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   12003 rows/s     18 q/s p50=23.0ms p99=205.3ms err=0 | backlog=5568078 lag=18390569s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5568078 
+2026/10/31 07:41:19 vt=06-03 14:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    8943 rows/s     14 q/s p50=139.4ms p99=1089.5ms err=0 | backlog=5550192 lag=18590122s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5552547 
+2026/10/31 07:41:21 vt=06-05 21:45 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14227 rows/s     22 q/s p50=32.9ms p99=250.8ms err=0 | backlog=5521738 lag=18790073s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5521853 
+2026/10/31 07:41:23 vt=06-08 05:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17529 rows/s     26 q/s p50=28.0ms p99=495.1ms err=0 | backlog=5486680 lag=18989768s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5486680 
+2026/10/31 07:41:25 vt=06-10 12:52 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    4301 rows/s      6 q/s p50=233.2ms p99=335.9ms err=0 | backlog=5478078 lag=19189805s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5478795 
+2026/10/31 07:41:27 vt=06-12 20:27 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     705 rows/s      1 q/s p50=1713.2ms p99=1756.2ms err=0 | backlog=5476668 lag=19389975s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5478625 
+2026/10/31 07:41:29 vt=06-15 04:08 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15292 rows/s     23 q/s p50=23.1ms p99=139.0ms err=0 | backlog=5446085 lag=19590198s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5447568 
+2026/10/31 07:41:31 vt=06-17 11:34 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    6617 rows/s     10 q/s p50=21.6ms p99=97.3ms err=0 | backlog=5432852 lag=19789696s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5434221 
+2026/10/31 07:41:33 vt=06-19 19:16 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     339 rows/s      0 q/s p50=1879.0ms p99=1879.0ms err=0 | backlog=5432174 lag=19990282s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5433861 
+2026/10/31 07:41:35 vt=06-22 02:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    3698 rows/s      6 q/s p50=22.2ms p99=41.0ms err=0 | backlog=5424778 lag=20189435s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5426006 
+2026/10/31 07:41:37 vt=06-24 10:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   12214 rows/s     18 q/s p50=28.9ms p99=835.6ms err=0 | backlog=5400349 lag=20389238s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5402031 
+2026/10/31 07:41:39 vt=06-26 17:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   13214 rows/s     20 q/s p50=29.1ms p99=374.3ms err=0 | backlog=5373921 lag=20589102s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5373921 
+2026/10/31 07:41:41 vt=06-29 01:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9073 rows/s     13 q/s p50=43.4ms p99=989.2ms err=0 | backlog=5355774 lag=20789075s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5356473 
+2026/10/31 07:41:43 vt=07-01 08:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17850 rows/s     27 q/s p50=22.0ms p99=74.2ms err=0 | backlog=5320075 lag=20988811s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5320772 
+2026/10/31 07:41:45 vt=07-03 16:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2293 rows/s      3 q/s p50=473.9ms p99=882.7ms err=0 | backlog=5315488 lag=21188866s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5316633 
+2026/10/31 07:41:47 vt=07-05 23:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   22256 rows/s     34 q/s p50=23.9ms p99=327.9ms err=0 | backlog=5270977 lag=21388616s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5270977 
+2026/10/31 07:41:49 vt=07-08 07:35 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15544 rows/s     23 q/s p50=145.3ms p99=490.5ms err=0 | backlog=5239889 lag=21588675s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5241612 
+2026/10/31 07:41:51 vt=07-10 15:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9161 rows/s     14 q/s p50=20.7ms p99=186.6ms err=0 | backlog=5221566 lag=21788246s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5221566 
+2026/10/31 07:41:53 vt=07-12 22:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11653 rows/s     18 q/s p50=200.6ms p99=508.2ms err=0 | backlog=5198261 lag=21988170s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5199199 
+2026/10/31 07:41:55 vt=07-15 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   21315 rows/s     32 q/s p50=31.4ms p99=235.0ms err=0 | backlog=5155630 lag=22187847s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5155630 
+2026/10/31 07:41:57 vt=07-17 13:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    7327 rows/s     11 q/s p50=88.7ms p99=356.6ms err=0 | backlog=5140975 lag=22387978s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5142954 
+2026/10/31 07:41:59 vt=07-19 21:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   18016 rows/s     27 q/s p50=86.4ms p99=205.4ms err=0 | backlog=5104943 lag=22587688s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5105844 
+2026/10/31 07:42:01 vt=07-22 05:01 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   12064 rows/s     18 q/s p50=36.4ms p99=168.4ms err=0 | backlog=5080816 lag=22788179s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5082545 
+2026/10/31 07:42:03 vt=07-24 12:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5080816 lag=22987496s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5082545 
+2026/10/31 07:42:05 vt=07-26 19:57 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17230 rows/s     27 q/s p50=30.1ms p99=198.7ms err=0 | backlog=5046357 lag=23187288s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5046357 
+2026/10/31 07:42:07 vt=07-29 03:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    6088 rows/s      9 q/s p50=31.5ms p99=192.3ms err=0 | backlog=5034180 lag=23387180s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=5036385 
+2026/10/31 07:42:09 vt=07-31 11:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9400 rows/s     15 q/s p50=17.6ms p99=152.2ms err=0 | backlog=5015381 lag=23587053s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=5016756 
+2026/10/31 07:42:11 vt=08-02 18:36 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   22030 rows/s     34 q/s p50=18.8ms p99=76.9ms err=0 | backlog=4971320 lag=23786816s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4972036 
+2026/10/31 07:42:13 vt=08-05 02:15 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   25824 rows/s     40 q/s p50=26.4ms p99=102.4ms err=0 | backlog=4919671 lag=23986825s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4920050 
+2026/10/31 07:42:15 vt=08-07 09:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   18286 rows/s     29 q/s p50=26.2ms p99=111.6ms err=0 | backlog=4883099 lag=24186355s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4883676 
+2026/10/31 07:42:17 vt=08-09 17:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    7890 rows/s     12 q/s p50=43.7ms p99=287.7ms err=0 | backlog=4867318 lag=24386642s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4869104 
+2026/10/31 07:42:19 vt=08-12 01:07 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4867318 lag=24587226s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4868904 
+2026/10/31 07:42:21 vt=08-14 08:24 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    2800 rows/s      5 q/s p50=16.4ms p99=225.3ms err=0 | backlog=4861719 lag=24786222s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4862825 
+2026/10/31 07:42:23 vt=08-16 15:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   23720 rows/s     38 q/s p50=30.7ms p99=181.5ms err=0 | backlog=4814280 lag=24985998s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4814488 
+2026/10/31 07:42:25 vt=08-18 23:31 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11978 rows/s     19 q/s p50=19.3ms p99=1131.5ms err=0 | backlog=4790323 lag=25185787s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4790323 
+2026/10/31 07:42:27 vt=08-21 07:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17808 rows/s     28 q/s p50=42.9ms p99=288.3ms err=0 | backlog=4754706 lag=25385597s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4754706 
+2026/10/31 07:42:29 vt=08-23 14:41 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    8847 rows/s     14 q/s p50=16.7ms p99=256.9ms err=0 | backlog=4737012 lag=25585733s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4738327 
+2026/10/31 07:42:31 vt=08-25 22:15 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   18331 rows/s     29 q/s p50=35.3ms p99=327.2ms err=0 | backlog=4700350 lag=25785525s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4700809 
+2026/10/31 07:42:33 vt=08-28 05:49 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   12401 rows/s     19 q/s p50=112.0ms p99=544.8ms err=0 | backlog=4675547 lag=25985419s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4675547 
+2026/10/31 07:42:35 vt=08-30 13:21 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   13668 rows/s     22 q/s p50=41.6ms p99=855.6ms err=0 | backlog=4648212 lag=26185193s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4650130 
+2026/10/31 07:42:37 vt=09-01 20:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   14666 rows/s     23 q/s p50=46.3ms p99=238.0ms err=0 | backlog=4618879 lag=26384772s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4620609 
+2026/10/31 07:42:39 vt=09-04 04:27 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4618879 lag=26585031s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4620459 
+2026/10/31 07:42:41 vt=09-06 11:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   10841 rows/s     17 q/s p50=16.6ms p99=93.6ms err=0 | backlog=4597196 lag=26784707s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4597858 
+2026/10/31 07:42:43 vt=09-08 19:32 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   22373 rows/s     35 q/s p50=39.5ms p99=98.8ms err=0 | backlog=4552450 lag=26984490s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4552450 
+2026/10/31 07:42:45 vt=09-11 03:11 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17194 rows/s     27 q/s p50=28.1ms p99=211.3ms err=0 | backlog=4518062 lag=27184611s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4519049 
+2026/10/31 07:42:47 vt=09-13 10:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   17112 rows/s     27 q/s p50=49.6ms p99=266.2ms err=0 | backlog=4483837 lag=27384541s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4485848 
+2026/10/31 07:42:49 vt=09-15 18:14 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4483837 lag=27584186s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4485848 
+2026/10/31 07:42:51 vt=09-18 01:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4483837 lag=27783937s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4485700 
+2026/10/31 07:42:53 vt=09-20 09:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   12984 rows/s     21 q/s p50=24.8ms p99=94.1ms err=0 | backlog=4457870 lag=27983844s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4458256 
+2026/10/31 07:42:55 vt=09-22 16:53 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11990 rows/s     20 q/s p50=18.4ms p99=444.4ms err=0 | backlog=4433890 lag=28183837s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4434578 
+2026/10/31 07:42:57 vt=09-25 00:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   25082 rows/s     41 q/s p50=28.6ms p99=180.9ms err=0 | backlog=4383726 lag=28383280s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4385050 
+2026/10/31 07:42:59 vt=09-27 07:56 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   19376 rows/s     32 q/s p50=20.8ms p99=277.5ms err=0 | backlog=4344974 lag=28583034s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4344974 
+2026/10/31 07:43:01 vt=09-29 15:33 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R    9103 rows/s     15 q/s p50=35.2ms p99=994.8ms err=0 | backlog=4326768 lag=28783175s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4327693 
+2026/10/31 07:43:03 vt=10-01 23:09 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   11190 rows/s     18 q/s p50=108.5ms p99=205.6ms err=0 | backlog=4304387 lag=28983142s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4305608 
+2026/10/31 07:43:05 vt=10-04 06:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R     306 rows/s      1 q/s p50=35.7ms p99=35.7ms err=0 | backlog=4303776 lag=29182865s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4305433 
+2026/10/31 07:43:07 vt=10-06 14:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   15408 rows/s     26 q/s p50=18.4ms p99=46.1ms err=0 | backlog=4272961 lag=29382620s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4274121 
+2026/10/31 07:43:09 vt=10-08 21:45 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   20303 rows/s     33 q/s p50=24.5ms p99=255.4ms err=0 | backlog=4232354 lag=29582500s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4232354 
+2026/10/31 07:43:11 vt=10-11 05:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   21227 rows/s     35 q/s p50=45.8ms p99=394.0ms err=0 | backlog=4189900 lag=29782153s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4190678 
+2026/10/31 07:43:13 finish bucket: connection(mongodb:27017[-56]) incomplete read of message header: context deadline exceeded: client timed out waiting for server response: read tcp 192.168.97.3:51018->192.168.97.2:27017: i/o timeout
+2026/10/31 07:43:13 read h=498177 m=32 s=12: operation not sent to server, as Timeout would be exceeded: context deadline exceeded: network round-trip time stats: moving avg: 6.150417ms, min: 148.084µs, moving stddev: 27.638385ms
+2026/10/31 07:43:13 vt=10-13 13:57 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   16794 rows/s     28 q/s p50=19.2ms p99=188.3ms err=1 | backlog=4156312 lag=29985928s(virt) | mongo_storage_bytes=6531.9MB mongo_index_bytes=490.5MB mongo_docs=4157380 
+2026/10/31 07:43:13 SUMMARY mongodb [DRAIN workers=4 page=1000 payload=random consume=delete]: prefill=7083216 (72239/s) written=0 (0/s, p99=0.0ms) read=2926904 (avg 9752/s, peak 25824/s, 16 q/s, p99=1078.3ms) max_lag=29985928s(virt) errs w=0 r=1 size_max: mongo_storage_bytes=6531.9MB mongo_index_bytes=492.4MB mongo_docs=7074546 
+2026/10/31 07:43:13 saved /results/mongodb-20261031-103628.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 258.3, "cpu_max": 564.9, "mem_max_mb": 1415, "disk_max_mb": 6998}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-2ed5f1bce099 Creating 
+ Container test-bench-tarantool-run-2ed5f1bce099 Created 
+2026/10/31 07:43:39 prefill: 1000129 tasks, 68134 rows/s
+2026/10/31 07:43:43 prefill: 2000157 tasks, 104963 rows/s
+2026/10/31 07:43:48 prefill: 3000308 tasks, 127321 rows/s
+2026/10/31 07:43:53 prefill: 4000304 tasks, 137945 rows/s
+2026/10/31 07:43:59 prefill: 5000085 tasks, 141736 rows/s
+2026/10/31 07:44:05 prefill: 6000119 tasks, 147498 rows/s
+2026/10/31 07:44:10 prefill: 7000047 tasks, 151654 rows/s
+2026/10/31 07:44:16 prefill: 8000059 tasks, 154922 rows/s
+2026/10/31 07:44:21 prefill: 9000002 tasks, 157677 rows/s
+2026/10/31 07:44:27 prefill: 10000199 tasks, 159774 rows/s
+2026/10/31 07:44:28 prefill done: 10199944 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 1m4s, 160248 rows/s (batch=500), size: tt_disk_bytes=3580.9MB tt_mem_bytes=165.1MB tt_rows=10853646 
+2026/10/31 07:44:28 run=tarantool-20261031-104318 backend=tarantool role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:44:38 vt=10-31 07:35 | W    5047 rows/s   5047 calls/s p50=0.4ms p99=2.3ms err=0 | R       0 rows/s      6 q/s p50=0.2ms p99=2.1ms err=0 | backlog=10250419 lag=0s(virt) | tt_disk_bytes=3577.3MB tt_mem_bytes=49.6MB tt_rows=10645011 
+2026/10/31 07:44:48 vt=10-31 07:40 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=1.7ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=1.4ms err=0 | backlog=10300407 lag=0s(virt) | tt_disk_bytes=3577.3MB tt_mem_bytes=68.1MB tt_rows=10695002 
+2026/10/31 07:44:58 vt=10-31 07:45 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=1.7ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=0.6ms err=0 | backlog=10350417 lag=0s(virt) | tt_disk_bytes=3577.3MB tt_mem_bytes=86.8MB tt_rows=10745014 
+2026/10/31 07:45:08 vt=10-31 07:50 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=1.8ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=0.9ms err=0 | backlog=10400426 lag=0s(virt) | tt_disk_bytes=3577.3MB tt_mem_bytes=105.3MB tt_rows=10795012 
+2026/10/31 07:45:18 vt=10-31 07:55 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=1.8ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=0.9ms err=0 | backlog=10450423 lag=0s(virt) | tt_disk_bytes=3577.3MB tt_mem_bytes=123.9MB tt_rows=10845010 
+2026/10/31 07:45:28 vt=10-31 08:00 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=1.8ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=1.2ms err=0 | backlog=10500429 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=8.9MB tt_rows=10824124 
+2026/10/31 07:45:38 vt=10-31 08:05 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.0ms err=0 | R    6878 rows/s     14 q/s p50=2.1ms p99=35.3ms err=0 | backlog=10481649 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=29.7MB tt_rows=10874116 
+2026/10/31 07:45:48 vt=10-31 08:10 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=1.7ms err=0 | R    8547 rows/s     16 q/s p50=11.5ms p99=36.2ms err=0 | backlog=10446177 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=48.2MB tt_rows=10924119 
+2026/10/31 07:45:58 vt=10-31 08:15 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.4ms err=0 | R    8597 rows/s     16 q/s p50=12.0ms p99=39.3ms err=0 | backlog=10410208 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=66.7MB tt_rows=10974115 
+2026/10/31 07:46:08 vt=10-31 08:20 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.1ms err=0 | R    8606 rows/s     16 q/s p50=12.0ms p99=39.4ms err=0 | backlog=10374151 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=85.3MB tt_rows=11024120 
+2026/10/31 07:46:18 vt=10-31 08:25 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.3ms err=0 | R    8602 rows/s     16 q/s p50=3.6ms p99=42.1ms err=0 | backlog=10338131 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=104.0MB tt_rows=11074121 
+2026/10/31 07:46:28 vt=10-31 08:30 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=2.4ms err=0 | R    8536 rows/s     16 q/s p50=12.8ms p99=45.4ms err=0 | backlog=10302753 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=122.5MB tt_rows=11124127 
+2026/10/31 07:46:38 vt=10-31 08:35 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.0ms err=0 | R    8588 rows/s     16 q/s p50=13.7ms p99=44.5ms err=0 | backlog=10266866 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=141.1MB tt_rows=11174119 
+2026/10/31 07:46:48 vt=10-31 08:40 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.3ms err=0 | R    8533 rows/s     16 q/s p50=13.2ms p99=44.3ms err=0 | backlog=10231552 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=159.7MB tt_rows=11224132 
+2026/10/31 07:46:58 vt=10-31 08:45 | W    4998 rows/s   4998 calls/s p50=0.4ms p99=2.1ms err=0 | R    8569 rows/s     16 q/s p50=13.8ms p99=41.6ms err=0 | backlog=10195838 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=178.3MB tt_rows=11274120 
+2026/10/31 07:47:08 vt=10-31 08:50 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.3ms err=0 | R    8605 rows/s     16 q/s p50=13.3ms p99=44.9ms err=0 | backlog=10159796 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=196.8MB tt_rows=11324121 
+2026/10/31 07:47:18 vt=10-31 08:55 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.2ms err=0 | R    8603 rows/s     16 q/s p50=13.2ms p99=43.6ms err=0 | backlog=10123772 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=215.4MB tt_rows=11374116 
+2026/10/31 07:47:28 vt=10-31 09:00 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.5ms err=0 | R    8594 rows/s     16 q/s p50=3.0ms p99=44.8ms err=0 | backlog=10087848 lag=0s(virt) | tt_disk_bytes=3675.6MB tt_mem_bytes=234.0MB tt_rows=11424118 
+2026/10/31 07:47:38 vt=10-31 09:05 | W    5000 rows/s   5000 calls/s p50=0.3ms p99=2.2ms err=0 | R    8565 rows/s     16 q/s p50=11.3ms p99=42.0ms err=0 | backlog=10052203 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=20.8MB tt_rows=10192846 
+2026/10/31 07:47:48 vt=10-31 09:10 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=1.9ms err=0 | R    8595 rows/s     16 q/s p50=5.1ms p99=44.0ms err=0 | backlog=10016255 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=39.3MB tt_rows=10242846 
+2026/10/31 07:47:58 vt=10-31 09:15 | W    4998 rows/s   4998 calls/s p50=0.4ms p99=2.0ms err=0 | R    8572 rows/s     16 q/s p50=11.3ms p99=42.1ms err=0 | backlog=9980520 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=57.8MB tt_rows=10292849 
+2026/10/31 07:48:08 vt=10-31 09:20 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.1ms err=0 | R    8554 rows/s     16 q/s p50=8.3ms p99=38.2ms err=0 | backlog=9944984 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=76.4MB tt_rows=10342833 
+2026/10/31 07:48:18 vt=10-31 09:25 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.2ms err=0 | R    8554 rows/s     16 q/s p50=12.9ms p99=45.7ms err=0 | backlog=9909456 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=95.1MB tt_rows=10392846 
+2026/10/31 07:48:28 vt=10-31 09:30 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=2.1ms err=0 | R    8564 rows/s     16 q/s p50=4.4ms p99=47.9ms err=0 | backlog=9873805 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=113.6MB tt_rows=10442851 
+2026/10/31 07:48:38 vt=10-31 09:35 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.4ms err=0 | R    8565 rows/s     16 q/s p50=9.3ms p99=46.6ms err=0 | backlog=9838169 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=132.1MB tt_rows=10492856 
+2026/10/31 07:48:48 vt=10-31 09:40 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.4ms err=0 | R    8606 rows/s     16 q/s p50=12.9ms p99=46.6ms err=0 | backlog=9802104 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=150.7MB tt_rows=10542850 
+2026/10/31 07:48:58 vt=10-31 09:45 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.2ms err=0 | R    8559 rows/s     16 q/s p50=13.0ms p99=41.2ms err=0 | backlog=9766512 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=169.3MB tt_rows=10592853 
+2026/10/31 07:49:08 vt=10-31 09:50 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.0ms err=0 | R    8533 rows/s     16 q/s p50=4.4ms p99=43.1ms err=0 | backlog=9731177 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=187.9MB tt_rows=10642851 
+2026/10/31 07:49:18 vt=10-31 09:55 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=1.9ms err=0 | R    8564 rows/s     16 q/s p50=12.6ms p99=50.0ms err=0 | backlog=9695543 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=206.4MB tt_rows=10692861 
+2026/10/31 07:49:28 vt=10-31 10:00 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.5ms err=0 | R    8519 rows/s     16 q/s p50=13.1ms p99=45.3ms err=0 | backlog=9660356 lag=0s(virt) | tt_disk_bytes=3459.5MB tt_mem_bytes=225.1MB tt_rows=10742852 
+2026/10/31 07:49:28 SUMMARY tarantool [batch=1 payload=random vinyl consume=drop]: prefill=10199944 (160248/s) written=1500494 (5002/s, p99=2.1ms) read=2040082 (avg 6800/s, peak 8606/s, 14 q/s, p99=44.3ms) max_lag=0s(virt) errs w=0 r=0 size_max: tt_disk_bytes=3675.6MB tt_mem_bytes=234.0MB tt_rows=11424118 
+2026/10/31 07:49:28 tarantool: connection 192.168.97.2:3301 got unexpected request ID (383407) in response (probably cancelled request)
+2026/10/31 07:49:28 tarantool: connection 192.168.97.2:3301 got unexpected request ID (383407) in response (probably cancelled request)
+2026/10/31 07:49:28 saved /results/tarantool-20261031-104318.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 78.4, "cpu_max": 365.1, "mem_max_mb": 568, "disk_max_mb": 7065}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-796511c35ec0 Creating 
+ Container test-bench-tarantool-run-796511c35ec0 Created 
+2026/10/31 07:49:48 prefill: 1000292 tasks, 68228 rows/s
+2026/10/31 07:49:53 prefill: 2000249 tasks, 103775 rows/s
+2026/10/31 07:49:57 prefill: 3000065 tasks, 130128 rows/s
+2026/10/31 07:50:02 prefill: 4000343 tasks, 143170 rows/s
+2026/10/31 07:50:06 prefill: 5000233 tasks, 153177 rows/s
+2026/10/31 07:50:11 prefill: 6000173 tasks, 160251 rows/s
+2026/10/31 07:50:16 prefill: 7000267 tasks, 164965 rows/s
+2026/10/31 07:50:21 prefill: 8000218 tasks, 168288 rows/s
+2026/10/31 07:50:26 prefill: 9000359 tasks, 171008 rows/s
+2026/10/31 07:50:31 prefill: 10000284 tasks, 173264 rows/s
+2026/10/31 07:50:33 prefill done: 10198993 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 59s, 173535 rows/s (batch=500), size: tt_disk_bytes=3568.2MB tt_mem_bytes=147.9MB tt_rows=10880975 
+2026/10/31 07:50:33 run=tarantool-20261031-104929 backend=tarantool role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:50:43 vt=10-31 07:35 | W    5040 rows/s     50 calls/s p50=2.2ms p99=5.2ms err=0 | R       0 rows/s      6 q/s p50=0.3ms p99=0.8ms err=0 | backlog=10249393 lag=0s(virt) | tt_disk_bytes=3486.6MB tt_mem_bytes=32.4MB tt_rows=10332143 
+2026/10/31 07:50:53 vt=10-31 07:40 | W    5000 rows/s     50 calls/s p50=3.2ms p99=5.1ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=2.0ms err=0 | backlog=10299393 lag=0s(virt) | tt_disk_bytes=3486.6MB tt_mem_bytes=50.9MB tt_rows=10382043 
+2026/10/31 07:51:03 vt=10-31 07:45 | W    5000 rows/s     50 calls/s p50=3.3ms p99=5.0ms err=0 | R       0 rows/s      8 q/s p50=0.5ms p99=2.8ms err=0 | backlog=10349393 lag=0s(virt) | tt_disk_bytes=3486.6MB tt_mem_bytes=69.5MB tt_rows=10432143 
+2026/10/31 07:51:13 vt=10-31 07:50 | W    5000 rows/s     50 calls/s p50=3.3ms p99=6.1ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=0.6ms err=0 | backlog=10399393 lag=0s(virt) | tt_disk_bytes=3486.6MB tt_mem_bytes=88.1MB tt_rows=10482043 
+2026/10/31 07:51:23 vt=10-31 07:55 | W    5000 rows/s     50 calls/s p50=3.4ms p99=5.9ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=0.8ms err=0 | backlog=10449393 lag=0s(virt) | tt_disk_bytes=3486.6MB tt_mem_bytes=106.7MB tt_rows=10532043 
+2026/10/31 07:51:33 vt=10-31 08:00 | W    5000 rows/s     50 calls/s p50=3.5ms p99=5.6ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=2.3ms err=0 | backlog=10499393 lag=0s(virt) | 
+2026/10/31 07:51:43 vt=10-31 08:05 | W    5000 rows/s     50 calls/s p50=2.6ms p99=5.0ms err=0 | R    6892 rows/s     14 q/s p50=2.0ms p99=41.4ms err=0 | backlog=10480478 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=11.5MB tt_rows=10590440 
+2026/10/31 07:51:53 vt=10-31 08:10 | W    5000 rows/s     50 calls/s p50=2.9ms p99=5.4ms err=0 | R    8550 rows/s     16 q/s p50=4.0ms p99=40.4ms err=0 | backlog=10444975 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=30.0MB tt_rows=10640540 
+2026/10/31 07:52:03 vt=10-31 08:15 | W    5000 rows/s     50 calls/s p50=3.1ms p99=5.6ms err=0 | R    8544 rows/s     16 q/s p50=10.1ms p99=42.8ms err=0 | backlog=10409532 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=48.6MB tt_rows=10690440 
+2026/10/31 07:52:13 vt=10-31 08:20 | W    5000 rows/s     50 calls/s p50=3.1ms p99=6.2ms err=0 | R    8610 rows/s     16 q/s p50=9.8ms p99=39.3ms err=0 | backlog=10373429 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=67.3MB tt_rows=10740440 
+2026/10/31 07:52:23 vt=10-31 08:25 | W    5000 rows/s     50 calls/s p50=3.3ms p99=6.5ms err=0 | R    8598 rows/s     16 q/s p50=12.5ms p99=59.0ms err=0 | backlog=10337449 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=85.8MB tt_rows=10790540 
+2026/10/31 07:52:33 vt=10-31 08:30 | W    5000 rows/s     50 calls/s p50=3.3ms p99=5.8ms err=0 | R    8557 rows/s     16 q/s p50=12.0ms p99=51.0ms err=0 | backlog=10301882 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=104.3MB tt_rows=10840440 
+2026/10/31 07:52:43 vt=10-31 08:35 | W    5000 rows/s     50 calls/s p50=3.5ms p99=6.0ms err=0 | R    8584 rows/s     16 q/s p50=3.5ms p99=48.4ms err=0 | backlog=10266043 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=123.0MB tt_rows=10890440 
+2026/10/31 07:52:53 vt=10-31 08:40 | W    5000 rows/s     50 calls/s p50=3.5ms p99=6.6ms err=0 | R    8597 rows/s     16 q/s p50=5.1ms p99=45.5ms err=0 | backlog=10230073 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=141.6MB tt_rows=10940540 
+2026/10/31 07:53:03 vt=10-31 08:45 | W    5000 rows/s     50 calls/s p50=3.6ms p99=6.5ms err=0 | R    8570 rows/s     16 q/s p50=11.9ms p99=44.0ms err=0 | backlog=10194376 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=160.1MB tt_rows=10990440 
+2026/10/31 07:53:13 vt=10-31 08:50 | W    5000 rows/s     50 calls/s p50=3.7ms p99=6.8ms err=0 | R    8576 rows/s     16 q/s p50=3.9ms p99=48.0ms err=0 | backlog=10158615 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=178.6MB tt_rows=11040440 
+2026/10/31 07:53:23 vt=10-31 08:55 | W    5000 rows/s     50 calls/s p50=3.6ms p99=6.4ms err=0 | R    8568 rows/s     16 q/s p50=3.6ms p99=43.0ms err=0 | backlog=10122932 lag=0s(virt) | tt_disk_bytes=3593.6MB tt_mem_bytes=197.3MB tt_rows=11090440 
+2026/10/31 07:53:33 vt=10-31 09:00 | W    5000 rows/s     50 calls/s p50=3.7ms p99=6.1ms err=0 | R    8509 rows/s     16 q/s p50=13.0ms p99=50.0ms err=0 | backlog=10087844 lag=0s(virt) | 
+2026/10/31 07:53:43 vt=10-31 09:05 | W    5000 rows/s     50 calls/s p50=2.8ms p99=11.3ms err=0 | R    8592 rows/s     16 q/s p50=10.8ms p99=49.4ms err=0 | backlog=10051920 lag=0s(virt) | tt_disk_bytes=3239.4MB tt_mem_bytes=236.4MB tt_rows=10149353 
+2026/10/31 07:53:53 vt=10-31 09:10 | W    5000 rows/s     50 calls/s p50=3.0ms p99=5.3ms err=0 | R    8539 rows/s     16 q/s p50=8.5ms p99=38.7ms err=0 | backlog=10016528 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=20.7MB tt_rows=10220537 
+2026/10/31 07:54:03 vt=10-31 09:15 | W    5000 rows/s     50 calls/s p50=3.0ms p99=5.4ms err=0 | R    8556 rows/s     16 q/s p50=10.1ms p99=44.6ms err=0 | backlog=9980966 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=39.2MB tt_rows=10270637 
+2026/10/31 07:54:13 vt=10-31 09:20 | W    5000 rows/s     50 calls/s p50=3.1ms p99=5.6ms err=0 | R    8559 rows/s     16 q/s p50=3.3ms p99=36.9ms err=0 | backlog=9945381 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=57.8MB tt_rows=10320537 
+2026/10/31 07:54:23 vt=10-31 09:25 | W    5000 rows/s     50 calls/s p50=3.2ms p99=5.9ms err=0 | R    8653 rows/s     16 q/s p50=4.2ms p99=49.0ms err=0 | backlog=9908848 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=76.4MB tt_rows=10370537 
+2026/10/31 07:54:33 vt=10-31 09:30 | W    5000 rows/s     50 calls/s p50=3.3ms p99=6.4ms err=0 | R    8579 rows/s     16 q/s p50=13.5ms p99=45.4ms err=0 | backlog=9873053 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=95.0MB tt_rows=10420537 
+2026/10/31 07:54:43 vt=10-31 09:35 | W    5000 rows/s     50 calls/s p50=3.4ms p99=5.8ms err=0 | R    8589 rows/s     16 q/s p50=12.6ms p99=50.8ms err=0 | backlog=9837164 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=113.5MB tt_rows=10470637 
+2026/10/31 07:54:53 vt=10-31 09:40 | W    5000 rows/s     50 calls/s p50=3.4ms p99=5.8ms err=0 | R    8580 rows/s     16 q/s p50=3.9ms p99=47.8ms err=0 | backlog=9801365 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=132.1MB tt_rows=10520537 
+2026/10/31 07:55:03 vt=10-31 09:45 | W    5000 rows/s     50 calls/s p50=3.4ms p99=5.7ms err=0 | R    8494 rows/s     16 q/s p50=12.6ms p99=48.8ms err=0 | backlog=9766423 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=150.7MB tt_rows=10570537 
+2026/10/31 07:55:13 vt=10-31 09:50 | W    5000 rows/s     50 calls/s p50=3.5ms p99=7.0ms err=0 | R    8589 rows/s     16 q/s p50=11.6ms p99=50.6ms err=0 | backlog=9730529 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=169.3MB tt_rows=10620637 
+2026/10/31 07:55:23 vt=10-31 09:55 | W    5000 rows/s     50 calls/s p50=3.6ms p99=6.2ms err=0 | R    8547 rows/s     16 q/s p50=4.9ms p99=52.0ms err=0 | backlog=9695055 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=187.8MB tt_rows=10670537 
+2026/10/31 07:55:33 vt=10-31 10:00 | W    5000 rows/s     50 calls/s p50=3.7ms p99=6.4ms err=0 | R    8593 rows/s     16 q/s p50=10.5ms p99=46.3ms err=0 | backlog=9659127 lag=0s(virt) | tt_disk_bytes=3472.1MB tt_mem_bytes=206.4MB tt_rows=10720537 
+2026/10/31 07:55:33 SUMMARY tarantool [batch=100 payload=random vinyl consume=drop]: prefill=10198993 (173535/s) written=1500400 (5001/s, p99=6.0ms) read=2040266 (avg 6801/s, peak 8653/s, 14 q/s, p99=48.8ms) max_lag=0s(virt) errs w=0 r=0 size_max: tt_disk_bytes=3593.6MB tt_mem_bytes=236.4MB tt_rows=11090440 
+2026/10/31 07:55:33 saved /results/tarantool-20261031-104929.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 59.2, "cpu_max": 363.4, "mem_max_mb": 566, "disk_max_mb": 7033}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-f9ac42f0d6dc Creating 
+ Container test-bench-tarantool-run-f9ac42f0d6dc Created 
+2026/10/31 07:55:53 prefill: 1000199 tasks, 68340 rows/s
+2026/10/31 07:55:57 prefill: 2000110 tasks, 109139 rows/s
+2026/10/31 07:56:00 prefill: 3000128 tasks, 136240 rows/s
+2026/10/31 07:56:04 prefill: 4000142 tasks, 155017 rows/s
+2026/10/31 07:56:08 prefill: 5000312 tasks, 166131 rows/s
+2026/10/31 07:56:13 prefill: 6000005 tasks, 173325 rows/s
+2026/10/31 07:56:18 prefill: 7000188 tasks, 178161 rows/s
+2026/10/31 07:56:22 prefill: 8000190 tasks, 180833 rows/s
+2026/10/31 07:56:27 prefill: 9000259 tasks, 183109 rows/s
+2026/10/31 07:56:32 prefill: 10000320 tasks, 184954 rows/s
+2026/10/31 07:56:33 prefill done: 10199509 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 55s, 185343 rows/s (batch=500), size: tt_disk_bytes=3927.6MB tt_mem_bytes=149.2MB tt_rows=11944053 
+2026/10/31 07:56:33 run=tarantool-20261031-105533 backend=tarantool role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 07:56:43 vt=10-31 07:35 | W    5050 rows/s   5050 calls/s p50=0.3ms p99=1.5ms err=0 | R       0 rows/s      6 q/s p50=0.2ms p99=1.1ms err=0 | backlog=10250005 lag=0s(virt) | tt_disk_bytes=3847.1MB tt_mem_bytes=33.7MB tt_rows=11396775 
+2026/10/31 07:56:53 vt=10-31 07:40 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=1.7ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=1.4ms err=0 | backlog=10300008 lag=0s(virt) | tt_disk_bytes=3847.1MB tt_mem_bytes=52.3MB tt_rows=11446769 
+2026/10/31 07:57:03 vt=10-31 07:45 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.1ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=1.3ms err=0 | backlog=10350009 lag=0s(virt) | tt_disk_bytes=3847.1MB tt_mem_bytes=70.9MB tt_rows=11496773 
+2026/10/31 07:57:13 vt=10-31 07:50 | W    4999 rows/s   4999 calls/s p50=0.5ms p99=2.1ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=1.3ms err=0 | backlog=10400000 lag=0s(virt) | tt_disk_bytes=3847.1MB tt_mem_bytes=89.5MB tt_rows=11546772 
+2026/10/31 07:57:23 vt=10-31 07:55 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=1.6ms err=0 | R       0 rows/s      8 q/s p50=0.3ms p99=0.7ms err=0 | backlog=10450010 lag=0s(virt) | tt_disk_bytes=3847.1MB tt_mem_bytes=108.0MB tt_rows=11596784 
+2026/10/31 07:57:33 vt=10-31 08:00 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=1.9ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=1.5ms err=0 | backlog=10499999 lag=0s(virt) | tt_disk_bytes=3847.1MB tt_mem_bytes=126.6MB tt_rows=11646774 
+2026/10/31 07:57:43 vt=10-31 08:05 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.4ms err=0 | R    6850 rows/s     14 q/s p50=11.3ms p99=54.8ms err=0 | backlog=10481513 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=15.8MB tt_rows=11937374 
+2026/10/31 07:57:53 vt=10-31 08:10 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=3.6ms err=0 | R    8542 rows/s     16 q/s p50=12.0ms p99=52.4ms err=0 | backlog=10446090 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=40.3MB tt_rows=12072795 
+2026/10/31 07:58:03 vt=10-31 08:15 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=3.9ms err=0 | R    8593 rows/s     16 q/s p50=11.8ms p99=50.3ms err=0 | backlog=10410160 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=64.9MB tt_rows=12208727 
+2026/10/31 07:58:13 vt=10-31 08:20 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=3.5ms err=0 | R    8585 rows/s     16 q/s p50=11.9ms p99=49.5ms err=0 | backlog=10374299 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=89.5MB tt_rows=12344595 
+2026/10/31 07:58:23 vt=10-31 08:25 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=3.9ms err=0 | R    8573 rows/s     16 q/s p50=11.8ms p99=50.1ms err=0 | backlog=10338577 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=114.0MB tt_rows=12480321 
+2026/10/31 07:58:33 vt=10-31 08:30 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.7ms err=0 | R    8565 rows/s     16 q/s p50=11.9ms p99=50.9ms err=0 | backlog=10302923 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=138.6MB tt_rows=12615975 
+2026/10/31 07:58:43 vt=10-31 08:35 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=2.9ms err=0 | R    8606 rows/s     16 q/s p50=12.0ms p99=48.8ms err=0 | backlog=10266853 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=163.2MB tt_rows=12752024 
+2026/10/31 07:58:53 vt=10-31 08:40 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=3.6ms err=0 | R    8575 rows/s     16 q/s p50=12.1ms p99=53.1ms err=0 | backlog=10231104 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=187.7MB tt_rows=12887781 
+2026/10/31 07:59:03 vt=10-31 08:45 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.7ms err=0 | R    8552 rows/s     16 q/s p50=12.9ms p99=43.6ms err=0 | backlog=10195590 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=212.3MB tt_rows=13023369 
+2026/10/31 07:59:13 vt=10-31 08:50 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.6ms err=0 | R    8536 rows/s     16 q/s p50=12.8ms p99=46.5ms err=0 | backlog=10160234 lag=0s(virt) | tt_disk_bytes=4022.6MB tt_mem_bytes=236.9MB tt_rows=13158661 
+2026/10/31 07:59:23 vt=10-31 08:55 | W    4999 rows/s   4999 calls/s p50=0.3ms p99=3.1ms err=0 | R    8599 rows/s     16 q/s p50=13.0ms p99=52.8ms err=0 | backlog=10124227 lag=0s(virt) | tt_disk_bytes=4229.5MB tt_mem_bytes=9.7MB tt_rows=13294659 
+2026/10/31 07:59:33 vt=10-31 09:00 | W    5001 rows/s   5001 calls/s p50=0.3ms p99=3.0ms err=0 | R    8566 rows/s     16 q/s p50=14.0ms p99=54.8ms err=0 | backlog=10088576 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=34.3MB tt_rows=13474929 
+2026/10/31 07:59:43 vt=10-31 09:05 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=3.8ms err=0 | R    8579 rows/s     16 q/s p50=11.8ms p99=49.0ms err=0 | backlog=10052774 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=58.9MB tt_rows=13610715 
+2026/10/31 07:59:53 vt=10-31 09:10 | W    5002 rows/s   5002 calls/s p50=0.4ms p99=3.4ms err=0 | R    8588 rows/s     16 q/s p50=12.3ms p99=50.4ms err=0 | backlog=10016910 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=83.5MB tt_rows=13746594 
+2026/10/31 08:00:03 vt=10-31 09:15 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=3.2ms err=0 | R    8639 rows/s     16 q/s p50=13.0ms p99=48.8ms err=0 | backlog=9980514 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=108.1MB tt_rows=13882981 
+2026/10/31 08:00:13 vt=10-31 09:20 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=2.9ms err=0 | R    8609 rows/s     16 q/s p50=13.0ms p99=52.8ms err=0 | backlog=9944428 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=132.7MB tt_rows=14019072 
+2026/10/31 08:00:23 vt=10-31 09:25 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=2.9ms err=0 | R    8538 rows/s     16 q/s p50=13.3ms p99=53.2ms err=0 | backlog=9909037 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=157.2MB tt_rows=14154459 
+2026/10/31 08:00:33 vt=10-31 09:30 | W    5001 rows/s   5001 calls/s p50=0.4ms p99=3.6ms err=0 | R    8579 rows/s     16 q/s p50=12.9ms p99=49.6ms err=0 | backlog=9873259 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=181.8MB tt_rows=14290249 
+2026/10/31 08:00:43 vt=10-31 09:35 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=3.1ms err=0 | R    8596 rows/s     16 q/s p50=13.5ms p99=48.5ms err=0 | backlog=9837301 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=206.4MB tt_rows=14426200 
+2026/10/31 08:00:53 vt=10-31 09:40 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=2.8ms err=0 | R    8562 rows/s     16 q/s p50=12.2ms p99=55.0ms err=0 | backlog=9801674 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=230.9MB tt_rows=14561817 
+2026/10/31 08:01:03 vt=10-31 09:45 | W    5000 rows/s   5000 calls/s p50=0.4ms p99=2.8ms err=0 | R    8575 rows/s     16 q/s p50=14.4ms p99=52.7ms err=0 | backlog=9765924 lag=0s(virt) | tt_disk_bytes=4244.7MB tt_mem_bytes=255.5MB tt_rows=14697564 
+2026/10/31 08:01:13 vt=10-31 09:50 | W    5002 rows/s   5002 calls/s p50=0.3ms p99=2.7ms err=0 | R    8555 rows/s     16 q/s p50=13.0ms p99=50.7ms err=0 | backlog=9730394 lag=0s(virt) | tt_disk_bytes=4334.1MB tt_mem_bytes=28.5MB tt_rows=14636259 
+2026/10/31 08:01:23 vt=10-31 09:55 | W    4999 rows/s   4999 calls/s p50=0.4ms p99=3.3ms err=0 | R    8611 rows/s     16 q/s p50=11.5ms p99=54.3ms err=0 | backlog=9694266 lag=0s(virt) | tt_disk_bytes=4334.1MB tt_mem_bytes=53.1MB tt_rows=14772385 
+2026/10/31 08:01:33 SUMMARY tarantool [batch=1 payload=random vinyl consume=delete]: prefill=10199509 (185343/s) written=1500511 (5002/s, p99=2.8ms) read=2041649 (avg 6805/s, peak 8639/s, 14 q/s, p99=52.4ms) max_lag=0s(virt) errs w=0 r=0 size_max: tt_disk_bytes=4334.1MB tt_mem_bytes=255.5MB tt_rows=14772385 
+2026/10/31 08:01:33 tarantool: connection 192.168.97.2:3301 got unexpected request ID (383403) in response (probably cancelled request)
+2026/10/31 08:01:33 saved /results/tarantool-20261031-105533.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 84.7, "cpu_max": 386.0, "mem_max_mb": 534, "disk_max_mb": 7633}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-f7b6bfde7e2f Creating 
+ Container test-bench-tarantool-run-f7b6bfde7e2f Created 
+2026/10/31 08:01:39 run=tarantool-20261031-110134 backend=tarantool role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=5m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 08:01:49 vt=10-31 07:40 | W   28601 rows/s  28601 calls/s p50=2.4ms p99=81.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=286006 lag=0s(virt) | tt_disk_bytes=0.0MB tt_mem_bytes=106.9MB tt_rows=286006 
+2026/10/31 08:01:59 vt=10-31 07:50 | W  130736 rows/s 130736 calls/s p50=1.3ms p99=6.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1593364 lag=0s(virt) | tt_disk_bytes=422.1MB tt_mem_bytes=142.1MB tt_rows=1593684 
+2026/10/31 08:02:09 vt=10-31 08:00 | W  161485 rows/s 161485 calls/s p50=1.4ms p99=5.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3208214 lag=0s(virt) | tt_disk_bytes=1055.9MB tt_mem_bytes=40.5MB tt_rows=3208471 
+2026/10/31 08:02:19 vt=10-31 08:10 | W  157173 rows/s 157173 calls/s p50=1.4ms p99=4.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4779947 lag=0s(virt) | tt_disk_bytes=1513.2MB tt_mem_bytes=191.0MB tt_rows=4780204 
+2026/10/31 08:02:29 vt=10-31 08:20 | W  143924 rows/s 143924 calls/s p50=1.6ms p99=5.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6219186 lag=0s(virt) | tt_disk_bytes=2032.0MB tt_mem_bytes=207.3MB tt_rows=6219464 
+2026/10/31 08:02:39 vt=10-31 08:30 | W  149761 rows/s 149761 calls/s p50=1.5ms p99=5.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7716800 lag=0s(virt) | tt_disk_bytes=2557.3MB tt_mem_bytes=77.7MB tt_rows=7717008 
+2026/10/31 08:02:49 vt=10-31 08:40 | W  153628 rows/s 153628 calls/s p50=1.4ms p99=5.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9253079 lag=0s(virt) | tt_disk_bytes=3064.2MB tt_mem_bytes=97.3MB tt_rows=9265683 
+2026/10/31 08:02:59 vt=10-31 08:50 | W  160482 rows/s 160482 calls/s p50=1.4ms p99=5.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10857899 lag=0s(virt) | tt_disk_bytes=3686.7MB tt_mem_bytes=159.4MB tt_rows=10922583 
+2026/10/31 08:03:09 vt=10-31 09:00 | W  122005 rows/s 122005 calls/s p50=1.8ms p99=6.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=12077949 lag=0s(virt) | 
+2026/10/31 08:03:19 vt=10-31 09:10 | W  169859 rows/s 169859 calls/s p50=1.3ms p99=4.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=13776542 lag=0s(virt) | tt_disk_bytes=4637.8MB tt_mem_bytes=142.3MB tt_rows=13949085 
+2026/10/31 08:03:29 vt=10-31 09:20 | W  116266 rows/s 116266 calls/s p50=1.9ms p99=6.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=14939204 lag=0s(virt) | tt_disk_bytes=5344.0MB tt_mem_bytes=173.4MB tt_rows=15914598 
+2026/10/31 08:03:39 vt=10-31 09:30 | W  132613 rows/s 132613 calls/s p50=1.7ms p99=5.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16265336 lag=0s(virt) | tt_disk_bytes=5526.3MB tt_mem_bytes=97.4MB tt_rows=16459830 
+2026/10/31 08:03:49 vt=10-31 09:40 | W  146478 rows/s 146478 calls/s p50=1.5ms p99=6.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=17730112 lag=0s(virt) | tt_disk_bytes=6052.2MB tt_mem_bytes=73.3MB tt_rows=17982028 
+2026/10/31 08:03:59 vt=10-31 09:50 | W  149692 rows/s 149692 calls/s p50=1.5ms p99=5.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=19227029 lag=0s(virt) | tt_disk_bytes=6548.1MB tt_mem_bytes=95.0MB tt_rows=19471921 
+2026/10/31 08:04:09 vt=10-31 10:00 | W  117612 rows/s 117612 calls/s p50=1.9ms p99=6.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=20403149 lag=0s(virt) | tt_disk_bytes=7086.7MB tt_mem_bytes=114.3MB tt_rows=21126082 
+2026/10/31 08:04:19 vt=10-31 10:10 | W  147380 rows/s 147380 calls/s p50=1.5ms p99=5.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=21876944 lag=0s(virt) | tt_disk_bytes=7586.4MB tt_mem_bytes=111.6MB tt_rows=22588016 
+2026/10/31 08:04:29 vt=10-31 10:20 | W  127644 rows/s 127644 calls/s p50=1.7ms p99=6.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=23153379 lag=0s(virt) | tt_disk_bytes=8156.7MB tt_mem_bytes=168.6MB tt_rows=24131361 
+2026/10/31 08:04:39 vt=10-31 10:30 | W  140563 rows/s 140563 calls/s p50=1.5ms p99=6.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=24559010 lag=0s(virt) | tt_disk_bytes=8539.7MB tt_mem_bytes=122.3MB tt_rows=25383675 
+2026/10/31 08:04:49 vt=10-31 10:40 | W  143880 rows/s 143880 calls/s p50=1.5ms p99=5.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=25997815 lag=0s(virt) | tt_disk_bytes=8924.4MB tt_mem_bytes=122.3MB tt_rows=26527820 
+2026/10/31 08:04:59 vt=10-31 10:50 | W  123916 rows/s 123916 calls/s p50=1.8ms p99=6.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=27236978 lag=0s(virt) | tt_disk_bytes=9764.2MB tt_mem_bytes=48.0MB tt_rows=28807741 
+2026/10/31 08:05:09 vt=10-31 11:00 | W   64888 rows/s  64888 calls/s p50=3.0ms p99=14.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=27885860 lag=0s(virt) | 
+2026/10/31 08:05:19 vt=10-31 11:10 | W   70222 rows/s  70222 calls/s p50=2.9ms p99=14.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=28588081 lag=0s(virt) | tt_disk_bytes=10099.5MB tt_mem_bytes=83.3MB tt_rows=29892241 
+2026/10/31 08:05:29 vt=10-31 11:20 | W  109640 rows/s 109640 calls/s p50=2.0ms p99=7.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=29684481 lag=0s(virt) | tt_disk_bytes=10586.0MB tt_mem_bytes=190.4MB tt_rows=31324051 
+2026/10/31 08:05:39 vt=10-31 11:30 | W   91655 rows/s  91655 calls/s p50=2.2ms p99=8.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=30601031 lag=0s(virt) | tt_disk_bytes=10824.3MB tt_mem_bytes=246.8MB tt_rows=32343641 
+2026/10/31 08:05:49 vt=10-31 11:40 | W   82792 rows/s  82792 calls/s p50=2.0ms p99=15.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=31428950 lag=0s(virt) | tt_disk_bytes=11125.5MB tt_mem_bytes=236.7MB tt_rows=32947810 
+2026/10/31 08:05:59 vt=10-31 11:50 | W  107254 rows/s 107254 calls/s p50=1.8ms p99=8.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=32501492 lag=0s(virt) | tt_disk_bytes=11551.1MB tt_mem_bytes=167.3MB tt_rows=34305148 
+2026/10/31 08:06:09 vt=10-31 12:00 | W  101318 rows/s 101318 calls/s p50=2.0ms p99=9.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=33514668 lag=0s(virt) | tt_disk_bytes=12148.0MB tt_mem_bytes=76.4MB tt_rows=35892482 
+2026/10/31 08:06:19 vt=10-31 12:10 | W   96033 rows/s  96033 calls/s p50=1.9ms p99=13.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=34475000 lag=0s(virt) | tt_disk_bytes=12418.7MB tt_mem_bytes=115.5MB tt_rows=36802781 
+2026/10/31 08:06:29 vt=10-31 12:20 | W  112622 rows/s 112622 calls/s p50=1.7ms p99=8.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=35601222 lag=0s(virt) | tt_disk_bytes=12923.8MB tt_mem_bytes=82.6MB tt_rows=38179239 
+2026/10/31 08:06:39 SUMMARY tarantool [batch=1 payload=random vinyl consume=drop]: prefill=0 (0/s) written=36739031 (122444/s, p99=7.4ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: tt_disk_bytes=12923.8MB tt_mem_bytes=246.8MB tt_rows=38179239 
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184775) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184775) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184779) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184795) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184811) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184781) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184797) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184813) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184783) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184799) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184785) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184801) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184787) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184803) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184789) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184805) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184791) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184807) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184793) in response (probably cancelled request)
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184809) in response (probably cancelled request)
+2026/10/31 08:06:39 saved /results/tarantool-20261031-110134.json
+2026/10/31 08:06:39 tarantool: connection 192.168.97.2:3301 got unexpected request ID (9184777) in response (probably cancelled request)
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 284.8, "cpu_max": 441.6, "mem_max_mb": 527, "disk_max_mb": 23446}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-3a26f4c88d40 Creating 
+ Container test-bench-tarantool-run-3a26f4c88d40 Created 
+2026/10/31 08:07:10 prefill: 1000142 tasks, 66911 rows/s
+2026/10/31 08:07:15 prefill: 2000136 tasks, 102027 rows/s
+2026/10/31 08:07:19 prefill: 3000260 tasks, 125854 rows/s
+2026/10/31 08:07:24 prefill: 4000041 tasks, 136429 rows/s
+2026/10/31 08:07:30 prefill: 5000077 tasks, 144489 rows/s
+2026/10/31 08:07:35 prefill: 6000048 tasks, 149080 rows/s
+2026/10/31 08:07:41 prefill: 7000067 tasks, 151595 rows/s
+2026/10/31 08:07:42 prefill done: 7082621 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 47s, 151835 rows/s (batch=500), size: tt_disk_bytes=2326.0MB tt_mem_bytes=92.2MB tt_rows=7082621 
+2026/10/31 08:07:42 run=tarantool-20261031-110646 backend=tarantool role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 08:07:44 vt=11-02 15:05 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  239098 rows/s    568 q/s p50=8.9ms p99=26.2ms err=0 | backlog=6604423 lag=195784s(virt) | tt_disk_bytes=2326.0MB tt_mem_bytes=92.2MB tt_rows=7082621 
+2026/10/31 08:07:46 vt=11-04 22:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  283200 rows/s    399 q/s p50=9.5ms p99=18.8ms err=0 | backlog=6038023 lag=392826s(virt) | 
+2026/10/31 08:07:48 vt=11-07 06:13 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  270343 rows/s    396 q/s p50=9.4ms p99=20.2ms err=0 | backlog=5497337 lag=589929s(virt) | 
+2026/10/31 08:07:50 vt=11-09 13:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  229536 rows/s    346 q/s p50=10.1ms p99=27.6ms err=0 | backlog=5038265 lag=787201s(virt) | 
+2026/10/31 08:07:52 vt=11-11 21:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  252875 rows/s    397 q/s p50=9.3ms p99=19.8ms err=0 | backlog=4532515 lag=984212s(virt) | 
+2026/10/31 08:07:54 vt=11-14 04:51 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  285444 rows/s    470 q/s p50=8.0ms p99=15.7ms err=0 | backlog=3961626 lag=1180720s(virt) | tt_disk_bytes=1466.2MB tt_mem_bytes=92.2MB tt_rows=4464502 
+2026/10/31 08:07:56 vt=11-16 12:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  255886 rows/s    442 q/s p50=8.1ms p99=21.1ms err=0 | backlog=3449856 lag=1377421s(virt) | 
+2026/10/31 08:07:58 vt=11-18 19:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  252573 rows/s    459 q/s p50=7.5ms p99=27.0ms err=0 | backlog=2944710 lag=1574019s(virt) | 
+2026/10/31 08:08:00 vt=11-21 03:35 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  219053 rows/s    421 q/s p50=7.7ms p99=25.9ms err=0 | backlog=2506605 lag=1771082s(virt) | 
+2026/10/31 08:08:02 vt=11-23 11:06 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  226765 rows/s    459 q/s p50=7.6ms p99=21.9ms err=0 | backlog=2053075 lag=1967475s(virt) | tt_disk_bytes=762.0MB tt_mem_bytes=92.2MB tt_rows=2320096 
+2026/10/31 08:08:04 vt=11-25 18:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  256022 rows/s    556 q/s p50=6.4ms p99=14.6ms err=0 | backlog=1541031 lag=2163149s(virt) | 
+2026/10/31 08:08:06 vt=11-28 02:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  241792 rows/s    570 q/s p50=5.9ms p99=20.1ms err=0 | backlog=1057448 lag=2358859s(virt) | tt_disk_bytes=469.3MB tt_mem_bytes=92.2MB tt_rows=1428676 
+2026/10/31 08:08:08 vt=11-30 09:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  256030 rows/s    670 q/s p50=5.0ms p99=15.7ms err=0 | backlog=545388 lag=2553972s(virt) | tt_disk_bytes=215.1MB tt_mem_bytes=92.2MB tt_rows=654686 
+2026/10/31 08:08:10 SUMMARY tarantool [DRAIN workers=4 page=1000 payload=random vinyl consume=drop]: prefill=7082621 (151835/s) written=0 (0/s, p99=0.0ms) read=7082621 (avg 253755/s, peak 285444/s, 500 q/s, p99=22.7ms) max_lag=2553972s(virt) errs w=0 r=0 size_max: tt_disk_bytes=2326.0MB tt_mem_bytes=92.2MB tt_rows=7082621 
+2026/10/31 08:08:10 tarantool: connection 192.168.97.2:3301 got unexpected request ID (8695) in response (probably cancelled request)
+2026/10/31 08:08:10 tarantool: connection 192.168.97.2:3301 got unexpected request ID (8695) in response (probably cancelled request)
+2026/10/31 08:08:10 tarantool: connection 192.168.97.2:3301 got unexpected request ID (8695) in response (probably cancelled request)
+2026/10/31 08:08:10 saved /results/tarantool-20261031-110646.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 174.7, "cpu_max": 358.1, "mem_max_mb": 525, "disk_max_mb": 4267}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-8c56f318c258 Creating 
+ Container test-bench-tarantool-run-8c56f318c258 Created 
+2026/10/31 08:08:30 prefill: 1000141 tasks, 67169 rows/s
+2026/10/31 08:08:34 prefill: 2000301 tasks, 108173 rows/s
+2026/10/31 08:08:38 prefill: 3000278 tasks, 132559 rows/s
+2026/10/31 08:08:42 prefill: 4000012 tasks, 148749 rows/s
+2026/10/31 08:08:47 prefill: 5000310 tasks, 157847 rows/s
+2026/10/31 08:08:52 prefill: 6000007 tasks, 162179 rows/s
+2026/10/31 08:08:58 prefill: 7000306 tasks, 163808 rows/s
+2026/10/31 08:08:59 prefill done: 7084082 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 43s, 163944 rows/s (batch=500), size: tt_disk_bytes=2686.7MB tt_mem_bytes=115.7MB tt_rows=8206907 
+2026/10/31 08:08:59 run=tarantool-20261031-110810 backend=tarantool role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 08:09:01 vt=11-02 15:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  194926 rows/s    507 q/s p50=10.9ms p99=24.9ms err=0 | backlog=6694227 lag=196215s(virt) | tt_disk_bytes=2725.3MB tt_mem_bytes=8.8MB tt_rows=8373969 
+2026/10/31 08:09:03 vt=11-04 22:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  222313 rows/s    309 q/s p50=12.7ms p99=17.8ms err=0 | backlog=6249602 lag=393967s(virt) | tt_disk_bytes=2624.1MB tt_mem_bytes=39.9MB tt_rows=8520608 
+2026/10/31 08:09:05 vt=11-07 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  206620 rows/s    296 q/s p50=12.5ms p99=25.0ms err=0 | backlog=5836361 lag=591717s(virt) | tt_disk_bytes=2624.1MB tt_mem_bytes=68.9MB tt_rows=8934545 
+2026/10/31 08:09:07 vt=11-09 13:45 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  217167 rows/s    322 q/s p50=11.6ms p99=22.8ms err=0 | backlog=5402027 lag=789317s(virt) | tt_disk_bytes=2624.1MB tt_mem_bytes=99.3MB tt_rows=9368793 
+2026/10/31 08:09:09 vt=11-11 21:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  201938 rows/s    306 q/s p50=12.8ms p99=17.2ms err=0 | backlog=4998152 lag=986939s(virt) | tt_disk_bytes=2624.1MB tt_mem_bytes=127.6MB tt_rows=9772667 
+2026/10/31 08:09:11 vt=11-14 04:55 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  166050 rows/s    261 q/s p50=14.0ms p99=33.7ms err=0 | backlog=4666052 lag=1185248s(virt) | tt_disk_bytes=2688.3MB tt_mem_bytes=16.6MB tt_rows=10104158 
+2026/10/31 08:09:13 vt=11-16 12:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  174397 rows/s    281 q/s p50=12.7ms p99=35.9ms err=0 | backlog=4317259 lag=1382855s(virt) | tt_disk_bytes=2293.2MB tt_mem_bytes=41.1MB tt_rows=9291638 
+2026/10/31 08:09:15 vt=11-18 19:59 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  199527 rows/s    329 q/s p50=11.5ms p99=20.2ms err=0 | backlog=3918204 lag=1580566s(virt) | tt_disk_bytes=2293.2MB tt_mem_bytes=69.0MB tt_rows=9690693 
+2026/10/31 08:09:17 vt=11-21 03:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  207962 rows/s    362 q/s p50=10.4ms p99=18.7ms err=0 | backlog=3502281 lag=1777693s(virt) | tt_disk_bytes=2293.2MB tt_mem_bytes=98.2MB tt_rows=10107229 
+2026/10/31 08:09:19 vt=11-23 11:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  210561 rows/s    380 q/s p50=9.5ms p99=20.0ms err=0 | backlog=3081158 lag=1974868s(virt) | tt_disk_bytes=2293.2MB tt_mem_bytes=127.7MB tt_rows=10527739 
+2026/10/31 08:09:21 vt=11-25 18:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  192265 rows/s    360 q/s p50=10.1ms p99=24.0ms err=0 | backlog=2696627 lag=2172195s(virt) | tt_disk_bytes=2293.2MB tt_mem_bytes=154.7MB tt_rows=10912804 
+2026/10/31 08:09:23 vt=11-28 02:11 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  215460 rows/s    424 q/s p50=8.7ms p99=19.4ms err=0 | backlog=2265706 lag=2369019s(virt) | tt_disk_bytes=2293.2MB tt_mem_bytes=184.9MB tt_rows=11343665 
+2026/10/31 08:09:25 vt=11-30 09:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  216530 rows/s    451 q/s p50=8.1ms p99=17.0ms err=0 | backlog=1832645 lag=2565586s(virt) | tt_disk_bytes=2382.6MB tt_mem_bytes=14.0MB tt_rows=11776735 
+2026/10/31 08:09:27 vt=12-02 17:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  174345 rows/s    388 q/s p50=8.4ms p99=24.7ms err=0 | backlog=1483956 lag=2762660s(virt) | tt_disk_bytes=1806.2MB tt_mem_bytes=38.5MB tt_rows=10431667 
+2026/10/31 08:09:29 vt=12-05 00:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  244924 rows/s    585 q/s p50=6.7ms p99=9.7ms err=0 | backlog=994108 lag=2958252s(virt) | tt_disk_bytes=1806.2MB tt_mem_bytes=72.6MB tt_rows=10920602 
+2026/10/31 08:09:31 vt=12-07 08:24 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  199810 rows/s    523 q/s p50=6.8ms p99=14.8ms err=0 | backlog=594488 lag=3154407s(virt) | tt_disk_bytes=1806.2MB tt_mem_bytes=100.7MB tt_rows=11320574 
+2026/10/31 08:09:33 vt=12-09 16:01 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  209309 rows/s    604 q/s p50=6.0ms p99=13.8ms err=0 | backlog=175871 lag=3350111s(virt) | tt_disk_bytes=1806.2MB tt_mem_bytes=129.9MB tt_rows=11739164 
+2026/10/31 08:09:33 SUMMARY tarantool [DRAIN workers=4 page=1000 payload=random vinyl consume=delete]: prefill=7084082 (163944/s) written=0 (0/s, p99=0.0ms) read=7084082 (avg 203483/s, peak 244924/s, 404 q/s, p99=24.2ms) max_lag=3350111s(virt) errs w=0 r=0 size_max: tt_disk_bytes=2725.3MB tt_mem_bytes=184.9MB tt_rows=11776735 
+2026/10/31 08:09:33 tarantool: connection 192.168.97.2:3301 got unexpected request ID (8521) in response (probably cancelled request)
+2026/10/31 08:09:33 tarantool: connection 192.168.97.2:3301 got unexpected request ID (8523) in response (probably cancelled request)
+2026/10/31 08:09:33 tarantool: connection 192.168.97.2:3301 got unexpected request ID (8523) in response (probably cancelled request)
+2026/10/31 08:09:33 saved /results/tarantool-20261031-110810.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 187.9, "cpu_max": 367.8, "mem_max_mb": 474, "disk_max_mb": 4663}
+ Image test-bench-rabbitmq Building 
+ Image test-bench-rabbitmq Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Created 
+ Volume test_rabbit-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rabbitmq Creating 
+ Container tb-rabbitmq Created 
+ Container tb-rabbitmq Starting 
+ Container tb-rabbitmq Started 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container tb-rabbitmq Running 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container test-bench-rabbitmq-run-693103372e93 Creating 
+ Container test-bench-rabbitmq-run-693103372e93 Created 
+2026/10/31 08:10:54 prefill: 1000032 tasks, 14728 rows/s
+2026/10/31 08:15:09 prefill: 2000018 tasks, 6195 rows/s
+2026/10/31 08:19:22 prefill: 3000051 tasks, 5207 rows/s
+2026/10/31 08:24:17 prefill: 4000305 tasks, 4589 rows/s
+2026/10/31 08:29:07 prefill: 5000221 tasks, 4304 rows/s
+2026/10/31 08:33:40 prefill: context canceled
+2026/10/31 08:33:40 prefill: context canceled
+2026/10/31 08:33:40 prefill: context canceled
+2026/10/31 08:33:41 prefill done: 5881170 tasks (из 14400000 сгенерированных), ошибок батчей 64, за 23m55s, 4098 rows/s (batch=500), size: 
+2026/10/31 08:33:41 run=rabbitmq-20261031-110934 backend=rabbitmq role=both virtual_start=2026-10-31 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=4 consumers=4 page=1000
+2026/10/31 08:33:41 SUMMARY rabbitmq [batch=1 payload=random queue/bucket shards=4]: prefill=5881170 (4098/s) written=0 (0/s, p99=0.0ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 08:33:41 saved /results/rabbitmq-20261031-110934.json
+DB resources (tb-rabbitmq, CPU% = 100 на ядро): {"cpu_avg": 50.2, "cpu_max": 431.8, "mem_max_mb": 1013, "disk_max_mb": 2957}

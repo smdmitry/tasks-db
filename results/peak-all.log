@@ -1,0 +1,1776 @@
+ Image test-bench-scylla Building 
+ Image test-bench-scylla Built 
+ Network test_default Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Creating 
+ Network test_default Creating 
+ Volume test_scylla-data Created 
+ Volume test_scylla-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-scylla Creating 
+ Container tb-scylla Created 
+ Container tb-scylla Starting 
+ Container tb-scylla Started 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container tb-scylla Running 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container test-bench-scylla-run-3d9c16ebb43c Creating 
+ Container test-bench-scylla-run-3d9c16ebb43c Created 
+2026/10/31 09:24:38 [f38a8245-e9d9-4c2f-b1e3-b4c320be7a42] warnings: [Using Replication Factor replication_factor=1 lower than the minimum_replication_factor_warn_threshold=3 is not recommended.]
+2026/10/31 09:24:38 run=peak-all-1031-1224-scylla-write backend=scylla role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:24:43 vt=10-31 07:35 | W  120881 rows/s 120881 calls/s p50=1.6ms p99=10.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=604407 lag=0s(virt) | 
+2026/10/31 09:24:48 vt=10-31 07:40 | W  107811 rows/s 107811 calls/s p50=1.6ms p99=14.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1143460 lag=0s(virt) | 
+2026/10/31 09:24:53 vt=10-31 07:45 | W  101806 rows/s 101806 calls/s p50=1.7ms p99=16.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1652490 lag=0s(virt) | 
+2026/10/31 09:24:58 vt=10-31 07:50 | W  117251 rows/s 117251 calls/s p50=1.6ms p99=10.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2238744 lag=0s(virt) | 
+2026/10/31 09:25:03 vt=10-31 07:55 | W  108376 rows/s 108376 calls/s p50=1.7ms p99=10.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2780622 lag=0s(virt) | 
+2026/10/31 09:25:08 vt=10-31 08:00 | W   63703 rows/s  63703 calls/s p50=2.0ms p99=24.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3099137 lag=0s(virt) | 
+2026/10/31 09:25:13 vt=10-31 08:05 | W   42556 rows/s  42556 calls/s p50=2.7ms p99=41.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3311918 lag=0s(virt) | 
+2026/10/31 09:25:18 vt=10-31 08:10 | W   63441 rows/s  63441 calls/s p50=2.1ms p99=20.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3629122 lag=0s(virt) | 
+2026/10/31 09:25:23 vt=10-31 08:15 | W   63584 rows/s  63584 calls/s p50=2.2ms p99=23.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3947040 lag=0s(virt) | 
+2026/10/31 09:25:28 vt=10-31 08:20 | W   64926 rows/s  64926 calls/s p50=2.0ms p99=21.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4271670 lag=0s(virt) | 
+2026/10/31 09:25:33 vt=10-31 08:25 | W   62423 rows/s  62423 calls/s p50=1.8ms p99=22.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4583784 lag=0s(virt) | 
+2026/10/31 09:25:38 SUMMARY scylla [batch=1 payload=random consume=ttl]: prefill=0 (0/s) written=4885929 (81432/s, p99=18.7ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:25:38 saved /results/peak-all-1031-1224-scylla-write.json
+DB resources (tb-scylla, CPU% = 100 на ядро): {"cpu_avg": 132.5, "cpu_max": 239.3, "mem_max_mb": 793, "disk_max_mb": 2586}
+ Image test-bench-scylla Building 
+ Image test-bench-scylla Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Created 
+ Volume test_scylla-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-scylla Creating 
+ Container tb-scylla Created 
+ Container tb-scylla Starting 
+ Container tb-scylla Started 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container tb-scylla Running 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container test-bench-scylla-run-07bea6d06edc Creating 
+ Container test-bench-scylla-run-07bea6d06edc Created 
+2026/10/31 09:25:54 [176bfa8d-cb27-468c-939d-84ed8ada46b6] warnings: [Using Replication Factor replication_factor=1 lower than the minimum_replication_factor_warn_threshold=3 is not recommended.]
+2026/10/31 09:25:54 run=peak-all-1031-1224-scylla-batch backend=scylla role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:25:59 vt=10-31 07:35 | W  147820 rows/s   1478 calls/s p50=40.9ms p99=84.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=739100 lag=0s(virt) | 
+2026/10/31 09:26:04 vt=10-31 07:40 | W  132000 rows/s   1320 calls/s p50=45.7ms p99=106.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1399100 lag=0s(virt) | 
+2026/10/31 09:26:09 vt=10-31 07:45 | W  105480 rows/s   1055 calls/s p50=46.3ms p99=478.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1926500 lag=0s(virt) | 
+2026/10/31 09:26:14 vt=10-31 07:50 | W   89760 rows/s    898 calls/s p50=49.6ms p99=350.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2375300 lag=0s(virt) | 
+2026/10/31 09:26:19 vt=10-31 07:55 | W   86700 rows/s    867 calls/s p50=53.2ms p99=341.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2808800 lag=0s(virt) | 
+2026/10/31 09:26:24 vt=10-31 08:00 | W   89640 rows/s    896 calls/s p50=54.9ms p99=370.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3257000 lag=0s(virt) | 
+2026/10/31 09:26:29 vt=10-31 08:05 | W   63340 rows/s    633 calls/s p50=63.2ms p99=459.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3573700 lag=0s(virt) | 
+2026/10/31 09:26:34 vt=10-31 08:10 | W   89560 rows/s    896 calls/s p50=53.0ms p99=617.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4021500 lag=0s(virt) | 
+2026/10/31 09:26:39 vt=10-31 08:15 | W   97060 rows/s    971 calls/s p50=53.5ms p99=309.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4506800 lag=0s(virt) | 
+2026/10/31 09:26:44 vt=10-31 08:20 | W   88020 rows/s    880 calls/s p50=55.0ms p99=293.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4946900 lag=0s(virt) | 
+2026/10/31 09:26:49 vt=10-31 08:25 | W   56540 rows/s    565 calls/s p50=50.1ms p99=619.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5229600 lag=0s(virt) | 
+2026/10/31 09:26:54 write: Operation timed out for bench.tasks - received only 0 responses from 1 CL=QUORUM. (potentially executed: false)
+2026/10/31 09:26:54 vt=10-31 08:30 | W   16180 rows/s    162 calls/s p50=51.8ms p99=3743.7ms err=31 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5310500 lag=0s(virt) | 
+2026/10/31 09:26:54 SUMMARY scylla [batch=100 payload=random consume=ttl]: prefill=0 (0/s) written=5315100 (88543/s, p99=362.2ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=31 r=0 size_max: 
+2026/10/31 09:26:54 saved /results/peak-all-1031-1224-scylla-batch.json
+DB resources (tb-scylla, CPU% = 100 на ядро): {"cpu_avg": 174.4, "cpu_max": 405.5, "mem_max_mb": 792, "disk_max_mb": 2786}
+ Image test-bench-scylla Building 
+ Image test-bench-scylla Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Created 
+ Volume test_scylla-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-scylla Creating 
+ Container tb-scylla Created 
+ Container tb-scylla Starting 
+ Container tb-scylla Started 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container tb-scylla Running 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container test-bench-scylla-run-b7e84593e3a4 Creating 
+ Container test-bench-scylla-run-b7e84593e3a4 Created 
+2026/10/31 09:27:10 [100b5cad-b140-4306-abda-8da22753cfd3] warnings: [Using Replication Factor replication_factor=1 lower than the minimum_replication_factor_warn_threshold=3 is not recommended.]
+2026/10/31 09:27:17 prefill: 1000293 tasks, 134289 rows/s
+2026/10/31 09:27:25 prefill: 2000271 tasks, 131899 rows/s
+2026/10/31 09:27:32 prefill: 3000121 tasks, 133120 rows/s
+2026/10/31 09:27:36 prefill done: 3542891 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 27s, 133544 rows/s (batch=500), size: 
+2026/10/31 09:27:36 run=peak-all-1031-1224-scylla-read backend=scylla role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:27:38 vt=11-02 15:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  684514 rows/s   2259 q/s p50=1.3ms p99=6.7ms err=0 | backlog=2173862 lag=183194s(virt) | 
+2026/10/31 09:27:40 vt=11-04 22:39 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  730025 rows/s   2784 q/s p50=1.2ms p99=5.3ms err=0 | backlog=713813 lag=362536s(virt) | 
+2026/10/31 09:27:42 SUMMARY scylla [DRAIN workers=4 page=1000 payload=random consume=ttl]: prefill=3542891 (133544/s) written=0 (0/s, p99=0.0ms) read=3542891 (avg 662993/s, peak 730025/s, 2631 q/s, p99=5.7ms) max_lag=362536s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:27:42 saved /results/peak-all-1031-1224-scylla-read.json
+DB resources (tb-scylla, CPU% = 100 на ядро): {"cpu_avg": 180.6, "cpu_max": 278.6, "mem_max_mb": 775, "disk_max_mb": 2322}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-1c8291546016 Creating 
+ Container test-bench-cassandra-run-1c8291546016 Created 
+2026/10/31 09:28:49 run=peak-all-1031-1224-cassandra-write backend=cassandra role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:28:54 vt=10-31 07:35 | W   12630 rows/s  12630 calls/s p50=6.9ms p99=90.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=63151 lag=0s(virt) | 
+2026/10/31 09:28:59 vt=10-31 07:40 | W   22046 rows/s  22046 calls/s p50=4.1ms p99=76.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=173381 lag=0s(virt) | 
+2026/10/31 09:29:04 vt=10-31 07:45 | W   13583 rows/s  13583 calls/s p50=2.8ms p99=73.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=241295 lag=0s(virt) | 
+2026/10/31 09:29:09 vt=10-31 07:50 | W  102028 rows/s 102028 calls/s p50=1.3ms p99=30.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=751433 lag=0s(virt) | 
+2026/10/31 09:29:14 vt=10-31 07:55 | W  149444 rows/s 149444 calls/s p50=1.1ms p99=6.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1498655 lag=0s(virt) | 
+2026/10/31 09:29:19 vt=10-31 08:00 | W  188076 rows/s 188076 calls/s p50=1.1ms p99=6.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2439033 lag=0s(virt) | 
+2026/10/31 09:29:24 vt=10-31 08:05 | W  185283 rows/s 185283 calls/s p50=1.1ms p99=6.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3365450 lag=0s(virt) | 
+2026/10/31 09:29:29 vt=10-31 08:10 | W  183600 rows/s 183600 calls/s p50=1.1ms p99=6.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4283448 lag=0s(virt) | 
+2026/10/31 09:29:34 vt=10-31 08:15 | W  187909 rows/s 187909 calls/s p50=1.1ms p99=6.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5222995 lag=0s(virt) | 
+2026/10/31 09:29:39 vt=10-31 08:20 | W  182068 rows/s 182068 calls/s p50=1.1ms p99=6.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6133333 lag=0s(virt) | 
+2026/10/31 09:29:44 vt=10-31 08:25 | W  159086 rows/s 159086 calls/s p50=1.1ms p99=6.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6928762 lag=0s(virt) | 
+2026/10/31 09:29:49 vt=10-31 08:30 | W  178608 rows/s 178608 calls/s p50=1.1ms p99=6.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7821806 lag=0s(virt) | 
+2026/10/31 09:29:49 SUMMARY cassandra [batch=1 payload=random consume=ttl]: prefill=0 (0/s) written=7821968 (130357/s, p99=10.4ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:29:49 saved /results/peak-all-1031-1224-cassandra-write.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 283.8, "cpu_max": 464.4, "mem_max_mb": 1531, "disk_max_mb": 3025}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-c4d7ab8853c0 Creating 
+ Container test-bench-cassandra-run-c4d7ab8853c0 Created 
+2026/10/31 09:30:56 run=peak-all-1031-1224-cassandra-batch backend=cassandra role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:31:02 vt=10-31 07:35 | W   13440 rows/s    134 calls/s p50=410.6ms p99=936.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=67200 lag=0s(virt) | 
+2026/10/31 09:31:06 vt=10-31 07:40 | W   10660 rows/s    107 calls/s p50=318.0ms p99=3293.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=120500 lag=0s(virt) | 
+2026/10/31 09:31:11 vt=10-31 07:45 | W   12620 rows/s    126 calls/s p50=304.1ms p99=3102.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=183600 lag=0s(virt) | 
+2026/10/31 09:31:16 vt=10-31 07:50 | W   24160 rows/s    242 calls/s p50=203.3ms p99=1195.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=304400 lag=0s(virt) | 
+2026/10/31 09:31:22 vt=10-31 07:55 | W   44900 rows/s    449 calls/s p50=126.7ms p99=331.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=528900 lag=0s(virt) | 
+2026/10/31 09:31:26 vt=10-31 08:00 | W  103380 rows/s   1034 calls/s p50=56.3ms p99=165.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1045800 lag=0s(virt) | 
+2026/10/31 09:31:31 vt=10-31 08:05 | W  152640 rows/s   1526 calls/s p50=40.1ms p99=92.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1809000 lag=0s(virt) | 
+2026/10/31 09:31:37 vt=10-31 08:10 | W  163800 rows/s   1638 calls/s p50=37.2ms p99=78.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2628000 lag=0s(virt) | 
+2026/10/31 09:31:42 vt=10-31 08:15 | W  131280 rows/s   1313 calls/s p50=37.8ms p99=109.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3284400 lag=0s(virt) | 
+2026/10/31 09:31:46 vt=10-31 08:20 | W  131780 rows/s   1318 calls/s p50=37.6ms p99=97.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3943300 lag=0s(virt) | 
+2026/10/31 09:31:51 vt=10-31 08:25 | W  169240 rows/s   1692 calls/s p50=36.1ms p99=83.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4789500 lag=0s(virt) | 
+2026/10/31 09:31:57 vt=10-31 08:30 | W  168280 rows/s   1683 calls/s p50=36.5ms p99=82.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5630900 lag=0s(virt) | 
+2026/10/31 09:31:57 SUMMARY cassandra [batch=100 payload=random consume=ttl]: prefill=0 (0/s) written=5630900 (93837/s, p99=581.1ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:31:57 saved /results/peak-all-1031-1224-cassandra-batch.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 214.9, "cpu_max": 428.7, "mem_max_mb": 1525, "disk_max_mb": 2067}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-05197e0062fd Creating 
+ Container test-bench-cassandra-run-05197e0062fd Created 
+2026/10/31 09:33:31 prefill: 1000211 tasks, 35542 rows/s
+2026/10/31 09:33:43 prefill: 2000137 tasks, 50669 rows/s
+2026/10/31 09:33:49 prefill: 3000134 tasks, 64899 rows/s
+2026/10/31 09:33:53 prefill done: 3542879 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 50s, 70961 rows/s (batch=500), size: 
+2026/10/31 09:33:53 run=peak-all-1031-1224-cassandra-read backend=cassandra role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:33:55 vt=11-02 15:07 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  495633 rows/s   1660 q/s p50=2.0ms p99=7.4ms err=0 | backlog=2551611 lag=187856s(virt) | 
+2026/10/31 09:33:57 vt=11-04 22:39 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  683411 rows/s   2374 q/s p50=1.3ms p99=5.3ms err=0 | backlog=1184789 lag=370118s(virt) | 
+2026/10/31 09:33:59 vt=11-07 06:11 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  539578 rows/s   2601 q/s p50=1.1ms p99=5.7ms err=0 | backlog=105633 lag=550632s(virt) | 
+2026/10/31 09:33:59 SUMMARY cassandra [DRAIN workers=4 page=1000 payload=random consume=ttl]: prefill=3542879 (70961/s) written=0 (0/s, p99=0.0ms) read=3542879 (avg 562286/s, peak 683411/s, 2222 q/s, p99=6.2ms) max_lag=550632s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:33:59 saved /results/peak-all-1031-1224-cassandra-read.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 290.6, "cpu_max": 407.1, "mem_max_mb": 1535, "disk_max_mb": 1704}
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-1413d7a0a0c1 Creating 
+ Container test-bench-postgres-run-1413d7a0a0c1 Created 
+2026/10/31 09:34:12 run=peak-all-1031-1224-postgres-write backend=postgres role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:34:17 vt=10-31 07:35 | W   65416 rows/s  65416 calls/s p50=2.6ms p99=37.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=327081 lag=0s(virt) | pg_db_bytes=159.3MB pg_wal_bytes=173.7MB pg_live_tup=292069 pg_dead_tup=0 
+2026/10/31 09:34:22 vt=10-31 07:40 | W   67801 rows/s  67801 calls/s p50=2.7ms p99=31.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=666084 lag=0s(virt) | pg_db_bytes=302.5MB pg_wal_bytes=351.4MB pg_live_tup=632861 pg_dead_tup=0 
+2026/10/31 09:34:27 vt=10-31 07:45 | W   58747 rows/s  58747 calls/s p50=3.1ms p99=34.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=959817 lag=0s(virt) | pg_db_bytes=422.9MB pg_wal_bytes=506.7MB pg_live_tup=924526 pg_dead_tup=0 
+2026/10/31 09:34:32 vt=10-31 07:50 | W   56463 rows/s  56463 calls/s p50=3.3ms p99=30.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1242131 lag=0s(virt) | pg_db_bytes=541.5MB pg_wal_bytes=654.6MB pg_live_tup=1207918 pg_dead_tup=0 
+2026/10/31 09:34:37 vt=10-31 07:55 | W   55528 rows/s  55528 calls/s p50=3.2ms p99=32.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1519774 lag=0s(virt) | pg_db_bytes=661.9MB pg_wal_bytes=803.3MB pg_live_tup=1507444 pg_dead_tup=0 
+2026/10/31 09:34:42 vt=10-31 08:00 | W   66048 rows/s  66048 calls/s p50=2.7ms p99=29.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1850014 lag=0s(virt) | pg_db_bytes=795.3MB pg_wal_bytes=974.2MB pg_live_tup=1828210 pg_dead_tup=0 
+2026/10/31 09:34:47 vt=10-31 08:05 | W   53389 rows/s  53389 calls/s p50=2.9ms p99=34.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2116957 lag=0s(virt) | pg_db_bytes=908.6MB pg_wal_bytes=1116.5MB pg_live_tup=2130683 pg_dead_tup=0 
+2026/10/31 09:34:52 vt=10-31 08:10 | W   65790 rows/s  65790 calls/s p50=2.8ms p99=27.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2445908 lag=0s(virt) | pg_db_bytes=1049.8MB pg_wal_bytes=1289.3MB pg_live_tup=2462801 pg_dead_tup=0 
+2026/10/31 09:34:57 vt=10-31 08:15 | W   48801 rows/s  48801 calls/s p50=3.0ms p99=36.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2689915 lag=0s(virt) | pg_db_bytes=1144.9MB pg_wal_bytes=1417.7MB pg_live_tup=2668081 pg_dead_tup=0 
+2026/10/31 09:35:02 vt=10-31 08:20 | W   64620 rows/s  64620 calls/s p50=3.1ms p99=26.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3013013 lag=0s(virt) | pg_db_bytes=1273.4MB pg_wal_bytes=1583.2MB pg_live_tup=2979613 pg_dead_tup=0 
+2026/10/31 09:35:07 vt=10-31 08:25 | W   45656 rows/s  45656 calls/s p50=3.5ms p99=35.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3241295 lag=0s(virt) | pg_db_bytes=1365.5MB pg_wal_bytes=1704.5MB pg_live_tup=3261855 pg_dead_tup=0 
+2026/10/31 09:35:12 SUMMARY postgres [batch=1 payload=random consume=drop]: prefill=0 (0/s) written=3515534 (58584/s, p99=32.4ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: pg_db_bytes=1365.5MB pg_wal_bytes=1704.5MB pg_live_tup=3261855 pg_dead_tup=0 
+2026/10/31 09:35:12 saved /results/peak-all-1031-1224-postgres-write.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 300.7, "cpu_max": 409.2, "mem_max_mb": 853, "disk_max_mb": 3021}
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-a01aa7f78074 Creating 
+ Container test-bench-postgres-run-a01aa7f78074 Created 
+2026/10/31 09:35:19 run=peak-all-1031-1224-postgres-batch backend=postgres role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:35:24 vt=10-31 07:35 | W  490500 rows/s   4905 calls/s p50=8.9ms p99=77.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2452500 lag=0s(virt) | pg_db_bytes=1047.9MB pg_wal_bytes=1102.5MB pg_live_tup=2292442 pg_dead_tup=0 
+2026/10/31 09:35:29 vt=10-31 07:40 | W  128820 rows/s   1288 calls/s p50=8.8ms p99=757.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3096600 lag=0s(virt) | pg_db_bytes=1309.6MB pg_wal_bytes=1384.1MB pg_live_tup=3298294 pg_dead_tup=0 
+2026/10/31 09:35:34 vt=10-31 07:45 | W  392080 rows/s   3921 calls/s p50=8.5ms p99=248.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5057000 lag=0s(virt) | pg_db_bytes=2131.7MB pg_wal_bytes=2261.0MB pg_live_tup=4967428 pg_dead_tup=0 
+2026/10/31 09:35:39 vt=10-31 07:50 | W  334960 rows/s   3350 calls/s p50=9.2ms p99=138.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6731800 lag=0s(virt) | pg_db_bytes=2826.1MB pg_wal_bytes=3005.8MB pg_live_tup=6649847 pg_dead_tup=0 
+2026/10/31 09:35:45 vt=10-31 07:55 | W  213860 rows/s   2139 calls/s p50=17.7ms p99=363.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7801100 lag=0s(virt) | pg_db_bytes=3282.9MB pg_wal_bytes=3486.9MB pg_live_tup=7866869 pg_dead_tup=0 
+2026/10/31 09:35:49 vt=10-31 08:00 | W  207000 rows/s   2070 calls/s p50=10.6ms p99=636.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8836100 lag=0s(virt) | pg_db_bytes=3713.7MB pg_wal_bytes=3946.1MB pg_live_tup=8901089 pg_dead_tup=0 
+2026/10/31 09:35:54 vt=10-31 08:05 | W  229040 rows/s   2290 calls/s p50=16.6ms p99=227.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9981300 lag=0s(virt) | pg_db_bytes=4191.6MB pg_wal_bytes=4457.7MB pg_live_tup=9842266 pg_dead_tup=0 
+2026/10/31 09:35:59 vt=10-31 08:10 | W  218560 rows/s   2186 calls/s p50=14.2ms p99=300.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11074100 lag=0s(virt) | pg_db_bytes=4640.9MB pg_wal_bytes=4995.3MB pg_live_tup=10871292 pg_dead_tup=0 
+2026/10/31 09:36:04 vt=10-31 08:15 | W  169180 rows/s   1692 calls/s p50=14.0ms p99=530.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11920000 lag=0s(virt) | pg_db_bytes=5010.9MB pg_wal_bytes=5388.1MB pg_live_tup=11714343 pg_dead_tup=0 
+2026/10/31 09:36:09 vt=10-31 08:20 | W   99040 rows/s    990 calls/s p50=13.3ms p99=941.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=12415200 lag=0s(virt) | pg_db_bytes=5213.6MB pg_wal_bytes=5609.9MB pg_live_tup=12219732 pg_dead_tup=0 
+2026/10/31 09:36:14 vt=10-31 08:25 | W  229140 rows/s   2291 calls/s p50=11.7ms p99=487.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=13560900 lag=0s(virt) | pg_db_bytes=5682.4MB pg_wal_bytes=6124.6MB pg_live_tup=13114830 pg_dead_tup=0 
+2026/10/31 09:36:20 vt=10-31 08:30 | W  174980 rows/s   1750 calls/s p50=11.9ms p99=367.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=14435800 lag=0s(virt) | pg_db_bytes=6043.1MB pg_wal_bytes=6514.2MB pg_live_tup=13993259 pg_dead_tup=0 
+2026/10/31 09:36:20 SUMMARY postgres [batch=100 payload=random copy consume=drop]: prefill=0 (0/s) written=14435800 (237071/s, p99=336.1ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: pg_db_bytes=6043.1MB pg_wal_bytes=6514.2MB pg_live_tup=13993259 pg_dead_tup=0 
+2026/10/31 09:36:20 saved /results/peak-all-1031-1224-postgres-batch.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 277.8, "cpu_max": 508.6, "mem_max_mb": 667, "disk_max_mb": 11665}
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-05fdef83f89f Creating 
+ Container test-bench-postgres-run-05fdef83f89f Created 
+2026/10/31 09:36:34 prefill: 1000041 tasks, 753459 rows/s
+2026/10/31 09:36:36 prefill: 2000300 tasks, 687047 rows/s
+2026/10/31 09:36:37 prefill: 3000342 tasks, 678616 rows/s
+2026/10/31 09:36:38 prefill done: 3542402 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 5s, 650091 rows/s (batch=500), size: pg_db_bytes=1500.5MB pg_wal_bytes=1560.8MB pg_live_tup=3577683 pg_dead_tup=0 
+2026/10/31 09:36:38 run=peak-all-1031-1224-postgres-read backend=postgres role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:36:40 vt=11-02 15:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R 1277930 rows/s   4447 q/s p50=0.5ms p99=2.7ms err=0 | backlog=986540 lag=170330s(virt) | pg_db_bytes=595.7MB pg_wal_bytes=1563.1MB pg_live_tup=1367541 pg_dead_tup=0 
+2026/10/31 09:36:41 SUMMARY postgres [DRAIN workers=4 page=1000 payload=random consume=drop]: prefill=3542402 (650091/s) written=0 (0/s, p99=0.0ms) read=3542402 (avg 1303623/s, peak 1277930/s, 8065 q/s, p99=2.2ms) max_lag=170330s(virt) errs w=0 r=0 size_max: pg_db_bytes=595.7MB pg_wal_bytes=1563.1MB pg_live_tup=1367541 pg_dead_tup=0 
+2026/10/31 09:36:41 saved /results/peak-all-1031-1224-postgres-read.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 157.9, "cpu_max": 314.5, "mem_max_mb": 610, "disk_max_mb": 2546}
+ Image test-bench-redis Building 
+ Image test-bench-redis Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Created 
+ Volume test_redis-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-redis Creating 
+ Container tb-redis Created 
+ Container tb-redis Starting 
+ Container tb-redis Started 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container tb-redis Running 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container test-bench-redis-run-bc3aefcf6ea8 Creating 
+ Container test-bench-redis-run-bc3aefcf6ea8 Created 
+2026/10/31 09:36:48 run=peak-all-1031-1224-redis-write backend=redis role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:36:53 vt=10-31 07:35 | W  205499 rows/s 205499 calls/s p50=1.2ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1027494 lag=0s(virt) | redis_used_memory=337.6MB redis_keys=13440 
+2026/10/31 09:36:58 vt=10-31 07:40 | W  216097 rows/s 216097 calls/s p50=1.1ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2107977 lag=0s(virt) | redis_used_memory=679.5MB redis_keys=13440 
+2026/10/31 09:37:03 vt=10-31 07:45 | W  196691 rows/s 196691 calls/s p50=1.3ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3091434 lag=0s(virt) | redis_used_memory=990.9MB redis_keys=13440 
+2026/10/31 09:37:08 vt=10-31 07:50 | W  213452 rows/s 213452 calls/s p50=1.2ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4158692 lag=0s(virt) | redis_used_memory=1328.7MB redis_keys=13440 
+2026/10/31 09:37:13 vt=10-31 07:55 | W  183324 rows/s 183324 calls/s p50=1.4ms p99=3.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5075313 lag=0s(virt) | redis_used_memory=1619.0MB redis_keys=13440 
+2026/10/31 09:37:18 vt=10-31 08:00 | W  195244 rows/s 195244 calls/s p50=1.3ms p99=2.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6051534 lag=0s(virt) | redis_used_memory=1928.1MB redis_keys=13440 
+2026/10/31 09:37:23 vt=10-31 08:05 | W  200422 rows/s 200422 calls/s p50=1.3ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7053643 lag=0s(virt) | redis_used_memory=2245.6MB redis_keys=14400 
+2026/10/31 09:37:28 vt=10-31 08:10 | W  203946 rows/s 203946 calls/s p50=1.2ms p99=3.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8073374 lag=0s(virt) | redis_used_memory=2568.6MB redis_keys=14400 
+2026/10/31 09:37:33 vt=10-31 08:15 | W  205758 rows/s 205758 calls/s p50=1.2ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9102164 lag=0s(virt) | redis_used_memory=2894.3MB redis_keys=14400 
+2026/10/31 09:37:38 vt=10-31 08:20 | W  205371 rows/s 205371 calls/s p50=1.2ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10129016 lag=0s(virt) | redis_used_memory=3219.4MB redis_keys=14400 
+2026/10/31 09:37:43 vt=10-31 08:25 | W  183283 rows/s 183283 calls/s p50=1.4ms p99=3.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11045429 lag=0s(virt) | redis_used_memory=3509.6MB redis_keys=14400 
+2026/10/31 09:37:48 SUMMARY redis [batch=1 payload=random]: prefill=0 (0/s) written=11865026 (197750/s, p99=3.2ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: redis_used_memory=3509.6MB redis_keys=14400 
+2026/10/31 09:37:48 saved /results/peak-all-1031-1224-redis-write.json
+DB resources (tb-redis, CPU% = 100 на ядро): {"cpu_avg": 104.9, "cpu_max": 178.2, "mem_max_mb": 3519, "disk_max_mb": 3719}
+ Image test-bench-redis Building 
+ Image test-bench-redis Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Created 
+ Volume test_redis-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-redis Creating 
+ Container tb-redis Created 
+ Container tb-redis Starting 
+ Container tb-redis Started 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container tb-redis Running 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container test-bench-redis-run-1a132631cfa0 Creating 
+ Container test-bench-redis-run-1a132631cfa0 Created 
+2026/10/31 09:37:55 run=peak-all-1031-1224-redis-batch backend=redis role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:38:00 vt=10-31 07:35 | W  585480 rows/s   5855 calls/s p50=10.3ms p99=29.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2927400 lag=0s(virt) | redis_used_memory=939.0MB redis_keys=13440 
+2026/10/31 09:38:05 vt=10-31 07:40 | W  600060 rows/s   6001 calls/s p50=10.4ms p99=19.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5927700 lag=0s(virt) | redis_used_memory=1887.1MB redis_keys=13440 
+2026/10/31 09:38:10 vt=10-31 07:45 | W  511260 rows/s   5113 calls/s p50=12.0ms p99=24.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8484000 lag=0s(virt) | redis_used_memory=2696.5MB redis_keys=13440 
+2026/10/31 09:38:15 vt=10-31 07:50 | W  524460 rows/s   5245 calls/s p50=11.7ms p99=22.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11106300 lag=0s(virt) | redis_used_memory=3526.5MB redis_keys=13440 
+2026/10/31 09:38:20 vt=10-31 07:55 | W  634780 rows/s   6348 calls/s p50=9.9ms p99=18.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=14280200 lag=0s(virt) | redis_used_memory=4531.9MB redis_keys=13440 
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 vt=10-31 08:00 | W  530340 rows/s   5303 calls/s p50=11.4ms p99=25.6ms err=1039 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16931900 lag=0s(virt) | redis_used_memory=5369.1MB redis_keys=13440 
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:25 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:26 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:27 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:28 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:29 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 vt=10-31 08:05 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=90191 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16931900 lag=0s(virt) | redis_used_memory=5368.9MB redis_keys=13440 
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:30 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:31 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:32 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:33 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:34 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 vt=10-31 08:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=178900 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16931900 lag=0s(virt) | redis_used_memory=5368.9MB redis_keys=13440 
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:35 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:36 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:37 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:38 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:39 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 vt=10-31 08:15 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=269049 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16931900 lag=0s(virt) | redis_used_memory=5368.9MB redis_keys=13440 
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:40 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:41 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:42 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:43 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:44 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 vt=10-31 08:20 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=358229 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16931900 lag=0s(virt) | redis_used_memory=5368.9MB redis_keys=13440 
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:45 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:46 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:47 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:48 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:49 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 vt=10-31 08:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=450128 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16931900 lag=0s(virt) | redis_used_memory=5368.9MB redis_keys=13440 
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:50 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:51 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:52 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:53 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:54 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:55 write: OOM command not allowed when used memory > 'maxmemory'.
+2026/10/31 09:38:55 SUMMARY redis [batch=100 payload=random]: prefill=0 (0/s) written=16931900 (282193/s, p99=22.8ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=535920 r=0 size_max: redis_used_memory=5369.1MB redis_keys=13440 
+2026/10/31 09:38:55 saved /results/peak-all-1031-1224-redis-batch.json
+DB resources (tb-redis, CPU% = 100 на ядро): {"cpu_avg": 97.2, "cpu_max": 197.5, "mem_max_mb": 5237, "disk_max_mb": 5328}
+ Image test-bench-redis Building 
+ Image test-bench-redis Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Created 
+ Volume test_redis-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-redis Creating 
+ Container tb-redis Created 
+ Container tb-redis Starting 
+ Container tb-redis Started 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container tb-redis Running 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container test-bench-redis-run-615acd109919 Creating 
+ Container test-bench-redis-run-615acd109919 Created 
+2026/10/31 09:39:03 prefill: 1000005 tasks, 597289 rows/s
+2026/10/31 09:39:05 prefill: 2000198 tasks, 627400 rows/s
+2026/10/31 09:39:06 prefill: 3000260 tasks, 625047 rows/s
+2026/10/31 09:39:07 prefill done: 3542751 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 6s, 637812 rows/s (batch=500), size: redis_used_memory=1129.2MB redis_keys=13440 
+2026/10/31 09:39:07 run=peak-all-1031-1224-redis-read backend=redis role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:39:08 SUMMARY redis [DRAIN workers=4 page=1000 payload=random]: prefill=3542751 (637812/s) written=0 (0/s, p99=0.0ms) read=3542751 (avg 6742968/s, peak 0/s, 26519 q/s, p99=0.7ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:39:08 saved /results/peak-all-1031-1224-redis-read.json
+DB resources (tb-redis, CPU% = 100 на ядро): {"cpu_avg": 11.6, "cpu_max": 11.6, "mem_max_mb": 46, "disk_max_mb": 39}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-0997c066f44d Creating 
+ Container test-bench-mongodb-run-0997c066f44d Created 
+2026/10/31 09:39:14 run=peak-all-1031-1224-mongodb-write backend=mongodb role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:39:19 vt=10-31 07:35 | W   89904 rows/s  89904 calls/s p50=1.2ms p99=51.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=449518 lag=0s(virt) | mongo_storage_bytes=138.3MB mongo_index_bytes=11.6MB mongo_docs=450379 
+2026/10/31 09:39:24 vt=10-31 07:40 | W   77493 rows/s  77493 calls/s p50=1.2ms p99=57.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=836985 lag=0s(virt) | mongo_storage_bytes=281.3MB mongo_index_bytes=21.5MB mongo_docs=837233 
+2026/10/31 09:39:29 vt=10-31 07:45 | W   59996 rows/s  59996 calls/s p50=1.4ms p99=63.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1136967 lag=0s(virt) | mongo_storage_bytes=388.8MB mongo_index_bytes=30.0MB mongo_docs=1136998 
+2026/10/31 09:39:34 vt=10-31 07:50 | W   55535 rows/s  55535 calls/s p50=1.5ms p99=64.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1414643 lag=0s(virt) | mongo_storage_bytes=492.8MB mongo_index_bytes=36.1MB mongo_docs=1415402 
+2026/10/31 09:39:39 vt=10-31 07:55 | W   51822 rows/s  51822 calls/s p50=1.7ms p99=64.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1673752 lag=0s(virt) | mongo_storage_bytes=577.7MB mongo_index_bytes=41.9MB mongo_docs=1673884 
+2026/10/31 09:39:44 vt=10-31 08:00 | W   50739 rows/s  50739 calls/s p50=1.7ms p99=62.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1927449 lag=0s(virt) | mongo_storage_bytes=672.0MB mongo_index_bytes=49.2MB mongo_docs=1928084 
+2026/10/31 09:39:49 vt=10-31 08:05 | W   50521 rows/s  50521 calls/s p50=1.8ms p99=60.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2180056 lag=0s(virt) | mongo_storage_bytes=758.3MB mongo_index_bytes=56.5MB mongo_docs=2180121 
+2026/10/31 09:39:54 vt=10-31 08:10 | W   40959 rows/s  40959 calls/s p50=2.0ms p99=64.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2384849 lag=0s(virt) | mongo_storage_bytes=837.0MB mongo_index_bytes=61.1MB mongo_docs=2385277 
+2026/10/31 09:39:59 vt=10-31 08:15 | W   45799 rows/s  45799 calls/s p50=2.2ms p99=60.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2613844 lag=0s(virt) | mongo_storage_bytes=916.5MB mongo_index_bytes=65.9MB mongo_docs=2613909 
+2026/10/31 09:40:04 vt=10-31 08:20 | W   43954 rows/s  43954 calls/s p50=2.5ms p99=60.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2833613 lag=0s(virt) | mongo_storage_bytes=995.0MB mongo_index_bytes=71.0MB mongo_docs=2833659 
+2026/10/31 09:40:09 vt=10-31 08:25 | W   42609 rows/s  42609 calls/s p50=2.6ms p99=58.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3046660 lag=0s(virt) | mongo_storage_bytes=1076.0MB mongo_index_bytes=76.4MB mongo_docs=3046691 
+2026/10/31 09:40:14 SUMMARY mongodb [batch=1 payload=random consume=drop]: prefill=0 (0/s) written=3255302 (54253/s, p99=61.1ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=1076.0MB mongo_index_bytes=76.4MB mongo_docs=3046691 
+2026/10/31 09:40:14 saved /results/peak-all-1031-1224-mongodb-write.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 352.7, "cpu_max": 418.8, "mem_max_mb": 666, "disk_max_mb": 2697}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-288d890de256 Creating 
+ Container test-bench-mongodb-run-288d890de256 Created 
+2026/10/31 09:40:21 run=peak-all-1031-1224-mongodb-batch backend=mongodb role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:40:26 vt=10-31 07:35 | W  239960 rows/s   2400 calls/s p50=15.4ms p99=89.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1199800 lag=0s(virt) | mongo_storage_bytes=406.0MB mongo_index_bytes=30.6MB mongo_docs=1203224 
+2026/10/31 09:40:31 vt=10-31 07:40 | W  113340 rows/s   1133 calls/s p50=58.9ms p99=321.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1766500 lag=0s(virt) | mongo_storage_bytes=611.8MB mongo_index_bytes=44.3MB mongo_docs=1769309 
+2026/10/31 09:40:36 vt=10-31 07:45 | W   83760 rows/s    838 calls/s p50=78.3ms p99=607.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2185300 lag=0s(virt) | mongo_storage_bytes=764.4MB mongo_index_bytes=55.6MB mongo_docs=2188119 
+2026/10/31 09:40:41 vt=10-31 07:50 | W   79680 rows/s    797 calls/s p50=86.5ms p99=153.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2583700 lag=0s(virt) | mongo_storage_bytes=907.7MB mongo_index_bytes=66.2MB mongo_docs=2586708 
+2026/10/31 09:40:46 vt=10-31 07:55 | W   83340 rows/s    833 calls/s p50=82.0ms p99=163.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3000400 lag=0s(virt) | mongo_storage_bytes=1060.8MB mongo_index_bytes=76.3MB mongo_docs=3003447 
+2026/10/31 09:40:51 vt=10-31 08:00 | W   74700 rows/s    747 calls/s p50=89.5ms p99=175.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3373900 lag=0s(virt) | mongo_storage_bytes=1201.8MB mongo_index_bytes=84.4MB mongo_docs=3377629 
+2026/10/31 09:40:56 vt=10-31 08:05 | W   71840 rows/s    718 calls/s p50=91.1ms p99=190.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3733100 lag=0s(virt) | mongo_storage_bytes=1326.7MB mongo_index_bytes=93.2MB mongo_docs=3736407 
+2026/10/31 09:41:01 vt=10-31 08:10 | W   65460 rows/s    655 calls/s p50=98.4ms p99=194.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4060400 lag=0s(virt) | mongo_storage_bytes=1444.2MB mongo_index_bytes=103.8MB mongo_docs=4063606 
+2026/10/31 09:41:06 vt=10-31 08:15 | W   62640 rows/s    626 calls/s p50=101.1ms p99=197.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4373600 lag=0s(virt) | mongo_storage_bytes=1560.4MB mongo_index_bytes=112.1MB mongo_docs=4377201 
+2026/10/31 09:41:11 vt=10-31 08:20 | W   64160 rows/s    642 calls/s p50=98.3ms p99=200.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4694400 lag=0s(virt) | mongo_storage_bytes=1676.9MB mongo_index_bytes=119.5MB mongo_docs=4697872 
+2026/10/31 09:41:16 vt=10-31 08:25 | W   57740 rows/s    577 calls/s p50=107.3ms p99=204.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4983100 lag=0s(virt) | mongo_storage_bytes=1787.5MB mongo_index_bytes=129.8MB mongo_docs=4986452 
+2026/10/31 09:41:21 SUMMARY mongodb [batch=100 payload=random consume=drop]: prefill=0 (0/s) written=5261100 (87679/s, p99=192.0ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=1787.5MB mongo_index_bytes=129.8MB mongo_docs=4986452 
+2026/10/31 09:41:21 saved /results/peak-all-1031-1224-mongodb-batch.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 369.0, "cpu_max": 431.2, "mem_max_mb": 509, "disk_max_mb": 3830}
+ Image test-bench-mongodb Building 
+ Image test-bench-mongodb Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Creating 
+ Volume test_mongo-data Created 
+ Volume test_mongo-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-mongodb Creating 
+ Container tb-mongodb Created 
+ Container tb-mongodb Starting 
+ Container tb-mongodb Started 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container tb-mongodb Running 
+ Container tb-mongodb Waiting 
+ Container tb-mongodb Healthy 
+ Container test-bench-mongodb-run-ef0233dbfbf3 Creating 
+ Container test-bench-mongodb-run-ef0233dbfbf3 Created 
+2026/10/31 09:41:31 prefill: 1000293 tasks, 340729 rows/s
+2026/10/31 09:41:37 prefill: 2000335 tasks, 215471 rows/s
+2026/10/31 09:41:48 prefill: 3000297 tasks, 150383 rows/s
+2026/10/31 09:41:54 prefill done: 3544423 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 26s, 136450 rows/s (batch=500), size: mongo_storage_bytes=1254.9MB mongo_index_bytes=93.3MB mongo_docs=3544423 
+2026/10/31 09:41:54 run=peak-all-1031-1224-mongodb-read backend=mongodb role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:41:56 vt=11-02 15:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  580770 rows/s   1924 q/s p50=1.5ms p99=8.2ms err=0 | backlog=2382882 lag=186030s(virt) | mongo_storage_bytes=911.6MB mongo_index_bytes=67.5MB mongo_docs=2538693 
+2026/10/31 09:41:58 vt=11-04 22:42 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  564570 rows/s   1974 q/s p50=1.5ms p99=7.1ms err=0 | backlog=1253743 lag=371124s(virt) | mongo_storage_bytes=507.9MB mongo_index_bytes=38.2MB mongo_docs=1406174 
+2026/10/31 09:42:00 vt=11-07 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  535021 rows/s   2505 q/s p50=1.1ms p99=6.2ms err=0 | backlog=183702 lag=552043s(virt) | mongo_storage_bytes=118.8MB mongo_index_bytes=10.1MB mongo_docs=326941 
+2026/10/31 09:42:01 SUMMARY mongodb [DRAIN workers=4 page=1000 payload=random consume=drop]: prefill=3544423 (136450/s) written=0 (0/s, p99=0.0ms) read=3544423 (avg 545601/s, peak 580770/s, 2166 q/s, p99=7.2ms) max_lag=552043s(virt) errs w=0 r=0 size_max: mongo_storage_bytes=911.6MB mongo_index_bytes=67.5MB mongo_docs=2538693 
+2026/10/31 09:42:01 saved /results/peak-all-1031-1224-mongodb-read.json
+DB resources (tb-mongodb, CPU% = 100 на ядро): {"cpu_avg": 304.3, "cpu_max": 427.7, "mem_max_mb": 815, "disk_max_mb": 2705}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-5618f05b1232 Creating 
+ Container test-bench-tarantool-run-5618f05b1232 Created 
+2026/10/31 09:42:06 run=peak-all-1031-1224-tarantool-write backend=tarantool role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:42:11 vt=10-31 07:35 | W   29026 rows/s  29026 calls/s p50=2.0ms p99=84.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=145129 lag=0s(virt) | tt_disk_bytes=0.0MB tt_mem_bytes=54.5MB tt_rows=145129 
+2026/10/31 09:42:16 vt=10-31 07:40 | W   28225 rows/s  28225 calls/s p50=2.4ms p99=81.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=286255 lag=0s(virt) | tt_disk_bytes=0.0MB tt_mem_bytes=107.0MB tt_rows=286255 
+2026/10/31 09:42:21 vt=10-31 07:45 | W   91929 rows/s  91929 calls/s p50=1.4ms p99=74.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=745901 lag=0s(virt) | tt_disk_bytes=122.3MB tt_mem_bytes=144.1MB tt_rows=746167 
+2026/10/31 09:42:26 vt=10-31 07:50 | W  149417 rows/s 149417 calls/s p50=1.5ms p99=5.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1492987 lag=0s(virt) | tt_disk_bytes=454.1MB tt_mem_bytes=70.5MB tt_rows=1493243 
+2026/10/31 09:42:31 vt=10-31 07:55 | W  176462 rows/s 176462 calls/s p50=1.3ms p99=3.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2375298 lag=0s(virt) | tt_disk_bytes=688.7MB tt_mem_bytes=131.1MB tt_rows=2375612 
+2026/10/31 09:42:36 vt=10-31 08:00 | W  143129 rows/s 143129 calls/s p50=1.6ms p99=5.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3090943 lag=0s(virt) | 
+2026/10/31 09:42:41 vt=10-31 08:05 | W  135560 rows/s 135560 calls/s p50=1.6ms p99=6.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3768742 lag=0s(virt) | tt_disk_bytes=1192.6MB tt_mem_bytes=98.6MB tt_rows=3768998 
+2026/10/31 09:42:46 vt=10-31 08:10 | W  155090 rows/s 155090 calls/s p50=1.5ms p99=4.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4544192 lag=0s(virt) | tt_disk_bytes=1459.7MB tt_mem_bytes=102.7MB tt_rows=4544331 
+2026/10/31 09:42:51 vt=10-31 08:15 | W  113359 rows/s 113359 calls/s p50=2.0ms p99=6.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5110986 lag=0s(virt) | tt_disk_bytes=1700.6MB tt_mem_bytes=46.0MB tt_rows=5111234 
+2026/10/31 09:42:56 vt=10-31 08:20 | W  158992 rows/s 158992 calls/s p50=1.4ms p99=4.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5905948 lag=0s(virt) | tt_disk_bytes=1945.7MB tt_mem_bytes=74.1MB tt_rows=5906269 
+2026/10/31 09:43:01 vt=10-31 08:25 | W  146003 rows/s 146003 calls/s p50=1.5ms p99=5.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6635962 lag=0s(virt) | tt_disk_bytes=2193.8MB tt_mem_bytes=78.0MB tt_rows=6636258 
+2026/10/31 09:43:06 vt=10-31 08:30 | W  145916 rows/s 145916 calls/s p50=1.5ms p99=5.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7365543 lag=0s(virt) | tt_disk_bytes=2432.8MB tt_mem_bytes=81.7MB tt_rows=7365799 
+2026/10/31 09:43:06 SUMMARY tarantool [batch=1 payload=random vinyl consume=drop]: prefill=0 (0/s) written=7365543 (122757/s, p99=6.3ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: tt_disk_bytes=2432.8MB tt_mem_bytes=144.1MB tt_rows=7365799 
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841379) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841381) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841383) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841385) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841387) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841389) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841391) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841393) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841395) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841397) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841399) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841401) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841403) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841405) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841407) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841409) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841411) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841413) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841415) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841417) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841377) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841379) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841381) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841383) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841385) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841387) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841389) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841391) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841393) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841395) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841397) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841399) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841401) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841403) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841405) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841407) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841409) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841411) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841413) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841415) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841417) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841379) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841381) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841383) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841385) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841387) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841389) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841391) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841393) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841395) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841397) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841399) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841401) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841403) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841405) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841407) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841409) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841411) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841413) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841415) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841417) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841379) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841381) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841383) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841385) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841387) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841389) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841391) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841393) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841395) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841397) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841399) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841401) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841403) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841405) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841407) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841409) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841411) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841413) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841415) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841417) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841419) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841421) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841423) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841425) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841427) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841429) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841431) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841433) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841435) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841437) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841439) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841441) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841443) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841445) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841447) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841449) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841451) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841453) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841455) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841457) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841459) in response (probably cancelled request)
+2026/10/31 09:43:06 tarantool: connection 192.168.97.2:3301 got unexpected request ID (1841461) in response (probably cancelled request)
+2026/10/31 09:43:06 saved /results/peak-all-1031-1224-tarantool-write.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 164.2, "cpu_max": 324.1, "mem_max_mb": 316, "disk_max_mb": 4076}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-df2a0a7bdc18 Creating 
+ Container test-bench-tarantool-run-df2a0a7bdc18 Created 
+2026/10/31 09:43:13 run=peak-all-1031-1224-tarantool-batch backend=tarantool role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:43:18 vt=10-31 07:35 | W   29040 rows/s    290 calls/s p50=203.4ms p99=312.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=145200 lag=0s(virt) | tt_disk_bytes=0.0MB tt_mem_bytes=54.6MB tt_rows=145200 
+2026/10/31 09:43:23 vt=10-31 07:40 | W   28240 rows/s    282 calls/s p50=202.8ms p99=310.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=286400 lag=0s(virt) | tt_disk_bytes=0.0MB tt_mem_bytes=107.0MB tt_rows=286400 
+2026/10/31 09:43:28 vt=10-31 07:45 | W  153440 rows/s   1534 calls/s p50=18.3ms p99=303.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1053600 lag=0s(virt) | tt_disk_bytes=210.1MB tt_mem_bytes=261.3MB tt_rows=1060000 
+2026/10/31 09:43:33 vt=10-31 07:50 | W  226900 rows/s   2269 calls/s p50=24.3ms p99=74.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2188100 lag=0s(virt) | tt_disk_bytes=628.8MB tt_mem_bytes=130.3MB tt_rows=2194500 
+2026/10/31 09:43:38 vt=10-31 07:55 | W  232060 rows/s   2321 calls/s p50=22.4ms p99=61.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3348400 lag=0s(virt) | tt_disk_bytes=1019.2MB tt_mem_bytes=144.1MB tt_rows=3354200 
+2026/10/31 09:43:43 vt=10-31 08:00 | W  230080 rows/s   2301 calls/s p50=26.8ms p99=53.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4498800 lag=0s(virt) | 
+2026/10/31 09:43:48 vt=10-31 08:05 | W  212440 rows/s   2124 calls/s p50=28.2ms p99=65.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5561000 lag=0s(virt) | tt_disk_bytes=1822.9MB tt_mem_bytes=164.7MB tt_rows=5566800 
+2026/10/31 09:43:53 vt=10-31 08:10 | W  198860 rows/s   1989 calls/s p50=30.9ms p99=60.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6555300 lag=0s(virt) | tt_disk_bytes=2111.6MB tt_mem_bytes=132.8MB tt_rows=6561700 
+2026/10/31 09:43:58 vt=10-31 08:15 | W  214440 rows/s   2144 calls/s p50=25.6ms p99=72.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7627500 lag=0s(virt) | tt_disk_bytes=2478.8MB tt_mem_bytes=130.2MB tt_rows=7633900 
+2026/10/31 09:44:03 vt=10-31 08:20 | W  217880 rows/s   2179 calls/s p50=25.5ms p99=68.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8716900 lag=0s(virt) | tt_disk_bytes=2846.1MB tt_mem_bytes=134.0MB tt_rows=8723300 
+2026/10/31 09:44:08 vt=10-31 08:25 | W  204100 rows/s   2041 calls/s p50=31.2ms p99=65.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9737400 lag=0s(virt) | tt_disk_bytes=3213.3MB tt_mem_bytes=112.2MB tt_rows=9743800 
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26647) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26647) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26663) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26663) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26647) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26647) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26647) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26647) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26649) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26651) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 vt=10-31 08:30 | W  183260 rows/s   1833 calls/s p50=35.5ms p99=51.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10653700 lag=0s(virt) | tt_disk_bytes=3589.5MB tt_mem_bytes=185.8MB tt_rows=10814870 
+2026/10/31 09:44:13 SUMMARY tarantool [batch=100 payload=random vinyl consume=drop]: prefill=0 (0/s) written=10653700 (177526/s, p99=221.3ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: tt_disk_bytes=3589.5MB tt_mem_bytes=261.3MB tt_rows=10814870 
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26653) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26655) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26657) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26659) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 tarantool: connection 192.168.97.2:3301 got unexpected request ID (26661) in response (probably cancelled request)
+2026/10/31 09:44:13 saved /results/peak-all-1031-1224-tarantool-batch.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 223.3, "cpu_max": 354.1, "mem_max_mb": 413, "disk_max_mb": 6232}
+ Image test-bench-tarantool Building 
+ Image test-bench-tarantool Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Creating 
+ Volume test_tarantool-data Created 
+ Volume test_tarantool-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-tarantool Creating 
+ Container tb-tarantool Created 
+ Container tb-tarantool Starting 
+ Container tb-tarantool Started 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container tb-tarantool Running 
+ Container tb-tarantool Waiting 
+ Container tb-tarantool Healthy 
+ Container test-bench-tarantool-run-93b141c4719a Creating 
+ Container test-bench-tarantool-run-93b141c4719a Created 
+2026/10/31 09:44:34 prefill: 1000108 tasks, 68321 rows/s
+2026/10/31 09:44:38 prefill: 2000065 tasks, 105262 rows/s
+2026/10/31 09:44:42 prefill: 3000119 tasks, 130962 rows/s
+2026/10/31 09:44:45 prefill done: 3542663 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 25s, 139679 rows/s (batch=500), size: tt_disk_bytes=1120.1MB tt_mem_bytes=180.6MB tt_rows=3542663 
+2026/10/31 09:44:45 run=peak-all-1031-1224-tarantool-read backend=tarantool role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:44:47 vt=11-02 15:06 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  346332 rows/s   1212 q/s p50=3.7ms p99=6.8ms err=0 | backlog=2849999 lag=191058s(virt) | tt_disk_bytes=938.6MB tt_mem_bytes=46.4MB tt_rows=2858080 
+2026/10/31 09:44:49 vt=11-04 22:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  332138 rows/s   1029 q/s p50=3.6ms p99=5.8ms err=0 | backlog=2185723 lag=383224s(virt) | 
+2026/10/31 09:44:51 vt=11-07 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  314365 rows/s   1086 q/s p50=3.4ms p99=5.6ms err=0 | backlog=1556993 lag=575091s(virt) | tt_disk_bytes=548.1MB tt_mem_bytes=46.4MB tt_rows=1669019 
+2026/10/31 09:44:53 vt=11-09 13:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  310226 rows/s   1224 q/s p50=3.0ms p99=5.3ms err=0 | backlog=936541 lag=765921s(virt) | 
+2026/10/31 09:44:55 vt=11-11 21:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  314727 rows/s   1507 q/s p50=2.4ms p99=4.4ms err=0 | backlog=307086 lag=954590s(virt) | tt_disk_bytes=107.6MB tt_mem_bytes=46.4MB tt_rows=327640 
+2026/10/31 09:44:56 tarantool: connection 192.168.97.2:3301 got unexpected request ID (6073) in response (probably cancelled request)
+2026/10/31 09:44:56 SUMMARY tarantool [DRAIN workers=4 page=1000 payload=random vinyl consume=drop]: prefill=3542663 (139679/s) written=0 (0/s, p99=0.0ms) read=3542663 (avg 322058/s, peak 346332/s, 1269 q/s, p99=5.7ms) max_lag=954590s(virt) errs w=0 r=0 size_max: tt_disk_bytes=938.6MB tt_mem_bytes=46.4MB tt_rows=2858080 
+2026/10/31 09:44:56 saved /results/peak-all-1031-1224-tarantool-read.json
+DB resources (tb-tarantool, CPU% = 100 на ядро): {"cpu_avg": 133.1, "cpu_max": 309.2, "mem_max_mb": 474, "disk_max_mb": 2145}
+ Image test-bench-rabbitmq Building 
+ Image test-bench-rabbitmq Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Created 
+ Volume test_rabbit-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rabbitmq Creating 
+ Container tb-rabbitmq Created 
+ Container tb-rabbitmq Starting 
+ Container tb-rabbitmq Started 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container tb-rabbitmq Running 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container test-bench-rabbitmq-run-10128f6eb273 Creating 
+ Container test-bench-rabbitmq-run-10128f6eb273 Created 
+2026/10/31 09:45:07 run=peak-all-1031-1224-rabbitmq-write backend=rabbitmq role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=4 consumers=4 page=1000
+2026/10/31 09:45:12 vt=10-31 07:35 | W   26951 rows/s  26951 calls/s p50=6.9ms p99=43.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=134756 lag=0s(virt) | 
+2026/10/31 09:45:17 vt=10-31 07:40 | W   27655 rows/s  27655 calls/s p50=6.7ms p99=42.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=273029 lag=0s(virt) | 
+2026/10/31 09:45:22 vt=10-31 07:45 | W   27347 rows/s  27347 calls/s p50=6.8ms p99=43.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=409764 lag=0s(virt) | 
+2026/10/31 09:45:27 vt=10-31 07:50 | W   28312 rows/s  28312 calls/s p50=6.6ms p99=41.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=551322 lag=0s(virt) | 
+2026/10/31 09:45:32 vt=10-31 07:55 | W   28175 rows/s  28175 calls/s p50=6.7ms p99=43.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=692197 lag=0s(virt) | 
+2026/10/31 09:45:37 vt=10-31 08:00 | W   28206 rows/s  28206 calls/s p50=6.7ms p99=41.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=833228 lag=0s(virt) | 
+2026/10/31 09:45:42 vt=10-31 08:05 | W   27459 rows/s  27459 calls/s p50=7.0ms p99=40.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=970523 lag=0s(virt) | 
+2026/10/31 09:45:47 vt=10-31 08:10 | W   27969 rows/s  27969 calls/s p50=6.7ms p99=41.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1110366 lag=0s(virt) | 
+2026/10/31 09:45:52 vt=10-31 08:15 | W   27257 rows/s  27257 calls/s p50=6.9ms p99=43.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1246653 lag=0s(virt) | 
+2026/10/31 09:45:57 vt=10-31 08:20 | W   28066 rows/s  28066 calls/s p50=6.8ms p99=40.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1386985 lag=0s(virt) | 
+2026/10/31 09:46:02 vt=10-31 08:25 | W   26683 rows/s  26683 calls/s p50=6.9ms p99=44.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1520401 lag=0s(virt) | 
+2026/10/31 09:46:07 vt=10-31 08:30 | W   27851 rows/s  27851 calls/s p50=6.8ms p99=42.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1659658 lag=0s(virt) | 
+2026/10/31 09:46:07 SUMMARY rabbitmq [batch=1 payload=random queue/bucket shards=4]: prefill=0 (0/s) written=1659658 (27654/s, p99=42.6ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:46:07 saved /results/peak-all-1031-1224-rabbitmq-write.json
+DB resources (tb-rabbitmq, CPU% = 100 на ядро): {"cpu_avg": 380.9, "cpu_max": 424.0, "mem_max_mb": 2405, "disk_max_mb": 807}
+ Image test-bench-rabbitmq Building 
+ Image test-bench-rabbitmq Built 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rabbit-data Created 
+ Volume test_rabbit-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rabbitmq Creating 
+ Container tb-rabbitmq Created 
+ Container tb-rabbitmq Starting 
+ Container tb-rabbitmq Started 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container tb-rabbitmq Running 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container test-bench-rabbitmq-run-05cc817ca143 Creating 
+ Container test-bench-rabbitmq-run-05cc817ca143 Created 
+2026/10/31 09:46:31 run=peak-all-1031-1224-rabbitmq-batch backend=rabbitmq role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=4 consumers=4 page=1000
+2026/10/31 09:46:36 vt=10-31 07:35 | W   44140 rows/s    441 calls/s p50=138.4ms p99=202.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=220700 lag=0s(virt) | 
+2026/10/31 09:46:41 vt=10-31 07:40 | W   47620 rows/s    476 calls/s p50=130.2ms p99=191.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=458800 lag=0s(virt) | 
+2026/10/31 09:46:46 vt=10-31 07:45 | W   48880 rows/s    489 calls/s p50=123.3ms p99=196.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=703200 lag=0s(virt) | 
+2026/10/31 09:46:51 vt=10-31 07:50 | W   50100 rows/s    501 calls/s p50=120.5ms p99=194.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=953700 lag=0s(virt) | 
+2026/10/31 09:46:56 vt=10-31 07:55 | W   52700 rows/s    527 calls/s p50=117.2ms p99=186.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1217200 lag=0s(virt) | 
+2026/10/31 09:47:01 vt=10-31 08:00 | W   50260 rows/s    503 calls/s p50=122.0ms p99=193.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1468500 lag=0s(virt) | 
+2026/10/31 09:47:06 vt=10-31 08:05 | W   50620 rows/s    506 calls/s p50=119.7ms p99=188.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1721600 lag=0s(virt) | 
+2026/10/31 09:47:11 vt=10-31 08:10 | W   50060 rows/s    501 calls/s p50=120.3ms p99=194.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1971900 lag=0s(virt) | 
+2026/10/31 09:47:16 vt=10-31 08:15 | W   49680 rows/s    497 calls/s p50=121.3ms p99=202.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2220300 lag=0s(virt) | 
+2026/10/31 09:47:21 vt=10-31 08:20 | W   49880 rows/s    499 calls/s p50=121.8ms p99=192.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2469700 lag=0s(virt) | 
+2026/10/31 09:47:26 vt=10-31 08:25 | W   49080 rows/s    491 calls/s p50=122.9ms p99=202.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2715100 lag=0s(virt) | 
+2026/10/31 09:47:31 vt=10-31 08:30 | W   48620 rows/s    486 calls/s p50=126.1ms p99=193.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2958200 lag=0s(virt) | 
+2026/10/31 09:47:32 SUMMARY rabbitmq [batch=100 payload=random queue/bucket shards=4]: prefill=0 (0/s) written=2958200 (48849/s, p99=195.2ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:47:32 saved /results/peak-all-1031-1224-rabbitmq-batch.json
+DB resources (tb-rabbitmq, CPU% = 100 на ядро): {"cpu_avg": 350.5, "cpu_max": 419.3, "mem_max_mb": 1506, "disk_max_mb": 1406}
+ Image test-bench-rabbitmq Building 
+ Image test-bench-rabbitmq Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Creating 
+ Volume test_rabbit-data Created 
+ Volume test_rabbit-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rabbitmq Creating 
+ Container tb-rabbitmq Created 
+ Container tb-rabbitmq Starting 
+ Container tb-rabbitmq Started 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container tb-rabbitmq Running 
+ Container tb-rabbitmq Waiting 
+ Container tb-rabbitmq Healthy 
+ Container test-bench-rabbitmq-run-fcf01da800eb Creating 
+ Container test-bench-rabbitmq-run-fcf01da800eb Created 
+2026/10/31 09:48:19 prefill: 1000321 tasks, 46199 rows/s
+2026/10/31 09:48:39 prefill: 2000302 tasks, 48495 rows/s
+2026/10/31 09:48:59 prefill: 3000319 tasks, 49119 rows/s
+2026/10/31 09:49:09 prefill done: 3542360 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 1m12s, 49417 rows/s (batch=500), size: 
+2026/10/31 09:49:09 run=peak-all-1031-1224-rabbitmq-read backend=rabbitmq role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=4 consumers=4 page=1000
+2026/10/31 09:49:11 vt=11-02 15:05 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   74024 rows/s    161 q/s p50=16.1ms p99=248.7ms err=0 | backlog=3394312 lag=196810s(virt) | 
+2026/10/31 09:49:13 vt=11-04 22:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   84108 rows/s    115 q/s p50=28.5ms p99=72.4ms err=0 | backlog=3226095 lag=395103s(virt) | 
+2026/10/31 09:49:15 vt=11-07 06:11 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   83903 rows/s    119 q/s p50=25.8ms p99=57.3ms err=0 | backlog=3058289 lag=593296s(virt) | 
+2026/10/31 09:49:17 vt=11-09 13:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   78117 rows/s    112 q/s p50=36.6ms p99=69.9ms err=0 | backlog=2902056 lag=791616s(virt) | 
+2026/10/31 09:49:19 vt=11-11 21:19 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   83887 rows/s    124 q/s p50=24.1ms p99=54.2ms err=0 | backlog=2734282 lag=989875s(virt) | 
+2026/10/31 09:49:21 vt=11-14 04:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   77352 rows/s    116 q/s p50=21.8ms p99=54.4ms err=0 | backlog=2579578 lag=1187973s(virt) | 
+2026/10/31 09:49:23 vt=11-16 12:23 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   73741 rows/s    115 q/s p50=41.8ms p99=150.4ms err=0 | backlog=2432097 lag=1386207s(virt) | 
+2026/10/31 09:49:25 vt=11-18 19:57 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   65346 rows/s    102 q/s p50=34.5ms p99=58.8ms err=0 | backlog=2301404 lag=1584667s(virt) | 
+2026/10/31 09:49:27 vt=11-21 03:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   62253 rows/s    100 q/s p50=37.5ms p99=57.7ms err=0 | backlog=2176898 lag=1783168s(virt) | 
+2026/10/31 09:49:29 vt=11-23 11:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   57221 rows/s     96 q/s p50=42.5ms p99=56.7ms err=0 | backlog=2062457 lag=1981731s(virt) | 
+2026/10/31 09:49:31 vt=11-25 18:38 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   57845 rows/s     95 q/s p50=41.4ms p99=56.9ms err=0 | backlog=1946767 lag=2180360s(virt) | 
+2026/10/31 09:49:33 vt=11-28 02:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   63279 rows/s    110 q/s p50=35.1ms p99=55.0ms err=0 | backlog=1820209 lag=2378648s(virt) | 
+2026/10/31 09:49:35 vt=11-30 09:45 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   65492 rows/s    114 q/s p50=28.8ms p99=53.4ms err=0 | backlog=1689225 lag=2577005s(virt) | 
+2026/10/31 09:49:37 vt=12-02 17:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   64402 rows/s    117 q/s p50=26.2ms p99=52.9ms err=0 | backlog=1560421 lag=2775273s(virt) | 
+2026/10/31 09:49:39 vt=12-05 00:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   66466 rows/s    123 q/s p50=38.2ms p99=50.6ms err=0 | backlog=1427489 lag=2973400s(virt) | 
+2026/10/31 09:49:41 vt=12-07 08:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   60239 rows/s    104 q/s p50=44.6ms p99=77.2ms err=0 | backlog=1307011 lag=3171768s(virt) | 
+2026/10/31 09:49:43 vt=12-09 15:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   60426 rows/s    105 q/s p50=42.5ms p99=103.2ms err=0 | backlog=1186159 lag=3369899s(virt) | 
+2026/10/31 09:49:45 vt=12-11 23:36 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   59961 rows/s     78 q/s p50=59.5ms p99=80.5ms err=0 | backlog=1066237 lag=3568362s(virt) | 
+2026/10/31 09:49:47 vt=12-14 07:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   74667 rows/s     89 q/s p50=42.0ms p99=75.7ms err=0 | backlog=916903 lag=3765630s(virt) | 
+2026/10/31 09:49:49 vt=12-16 14:40 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   92289 rows/s    103 q/s p50=38.9ms p99=49.6ms err=0 | backlog=732326 lag=3962785s(virt) | 
+2026/10/31 09:49:51 vt=12-18 22:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   85316 rows/s    101 q/s p50=39.5ms p99=48.3ms err=0 | backlog=561694 lag=4159578s(virt) | 
+2026/10/31 09:49:53 vt=12-21 05:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   81105 rows/s    102 q/s p50=38.7ms p99=53.3ms err=0 | backlog=399484 lag=4356599s(virt) | 
+2026/10/31 09:49:55 vt=12-23 13:18 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   79637 rows/s    108 q/s p50=36.4ms p99=47.3ms err=0 | backlog=240210 lag=4553358s(virt) | 
+2026/10/31 09:49:57 vt=12-25 20:51 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   80889 rows/s    119 q/s p50=33.4ms p99=64.1ms err=0 | backlog=78433 lag=4749781s(virt) | 
+2026/10/31 09:50:02 SUMMARY rabbitmq [DRAIN workers=4 page=1000 payload=random queue/bucket shards=4]: prefill=3542360 (49417/s) written=0 (0/s, p99=0.0ms) read=3542360 (avg 66509/s, peak 92289/s, 135 q/s, p99=68.5ms) max_lag=4749781s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:50:02 saved /results/peak-all-1031-1224-rabbitmq-read.json
+DB resources (tb-rabbitmq, CPU% = 100 на ядро): {"cpu_avg": 360.9, "cpu_max": 423.2, "mem_max_mb": 1129, "disk_max_mb": 1787}
+ Image test-bench-rocketmq Building 
+ Image test-bench-rocketmq Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rocketmq-data Creating 
+ Volume test_rocketmq-data Creating 
+ Volume test_rocketmq-data Created 
+ Volume test_rocketmq-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rocketmq-namesrv Creating 
+ Container tb-rocketmq-namesrv Created 
+ Container tb-rocketmq Creating 
+ Container tb-rocketmq Created 
+ Container tb-rocketmq-namesrv Starting 
+ Container tb-rocketmq-namesrv Started 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Starting 
+ Container tb-rocketmq Started 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Healthy 
+ Container tb-rocketmq-namesrv Running 
+ Container tb-rocketmq Running 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Waiting 
+ Container tb-rocketmq Healthy 
+ Container test-bench-rocketmq-run-6820d136788e Creating 
+ Container test-bench-rocketmq-run-6820d136788e Created 
+2026/10/31 09:50:29 run=peak-all-1031-1224-rocketmq-write backend=rocketmq role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/31 09:50:34 vt=10-31 07:41 | W   64679 rows/s  64679 calls/s p50=3.5ms p99=14.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=323394 lag=0s(virt) | 
+2026/10/31 09:50:39 vt=10-31 07:46 | W   73834 rows/s  73834 calls/s p50=3.4ms p99=8.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=692564 lag=0s(virt) | 
+2026/10/31 09:50:44 vt=10-31 07:51 | W   70110 rows/s  70110 calls/s p50=3.5ms p99=8.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1043115 lag=0s(virt) | 
+2026/10/31 09:50:49 vt=10-31 07:56 | W   72963 rows/s  72963 calls/s p50=3.4ms p99=9.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1407929 lag=0s(virt) | 
+2026/10/31 09:50:54 vt=10-31 08:01 | W   72703 rows/s  72703 calls/s p50=3.4ms p99=8.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1771445 lag=0s(virt) | 
+2026/10/31 09:50:59 vt=10-31 08:06 | W   73336 rows/s  73336 calls/s p50=3.4ms p99=8.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2138125 lag=0s(virt) | 
+2026/10/31 09:51:04 vt=10-31 08:11 | W   70136 rows/s  70136 calls/s p50=3.5ms p99=9.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2488807 lag=0s(virt) | 
+2026/10/31 09:51:09 vt=10-31 08:16 | W   72942 rows/s  72942 calls/s p50=3.4ms p99=9.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2853518 lag=0s(virt) | 
+2026/10/31 09:51:14 vt=10-31 08:21 | W   72828 rows/s  72828 calls/s p50=3.4ms p99=8.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3217656 lag=0s(virt) | 
+2026/10/31 09:51:19 vt=10-31 08:26 | W   72068 rows/s  72068 calls/s p50=3.4ms p99=10.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3577998 lag=0s(virt) | 
+2026/10/31 09:51:24 vt=10-31 08:31 | W   72962 rows/s  72962 calls/s p50=3.4ms p99=8.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3942809 lag=0s(virt) | 
+2026/10/31 09:51:29 vt=10-31 08:36 | W   72347 rows/s  72347 calls/s p50=3.4ms p99=8.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4304544 lag=0s(virt) | 
+2026/10/31 09:51:29 SUMMARY rocketmq [batch=1 payload=random timer-msg]: prefill=0 (0/s) written=4304568 (71730/s, p99=9.2ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:51:29 saved /results/peak-all-1031-1224-rocketmq-write.json
+DB resources (tb-rocketmq, CPU% = 100 на ядро): {"cpu_avg": 147.7, "cpu_max": 201.7, "mem_max_mb": 1438, "disk_max_mb": 2914}
+ Image test-bench-rocketmq Building 
+ Image test-bench-rocketmq Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rocketmq-data Creating 
+ Volume test_rocketmq-data Creating 
+ Volume test_rocketmq-data Created 
+ Volume test_rocketmq-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rocketmq-namesrv Creating 
+ Container tb-rocketmq-namesrv Created 
+ Container tb-rocketmq Creating 
+ Container tb-rocketmq Created 
+ Container tb-rocketmq-namesrv Starting 
+ Container tb-rocketmq-namesrv Started 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Starting 
+ Container tb-rocketmq Started 
+ Container tb-rocketmq Waiting 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Healthy 
+ Container tb-rocketmq Running 
+ Container tb-rocketmq-namesrv Running 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Waiting 
+ Container tb-rocketmq Healthy 
+ Container test-bench-rocketmq-run-0954ba156f15 Creating 
+ Container test-bench-rocketmq-run-0954ba156f15 Created 
+2026/10/31 09:52:06 run=peak-all-1031-1224-rocketmq-batch backend=rocketmq role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:52:11 vt=10-31 07:41 | W   62140 rows/s    621 calls/s p50=94.6ms p99=363.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=310700 lag=0s(virt) | 
+2026/10/31 09:52:16 vt=10-31 07:46 | W   70520 rows/s    705 calls/s p50=86.0ms p99=213.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=663300 lag=0s(virt) | 
+2026/10/31 09:52:21 vt=10-31 07:51 | W   70080 rows/s    701 calls/s p50=87.2ms p99=220.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1013700 lag=0s(virt) | 
+2026/10/31 09:52:26 vt=10-31 07:56 | W   69900 rows/s    699 calls/s p50=86.3ms p99=218.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1363200 lag=0s(virt) | 
+2026/10/31 09:52:31 vt=10-31 08:01 | W   69060 rows/s    691 calls/s p50=88.4ms p99=215.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1708500 lag=0s(virt) | 
+2026/10/31 09:52:36 vt=10-31 08:06 | W   70800 rows/s    708 calls/s p50=86.0ms p99=212.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2062500 lag=0s(virt) | 
+2026/10/31 09:52:41 vt=10-31 08:11 | W   70060 rows/s    701 calls/s p50=87.7ms p99=214.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2412800 lag=0s(virt) | 
+2026/10/31 09:52:46 vt=10-31 08:16 | W   68360 rows/s    684 calls/s p50=89.3ms p99=217.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2754600 lag=0s(virt) | 
+2026/10/31 09:52:51 vt=10-31 08:21 | W   69480 rows/s    695 calls/s p50=85.9ms p99=218.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3102000 lag=0s(virt) | 
+2026/10/31 09:52:56 vt=10-31 08:26 | W   69920 rows/s    699 calls/s p50=86.7ms p99=221.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3451600 lag=0s(virt) | 
+2026/10/31 09:53:01 vt=10-31 08:31 | W   69380 rows/s    694 calls/s p50=87.2ms p99=223.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3798500 lag=0s(virt) | 
+2026/10/31 09:53:06 vt=10-31 08:36 | W   70060 rows/s    701 calls/s p50=87.9ms p99=204.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4148800 lag=0s(virt) | 
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x64f4bc]
+
+goroutine 8304104 [running]:
+github.com/apache/rocketmq-client-go/v2/internal.(*rmqClient).ProcessSendResponse(0x2?, {0x4a134b548830?, 0x0?}, 0x0, 0x1327800?, {0x4a134e62a590?, 0x4a134d33ee68?, 0x8dd38?})
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/client.go:730 +0x2c
+github.com/apache/rocketmq-client-go/v2/producer.(*defaultProducer).sendAsync.func1(0x0, {0xb36f08, 0x1327800})
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/producer/producer.go:411 +0x100
+github.com/apache/rocketmq-client-go/v2/internal.(*rmqClient).InvokeAsync.func1(0x4a134e4e10c8?)
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/client.go:591 +0x30
+github.com/apache/rocketmq-client-go/v2/internal/remote.(*ResponseFuture).executeInvokeCallback.func1()
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/remote/future.go:50 +0x2c
+sync.(*Once).doSlow(0x0?, 0x4a134e0809a0?)
+	/usr/local/go/src/sync/once.go:78 +0xdc
+sync.(*Once).Do(...)
+	/usr/local/go/src/sync/once.go:69
+github.com/apache/rocketmq-client-go/v2/internal/remote.(*ResponseFuture).executeInvokeCallback(0x4a134d157b80?)
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/remote/future.go:48 +0x40
+github.com/apache/rocketmq-client-go/v2/internal/remote.(*remotingClient).receiveAsync(0x4a134b7e2080?, 0x4a134d157b80)
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/remote/remote_client.go:139 +0x30
+github.com/apache/rocketmq-client-go/v2/internal/remote.(*remotingClient).InvokeAsync.func1()
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/remote/remote_client.go:129 +0x2c
+github.com/apache/rocketmq-client-go/v2/primitive.WithRecover(0x65757161706f?)
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/primitive/base.go:100 +0x40
+created by github.com/apache/rocketmq-client-go/v2/internal/remote.(*remotingClient).InvokeAsync in goroutine 118
+	/go/pkg/mod/github.com/apache/rocketmq-client-go/v2@v2.1.2/internal/remote/remote_client.go:128 +0x19c
+
+RUN FAILED: rocketmq batch
+ Image test-bench-rocketmq Building 
+ Image test-bench-rocketmq Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_rocketmq-data Creating 
+ Volume test_rocketmq-data Creating 
+ Volume test_rocketmq-data Created 
+ Volume test_rocketmq-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-rocketmq-namesrv Creating 
+ Container tb-rocketmq-namesrv Created 
+ Container tb-rocketmq Creating 
+ Container tb-rocketmq Created 
+ Container tb-rocketmq-namesrv Starting 
+ Container tb-rocketmq-namesrv Started 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Starting 
+ Container tb-rocketmq Started 
+ Container tb-rocketmq Waiting 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Healthy 
+ Container tb-rocketmq-namesrv Running 
+ Container tb-rocketmq Running 
+ Container tb-rocketmq-namesrv Waiting 
+ Container tb-rocketmq-namesrv Healthy 
+ Container tb-rocketmq Waiting 
+ Container tb-rocketmq Healthy 
+ Container test-bench-rocketmq-run-61d14a58d66e Creating 
+ Container test-bench-rocketmq-run-61d14a58d66e Created 
+2026/10/31 09:54:06 prefill: 1000152 tasks, 70703 rows/s
+2026/10/31 09:54:20 prefill: 2000032 tasks, 72458 rows/s
+2026/10/31 09:54:34 prefill: 3000083 tasks, 72660 rows/s
+2026/10/31 09:54:41 prefill done: 3542772 tasks (из 5000000 сгенерированных), ошибок батчей 0, за 48s, 73154 rows/s (batch=500), size: 
+2026/10/31 09:54:41 run=peak-all-1031-1224-rocketmq-read backend=rocketmq role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/31 09:54:43 vt=01-04 20:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  959999 rows/s    960 q/s p50=55443.5ms p99=56492.0ms err=0 | backlog=1622772 lag=5659400s(virt) | 
+2026/10/31 09:54:44 SUMMARY rocketmq [DRAIN workers=4 page=1000 payload=random timer-msg]: prefill=3542772 (73154/s) written=0 (0/s, p99=0.0ms) read=3542772 (avg 973500/s, peak 959999/s, 976 q/s, p99=58064.9ms) max_lag=5659400s(virt) errs w=0 r=0 size_max: 
+2026/10/31 09:54:44 saved /results/peak-all-1031-1224-rocketmq-read.json
+DB resources (tb-rocketmq, CPU% = 100 на ядро): {"cpu_avg": 139.0, "cpu_max": 232.0, "mem_max_mb": 839, "disk_max_mb": 2172}

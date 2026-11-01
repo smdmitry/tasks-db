@@ -1,0 +1,264 @@
+{
+  "run_id": "mongodb-20261031-103439",
+  "backend": "mongodb",
+  "variant": "DRAIN workers=4 page=1000 payload=random consume=drop",
+  "config": {
+    "Backend": "mongodb",
+    "Role": "drain",
+    "RunID": "mongodb-20261031-103439",
+    "Duration": 300000000000,
+    "ReportInterval": 2000000000,
+    "ResultsDir": "/results",
+    "Speed": 100000,
+    "VirtualStart": "2026-10-31T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 5000,
+    "WriteBatch": 1,
+    "Writers": 64,
+    "PayloadBytes": 300,
+    "PayloadRandom": true,
+    "Shards": 16,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false,
+    "MongoURI": "mongodb://mongodb:27017",
+    "MongoPool": 64,
+    "MongoConsumeMode": "drop",
+    "TarantoolAddr": "tarantool:3301",
+    "TarantoolConns": 8,
+    "TarantoolConsumeMode": "drop",
+    "RabbitURL": "amqp://guest:guest@rabbitmq:5672/",
+    "RabbitConns": 8,
+    "RocketNamesrv": "rocketmq-namesrv:9876",
+    "RocketBroker": "rocketmq:10911",
+    "RocketQueues": 16,
+    "PrefillETA": 180000000000
+  },
+  "seconds": 11.604223603,
+  "prefilled": 7082520,
+  "prefill_rps": 78411.29528596626,
+  "prefill_errs": 0,
+  "written": 0,
+  "read": 7082520,
+  "write_rps_avg": 0,
+  "read_rps_avg": 610339.8419665906,
+  "read_rps_peak": 697179.5472364963,
+  "read_qps_avg": 1224.2094332211395,
+  "write_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "read_lat": {
+    "count": 14206,
+    "p50_ms": 2.399,
+    "p95_ms": 8.171,
+    "p99_ms": 13.279,
+    "p999_ms": 26.287,
+    "max_ms": 73.983
+  },
+  "bucket_lat": {
+    "count": 14206,
+    "p50_ms": 2.399,
+    "p95_ms": 8.175,
+    "p99_ms": 13.279,
+    "p999_ms": 26.287,
+    "max_ms": 76.863
+  },
+  "max_lag_virtual_s": 958826.7532,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {
+    "mongo_docs": 5712774,
+    "mongo_index_bytes": 214421504,
+    "mongo_storage_bytes": 2082123776
+  },
+  "rows": [
+    {
+      "elapsed_s": 2.000014208,
+      "virtual_time": "11-02 15:08",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 697179.5472364963,
+      "read_qps": 1218.4913438374933,
+      "read_lat": {
+        "count": 2437,
+        "p50_ms": 2.573,
+        "p95_ms": 7.523,
+        "p99_ms": 15.255,
+        "p999_ms": 73.919,
+        "max_ms": 73.983
+      },
+      "backlog": 5688151,
+      "lag_virtual_s": 191156.3215,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5712774,
+        "mongo_index_bytes": 214421504,
+        "mongo_storage_bytes": 2082123776
+      }
+    },
+    {
+      "elapsed_s": 4.000014916,
+      "virtual_time": "11-04 22:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 626166.2783371374,
+      "read_qps": 964.999658390121,
+      "read_lat": {
+        "count": 1930,
+        "p50_ms": 3.053,
+        "p95_ms": 9.983,
+        "p99_ms": 14.335,
+        "p999_ms": 17.935,
+        "max_ms": 19.343
+      },
+      "backlog": 4435818,
+      "lag_virtual_s": 383652.7013,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4464159,
+        "mongo_index_bytes": 167428096,
+        "mongo_storage_bytes": 1622749184
+      }
+    },
+    {
+      "elapsed_s": 6.000014958,
+      "virtual_time": "11-07 06:15",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 474789.9900294102,
+      "read_qps": 802.4999831475004,
+      "read_lat": {
+        "count": 1605,
+        "p50_ms": 4.383,
+        "p95_ms": 11.575,
+        "p99_ms": 14.863,
+        "p999_ms": 17.935,
+        "max_ms": 21.247
+      },
+      "backlog": 3486238,
+      "lag_virtual_s": 577967.5686,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 3882266,
+        "mongo_index_bytes": 146288640,
+        "mongo_storage_bytes": 1412300800
+      }
+    },
+    {
+      "elapsed_s": 8.000014666,
+      "virtual_time": "11-09 13:45",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 611764.58931763,
+      "read_qps": 1155.5001687030247,
+      "read_lat": {
+        "count": 2311,
+        "p50_ms": 2.527,
+        "p95_ms": 8.911,
+        "p99_ms": 13.151,
+        "p999_ms": 21.983,
+        "max_ms": 26.319
+      },
+      "backlog": 2262709,
+      "lag_virtual_s": 769022.7025,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 2321566,
+        "mongo_index_bytes": 87654400,
+        "mongo_storage_bytes": 845201408
+      }
+    },
+    {
+      "elapsed_s": 10.000014333,
+      "virtual_time": "11-11 21:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 615809.6025322988,
+      "read_qps": 1372.5002285212881,
+      "read_lat": {
+        "count": 2745,
+        "p50_ms": 2.169,
+        "p95_ms": 6.279,
+        "p99_ms": 10.279,
+        "p999_ms": 26.719,
+        "max_ms": 42.719
+      },
+      "backlog": 1031090,
+      "lag_virtual_s": 958826.7532,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 1427819,
+        "mongo_index_bytes": 55037952,
+        "mongo_storage_bytes": 521023488
+      }
+    }
+  ]
+}

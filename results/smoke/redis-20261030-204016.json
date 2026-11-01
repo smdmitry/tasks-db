@@ -1,0 +1,148 @@
+{
+  "run_id": "redis-20261030-204016",
+  "backend": "redis",
+  "variant": "DRAIN workers=4 page=1000",
+  "config": {
+    "Backend": "redis",
+    "Role": "drain",
+    "RunID": "redis-20261030-204016",
+    "Duration": 300000000000,
+    "ReportInterval": 5000000000,
+    "ResultsDir": "/results",
+    "Speed": 3600,
+    "VirtualStart": "2026-10-30T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 5000,
+    "WriteBatch": 1,
+    "Writers": 64,
+    "PayloadBytes": 300,
+    "Shards": 16,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false
+  },
+  "seconds": 14.503060508,
+  "prefilled": 85347,
+  "prefill_rps": 642646.0206520637,
+  "written": 0,
+  "read": 85347,
+  "write_rps_avg": 0,
+  "read_rps_avg": 5884.757906989489,
+  "read_rps_peak": 7005.39089299184,
+  "read_qps_avg": 959.7974160227506,
+  "write_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "read_lat": {
+    "count": 13920,
+    "p50_ms": 0.164,
+    "p95_ms": 0.557,
+    "p99_ms": 0.962,
+    "p999_ms": 2.259,
+    "max_ms": 9.711
+  },
+  "bucket_lat": {
+    "count": 13920,
+    "p50_ms": 0.164,
+    "p95_ms": 0.559,
+    "p99_ms": 0.963,
+    "p999_ms": 2.259,
+    "max_ms": 9.719
+  },
+  "max_lag_virtual_s": 4.2923632,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {
+    "redis_keys": 9069,
+    "redis_used_memory": 19193016
+  },
+  "rows": [
+    {
+      "elapsed_s": 5.0000065,
+      "virtual_time": "10-30 12:30",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 7005.39089299184,
+      "read_qps": 956.7987561616171,
+      "read_lat": {
+        "count": 4784,
+        "p50_ms": 0.204,
+        "p95_ms": 0.678,
+        "p99_ms": 1.262,
+        "p999_ms": 5.143,
+        "max_ms": 9.711
+      },
+      "backlog": 50320,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "redis_keys": 9069,
+        "redis_used_memory": 19193016
+      }
+    },
+    {
+      "elapsed_s": 10.000004209,
+      "virtual_time": "10-30 17:30",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6056.602775135392,
+      "read_qps": 960.0004398722016,
+      "read_lat": {
+        "count": 4800,
+        "p50_ms": 0.143,
+        "p95_ms": 0.491,
+        "p99_ms": 0.746,
+        "p999_ms": 1.407,
+        "max_ms": 1.841
+      },
+      "backlog": 20037,
+      "lag_virtual_s": 4.2923632,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "redis_keys": 4274,
+        "redis_used_memory": 8678992
+      }
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+ Image test-bench-scylla Building 
+ Image test-bench-scylla Built 
+ Network test_default Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Creating 
+ Network test_default Creating 
+ Volume test_scylla-data Created 
+ Volume test_scylla-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-scylla Creating 
+ Container tb-scylla Created 
+ Container tb-scylla Starting 
+ Container tb-scylla Started 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container tb-scylla Running 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container test-bench-scylla-run-29719cb89f20 Creating 
+ Container test-bench-scylla-run-29719cb89f20 Created 
+2026/10/30 21:20:16 [25464f84-d390-4577-8675-a6c48b275f06] warnings: [Using Replication Factor replication_factor=1 lower than the minimum_replication_factor_warn_threshold=3 is not recommended.]
+2026/10/30 21:20:16 run=peak-1031-0020-scylla-write backend=scylla role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/30 21:20:21 vt=10-31 07:35 | W  124782 rows/s 124782 calls/s p50=1.6ms p99=9.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=623910 lag=0s(virt) | 
+2026/10/30 21:20:26 vt=10-31 07:40 | W  119742 rows/s 119742 calls/s p50=1.6ms p99=10.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1222620 lag=0s(virt) | 
+2026/10/30 21:20:31 vt=10-31 07:45 | W  122836 rows/s 122836 calls/s p50=1.5ms p99=9.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1836798 lag=0s(virt) | 
+2026/10/30 21:20:36 vt=10-31 07:50 | W  118158 rows/s 118158 calls/s p50=1.6ms p99=10.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2427586 lag=0s(virt) | 
+2026/10/30 21:20:41 vt=10-31 07:55 | W  117318 rows/s 117318 calls/s p50=1.6ms p99=9.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3014178 lag=0s(virt) | 
+2026/10/30 21:20:46 vt=10-31 08:00 | W  100611 rows/s 100611 calls/s p50=1.7ms p99=13.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3517234 lag=0s(virt) | 
+2026/10/30 21:20:51 vt=10-31 08:05 | W  118920 rows/s 118920 calls/s p50=1.6ms p99=9.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4111836 lag=0s(virt) | 
+2026/10/30 21:20:56 vt=10-31 08:10 | W   66759 rows/s  66759 calls/s p50=2.1ms p99=18.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4445631 lag=0s(virt) | 
+2026/10/30 21:21:01 vt=10-31 08:15 | W   64617 rows/s  64617 calls/s p50=2.3ms p99=21.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4768717 lag=0s(virt) | 
+2026/10/30 21:21:06 vt=10-31 08:20 | W   63094 rows/s  63094 calls/s p50=2.1ms p99=20.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5084186 lag=0s(virt) | 
+2026/10/30 21:21:11 vt=10-31 08:25 | W   56673 rows/s  56673 calls/s p50=1.9ms p99=22.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5367550 lag=0s(virt) | 
+2026/10/30 21:21:16 vt=10-31 08:30 | W   55321 rows/s  55321 calls/s p50=2.1ms p99=24.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5644158 lag=0s(virt) | 
+2026/10/30 21:21:16 SUMMARY scylla [batch=1 payload=random consume=ttl]: prefill=0 (0/s) written=5644194 (94068/s, p99=13.9ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 21:21:16 saved /results/peak-1031-0020-scylla-write.json
+DB resources (tb-scylla, CPU% = 100 на ядро): {"cpu_avg": 141.6, "cpu_max": 229.0, "mem_max_mb": 821, "disk_max_mb": 2844}
+ Image test-bench-scylla Building 
+ Image test-bench-scylla Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Creating 
+ Volume test_scylla-data Created 
+ Volume test_scylla-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-scylla Creating 
+ Container tb-scylla Created 
+ Container tb-scylla Starting 
+ Container tb-scylla Started 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container tb-scylla Running 
+ Container tb-scylla Waiting 
+ Container tb-scylla Healthy 
+ Container test-bench-scylla-run-34d8e0b7a845 Creating 
+ Container test-bench-scylla-run-34d8e0b7a845 Created 
+2026/10/30 21:21:28 [ca2e9c05-1be5-4e6c-b869-7850205382d6] warnings: [Using Replication Factor replication_factor=1 lower than the minimum_replication_factor_warn_threshold=3 is not recommended.]
+2026/10/30 21:21:36 prefill: 1000099 tasks, 126830 rows/s
+2026/10/30 21:21:44 prefill: 2000193 tasks, 124891 rows/s
+2026/10/30 21:21:58 prefill: 3000076 tasks, 102357 rows/s
+2026/10/30 21:22:11 prefill: 4000185 tasks, 93519 rows/s
+2026/10/30 21:22:21 prefill: 5000084 tasks, 94396 rows/s
+2026/10/30 21:22:34 prefill: 6000299 tasks, 91461 rows/s
+2026/10/30 21:22:48 prefill: 7000132 tasks, 87488 rows/s
+2026/10/30 21:22:49 prefill done: 7086280 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 1m21s, 88012 rows/s (batch=500), size: 
+2026/10/30 21:22:49 run=peak-1031-0020-scylla-read backend=scylla role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 21:22:51 vt=11-02 15:05 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  839196 rows/s   1433 q/s p50=2.5ms p99=8.2ms err=0 | backlog=5407886 lag=189451s(virt) | 
+2026/10/30 21:22:53 vt=11-04 22:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R 1042894 rows/s   1700 q/s p50=2.1ms p99=5.7ms err=0 | backlog=3322099 lag=376563s(virt) | 
+2026/10/30 21:22:55 vt=11-07 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  954866 rows/s   1930 q/s p50=1.8ms p99=6.3ms err=0 | backlog=1412366 lag=562219s(virt) | 
+2026/10/30 21:22:57 SUMMARY scylla [DRAIN workers=4 page=1000 payload=random consume=ttl]: prefill=7086280 (88012/s) written=0 (0/s, p99=0.0ms) read=7086280 (avg 926003/s, peak 1042894/s, 1840 q/s, p99=6.2ms) max_lag=562219s(virt) errs w=0 r=0 size_max: 
+2026/10/30 21:22:57 saved /results/peak-1031-0020-scylla-read.json
+DB resources (tb-scylla, CPU% = 100 на ядро): {"cpu_avg": 185.0, "cpu_max": 286.4, "mem_max_mb": 805, "disk_max_mb": 3447}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-9bf89c6c09f6 Creating 
+ Container test-bench-cassandra-run-9bf89c6c09f6 Created 
+2026/10/30 21:24:05 run=peak-1031-0020-cassandra-write backend=cassandra role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/30 21:24:10 vt=10-31 07:35 | W   14631 rows/s  14631 calls/s p50=6.1ms p99=84.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=73154 lag=0s(virt) | 
+2026/10/30 21:24:15 vt=10-31 07:40 | W   33952 rows/s  33952 calls/s p50=2.6ms p99=71.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=242916 lag=0s(virt) | 
+2026/10/30 21:24:20 vt=10-31 07:45 | W  143249 rows/s 143249 calls/s p50=1.2ms p99=14.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=959163 lag=0s(virt) | 
+2026/10/30 21:24:25 vt=10-31 07:50 | W  174887 rows/s 174887 calls/s p50=1.1ms p99=6.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1833596 lag=0s(virt) | 
+2026/10/30 21:24:30 vt=10-31 07:55 | W  167332 rows/s 167332 calls/s p50=1.1ms p99=5.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2670257 lag=0s(virt) | 
+2026/10/30 21:24:35 vt=10-31 08:00 | W  190092 rows/s 190092 calls/s p50=1.1ms p99=6.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3620716 lag=0s(virt) | 
+2026/10/30 21:24:40 vt=10-31 08:05 | W  182223 rows/s 182223 calls/s p50=1.1ms p99=8.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4531829 lag=0s(virt) | 
+2026/10/30 21:24:45 vt=10-31 08:10 | W  185885 rows/s 185885 calls/s p50=1.1ms p99=6.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5461254 lag=0s(virt) | 
+2026/10/30 21:24:50 vt=10-31 08:15 | W  191497 rows/s 191497 calls/s p50=1.1ms p99=7.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6418738 lag=0s(virt) | 
+2026/10/30 21:24:55 vt=10-31 08:20 | W  176677 rows/s 176677 calls/s p50=1.2ms p99=7.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7302121 lag=0s(virt) | 
+2026/10/30 21:25:00 vt=10-31 08:25 | W  193187 rows/s 193187 calls/s p50=1.1ms p99=6.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8268056 lag=0s(virt) | 
+2026/10/30 21:25:05 vt=10-31 08:30 | W  188095 rows/s 188095 calls/s p50=1.1ms p99=5.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9208529 lag=0s(virt) | 
+2026/10/30 21:25:05 SUMMARY cassandra [batch=1 payload=random consume=ttl]: prefill=0 (0/s) written=9209741 (153463/s, p99=9.7ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 21:25:05 saved /results/peak-1031-0020-cassandra-write.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 333.6, "cpu_max": 463.5, "mem_max_mb": 1525, "disk_max_mb": 3697}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-14e7aef8fe63 Creating 
+ Container test-bench-cassandra-run-14e7aef8fe63 Created 
+2026/10/30 21:26:41 prefill: 1000240 tasks, 33746 rows/s
+2026/10/30 21:26:49 prefill: 2000021 tasks, 53104 rows/s
+2026/10/30 21:26:56 prefill: 3000241 tasks, 67393 rows/s
+2026/10/30 21:27:03 prefill: 4000066 tasks, 77635 rows/s
+2026/10/30 21:27:10 prefill: 5000256 tasks, 85736 rows/s
+2026/10/30 21:27:17 prefill: 6000188 tasks, 92013 rows/s
+2026/10/30 21:27:25 prefill: 7000299 tasks, 95445 rows/s
+2026/10/30 21:27:25 prefill done: 7082945 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 1m14s, 96027 rows/s (batch=500), size: 
+2026/10/30 21:27:25 run=peak-1031-0020-cassandra-read backend=cassandra role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 21:27:27 vt=11-02 15:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  614935 rows/s   1100 q/s p50=3.0ms p99=13.6ms err=0 | backlog=5853074 lag=191785s(virt) | 
+2026/10/30 21:27:29 vt=11-04 22:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  942930 rows/s   1470 q/s p50=2.5ms p99=6.1ms err=0 | backlog=3967155 lag=380776s(virt) | 
+2026/10/30 21:27:31 vt=11-07 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  889424 rows/s   1647 q/s p50=2.2ms p99=6.0ms err=0 | backlog=2188363 lag=568491s(virt) | 
+2026/10/30 21:27:33 vt=11-09 13:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  863901 rows/s   2054 q/s p50=1.6ms p99=5.4ms err=0 | backlog=460562 lag=753052s(virt) | 
+2026/10/30 21:27:34 SUMMARY cassandra [DRAIN workers=4 page=1000 payload=random consume=ttl]: prefill=7082945 (96027/s) written=0 (0/s, p99=0.0ms) read=7082945 (avg 821438/s, peak 942930/s, 1620 q/s, p99=7.5ms) max_lag=753052s(virt) errs w=0 r=0 size_max: 
+2026/10/30 21:27:34 saved /results/peak-1031-0020-cassandra-read.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 325.5, "cpu_max": 456.6, "mem_max_mb": 1525, "disk_max_mb": 3786}
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Network test_default Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Network test_default Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-02e817370224 Creating 
+ Container test-bench-postgres-run-02e817370224 Created 
+2026/10/30 21:27:46 run=peak-1031-0020-postgres-write backend=postgres role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/30 21:27:51 vt=10-31 07:35 | W   61829 rows/s  61829 calls/s p50=2.7ms p99=37.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=309147 lag=0s(virt) | pg_db_bytes=152.1MB pg_wal_bytes=164.1MB pg_live_tup=267322 pg_dead_tup=0 
+2026/10/30 21:27:56 vt=10-31 07:40 | W   67397 rows/s  67397 calls/s p50=2.7ms p99=32.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=646131 lag=0s(virt) | pg_db_bytes=293.7MB pg_wal_bytes=340.8MB pg_live_tup=597554 pg_dead_tup=0 
+2026/10/30 21:28:01 vt=10-31 07:45 | W   65739 rows/s  65739 calls/s p50=2.9ms p99=31.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=974826 lag=0s(virt) | pg_db_bytes=429.3MB pg_wal_bytes=514.6MB pg_live_tup=941322 pg_dead_tup=0 
+2026/10/30 21:28:06 vt=10-31 07:50 | W   65109 rows/s  65109 calls/s p50=2.7ms p99=32.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1300371 lag=0s(virt) | pg_db_bytes=568.3MB pg_wal_bytes=685.8MB pg_live_tup=1266457 pg_dead_tup=0 
+2026/10/30 21:28:11 vt=10-31 07:55 | W   53337 rows/s  53337 calls/s p50=2.9ms p99=32.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1567054 lag=0s(virt) | pg_db_bytes=679.9MB pg_wal_bytes=828.1MB pg_live_tup=1536427 pg_dead_tup=0 
+2026/10/30 21:28:16 vt=10-31 08:00 | W   56514 rows/s  56514 calls/s p50=3.2ms p99=34.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1849622 lag=0s(virt) | pg_db_bytes=794.2MB pg_wal_bytes=974.0MB pg_live_tup=1820699 pg_dead_tup=0 
+2026/10/30 21:28:21 vt=10-31 08:05 | W   40976 rows/s  40976 calls/s p50=4.1ms p99=38.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2054503 lag=0s(virt) | pg_db_bytes=881.6MB pg_wal_bytes=1083.6MB pg_live_tup=2056579 pg_dead_tup=0 
+2026/10/30 21:28:26 vt=10-31 08:10 | W   51343 rows/s  51343 calls/s p50=3.6ms p99=27.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2311217 lag=0s(virt) | pg_db_bytes=992.8MB pg_wal_bytes=1218.6MB pg_live_tup=2277664 pg_dead_tup=0 
+2026/10/30 21:28:31 vt=10-31 08:15 | W   50148 rows/s  50148 calls/s p50=3.0ms p99=37.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2561958 lag=0s(virt) | pg_db_bytes=1096.0MB pg_wal_bytes=1351.7MB pg_live_tup=2560891 pg_dead_tup=0 
+2026/10/30 21:28:36 vt=10-31 08:20 | W   58849 rows/s  58849 calls/s p50=3.1ms p99=34.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2856205 lag=0s(virt) | pg_db_bytes=1212.0MB pg_wal_bytes=1502.7MB pg_live_tup=2859189 pg_dead_tup=0 
+2026/10/30 21:28:41 vt=10-31 08:25 | W   56163 rows/s  56163 calls/s p50=3.5ms p99=34.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3137021 lag=0s(virt) | pg_db_bytes=1322.7MB pg_wal_bytes=1649.7MB pg_live_tup=3139403 pg_dead_tup=0 
+2026/10/30 21:28:46 SUMMARY postgres [batch=1 payload=random consume=drop]: prefill=0 (0/s) written=3434416 (57231/s, p99=33.7ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: pg_db_bytes=1322.7MB pg_wal_bytes=1649.7MB pg_live_tup=3139403 pg_dead_tup=0 
+2026/10/30 21:28:46 saved /results/peak-1031-0020-postgres-write.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 323.6, "cpu_max": 410.9, "mem_max_mb": 846, "disk_max_mb": 2882}
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-d6eedbff4c65 Creating 
+ Container test-bench-postgres-run-d6eedbff4c65 Created 
+2026/10/30 21:28:55 prefill: 1000090 tasks, 697420 rows/s
+2026/10/30 21:28:57 prefill: 2000168 tasks, 618581 rows/s
+2026/10/30 21:28:59 prefill: 3000143 tasks, 589242 rows/s
+2026/10/30 21:29:00 prefill: 4000190 tasks, 599612 rows/s
+2026/10/30 21:29:02 prefill: 5000128 tasks, 578129 rows/s
+2026/10/30 21:29:04 prefill: 6000242 tasks, 581034 rows/s
+2026/10/30 21:29:10 prefill: 7000061 tasks, 440304 rows/s
+2026/10/30 21:29:10 prefill done: 7084220 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 16s, 442535 rows/s (batch=500), size: pg_db_bytes=2976.9MB pg_wal_bytes=3119.5MB pg_live_tup=7095993 pg_dead_tup=0 
+2026/10/30 21:29:10 run=peak-1031-0020-postgres-read backend=postgres role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 21:29:12 vt=11-02 15:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R 1061241 rows/s   1770 q/s p50=1.1ms p99=17.4ms err=0 | backlog=4961736 lag=187406s(virt) | pg_db_bytes=2404.7MB pg_wal_bytes=3122.8MB pg_live_tup=5713269 pg_dead_tup=0 
+2026/10/30 21:29:14 vt=11-04 22:36 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R 1964313 rows/s   3744 q/s p50=0.7ms p99=7.6ms err=0 | backlog=1033110 lag=358665s(virt) | pg_db_bytes=612.1MB pg_wal_bytes=3131.3MB pg_live_tup=1432548 pg_dead_tup=0 
+2026/10/30 21:29:14 SUMMARY postgres [DRAIN workers=4 page=1000 payload=random consume=drop]: prefill=7084220 (442535/s) written=0 (0/s, p99=0.0ms) read=7084220 (avg 1541636/s, peak 1964313/s, 3036 q/s, p99=8.4ms) max_lag=358665s(virt) errs w=0 r=0 size_max: pg_db_bytes=2404.7MB pg_wal_bytes=3131.3MB pg_live_tup=5713269 pg_dead_tup=0 
+2026/10/30 21:29:14 saved /results/peak-1031-0020-postgres-read.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 252.4, "cpu_max": 369.8, "mem_max_mb": 604, "disk_max_mb": 5572}
+ Image test-bench-redis Building 
+ Image test-bench-redis Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Created 
+ Volume test_redis-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-redis Creating 
+ Container tb-redis Created 
+ Container tb-redis Starting 
+ Container tb-redis Started 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container tb-redis Running 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container test-bench-redis-run-bf0f204b985a Creating 
+ Container test-bench-redis-run-bf0f204b985a Created 
+2026/10/30 21:29:25 run=peak-1031-0020-redis-write backend=redis role=producer virtual_start=2026-10-31 07:30 speed=x60 duration=1m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/30 21:29:30 vt=10-31 07:35 | W  202847 rows/s 202847 calls/s p50=1.2ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1014237 lag=0s(virt) | redis_used_memory=333.1MB redis_keys=13440 
+2026/10/30 21:29:35 vt=10-31 07:40 | W  193583 rows/s 193583 calls/s p50=1.3ms p99=3.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1982150 lag=0s(virt) | redis_used_memory=639.9MB redis_keys=13440 
+2026/10/30 21:29:40 vt=10-31 07:45 | W  196339 rows/s 196339 calls/s p50=1.3ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=2963848 lag=0s(virt) | redis_used_memory=965.2MB redis_keys=13440 
+2026/10/30 21:29:45 vt=10-31 07:50 | W  188903 rows/s 188903 calls/s p50=1.3ms p99=3.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3908363 lag=0s(virt) | redis_used_memory=1249.6MB redis_keys=13440 
+2026/10/30 21:29:50 vt=10-31 07:55 | W  203709 rows/s 203709 calls/s p50=1.3ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=4926908 lag=0s(virt) | redis_used_memory=1572.0MB redis_keys=13440 
+2026/10/30 21:29:55 vt=10-31 08:00 | W  198921 rows/s 198921 calls/s p50=1.3ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5921512 lag=0s(virt) | redis_used_memory=1887.0MB redis_keys=13453 
+2026/10/30 21:30:00 vt=10-31 08:05 | W  192701 rows/s 192701 calls/s p50=1.3ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6885019 lag=0s(virt) | redis_used_memory=2192.5MB redis_keys=14400 
+2026/10/30 21:30:05 vt=10-31 08:10 | W  177737 rows/s 177737 calls/s p50=1.4ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=7773704 lag=0s(virt) | redis_used_memory=2473.7MB redis_keys=14400 
+2026/10/30 21:30:10 vt=10-31 08:15 | W  209310 rows/s 209310 calls/s p50=1.2ms p99=2.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8820256 lag=0s(virt) | redis_used_memory=2805.2MB redis_keys=14400 
+2026/10/30 21:30:15 vt=10-31 08:20 | W  198734 rows/s 198734 calls/s p50=1.3ms p99=3.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9813925 lag=0s(virt) | redis_used_memory=3119.8MB redis_keys=14400 
+2026/10/30 21:30:20 vt=10-31 08:25 | W  208485 rows/s 208485 calls/s p50=1.2ms p99=2.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=10856351 lag=0s(virt) | redis_used_memory=3449.7MB redis_keys=14400 
+2026/10/30 21:30:25 vt=10-31 08:30 | W  197090 rows/s 197090 calls/s p50=1.3ms p99=3.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11841801 lag=0s(virt) | redis_used_memory=3761.7MB redis_keys=14400 
+2026/10/30 21:30:25 SUMMARY redis [batch=1 payload=random]: prefill=0 (0/s) written=11842057 (197364/s, p99=3.1ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: redis_used_memory=3761.7MB redis_keys=14400 
+2026/10/30 21:30:25 saved /results/peak-1031-0020-redis-write.json
+DB resources (tb-redis, CPU% = 100 на ядро): {"cpu_avg": 90.4, "cpu_max": 175.9, "mem_max_mb": 3388, "disk_max_mb": 3450}
+ Image test-bench-redis Building 
+ Image test-bench-redis Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Creating 
+ Volume test_redis-data Created 
+ Volume test_redis-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-redis Creating 
+ Container tb-redis Created 
+ Container tb-redis Starting 
+ Container tb-redis Started 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container tb-redis Running 
+ Container tb-redis Waiting 
+ Container tb-redis Healthy 
+ Container test-bench-redis-run-51d99b18545c Creating 
+ Container test-bench-redis-run-51d99b18545c Created 
+2026/10/30 21:30:33 prefill: 1000057 tasks, 669887 rows/s
+2026/10/30 21:30:35 prefill: 2000279 tasks, 658657 rows/s
+2026/10/30 21:30:36 prefill: 3000331 tasks, 671194 rows/s
+2026/10/30 21:30:38 prefill: 4000138 tasks, 659993 rows/s
+2026/10/30 21:30:39 prefill: 5000203 tasks, 654885 rows/s
+2026/10/30 21:30:41 prefill: 6000077 tasks, 640334 rows/s
+2026/10/30 21:30:43 prefill: 7000346 tasks, 645172 rows/s
+2026/10/30 21:30:43 prefill done: 7082231 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 11s, 646356 rows/s (batch=500), size: redis_used_memory=2249.9MB redis_keys=13440 
+2026/10/30 21:30:43 run=peak-1031-0020-redis-read backend=redis role=drain virtual_start=2026-10-31 07:30 speed=x100000 duration=1m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 21:30:44 SUMMARY redis [DRAIN workers=4 page=1000 payload=random]: prefill=7082231 (646356/s) written=0 (0/s, p99=0.0ms) read=7082231 (avg 7792344/s, peak 0/s, 15469 q/s, p99=1.1ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 21:30:44 saved /results/peak-1031-0020-redis-read.json
+DB resources (tb-redis, CPU% = 100 на ядро): {"cpu_avg": 103.4, "cpu_max": 192.0, "mem_max_mb": 1366, "disk_max_mb": 2014}

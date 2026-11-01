@@ -1,0 +1,132 @@
+{
+  "run_id": "peak-big-1101-1024-redis-batch",
+  "backend": "redis",
+  "variant": "batch=100 payload=5120-10240B",
+  "config": {
+    "Backend": "redis",
+    "Role": "producer",
+    "RunID": "peak-big-1101-1024-redis-batch",
+    "Duration": 60000000000,
+    "ReportInterval": 5000000000,
+    "ResultsDir": "/results",
+    "Speed": 60,
+    "VirtualStart": "2026-11-01T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 0,
+    "WriteBatch": 100,
+    "Writers": 64,
+    "PayloadBytes": 5120,
+    "PayloadMax": 10240,
+    "PayloadRandom": true,
+    "Shards": 16,
+    "MaxWrites": 500000,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false,
+    "MongoURI": "mongodb://mongodb:27017",
+    "MongoPool": 64,
+    "MongoConsumeMode": "drop",
+    "TarantoolAddr": "tarantool:3301",
+    "TarantoolConns": 8,
+    "TarantoolConsumeMode": "drop",
+    "RabbitURL": "amqp://guest:guest@rabbitmq:5672/",
+    "RabbitConns": 8,
+    "RocketNamesrv": "rocketmq-namesrv:9876",
+    "RocketBroker": "rocketmq:10911",
+    "RocketQueues": 16,
+    "PrefillETA": 180000000000
+  },
+  "seconds": 8.54202749,
+  "prefilled": 0,
+  "prefill_rps": 0,
+  "prefill_errs": 0,
+  "written": 506300,
+  "read": 0,
+  "write_rps_avg": 59271.64254536951,
+  "read_rps_avg": 0,
+  "read_rps_peak": 0,
+  "read_qps_avg": 0,
+  "write_lat": {
+    "count": 5063,
+    "p50_ms": 65.215,
+    "p95_ms": 169.599,
+    "p99_ms": 1784.831,
+    "p999_ms": 2018.303,
+    "max_ms": 2025.471
+  },
+  "read_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "bucket_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "max_lag_virtual_s": 0,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {
+    "redis_keys": 13440,
+    "redis_used_memory": 3386399432
+  },
+  "rows": [
+    {
+      "elapsed_s": 5.000006041,
+      "virtual_time": "11-01 07:35",
+      "write_rps": 78839.9047456271,
+      "write_call_rps": 788.3990474562709,
+      "write_lat": {
+        "count": 3942,
+        "p50_ms": 60.575,
+        "p95_ms": 158.207,
+        "p99_ms": 211.583,
+        "p999_ms": 289.023,
+        "max_ms": 292.863
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 394200,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "redis_keys": 13440,
+        "redis_used_memory": 3386399432
+      }
+    }
+  ]
+}

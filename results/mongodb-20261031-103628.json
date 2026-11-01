@@ -1,0 +1,5049 @@
+{
+  "run_id": "mongodb-20261031-103628",
+  "backend": "mongodb",
+  "variant": "DRAIN workers=4 page=1000 payload=random consume=delete",
+  "config": {
+    "Backend": "mongodb",
+    "Role": "drain",
+    "RunID": "mongodb-20261031-103628",
+    "Duration": 300000000000,
+    "ReportInterval": 2000000000,
+    "ResultsDir": "/results",
+    "Speed": 100000,
+    "VirtualStart": "2026-10-31T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 5000,
+    "WriteBatch": 1,
+    "Writers": 64,
+    "PayloadBytes": 300,
+    "PayloadRandom": true,
+    "Shards": 16,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false,
+    "MongoURI": "mongodb://mongodb:27017",
+    "MongoPool": 64,
+    "MongoConsumeMode": "delete",
+    "TarantoolAddr": "tarantool:3301",
+    "TarantoolConns": 8,
+    "TarantoolConsumeMode": "drop",
+    "RabbitURL": "amqp://guest:guest@rabbitmq:5672/",
+    "RabbitConns": 8,
+    "RocketNamesrv": "rocketmq-namesrv:9876",
+    "RocketBroker": "rocketmq:10911",
+    "RocketQueues": 16,
+    "PrefillETA": 180000000000
+  },
+  "seconds": 300.141195538,
+  "prefilled": 7083216,
+  "prefill_rps": 72238.94628070411,
+  "prefill_errs": 0,
+  "written": 0,
+  "read": 2926904,
+  "write_rps_avg": 0,
+  "read_rps_avg": 9751.756984753642,
+  "read_rps_peak": 25824.460178682406,
+  "read_qps_avg": 16.09242607081069,
+  "write_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "read_lat": {
+    "count": 4830,
+    "p50_ms": 32.863,
+    "p95_ms": 566.783,
+    "p99_ms": 1078.271,
+    "p999_ms": 1879.039,
+    "max_ms": 2930.687
+  },
+  "bucket_lat": {
+    "count": 4830,
+    "p50_ms": 112.255,
+    "p95_ms": 895.999,
+    "p99_ms": 3616.767,
+    "p999_ms": 5492.735,
+    "max_ms": 6635.519
+  },
+  "max_lag_virtual_s": 29985928.2687,
+  "write_errs": 0,
+  "read_errs": 1,
+  "max_size": {
+    "mongo_docs": 7074546,
+    "mongo_index_bytes": 492404736,
+    "mongo_storage_bytes": 6531895296
+  },
+  "rows": [
+    {
+      "elapsed_s": 2.000022458,
+      "virtual_time": "11-02 15:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4355.951087025243,
+      "read_qps": 245.99723769701788,
+      "read_lat": {
+        "count": 492,
+        "p50_ms": 0.087,
+        "p95_ms": 0.171,
+        "p99_ms": 440.831,
+        "p999_ms": 593.407,
+        "max_ms": 593.407
+      },
+      "backlog": 7074504,
+      "lag_virtual_s": 198237.7289,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7074546,
+        "mongo_index_bytes": 393887744,
+        "mongo_storage_bytes": 2843877376
+      }
+    },
+    {
+      "elapsed_s": 4.000020416,
+      "virtual_time": "11-04 22:38",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4367.004458711553,
+      "read_qps": 6.000006126006254,
+      "read_lat": {
+        "count": 12,
+        "p50_ms": 382.207,
+        "p95_ms": 884.735,
+        "p99_ms": 910.847,
+        "p999_ms": 910.847,
+        "max_ms": 910.847
+      },
+      "backlog": 7065770,
+      "lag_virtual_s": 398205.7053,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7065770,
+        "mongo_index_bytes": 413249536,
+        "mongo_storage_bytes": 3096772608
+      }
+    },
+    {
+      "elapsed_s": 6.000021125,
+      "virtual_time": "11-07 06:15",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3981.9985883815,
+      "read_qps": 5.499998050250691,
+      "read_lat": {
+        "count": 11,
+        "p50_ms": 758.783,
+        "p95_ms": 899.583,
+        "p99_ms": 1049.599,
+        "p999_ms": 1049.599,
+        "max_ms": 1049.599
+      },
+      "backlog": 7057806,
+      "lag_virtual_s": 598370.2107,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7058629,
+        "mongo_index_bytes": 416051200,
+        "mongo_storage_bytes": 3233746944
+      }
+    },
+    {
+      "elapsed_s": 8.000024499,
+      "virtual_time": "11-09 13:46",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 1835.9969026732253,
+      "read_qps": 2.4999957825071153,
+      "read_lat": {
+        "count": 5,
+        "p50_ms": 974.335,
+        "p95_ms": 1572.863,
+        "p99_ms": 1572.863,
+        "p999_ms": 1572.863,
+        "max_ms": 1572.863
+      },
+      "backlog": 7054134,
+      "lag_virtual_s": 798213.6161,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7054134,
+        "mongo_index_bytes": 416886784,
+        "mongo_storage_bytes": 3352391680
+      }
+    },
+    {
+      "elapsed_s": 10.000020874,
+      "virtual_time": "11-11 21:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4303.007799201636,
+      "read_qps": 6.0000108750197105,
+      "read_lat": {
+        "count": 12,
+        "p50_ms": 756.735,
+        "p95_ms": 1085.439,
+        "p99_ms": 1136.639,
+        "p999_ms": 1136.639,
+        "max_ms": 1136.639
+      },
+      "backlog": 7045528,
+      "lag_virtual_s": 998096.186,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7047045,
+        "mongo_index_bytes": 417296384,
+        "mongo_storage_bytes": 3482488832
+      }
+    },
+    {
+      "elapsed_s": 12.000023208,
+      "virtual_time": "11-14 04:51",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4367.494903133448,
+      "read_qps": 5.999992998008172,
+      "read_lat": {
+        "count": 12,
+        "p50_ms": 462.335,
+        "p95_ms": 612.351,
+        "p99_ms": 646.655,
+        "p999_ms": 646.655,
+        "max_ms": 646.655
+      },
+      "backlog": 7036793,
+      "lag_virtual_s": 1198010.0177,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7036793,
+        "mongo_index_bytes": 417443840,
+        "mongo_storage_bytes": 3666321408
+      }
+    },
+    {
+      "elapsed_s": 14.000020792,
+      "virtual_time": "11-16 12:24",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4388.505301314404,
+      "read_qps": 6.000007248008756,
+      "read_lat": {
+        "count": 12,
+        "p50_ms": 508.415,
+        "p95_ms": 696.319,
+        "p99_ms": 866.303,
+        "p999_ms": 866.303,
+        "max_ms": 866.303
+      },
+      "backlog": 7028016,
+      "lag_virtual_s": 1397942.967,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7028016,
+        "mongo_index_bytes": 417443840,
+        "mongo_storage_bytes": 3804102656
+      }
+    },
+    {
+      "elapsed_s": 16.000022124,
+      "virtual_time": "11-18 19:59",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4013.99732667778,
+      "read_qps": 5.49999633700244,
+      "read_lat": {
+        "count": 11,
+        "p50_ms": 491.263,
+        "p95_ms": 797.183,
+        "p99_ms": 816.127,
+        "p999_ms": 816.127,
+        "max_ms": 816.127
+      },
+      "backlog": 7019988,
+      "lag_virtual_s": 1598030.9324,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7019988,
+        "mongo_index_bytes": 417443840,
+        "mongo_storage_bytes": 3916234752
+      }
+    },
+    {
+      "elapsed_s": 18.000022417,
+      "virtual_time": "11-21 03:34",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3672.499461978829,
+      "read_qps": 4.999999267500108,
+      "read_lat": {
+        "count": 10,
+        "p50_ms": 675.839,
+        "p95_ms": 817.663,
+        "p99_ms": 817.663,
+        "p999_ms": 817.663,
+        "max_ms": 817.663
+      },
+      "backlog": 7012643,
+      "lag_virtual_s": 1798052.0701,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7012643,
+        "mongo_index_bytes": 417443840,
+        "mongo_storage_bytes": 4002783232
+      }
+    },
+    {
+      "elapsed_s": 20.000021666,
+      "virtual_time": "11-23 11:05",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4320.501622348359,
+      "read_qps": 6.000002253000846,
+      "read_lat": {
+        "count": 12,
+        "p50_ms": 676.351,
+        "p95_ms": 736.767,
+        "p99_ms": 825.855,
+        "p999_ms": 825.855,
+        "max_ms": 825.855
+      },
+      "backlog": 7004002,
+      "lag_virtual_s": 1997929.1331,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 7004002,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 22.000023249,
+      "virtual_time": "11-25 18:39",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4058.9967873040428,
+      "read_qps": 5.499995646753446,
+      "read_lat": {
+        "count": 11,
+        "p50_ms": 439.807,
+        "p95_ms": 558.079,
+        "p99_ms": 590.847,
+        "p999_ms": 590.847,
+        "max_ms": 590.847
+      },
+      "backlog": 6995884,
+      "lag_virtual_s": 2197898.9969,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6997436,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 24.000026333,
+      "virtual_time": "11-28 02:23",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 365.9994356288703,
+      "read_qps": 0.4999992290011889,
+      "read_lat": {
+        "count": 1,
+        "p50_ms": 2613.247,
+        "p95_ms": 2613.247,
+        "p99_ms": 2613.247,
+        "p999_ms": 2613.247,
+        "max_ms": 2613.247
+      },
+      "backlog": 6995152,
+      "lag_virtual_s": 2398534.4309,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6997226,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 26.000022166,
+      "virtual_time": "11-30 09:46",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 1479.5030825446727,
+      "read_qps": 2.000004167008682,
+      "read_lat": {
+        "count": 4,
+        "p50_ms": 433.663,
+        "p95_ms": 446.719,
+        "p99_ms": 446.719,
+        "p999_ms": 446.719,
+        "max_ms": 446.719
+      },
+      "backlog": 6992193,
+      "lag_virtual_s": 2597932.2501,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6992607,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 28.000022208,
+      "virtual_time": "12-02 17:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4331.499909038502,
+      "read_qps": 5.999999874000003,
+      "read_lat": {
+        "count": 12,
+        "p50_ms": 544.255,
+        "p95_ms": 590.335,
+        "p99_ms": 657.407,
+        "p999_ms": 657.407,
+        "max_ms": 657.407
+      },
+      "backlog": 6983530,
+      "lag_virtual_s": 2797784.3374,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6983530,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 30.000023041,
+      "virtual_time": "12-05 00:54",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3348.998605142081,
+      "read_qps": 4.49999812575078,
+      "read_lat": {
+        "count": 9,
+        "p50_ms": 695.807,
+        "p95_ms": 817.663,
+        "p99_ms": 817.663,
+        "p999_ms": 817.663,
+        "max_ms": 817.663
+      },
+      "backlog": 6976832,
+      "lag_virtual_s": 2997857.1448,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6977292,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 32.000022416,
+      "virtual_time": "12-07 08:38",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3248.501015156567,
+      "read_qps": 4.50000140625044,
+      "read_lat": {
+        "count": 9,
+        "p50_ms": 850.943,
+        "p95_ms": 1028.607,
+        "p99_ms": 1028.607,
+        "p999_ms": 1028.607,
+        "max_ms": 1028.607
+      },
+      "backlog": 6970335,
+      "lag_virtual_s": 3198515.8866,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6970769,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 34.000023083,
+      "virtual_time": "12-09 15:59",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3928.498689845687,
+      "read_qps": 5.499998165750611,
+      "read_lat": {
+        "count": 11,
+        "p50_ms": 697.343,
+        "p95_ms": 751.615,
+        "p99_ms": 796.159,
+        "p999_ms": 796.159,
+        "max_ms": 796.159
+      },
+      "backlog": 6962478,
+      "lag_virtual_s": 3397690.7802,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6962478,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 36.000023124,
+      "virtual_time": "12-11 23:32",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 1465.4999699572506,
+      "read_qps": 1.999999959000001,
+      "read_lat": {
+        "count": 4,
+        "p50_ms": 1296.383,
+        "p95_ms": 1341.439,
+        "p99_ms": 1341.439,
+        "p999_ms": 1341.439,
+        "max_ms": 1341.439
+      },
+      "backlog": 6959547,
+      "lag_virtual_s": 3597674.5909,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6959547,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 38.000024208,
+      "virtual_time": "12-14 07:03",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2865.498446899842,
+      "read_qps": 3.999997832001175,
+      "read_lat": {
+        "count": 8,
+        "p50_ms": 965.119,
+        "p95_ms": 1473.535,
+        "p99_ms": 1473.535,
+        "p999_ms": 1473.535,
+        "max_ms": 1473.535
+      },
+      "backlog": 6953816,
+      "lag_virtual_s": 3797507.6702,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6953816,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 40.000022292,
+      "virtual_time": "12-16 14:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3700.0035446033958,
+      "read_qps": 5.0000047900045885,
+      "read_lat": {
+        "count": 10,
+        "p50_ms": 704.511,
+        "p95_ms": 1078.271,
+        "p99_ms": 1078.271,
+        "p999_ms": 1078.271,
+        "max_ms": 1078.271
+      },
+      "backlog": 6946416,
+      "lag_virtual_s": 3997504.5257,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6946416,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4105572352
+      }
+    },
+    {
+      "elapsed_s": 42.000020125,
+      "virtual_time": "12-18 22:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3960.504291206399,
+      "read_qps": 5.500005959256456,
+      "read_lat": {
+        "count": 11,
+        "p50_ms": 451.071,
+        "p95_ms": 538.111,
+        "p99_ms": 577.023,
+        "p999_ms": 577.023,
+        "max_ms": 577.023
+      },
+      "backlog": 6938495,
+      "lag_virtual_s": 4197449.2823,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6938495,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4151652352
+      }
+    },
+    {
+      "elapsed_s": 44.000023374,
+      "virtual_time": "12-21 05:45",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 1485.4975868091701,
+      "read_qps": 1.9999967510052779,
+      "read_lat": {
+        "count": 4,
+        "p50_ms": 920.063,
+        "p95_ms": 2109.439,
+        "p99_ms": 2109.439,
+        "p999_ms": 2109.439,
+        "max_ms": 2109.439
+      },
+      "backlog": 6935524,
+      "lag_virtual_s": 4397573.101,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6938275,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4151951360
+      }
+    },
+    {
+      "elapsed_s": 46.0000235,
+      "virtual_time": "12-23 13:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2932.4998152525113,
+      "read_qps": 3.9999997480000156,
+      "read_lat": {
+        "count": 8,
+        "p50_ms": 396.031,
+        "p95_ms": 1086.463,
+        "p99_ms": 1086.463,
+        "p999_ms": 1086.463,
+        "max_ms": 1086.463
+      },
+      "backlog": 6929659,
+      "lag_virtual_s": 4597542.3869,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6931003,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4245598208
+      }
+    },
+    {
+      "elapsed_s": 48.000021208,
+      "virtual_time": "12-25 20:51",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2521.5028896423114,
+      "read_qps": 3.5000040110045965,
+      "read_lat": {
+        "count": 7,
+        "p50_ms": 422.143,
+        "p95_ms": 1742.847,
+        "p99_ms": 1742.847,
+        "p999_ms": 1742.847,
+        "max_ms": 1742.847
+      },
+      "backlog": 6924616,
+      "lag_virtual_s": 4797468.0144,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6924984,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4328255488
+      }
+    },
+    {
+      "elapsed_s": 50.000022249,
+      "virtual_time": "12-28 04:25",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2547.49867402694,
+      "read_qps": 3.4999981782509484,
+      "read_lat": {
+        "count": 7,
+        "p50_ms": 972.287,
+        "p95_ms": 1232.895,
+        "p99_ms": 1232.895,
+        "p999_ms": 1232.895,
+        "max_ms": 1232.895
+      },
+      "backlog": 6919521,
+      "lag_virtual_s": 4997471.4876,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6919521,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4382908416
+      }
+    },
+    {
+      "elapsed_s": 52.000019083,
+      "virtual_time": "12-30 12:01",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3348.0052998923898,
+      "read_qps": 4.500007123511276,
+      "read_lat": {
+        "count": 9,
+        "p50_ms": 982.015,
+        "p95_ms": 1261.567,
+        "p99_ms": 1261.567,
+        "p999_ms": 1261.567,
+        "max_ms": 1261.567
+      },
+      "backlog": 6912825,
+      "lag_virtual_s": 5197592.1978,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6912825,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4453175296
+      }
+    },
+    {
+      "elapsed_s": 54.000022292,
+      "virtual_time": "01-01 19:32",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6185.490075381174,
+      "read_qps": 8.499986361771883,
+      "read_lat": {
+        "count": 17,
+        "p50_ms": 402.943,
+        "p95_ms": 820.735,
+        "p99_ms": 830.463,
+        "p999_ms": 830.463,
+        "max_ms": 830.463
+      },
+      "backlog": 6900454,
+      "lag_virtual_s": 5397362.0092,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6900629,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4556677120
+      }
+    },
+    {
+      "elapsed_s": 56.000020958,
+      "virtual_time": "01-04 03:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 5455.503638820927,
+      "read_qps": 7.500005002503337,
+      "read_lat": {
+        "count": 15,
+        "p50_ms": 260.223,
+        "p95_ms": 1078.271,
+        "p99_ms": 1121.279,
+        "p999_ms": 1121.279,
+        "max_ms": 1121.279
+      },
+      "backlog": 6889543,
+      "lag_virtual_s": 5597222.041,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6889543,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4652220416
+      }
+    },
+    {
+      "elapsed_s": 58.000024625,
+      "virtual_time": "01-06 11:28",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3003.494493092847,
+      "read_qps": 3.999992666013447,
+      "read_lat": {
+        "count": 8,
+        "p50_ms": 711.167,
+        "p95_ms": 958.463,
+        "p99_ms": 958.463,
+        "p999_ms": 958.463,
+        "max_ms": 958.463
+      },
+      "backlog": 6883536,
+      "lag_virtual_s": 5800294.242,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6883536,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4699099136
+      }
+    },
+    {
+      "elapsed_s": 60.000022791,
+      "virtual_time": "01-08 18:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3219.502952284207,
+      "read_qps": 4.500004126503784,
+      "read_lat": {
+        "count": 9,
+        "p50_ms": 954.879,
+        "p95_ms": 1258.495,
+        "p99_ms": 1258.495,
+        "p999_ms": 1258.495,
+        "max_ms": 1258.495
+      },
+      "backlog": 6877097,
+      "lag_virtual_s": 5997154.8584,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6877097,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4738514944
+      }
+    },
+    {
+      "elapsed_s": 62.000020625,
+      "virtual_time": "01-11 01:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6277.006797998362,
+      "read_qps": 8.50000920550997,
+      "read_lat": {
+        "count": 17,
+        "p50_ms": 415.999,
+        "p95_ms": 717.311,
+        "p99_ms": 764.415,
+        "p999_ms": 764.415,
+        "max_ms": 764.415
+      },
+      "backlog": 6864543,
+      "lag_virtual_s": 6197097.5359,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6864543,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4814393344
+      }
+    },
+    {
+      "elapsed_s": 64.000024375,
+      "virtual_time": "01-13 09:26",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6389.488019709964,
+      "read_qps": 8.99998312503164,
+      "read_lat": {
+        "count": 18,
+        "p50_ms": 301.311,
+        "p95_ms": 751.103,
+        "p99_ms": 825.343,
+        "p999_ms": 825.343,
+        "max_ms": 825.343
+      },
+      "backlog": 6851764,
+      "lag_virtual_s": 6397585.7491,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6853184,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4868915200
+      }
+    },
+    {
+      "elapsed_s": 66.000022541,
+      "virtual_time": "01-15 16:51",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 5067.004646443261,
+      "read_qps": 7.000006419005886,
+      "read_lat": {
+        "count": 14,
+        "p50_ms": 379.391,
+        "p95_ms": 587.775,
+        "p99_ms": 985.599,
+        "p999_ms": 985.599,
+        "max_ms": 985.599
+      },
+      "backlog": 6841630,
+      "lag_virtual_s": 6597007.149,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6841630,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4919566336
+      }
+    },
+    {
+      "elapsed_s": 68.000023666,
+      "virtual_time": "01-18 00:26",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 5116.497121970369,
+      "read_qps": 6.999996062502215,
+      "read_lat": {
+        "count": 14,
+        "p50_ms": 426.751,
+        "p95_ms": 625.151,
+        "p99_ms": 709.631,
+        "p999_ms": 709.631,
+        "max_ms": 709.631
+      },
+      "backlog": 6831397,
+      "lag_virtual_s": 6797092.8885,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6832720,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4955422720
+      }
+    },
+    {
+      "elapsed_s": 70.000020416,
+      "virtual_time": "01-20 08:01",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2496.5040568190925,
+      "read_qps": 3.5000056875092422,
+      "read_lat": {
+        "count": 7,
+        "p50_ms": 120.511,
+        "p95_ms": 986.623,
+        "p99_ms": 986.623,
+        "p999_ms": 986.623,
+        "max_ms": 986.623
+      },
+      "backlog": 6826404,
+      "lag_virtual_s": 6997192.2531,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6826404,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 4982517760
+      }
+    },
+    {
+      "elapsed_s": 72.000019374,
+      "virtual_time": "01-22 15:30",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 7307.003806948984,
+      "read_qps": 10.000005210002715,
+      "read_lat": {
+        "count": 20,
+        "p50_ms": 323.839,
+        "p95_ms": 803.327,
+        "p99_ms": 814.591,
+        "p999_ms": 814.591,
+        "max_ms": 814.591
+      },
+      "backlog": 6811790,
+      "lag_virtual_s": 7196818.0814,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6811790,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 5025140736
+      }
+    },
+    {
+      "elapsed_s": 74.000020375,
+      "virtual_time": "01-24 23:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11036.994475984266,
+      "read_qps": 14.99999249250376,
+      "read_lat": {
+        "count": 30,
+        "p50_ms": 181.119,
+        "p95_ms": 382.975,
+        "p99_ms": 518.143,
+        "p999_ms": 518.143,
+        "max_ms": 518.143
+      },
+      "backlog": 6789716,
+      "lag_virtual_s": 7396719.1963,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6789716,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 5080395776
+      }
+    },
+    {
+      "elapsed_s": 76.000025166,
+      "virtual_time": "01-27 06:38",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6172.485213811671,
+      "read_qps": 8.499979638298777,
+      "read_lat": {
+        "count": 17,
+        "p50_ms": 410.623,
+        "p95_ms": 621.567,
+        "p99_ms": 734.207,
+        "p999_ms": 734.207,
+        "max_ms": 734.207
+      },
+      "backlog": 6777371,
+      "lag_virtual_s": 7596695.6111,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6778962,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 5098049536
+      }
+    },
+    {
+      "elapsed_s": 78.000020708,
+      "virtual_time": "01-29 14:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 6777371,
+      "lag_virtual_s": 7796609.5263,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6778962,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 5098049536
+      }
+    },
+    {
+      "elapsed_s": 80.000022624,
+      "virtual_time": "01-31 21:46",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 363.4996517673336,
+      "read_qps": 0.49999952100045886,
+      "read_lat": {
+        "count": 1,
+        "p50_ms": 2930.687,
+        "p95_ms": 2930.687,
+        "p99_ms": 2930.687,
+        "p999_ms": 2930.687,
+        "max_ms": 2930.687
+      },
+      "backlog": 6776644,
+      "lag_virtual_s": 7996769.7657,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6778792,
+        "mongo_index_bytes": 441008128,
+        "mongo_storage_bytes": 5098676224
+      }
+    },
+    {
+      "elapsed_s": 82.000023417,
+      "virtual_time": "02-03 05:17",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 368.499853889808,
+      "read_qps": 0.49999980175007863,
+      "read_lat": {
+        "count": 1,
+        "p50_ms": 165.759,
+        "p95_ms": 165.759,
+        "p99_ms": 165.759,
+        "p999_ms": 165.759,
+        "max_ms": 165.759
+      },
+      "backlog": 6775907,
+      "lag_virtual_s": 8196623.002,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6775907,
+        "mongo_index_bytes": 454856704,
+        "mongo_storage_bytes": 5103525888
+      }
+    },
+    {
+      "elapsed_s": 84.0000205,
+      "virtual_time": "02-05 12:53",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9682.014121217595,
+      "read_qps": 13.500019689778718,
+      "read_lat": {
+        "count": 27,
+        "p50_ms": 165.247,
+        "p95_ms": 312.063,
+        "p99_ms": 328.191,
+        "p999_ms": 328.191,
+        "max_ms": 328.191
+      },
+      "backlog": 6756543,
+      "lag_virtual_s": 8396760.8996,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6757598,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 86.000028749,
+      "virtual_time": "02-07 20:25",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 371.99846569232824,
+      "read_qps": 0.4999979377585057,
+      "read_lat": {
+        "count": 1,
+        "p50_ms": 670.207,
+        "p95_ms": 670.207,
+        "p99_ms": 670.207,
+        "p999_ms": 670.207,
+        "max_ms": 670.207
+      },
+      "backlog": 6755799,
+      "lag_virtual_s": 8596695.5065,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6757478,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 88.000024833,
+      "virtual_time": "02-10 04:01",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 6755799,
+      "lag_virtual_s": 8796779.6045,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6757378,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 90.000021833,
+      "virtual_time": "02-12 11:32",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9839.514759272139,
+      "read_qps": 13.500020250030374,
+      "read_lat": {
+        "count": 27,
+        "p50_ms": 71.295,
+        "p95_ms": 93.887,
+        "p99_ms": 96.959,
+        "p999_ms": 96.959,
+        "max_ms": 96.959
+      },
+      "backlog": 6736120,
+      "lag_virtual_s": 8996524.7157,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6738044,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 92.000019999,
+      "virtual_time": "02-14 19:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 19566.017942038452,
+      "read_qps": 27.0000247590227,
+      "read_lat": {
+        "count": 54,
+        "p50_ms": 67.583,
+        "p95_ms": 104.831,
+        "p99_ms": 108.351,
+        "p999_ms": 159.999,
+        "max_ms": 159.999
+      },
+      "backlog": 6696988,
+      "lag_virtual_s": 9196296.2391,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6697089,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 94.000024083,
+      "virtual_time": "02-17 02:38",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 21527.456040934765,
+      "read_qps": 29.49993976112301,
+      "read_lat": {
+        "count": 59,
+        "p50_ms": 49.407,
+        "p95_ms": 110.207,
+        "p99_ms": 114.431,
+        "p999_ms": 140.159,
+        "max_ms": 140.159
+      },
+      "backlog": 6653933,
+      "lag_virtual_s": 9396065.904,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6655241,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 96.000021292,
+      "virtual_time": "02-19 10:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9184.012816289885,
+      "read_qps": 12.500017443774343,
+      "read_lat": {
+        "count": 25,
+        "p50_ms": 28.447,
+        "p95_ms": 63.231,
+        "p99_ms": 67.519,
+        "p999_ms": 67.519,
+        "max_ms": 67.519
+      },
+      "backlog": 6635565,
+      "lag_virtual_s": 9595902.3399,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6635565,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 98.000020416,
+      "virtual_time": "02-21 17:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 23290.51020124347,
+      "read_qps": 32.00001401600614,
+      "read_lat": {
+        "count": 64,
+        "p50_ms": 39.967,
+        "p95_ms": 159.103,
+        "p99_ms": 177.407,
+        "p999_ms": 179.455,
+        "max_ms": 179.455
+      },
+      "backlog": 6588984,
+      "lag_virtual_s": 9795646.7383,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6590564,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 100.000028958,
+      "virtual_time": "02-24 01:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 8097.96541358972,
+      "read_qps": 10.999953019200657,
+      "read_lat": {
+        "count": 22,
+        "p50_ms": 46.431,
+        "p95_ms": 92.031,
+        "p99_ms": 96.575,
+        "p999_ms": 96.575,
+        "max_ms": 96.575
+      },
+      "backlog": 6572788,
+      "lag_virtual_s": 9995678.8654,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6574725,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 102.000022708,
+      "virtual_time": "02-26 08:50",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15381.54806733771,
+      "read_qps": 21.000065625205078,
+      "read_lat": {
+        "count": 42,
+        "p50_ms": 26.367,
+        "p95_ms": 57.567,
+        "p99_ms": 61.919,
+        "p999_ms": 61.919,
+        "max_ms": 61.919
+      },
+      "backlog": 6542025,
+      "lag_virtual_s": 10195413.7515,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6543376,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 104.000021166,
+      "virtual_time": "02-28 16:27",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 24080.018565694314,
+      "read_qps": 33.00002544301962,
+      "read_lat": {
+        "count": 66,
+        "p50_ms": 26.207,
+        "p95_ms": 45.247,
+        "p99_ms": 45.759,
+        "p999_ms": 60.575,
+        "max_ms": 60.575
+      },
+      "backlog": 6493865,
+      "lag_virtual_s": 10395381.0491,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6494287,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 106.000023208,
+      "virtual_time": "03-02 23:58",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 22336.477194456784,
+      "read_qps": 30.49996885953179,
+      "read_lat": {
+        "count": 61,
+        "p50_ms": 26.687,
+        "p95_ms": 156.159,
+        "p99_ms": 187.007,
+        "p999_ms": 205.183,
+        "max_ms": 205.183
+      },
+      "backlog": 6449192,
+      "lag_virtual_s": 10595012.4728,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6449979,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 108.000024833,
+      "virtual_time": "03-05 07:33",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 21436.982582451652,
+      "read_qps": 29.499976031269476,
+      "read_lat": {
+        "count": 59,
+        "p50_ms": 27.519,
+        "p95_ms": 184.191,
+        "p99_ms": 242.943,
+        "p999_ms": 263.679,
+        "max_ms": 263.679
+      },
+      "backlog": 6406318,
+      "lag_virtual_s": 10794907.7333,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6407105,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 110.000020333,
+      "virtual_time": "03-07 15:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9561.521513423406,
+      "read_qps": 13.000029250065813,
+      "read_lat": {
+        "count": 26,
+        "p50_ms": 42.815,
+        "p95_ms": 204.287,
+        "p99_ms": 258.175,
+        "p999_ms": 258.175,
+        "max_ms": 258.175
+      },
+      "backlog": 6387195,
+      "lag_virtual_s": 10994691.7027,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6388092,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 112.000021791,
+      "virtual_time": "03-09 22:38",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17450.487278594774,
+      "read_qps": 24.99998177501329,
+      "read_lat": {
+        "count": 50,
+        "p50_ms": 27.423,
+        "p95_ms": 487.167,
+        "p99_ms": 531.455,
+        "p999_ms": 531.455,
+        "max_ms": 531.455
+      },
+      "backlog": 6352294,
+      "lag_virtual_s": 11194502.1427,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6352826,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 114.000021791,
+      "virtual_time": "03-12 06:26",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9132.5,
+      "read_qps": 13,
+      "read_lat": {
+        "count": 26,
+        "p50_ms": 163.455,
+        "p95_ms": 261.631,
+        "p99_ms": 272.895,
+        "p999_ms": 272.895,
+        "max_ms": 272.895
+      },
+      "backlog": 6334029,
+      "lag_virtual_s": 11395316.7755,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6336629,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 116.000020499,
+      "virtual_time": "03-14 13:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17099.011045961135,
+      "read_qps": 24.500015827010223,
+      "read_lat": {
+        "count": 49,
+        "p50_ms": 26.879,
+        "p95_ms": 238.591,
+        "p99_ms": 326.399,
+        "p999_ms": 326.399,
+        "max_ms": 326.399
+      },
+      "backlog": 6299831,
+      "lag_virtual_s": 11594139.4062,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6299831,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 118.000021417,
+      "virtual_time": "03-16 21:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 16646.992359030508,
+      "read_qps": 23.999988984005057,
+      "read_lat": {
+        "count": 48,
+        "p50_ms": 92.735,
+        "p95_ms": 259.711,
+        "p99_ms": 262.655,
+        "p999_ms": 262.655,
+        "max_ms": 262.655
+      },
+      "backlog": 6266537,
+      "lag_virtual_s": 11794034.0625,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6267117,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 120.000019583,
+      "virtual_time": "03-19 04:50",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11180.0102520694,
+      "read_qps": 16.000014672013453,
+      "read_lat": {
+        "count": 32,
+        "p50_ms": 183.551,
+        "p95_ms": 339.455,
+        "p99_ms": 424.191,
+        "p999_ms": 424.191,
+        "max_ms": 424.191
+      },
+      "backlog": 6244177,
+      "lag_virtual_s": 11993845.7944,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6244874,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 122.000021458,
+      "virtual_time": "03-21 12:34",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 12689.488103604903,
+      "read_qps": 18.49998265626626,
+      "read_lat": {
+        "count": 37,
+        "p50_ms": 26.575,
+        "p95_ms": 47.935,
+        "p99_ms": 222.975,
+        "p999_ms": 222.975,
+        "max_ms": 222.975
+      },
+      "backlog": 6218798,
+      "lag_virtual_s": 12194351.549,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6220887,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 124.000020458,
+      "virtual_time": "03-23 19:57",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 10325.505162752583,
+      "read_qps": 14.500007250003627,
+      "read_lat": {
+        "count": 29,
+        "p50_ms": 30.527,
+        "p95_ms": 172.159,
+        "p99_ms": 484.095,
+        "p999_ms": 484.095,
+        "max_ms": 484.095
+      },
+      "backlog": 6198147,
+      "lag_virtual_s": 12393623.3534,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6199174,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 126.000021333,
+      "virtual_time": "03-26 03:33",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15582.993182440483,
+      "read_qps": 22.499990156254306,
+      "read_lat": {
+        "count": 45,
+        "p50_ms": 23.535,
+        "p95_ms": 303.615,
+        "p99_ms": 342.271,
+        "p999_ms": 342.271,
+        "max_ms": 342.271
+      },
+      "backlog": 6166981,
+      "lag_virtual_s": 12593639.0885,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6168141,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 128.000019249,
+      "virtual_time": "03-28 11:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 697.5007267957574,
+      "read_qps": 1.0000010420010859,
+      "read_lat": {
+        "count": 2,
+        "p50_ms": 1467.391,
+        "p95_ms": 1516.543,
+        "p99_ms": 1516.543,
+        "p999_ms": 1516.543,
+        "max_ms": 1516.543
+      },
+      "backlog": 6165586,
+      "lag_virtual_s": 12793849.1486,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6168051,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 130.000019916,
+      "virtual_time": "03-30 18:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 5538.498152910865,
+      "read_qps": 7.9999973320008895,
+      "read_lat": {
+        "count": 16,
+        "p50_ms": 21.519,
+        "p95_ms": 37.023,
+        "p99_ms": 44.031,
+        "p999_ms": 44.031,
+        "max_ms": 44.031
+      },
+      "backlog": 6154509,
+      "lag_virtual_s": 12993379.3232,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6155774,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 132.000019958,
+      "virtual_time": "04-02 02:13",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 22418.49952921151,
+      "read_qps": 31.999999328000015,
+      "read_lat": {
+        "count": 64,
+        "p50_ms": 24.287,
+        "p95_ms": 121.471,
+        "p99_ms": 169.727,
+        "p999_ms": 173.183,
+        "max_ms": 173.183
+      },
+      "backlog": 6109672,
+      "lag_virtual_s": 13193311.6793,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6111012,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 134.000018583,
+      "virtual_time": "04-04 09:46",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 7220.504964097163,
+      "read_qps": 10.500007218754963,
+      "read_lat": {
+        "count": 21,
+        "p50_ms": 44.735,
+        "p95_ms": 289.279,
+        "p99_ms": 289.791,
+        "p999_ms": 289.791,
+        "max_ms": 289.791
+      },
+      "backlog": 6095231,
+      "lag_virtual_s": 13393201.7819,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6095231,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 136.000025749,
+      "virtual_time": "04-06 17:20",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3139.4887512118044,
+      "read_qps": 4.49998387655777,
+      "read_lat": {
+        "count": 9,
+        "p50_ms": 50.943,
+        "p95_ms": 138.239,
+        "p99_ms": 138.239,
+        "p999_ms": 138.239,
+        "max_ms": 138.239
+      },
+      "backlog": 6088952,
+      "lag_virtual_s": 13593255.959,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6090147,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 138.000021249,
+      "virtual_time": "04-09 00:54",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 6088952,
+      "lag_virtual_s": 13793236.3615,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6090067,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 140.000020041,
+      "virtual_time": "04-11 08:25",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14741.008903569378,
+      "read_qps": 21.00001268400766,
+      "read_lat": {
+        "count": 42,
+        "p50_ms": 26.799,
+        "p95_ms": 75.007,
+        "p99_ms": 144.511,
+        "p999_ms": 144.511,
+        "max_ms": 144.511
+      },
+      "backlog": 6059470,
+      "lag_virtual_s": 13993005.3018,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6060437,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 142.00001975,
+      "virtual_time": "04-13 15:58",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14695.502138195561,
+      "read_qps": 21.000003055500446,
+      "read_lat": {
+        "count": 42,
+        "p50_ms": 53.343,
+        "p95_ms": 308.223,
+        "p99_ms": 331.519,
+        "p999_ms": 331.519,
+        "max_ms": 331.519
+      },
+      "backlog": 6030079,
+      "lag_virtual_s": 14192790.1627,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 6031264,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 144.000020083,
+      "virtual_time": "04-15 23:31",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15927.49734807169,
+      "read_qps": 22.999996170500637,
+      "read_lat": {
+        "count": 46,
+        "p50_ms": 80.383,
+        "p95_ms": 224.895,
+        "p99_ms": 245.887,
+        "p999_ms": 245.887,
+        "max_ms": 245.887
+      },
+      "backlog": 5998224,
+      "lag_virtual_s": 14392580.5319,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5998224,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 146.000022624,
+      "virtual_time": "04-18 07:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9473.987963298292,
+      "read_qps": 13.49998284827179,
+      "read_lat": {
+        "count": 27,
+        "p50_ms": 62.687,
+        "p95_ms": 204.543,
+        "p99_ms": 228.991,
+        "p999_ms": 228.991,
+        "max_ms": 228.991
+      },
+      "backlog": 5979276,
+      "lag_virtual_s": 14592782.975,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5979276,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 148.000018917,
+      "virtual_time": "04-20 14:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14747.027333615162,
+      "read_qps": 21.000038923572145,
+      "read_lat": {
+        "count": 42,
+        "p50_ms": 71.231,
+        "p95_ms": 255.359,
+        "p99_ms": 291.839,
+        "p999_ms": 291.839,
+        "max_ms": 291.839
+      },
+      "backlog": 5949782,
+      "lag_virtual_s": 14792327.2743,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5950034,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 150.000022708,
+      "virtual_time": "04-22 22:13",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15428.470755333683,
+      "read_qps": 21.999958299079044,
+      "read_lat": {
+        "count": 44,
+        "p50_ms": 42.687,
+        "p95_ms": 168.319,
+        "p99_ms": 187.007,
+        "p999_ms": 187.007,
+        "max_ms": 187.007
+      },
+      "backlog": 5918925,
+      "lag_virtual_s": 14992293.8513,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5920207,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 152.000019292,
+      "virtual_time": "04-25 05:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 5575.509522970266,
+      "read_qps": 8.000013664023339,
+      "read_lat": {
+        "count": 16,
+        "p50_ms": 22.239,
+        "p95_ms": 42.623,
+        "p99_ms": 1609.727,
+        "p999_ms": 1609.727,
+        "max_ms": 1609.727
+      },
+      "backlog": 5907774,
+      "lag_virtual_s": 15192079.7584,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5908170,
+        "mongo_index_bytes": 491368448,
+        "mongo_storage_bytes": 5296291840
+      }
+    },
+    {
+      "elapsed_s": 154.000020541,
+      "virtual_time": "04-27 13:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11960.492530672416,
+      "read_qps": 16.99998938350663,
+      "read_lat": {
+        "count": 34,
+        "p50_ms": 19.119,
+        "p95_ms": 36.383,
+        "p99_ms": 1175.551,
+        "p999_ms": 1175.551,
+        "max_ms": 1175.551
+      },
+      "backlog": 5883853,
+      "lag_virtual_s": 15392011.0607,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5885025,
+        "mongo_index_bytes": 491319296,
+        "mongo_storage_bytes": 5332533248
+      }
+    },
+    {
+      "elapsed_s": 156.000024916,
+      "virtual_time": "04-29 21:01",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 19852.956571657498,
+      "read_qps": 27.999938750133982,
+      "read_lat": {
+        "count": 56,
+        "p50_ms": 25.967,
+        "p95_ms": 53.503,
+        "p99_ms": 66.175,
+        "p999_ms": 67.455,
+        "max_ms": 67.455
+      },
+      "backlog": 5844147,
+      "lag_virtual_s": 15592355.6154,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5844590,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 5963984896
+      }
+    },
+    {
+      "elapsed_s": 158.000019083,
+      "virtual_time": "05-02 04:23",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14345.041837314518,
+      "read_qps": 20.500059788424373,
+      "read_lat": {
+        "count": 41,
+        "p50_ms": 75.711,
+        "p95_ms": 266.751,
+        "p99_ms": 852.991,
+        "p999_ms": 852.991,
+        "max_ms": 852.991
+      },
+      "backlog": 5815457,
+      "lag_virtual_s": 15791556.7325,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5815457,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6271905792
+      }
+    },
+    {
+      "elapsed_s": 160.000021375,
+      "virtual_time": "05-04 11:58",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17352.98011348479,
+      "read_qps": 24.999971350032833,
+      "read_lat": {
+        "count": 50,
+        "p50_ms": 67.135,
+        "p95_ms": 494.591,
+        "p99_ms": 570.879,
+        "p999_ms": 570.879,
+        "max_ms": 570.879
+      },
+      "backlog": 5780751,
+      "lag_virtual_s": 15991468.1347,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5781776,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6518915072
+      }
+    },
+    {
+      "elapsed_s": 162.000021166,
+      "virtual_time": "05-06 19:33",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 1733.0001810985189,
+      "read_qps": 2.5000002612500274,
+      "read_lat": {
+        "count": 5,
+        "p50_ms": 1070.079,
+        "p95_ms": 1388.543,
+        "p99_ms": 1388.543,
+        "p999_ms": 1388.543,
+        "max_ms": 1388.543
+      },
+      "backlog": 5777285,
+      "lag_virtual_s": 16191540.6659,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5779794,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6530711552
+      }
+    },
+    {
+      "elapsed_s": 164.000037624,
+      "virtual_time": "05-09 03:06",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 5777285,
+      "lag_virtual_s": 16391479.8185,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5779634,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531829760
+      }
+    },
+    {
+      "elapsed_s": 166.000018874,
+      "virtual_time": "05-11 10:40",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11179.10480410754,
+      "read_qps": 16.00015000140626,
+      "read_lat": {
+        "count": 32,
+        "p50_ms": 45.343,
+        "p95_ms": 259.327,
+        "p99_ms": 334.335,
+        "p999_ms": 334.335,
+        "max_ms": 334.335
+      },
+      "backlog": 5754927,
+      "lag_virtual_s": 16591398.4,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5755592,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 168.000019625,
+      "virtual_time": "05-13 18:11",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14967.49437970586,
+      "read_qps": 21.499991926753033,
+      "read_lat": {
+        "count": 43,
+        "p50_ms": 41.631,
+        "p95_ms": 765.439,
+        "p99_ms": 863.231,
+        "p999_ms": 863.231,
+        "max_ms": 863.231
+      },
+      "backlog": 5724992,
+      "lag_virtual_s": 16791179.2358,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5725712,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 170.000018625,
+      "virtual_time": "05-16 01:44",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14435.00721750361,
+      "read_qps": 21.500010750005377,
+      "read_lat": {
+        "count": 43,
+        "p50_ms": 64.863,
+        "p95_ms": 446.207,
+        "p99_ms": 472.319,
+        "p999_ms": 472.319,
+        "max_ms": 472.319
+      },
+      "backlog": 5696122,
+      "lag_virtual_s": 16990928.1613,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5696907,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 172.000020542,
+      "virtual_time": "05-18 09:32",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4962.995242969059,
+      "read_qps": 7.49999281125689,
+      "read_lat": {
+        "count": 15,
+        "p50_ms": 28.159,
+        "p95_ms": 53.407,
+        "p99_ms": 56.735,
+        "p999_ms": 56.735,
+        "max_ms": 56.735
+      },
+      "backlog": 5686196,
+      "lag_virtual_s": 17191747.7051,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5686196,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 174.000021916,
+      "virtual_time": "05-20 16:55",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17686.98784903935,
+      "read_qps": 26.499981794512507,
+      "read_lat": {
+        "count": 53,
+        "p50_ms": 33.727,
+        "p95_ms": 1661.951,
+        "p99_ms": 1668.095,
+        "p999_ms": 1679.359,
+        "max_ms": 1679.359
+      },
+      "backlog": 5650822,
+      "lag_virtual_s": 17390985.0297,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5650822,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 176.000020958,
+      "virtual_time": "05-23 00:32",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9563.004580679195,
+      "read_qps": 14.500006945503326,
+      "read_lat": {
+        "count": 29,
+        "p50_ms": 100.095,
+        "p95_ms": 410.879,
+        "p99_ms": 414.207,
+        "p999_ms": 414.207,
+        "max_ms": 414.207
+      },
+      "backlog": 5631696,
+      "lag_virtual_s": 17591089.3558,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5631696,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 178.000018666,
+      "virtual_time": "05-25 08:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9889.511333379987,
+      "read_qps": 15.0000171900197,
+      "read_lat": {
+        "count": 30,
+        "p50_ms": 26.255,
+        "p95_ms": 1058.815,
+        "p99_ms": 1063.935,
+        "p999_ms": 1063.935,
+        "max_ms": 1063.935
+      },
+      "backlog": 5611917,
+      "lag_virtual_s": 17790888.3313,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5612914,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 180.000019375,
+      "virtual_time": "05-27 15:30",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 652.999768511582,
+      "read_qps": 0.9999996455001257,
+      "read_lat": {
+        "count": 2,
+        "p50_ms": 2177.023,
+        "p95_ms": 2191.359,
+        "p99_ms": 2191.359,
+        "p999_ms": 2191.359,
+        "max_ms": 2191.359
+      },
+      "backlog": 5610611,
+      "lag_virtual_s": 17990439.152,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5612734,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 182.000019708,
+      "virtual_time": "05-29 23:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9262.998457710757,
+      "read_qps": 13.999997669000388,
+      "read_lat": {
+        "count": 28,
+        "p50_ms": 22.175,
+        "p95_ms": 57.599,
+        "p99_ms": 64.479,
+        "p999_ms": 64.479,
+        "max_ms": 64.479
+      },
+      "backlog": 5592085,
+      "lag_virtual_s": 18190363.9194,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5592498,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 184.000031083,
+      "virtual_time": "06-01 06:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 12003.431730482032,
+      "read_qps": 17.999897625582253,
+      "read_lat": {
+        "count": 36,
+        "p50_ms": 23.007,
+        "p95_ms": 172.927,
+        "p99_ms": 205.311,
+        "p999_ms": 205.311,
+        "max_ms": 205.311
+      },
+      "backlog": 5568078,
+      "lag_virtual_s": 18390569.2497,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5568078,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 186.000023083,
+      "virtual_time": "06-03 14:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 8943.035772143088,
+      "read_qps": 13.500054000216,
+      "read_lat": {
+        "count": 27,
+        "p50_ms": 139.391,
+        "p95_ms": 1086.463,
+        "p99_ms": 1089.535,
+        "p999_ms": 1089.535,
+        "max_ms": 1089.535
+      },
+      "backlog": 5550192,
+      "lag_virtual_s": 18590122.1372,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5552547,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 188.000020625,
+      "virtual_time": "06-05 21:45",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14227.01748500449,
+      "read_qps": 21.500026423532475,
+      "read_lat": {
+        "count": 43,
+        "p50_ms": 32.863,
+        "p95_ms": 222.847,
+        "p99_ms": 250.751,
+        "p999_ms": 250.751,
+        "max_ms": 250.751
+      },
+      "backlog": 5521738,
+      "lag_virtual_s": 18790073.4173,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5521853,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 190.000021374,
+      "virtual_time": "06-08 05:17",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17528.99343539196,
+      "read_qps": 25.99999026300365,
+      "read_lat": {
+        "count": 52,
+        "p50_ms": 27.999,
+        "p95_ms": 469.759,
+        "p99_ms": 495.103,
+        "p999_ms": 525.823,
+        "max_ms": 525.823
+      },
+      "backlog": 5486680,
+      "lag_virtual_s": 18989768.1385,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5486680,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 192.000021917,
+      "virtual_time": "06-10 12:52",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 4300.998832278817,
+      "read_qps": 6.499998235250479,
+      "read_lat": {
+        "count": 13,
+        "p50_ms": 233.215,
+        "p95_ms": 310.527,
+        "p99_ms": 335.871,
+        "p999_ms": 335.871,
+        "max_ms": 335.871
+      },
+      "backlog": 5478078,
+      "lag_virtual_s": 19189805.006,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5478795,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 194.000034208,
+      "virtual_time": "06-12 20:27",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 704.9956674491257,
+      "read_qps": 0.9999938545377669,
+      "read_lat": {
+        "count": 2,
+        "p50_ms": 1713.151,
+        "p95_ms": 1756.159,
+        "p99_ms": 1756.159,
+        "p999_ms": 1756.159,
+        "max_ms": 1756.159
+      },
+      "backlog": 5476668,
+      "lag_virtual_s": 19389975.0069,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5478625,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 196.00002775,
+      "virtual_time": "06-15 04:08",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15291.549376412937,
+      "read_qps": 23.00007426723981,
+      "read_lat": {
+        "count": 46,
+        "p50_ms": 23.103,
+        "p95_ms": 53.727,
+        "p99_ms": 139.007,
+        "p999_ms": 139.007,
+        "max_ms": 139.007
+      },
+      "backlog": 5446085,
+      "lag_virtual_s": 19590198.3124,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5447568,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 198.000025042,
+      "virtual_time": "06-17 11:34",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6616.50895875313,
+      "read_qps": 10.000013540018333,
+      "read_lat": {
+        "count": 20,
+        "p50_ms": 21.583,
+        "p95_ms": 77.375,
+        "p99_ms": 97.279,
+        "p999_ms": 97.279,
+        "max_ms": 97.279
+      },
+      "backlog": 5432852,
+      "lag_virtual_s": 19789695.8415,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5434221,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 200.000025499,
+      "virtual_time": "06-19 19:16",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 338.9999225385177,
+      "read_qps": 0.4999998857500261,
+      "read_lat": {
+        "count": 1,
+        "p50_ms": 1879.039,
+        "p95_ms": 1879.039,
+        "p99_ms": 1879.039,
+        "p999_ms": 1879.039,
+        "max_ms": 1879.039
+      },
+      "backlog": 5432174,
+      "lag_virtual_s": 19990281.9014,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5433861,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 202.000018499,
+      "virtual_time": "06-22 02:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 3698.0129430453007,
+      "read_qps": 5.500019250067376,
+      "read_lat": {
+        "count": 11,
+        "p50_ms": 22.191,
+        "p95_ms": 36.991,
+        "p99_ms": 41.023,
+        "p999_ms": 41.023,
+        "max_ms": 41.023
+      },
+      "backlog": 5424778,
+      "lag_virtual_s": 20189434.5674,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5426006,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 204.000023208,
+      "virtual_time": "06-24 10:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 12214.471241027462,
+      "read_qps": 18.499956441852557,
+      "read_lat": {
+        "count": 37,
+        "p50_ms": 28.943,
+        "p95_ms": 781.823,
+        "p99_ms": 835.583,
+        "p999_ms": 835.583,
+        "max_ms": 835.583
+      },
+      "backlog": 5400349,
+      "lag_virtual_s": 20389237.9347,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5402031,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 206.000021249,
+      "virtual_time": "06-26 17:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 13214.012943125677,
+      "read_qps": 20.00001959001919,
+      "read_lat": {
+        "count": 40,
+        "p50_ms": 29.071,
+        "p95_ms": 263.935,
+        "p99_ms": 374.271,
+        "p999_ms": 374.271,
+        "max_ms": 374.271
+      },
+      "backlog": 5373921,
+      "lag_virtual_s": 20589101.9395,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5373921,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 208.000022958,
+      "virtual_time": "06-29 01:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9073.492246700875,
+      "read_qps": 13.499988464259856,
+      "read_lat": {
+        "count": 27,
+        "p50_ms": 43.359,
+        "p95_ms": 950.783,
+        "p99_ms": 989.183,
+        "p999_ms": 989.183,
+        "max_ms": 989.183
+      },
+      "backlog": 5355774,
+      "lag_virtual_s": 20789075.3986,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5356473,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 210.000020333,
+      "virtual_time": "07-01 08:50",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17849.5234274995,
+      "read_qps": 27.00003543754651,
+      "read_lat": {
+        "count": 54,
+        "p50_ms": 21.951,
+        "p95_ms": 38.047,
+        "p99_ms": 74.175,
+        "p999_ms": 102.719,
+        "max_ms": 102.719
+      },
+      "backlog": 5320075,
+      "lag_virtual_s": 20988811.1491,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5320772,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 212.000023708,
+      "virtual_time": "07-03 16:25",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2293.496129725281,
+      "read_qps": 3.499994093759967,
+      "read_lat": {
+        "count": 7,
+        "p50_ms": 473.855,
+        "p95_ms": 882.687,
+        "p99_ms": 882.687,
+        "p999_ms": 882.687,
+        "max_ms": 882.687
+      },
+      "backlog": 5315488,
+      "lag_virtual_s": 21188865.6083,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5316633,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 214.000020375,
+      "virtual_time": "07-05 23:58",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 22255.537088852558,
+      "read_qps": 33.500055827843035,
+      "read_lat": {
+        "count": 67,
+        "p50_ms": 23.887,
+        "p95_ms": 144.255,
+        "p99_ms": 327.935,
+        "p999_ms": 351.231,
+        "max_ms": 351.231
+      },
+      "backlog": 5270977,
+      "lag_virtual_s": 21388615.8047,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5270977,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 216.000020625,
+      "virtual_time": "07-08 07:35",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15543.998057000244,
+      "read_qps": 22.999997125000363,
+      "read_lat": {
+        "count": 46,
+        "p50_ms": 145.279,
+        "p95_ms": 378.623,
+        "p99_ms": 490.495,
+        "p999_ms": 490.495,
+        "max_ms": 490.495
+      },
+      "backlog": 5239889,
+      "lag_virtual_s": 21588675.2724,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5241612,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 218.000021583,
+      "virtual_time": "07-10 15:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9161.4956116436,
+      "read_qps": 13.999993294003211,
+      "read_lat": {
+        "count": 28,
+        "p50_ms": 20.703,
+        "p95_ms": 161.151,
+        "p99_ms": 186.623,
+        "p999_ms": 186.623,
+        "max_ms": 186.623
+      },
+      "backlog": 5221566,
+      "lag_virtual_s": 21788245.8392,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5221566,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 220.00001975,
+      "virtual_time": "07-12 22:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11652.510679526038,
+      "read_qps": 17.5000160387647,
+      "read_lat": {
+        "count": 35,
+        "p50_ms": 200.575,
+        "p95_ms": 377.087,
+        "p99_ms": 508.159,
+        "p999_ms": 508.159,
+        "max_ms": 508.159
+      },
+      "backlog": 5198261,
+      "lag_virtual_s": 21988169.5357,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5199199,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 222.000020624,
+      "virtual_time": "07-15 06:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 21315.49068513057,
+      "read_qps": 31.999986016006112,
+      "read_lat": {
+        "count": 64,
+        "p50_ms": 31.423,
+        "p95_ms": 175.231,
+        "p99_ms": 235.007,
+        "p999_ms": 256.767,
+        "max_ms": 256.767
+      },
+      "backlog": 5155630,
+      "lag_virtual_s": 22187846.6863,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5155630,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 224.000020708,
+      "virtual_time": "07-17 13:46",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 7327.499692245014,
+      "read_qps": 10.99999953800002,
+      "read_lat": {
+        "count": 22,
+        "p50_ms": 88.703,
+        "p95_ms": 327.423,
+        "p99_ms": 356.607,
+        "p999_ms": 356.607,
+        "max_ms": 356.607
+      },
+      "backlog": 5140975,
+      "lag_virtual_s": 22387977.7123,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5142954,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 226.000021333,
+      "virtual_time": "07-19 21:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 18015.994370001757,
+      "read_qps": 26.999991562502633,
+      "read_lat": {
+        "count": 54,
+        "p50_ms": 86.399,
+        "p95_ms": 202.367,
+        "p99_ms": 205.439,
+        "p999_ms": 226.559,
+        "max_ms": 226.559
+      },
+      "backlog": 5104943,
+      "lag_virtual_s": 22587688.2044,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5105844,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 228.000020708,
+      "virtual_time": "07-22 05:01",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 12063.503769844929,
+      "read_qps": 18.00000562500176,
+      "read_lat": {
+        "count": 36,
+        "p50_ms": 36.351,
+        "p95_ms": 120.767,
+        "p99_ms": 168.447,
+        "p999_ms": 168.447,
+        "max_ms": 168.447
+      },
+      "backlog": 5080816,
+      "lag_virtual_s": 22788178.5227,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5082545,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 230.000032041,
+      "virtual_time": "07-24 12:23",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 5080816,
+      "lag_virtual_s": 22987496.0597,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5082545,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 232.000020333,
+      "virtual_time": "07-26 19:57",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17229.600862083447,
+      "read_qps": 27.00015805892528,
+      "read_lat": {
+        "count": 54,
+        "p50_ms": 30.111,
+        "p95_ms": 191.615,
+        "p99_ms": 198.655,
+        "p999_ms": 201.599,
+        "max_ms": 201.599
+      },
+      "backlog": 5046357,
+      "lag_virtual_s": 23187288.3729,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5046357,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 234.000023666,
+      "virtual_time": "07-29 03:30",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 6088.489853531659,
+      "read_qps": 9.499984168276384,
+      "read_lat": {
+        "count": 19,
+        "p50_ms": 31.471,
+        "p95_ms": 136.319,
+        "p99_ms": 192.255,
+        "p999_ms": 192.255,
+        "max_ms": 192.255
+      },
+      "backlog": 5034180,
+      "lag_virtual_s": 23387179.9485,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5036385,
+        "mongo_index_bytes": 492404736,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 236.000020958,
+      "virtual_time": "07-31 11:03",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9399.512726940233,
+      "read_qps": 15.0000203100275,
+      "read_lat": {
+        "count": 30,
+        "p50_ms": 17.567,
+        "p95_ms": 139.903,
+        "p99_ms": 152.191,
+        "p999_ms": 152.191,
+        "max_ms": 152.191
+      },
+      "backlog": 5015381,
+      "lag_virtual_s": 23587052.7908,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 5016756,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531895296
+      }
+    },
+    {
+      "elapsed_s": 238.000023374,
+      "virtual_time": "08-02 18:36",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 22030.473387188147,
+      "read_qps": 34.49995832405035,
+      "read_lat": {
+        "count": 69,
+        "p50_ms": 18.783,
+        "p95_ms": 67.583,
+        "p99_ms": 76.863,
+        "p999_ms": 463.103,
+        "max_ms": 463.103
+      },
+      "backlog": 4971320,
+      "lag_virtual_s": 23786816.3248,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4972036,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 240.000026458,
+      "virtual_time": "08-05 02:15",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 25824.460178682406,
+      "read_qps": 40.4999375490963,
+      "read_lat": {
+        "count": 81,
+        "p50_ms": 26.415,
+        "p95_ms": 91.327,
+        "p99_ms": 102.399,
+        "p999_ms": 139.391,
+        "max_ms": 139.391
+      },
+      "backlog": 4919671,
+      "lag_virtual_s": 23986825.0051,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4920050,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 242.00002,
+      "virtual_time": "08-07 09:44",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 18286.05904568466,
+      "read_qps": 29.00009364130237,
+      "read_lat": {
+        "count": 58,
+        "p50_ms": 26.175,
+        "p95_ms": 95.871,
+        "p99_ms": 111.551,
+        "p999_ms": 145.791,
+        "max_ms": 145.791
+      },
+      "backlog": 4883099,
+      "lag_virtual_s": 24186355.2262,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4883676,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 244.000032167,
+      "virtual_time": "08-09 17:23",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 7890.451998435267,
+      "read_qps": 12.49992395671261,
+      "read_lat": {
+        "count": 25,
+        "p50_ms": 43.679,
+        "p95_ms": 284.415,
+        "p99_ms": 287.743,
+        "p999_ms": 287.743,
+        "max_ms": 287.743
+      },
+      "backlog": 4867318,
+      "lag_virtual_s": 24386641.6524,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4869104,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 246.000024375,
+      "virtual_time": "08-12 01:07",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 4867318,
+      "lag_virtual_s": 24587226.4957,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4868904,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 248.000023458,
+      "virtual_time": "08-14 08:24",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 2799.5012835713383,
+      "read_qps": 4.500002063250946,
+      "read_lat": {
+        "count": 9,
+        "p50_ms": 16.399,
+        "p95_ms": 225.279,
+        "p99_ms": 225.279,
+        "p999_ms": 225.279,
+        "max_ms": 225.279
+      },
+      "backlog": 4861719,
+      "lag_virtual_s": 24786222.4781,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4862825,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 250.000020041,
+      "virtual_time": "08-16 15:58",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 23719.540524834985,
+      "read_qps": 37.50006406885946,
+      "read_lat": {
+        "count": 75,
+        "p50_ms": 30.703,
+        "p95_ms": 89.983,
+        "p99_ms": 181.503,
+        "p999_ms": 190.591,
+        "max_ms": 190.591
+      },
+      "backlog": 4814280,
+      "lag_virtual_s": 24985998.3663,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4814488,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 252.000020792,
+      "virtual_time": "08-18 23:31",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11978.495502074938,
+      "read_qps": 18.99999286550268,
+      "read_lat": {
+        "count": 38,
+        "p50_ms": 19.327,
+        "p95_ms": 1123.327,
+        "p99_ms": 1131.519,
+        "p999_ms": 1131.519,
+        "max_ms": 1131.519
+      },
+      "backlog": 4790323,
+      "lag_virtual_s": 25185786.946,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4790323,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 254.000022958,
+      "virtual_time": "08-21 07:04",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17808.48071341539,
+      "read_qps": 27.999969676032844,
+      "read_lat": {
+        "count": 56,
+        "p50_ms": 42.943,
+        "p95_ms": 247.039,
+        "p99_ms": 288.255,
+        "p999_ms": 305.919,
+        "max_ms": 305.919
+      },
+      "backlog": 4754706,
+      "lag_virtual_s": 25385596.7341,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4754706,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 256.000019208,
+      "virtual_time": "08-23 14:41",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 8847.016588156102,
+      "read_qps": 14.000026250049217,
+      "read_lat": {
+        "count": 28,
+        "p50_ms": 16.655,
+        "p95_ms": 232.831,
+        "p99_ms": 256.895,
+        "p999_ms": 256.895,
+        "max_ms": 256.895
+      },
+      "backlog": 4737012,
+      "lag_virtual_s": 25585732.7435,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4738327,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 258.000020666,
+      "virtual_time": "08-25 22:15",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 18330.986636710742,
+      "read_qps": 28.999978859015414,
+      "read_lat": {
+        "count": 58,
+        "p50_ms": 35.327,
+        "p95_ms": 222.975,
+        "p99_ms": 327.167,
+        "p999_ms": 407.295,
+        "max_ms": 407.295
+      },
+      "backlog": 4700350,
+      "lag_virtual_s": 25785525.0484,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4700809,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 260.000022541,
+      "virtual_time": "08-28 05:49",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 12401.488373604649,
+      "read_qps": 19.49998171876714,
+      "read_lat": {
+        "count": 39,
+        "p50_ms": 111.999,
+        "p95_ms": 183.679,
+        "p99_ms": 544.767,
+        "p999_ms": 544.767,
+        "max_ms": 544.767
+      },
+      "backlog": 4675547,
+      "lag_virtual_s": 25985418.5699,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4675547,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 262.000020416,
+      "virtual_time": "08-30 13:21",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 13667.51452173418,
+      "read_qps": 21.50002284377427,
+      "read_lat": {
+        "count": 43,
+        "p50_ms": 41.599,
+        "p95_ms": 99.519,
+        "p99_ms": 855.551,
+        "p999_ms": 855.551,
+        "max_ms": 855.551
+      },
+      "backlog": 4648212,
+      "lag_virtual_s": 26185192.6496,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4650130,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 264.000022917,
+      "virtual_time": "09-01 20:50",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 14666.481659564684,
+      "read_qps": 22.999971238535966,
+      "read_lat": {
+        "count": 46,
+        "p50_ms": 46.303,
+        "p95_ms": 232.703,
+        "p99_ms": 237.951,
+        "p999_ms": 237.951,
+        "max_ms": 237.951
+      },
+      "backlog": 4618879,
+      "lag_virtual_s": 26384772.1373,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4620609,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 266.000019333,
+      "virtual_time": "09-04 04:27",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 4618879,
+      "lag_virtual_s": 26585031.28,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4620459,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 268.000023458,
+      "virtual_time": "09-06 11:58",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 10841.47763945237,
+      "read_qps": 16.99996493757232,
+      "read_lat": {
+        "count": 34,
+        "p50_ms": 16.623,
+        "p95_ms": 74.175,
+        "p99_ms": 93.567,
+        "p999_ms": 93.567,
+        "max_ms": 93.567
+      },
+      "backlog": 4597196,
+      "lag_virtual_s": 26784707.0096,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4597858,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 270.000020291,
+      "virtual_time": "09-08 19:32",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 22373.0354277016,
+      "read_qps": 35.000055422587764,
+      "read_lat": {
+        "count": 70,
+        "p50_ms": 39.487,
+        "p95_ms": 93.055,
+        "p99_ms": 98.815,
+        "p999_ms": 102.079,
+        "max_ms": 102.079
+      },
+      "backlog": 4552450,
+      "lag_virtual_s": 26984489.9269,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4552450,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 272.000023333,
+      "virtual_time": "09-11 03:11",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17193.97384796578,
+      "read_qps": 26.999958933062466,
+      "read_lat": {
+        "count": 54,
+        "p50_ms": 28.111,
+        "p95_ms": 187.007,
+        "p99_ms": 211.327,
+        "p999_ms": 213.375,
+        "max_ms": 213.375
+      },
+      "backlog": 4518062,
+      "lag_virtual_s": 27184611.024,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4519049,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 274.000024208,
+      "virtual_time": "09-13 10:46",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 17112.492513284524,
+      "read_qps": 26.999988187505167,
+      "read_lat": {
+        "count": 54,
+        "p50_ms": 49.567,
+        "p95_ms": 226.431,
+        "p99_ms": 266.239,
+        "p999_ms": 281.087,
+        "max_ms": 281.087
+      },
+      "backlog": 4483837,
+      "lag_virtual_s": 27384540.5207,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4485848,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 276.00002825,
+      "virtual_time": "09-15 18:14",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 4483837,
+      "lag_virtual_s": 27584186.1832,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4485848,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 278.000020499,
+      "virtual_time": "09-18 01:43",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 4483837,
+      "lag_virtual_s": 27783937.1626,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4485700,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 280.000020291,
+      "virtual_time": "09-20 09:18",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 12983.50135028414,
+      "read_qps": 20.50000213200022,
+      "read_lat": {
+        "count": 41,
+        "p50_ms": 24.847,
+        "p95_ms": 56.543,
+        "p99_ms": 94.079,
+        "p999_ms": 94.079,
+        "max_ms": 94.079
+      },
+      "backlog": 4457870,
+      "lag_virtual_s": 27983843.6509,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4458256,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 282.000022125,
+      "virtual_time": "09-22 16:53",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11989.989005180083,
+      "read_qps": 19.999981660016818,
+      "read_lat": {
+        "count": 40,
+        "p50_ms": 18.383,
+        "p95_ms": 234.111,
+        "p99_ms": 444.415,
+        "p999_ms": 444.415,
+        "max_ms": 444.415
+      },
+      "backlog": 4433890,
+      "lag_virtual_s": 28183836.7101,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4434578,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 284.000021208,
+      "virtual_time": "09-25 00:23",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 25082.01150010227,
+      "read_qps": 41.00001879850862,
+      "read_lat": {
+        "count": 82,
+        "p50_ms": 28.591,
+        "p95_ms": 154.495,
+        "p99_ms": 180.863,
+        "p999_ms": 256.127,
+        "max_ms": 256.127
+      },
+      "backlog": 4383726,
+      "lag_virtual_s": 28383280.4187,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4385050,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 286.000023042,
+      "virtual_time": "09-27 07:56",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 19375.982232224294,
+      "read_qps": 31.99997065602691,
+      "read_lat": {
+        "count": 64,
+        "p50_ms": 20.751,
+        "p95_ms": 242.303,
+        "p99_ms": 277.503,
+        "p999_ms": 320.767,
+        "max_ms": 320.767
+      },
+      "backlog": 4344974,
+      "lag_virtual_s": 28583033.6902,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4344974,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 288.000020458,
+      "virtual_time": "09-29 15:33",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 9103.011761091195,
+      "read_qps": 15.000019380025039,
+      "read_lat": {
+        "count": 30,
+        "p50_ms": 35.199,
+        "p95_ms": 987.135,
+        "p99_ms": 994.815,
+        "p999_ms": 994.815,
+        "max_ms": 994.815
+      },
+      "backlog": 4326768,
+      "lag_virtual_s": 28783174.7953,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4327693,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 290.000033292,
+      "virtual_time": "10-01 23:09",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 11190.428191022298,
+      "read_qps": 18.499881286261786,
+      "read_lat": {
+        "count": 37,
+        "p50_ms": 108.543,
+        "p95_ms": 202.111,
+        "p99_ms": 205.567,
+        "p999_ms": 205.567,
+        "max_ms": 205.567
+      },
+      "backlog": 4304387,
+      "lag_virtual_s": 28983141.6629,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4305608,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 292.000030583,
+      "virtual_time": "10-04 06:37",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 305.50041380031047,
+      "read_qps": 0.5000006772509173,
+      "read_lat": {
+        "count": 1,
+        "p50_ms": 35.711,
+        "p95_ms": 35.711,
+        "p99_ms": 35.711,
+        "p999_ms": 35.711,
+        "max_ms": 35.711
+      },
+      "backlog": 4303776,
+      "lag_virtual_s": 29182864.5339,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4305433,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 294.000019499,
+      "virtual_time": "10-06 14:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 15407.585388838226,
+      "read_qps": 25.500141321783207,
+      "read_lat": {
+        "count": 51,
+        "p50_ms": 18.447,
+        "p95_ms": 31.663,
+        "p99_ms": 46.111,
+        "p999_ms": 211.199,
+        "max_ms": 211.199
+      },
+      "backlog": 4272961,
+      "lag_virtual_s": 29382620.4719,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4274121,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 296.000020833,
+      "virtual_time": "10-08 21:45",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 20303.486457574534,
+      "read_qps": 33.499977655514904,
+      "read_lat": {
+        "count": 67,
+        "p50_ms": 24.543,
+        "p95_ms": 163.327,
+        "p99_ms": 255.359,
+        "p999_ms": 258.431,
+        "max_ms": 258.431
+      },
+      "backlog": 4232354,
+      "lag_virtual_s": 29582500.2472,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4232354,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 298.000023583,
+      "virtual_time": "10-11 05:17",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 21226.97081291513,
+      "read_qps": 34.99995187506617,
+      "read_lat": {
+        "count": 70,
+        "p50_ms": 45.759,
+        "p95_ms": 175.743,
+        "p99_ms": 393.983,
+        "p999_ms": 417.279,
+        "max_ms": 417.279
+      },
+      "backlog": 4189900,
+      "lag_virtual_s": 29782152.9778,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 4190678,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    },
+    {
+      "elapsed_s": 300.000027208,
+      "virtual_time": "10-13 13:57",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 16793.96956093017,
+      "read_qps": 27.999949250091984,
+      "read_lat": {
+        "count": 56,
+        "p50_ms": 19.151,
+        "p95_ms": 182.655,
+        "p99_ms": 188.287,
+        "p999_ms": 196.991,
+        "max_ms": 196.991
+      },
+      "backlog": 4156312,
+      "lag_virtual_s": 29985928.2687,
+      "write_errs": 0,
+      "read_errs": 1,
+      "size": {
+        "mongo_docs": 4157380,
+        "mongo_index_bytes": 490487808,
+        "mongo_storage_bytes": 6531891200
+      }
+    }
+  ]
+}

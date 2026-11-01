@@ -1,0 +1,116 @@
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-7fd455bcd9a9 Creating 
+ Container test-bench-postgres-run-7fd455bcd9a9 Created 
+2026/10/30 20:02:44 prefill: 1000194 tasks, 777632 rows/s
+2026/10/30 20:02:46 prefill: 2000124 tasks, 675618 rows/s
+2026/10/30 20:02:47 prefill: 3000259 tasks, 657003 rows/s
+2026/10/30 20:02:50 prefill: 4000203 tasks, 528319 rows/s
+2026/10/30 20:02:55 prefill: 5000142 tasks, 400270 rows/s
+2026/10/30 20:02:59 prefill: 6000110 tasks, 363159 rows/s
+2026/10/30 20:03:03 prefill: 7000257 tasks, 353946 rows/s
+2026/10/30 20:03:10 prefill: 8000195 tasks, 299573 rows/s
+2026/10/30 20:03:16 prefill: 9000043 tasks, 274968 rows/s
+2026/10/30 20:03:23 prefill: 10000103 tasks, 247467 rows/s
+2026/10/30 20:03:27 prefill done: 10199147 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 44s, 233851 rows/s (batch=500), size: pg_db_bytes=4283.9MB pg_wal_bytes=4499.2MB pg_live_tup=9970435 pg_dead_tup=0 
+2026/10/30 20:03:27 run=postgres-20261030-230237 backend=postgres role=both virtual_start=2026-10-30 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 20:03:37 vt=10-30 07:35 | W    3971 rows/s   3971 calls/s p50=1.9ms p99=108.6ms err=0 | R       0 rows/s      6 q/s p50=1.8ms p99=88.7ms err=0 | backlog=10238857 lag=0s(virt) | pg_db_bytes=4297.7MB pg_wal_bytes=4556.5MB pg_live_tup=10066209 pg_dead_tup=0 
+2026/10/30 20:03:47 vt=10-30 07:40 | W    3903 rows/s   3903 calls/s p50=1.6ms p99=114.5ms err=0 | R       0 rows/s      8 q/s p50=1.4ms p99=80.5ms err=0 | backlog=10277886 lag=0s(virt) | pg_db_bytes=4312.0MB pg_wal_bytes=4583.4MB pg_live_tup=10140819 pg_dead_tup=0 
+2026/10/30 20:03:57 vt=10-30 07:45 | W    4368 rows/s   4368 calls/s p50=1.5ms p99=103.5ms err=0 | R       0 rows/s      8 q/s p50=0.4ms p99=82.9ms err=0 | backlog=10321562 lag=0s(virt) | pg_db_bytes=4330.5MB pg_wal_bytes=4607.2MB pg_live_tup=10186793 pg_dead_tup=0 
+2026/10/30 20:04:07 vt=10-30 07:50 | W    4100 rows/s   4100 calls/s p50=2.2ms p99=142.6ms err=0 | R       0 rows/s      8 q/s p50=2.1ms p99=249.3ms err=0 | backlog=10362559 lag=0s(virt) | pg_db_bytes=4347.9MB pg_wal_bytes=4629.2MB pg_live_tup=10256388 pg_dead_tup=0 
+2026/10/30 20:04:17 vt=10-30 07:55 | W    4644 rows/s   4644 calls/s p50=1.3ms p99=40.8ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=13.9ms err=0 | backlog=10408998 lag=0s(virt) | pg_db_bytes=4367.1MB pg_wal_bytes=4653.9MB pg_live_tup=10301975 pg_dead_tup=0 
+2026/10/30 20:04:27 vt=10-30 08:00 | W    4111 rows/s   4111 calls/s p50=1.2ms p99=73.3ms err=0 | R       0 rows/s      8 q/s p50=0.2ms p99=32.7ms err=0 | backlog=10450109 lag=0s(virt) | pg_db_bytes=4384.4MB pg_wal_bytes=4675.9MB pg_live_tup=10343421 pg_dead_tup=0 
+2026/10/30 20:04:37 vt=10-30 08:05 | W    3293 rows/s   3293 calls/s p50=1.3ms p99=134.5ms err=0 | R    5904 rows/s     12 q/s p50=39.9ms p99=1605.6ms err=0 | backlog=10424006 lag=55s(virt) | pg_db_bytes=4398.0MB pg_wal_bytes=4725.1MB pg_live_tup=10320234 pg_dead_tup=59060 
+2026/10/30 20:04:47 vt=10-30 08:10 | W    3465 rows/s   3465 calls/s p50=1.3ms p99=62.6ms err=0 | R    9416 rows/s     18 q/s p50=10.0ms p99=1030.7ms err=0 | backlog=10364498 lag=0s(virt) | pg_db_bytes=4412.8MB pg_wal_bytes=4764.1MB pg_live_tup=10268532 pg_dead_tup=140539 
+2026/10/30 20:04:57 vt=10-30 08:15 | W    4238 rows/s   4238 calls/s p50=1.5ms p99=71.0ms err=0 | R    8573 rows/s     16 q/s p50=12.7ms p99=547.8ms err=0 | backlog=10321151 lag=0s(virt) | pg_db_bytes=4429.8MB pg_wal_bytes=4807.8MB pg_live_tup=10237401 pg_dead_tup=11368 
+2026/10/30 20:05:07 vt=10-30 08:20 | W    3843 rows/s   3843 calls/s p50=1.2ms p99=115.1ms err=0 | R    8529 rows/s     16 q/s p50=7.9ms p99=298.0ms err=0 | backlog=10274288 lag=0s(virt) | pg_db_bytes=4446.6MB pg_wal_bytes=4838.3MB pg_live_tup=10168155 pg_dead_tup=119586 
+2026/10/30 20:05:17 vt=10-30 08:25 | W    3884 rows/s   3884 calls/s p50=1.4ms p99=151.2ms err=0 | R    8537 rows/s     16 q/s p50=11.4ms p99=843.8ms err=0 | backlog=10227761 lag=0s(virt) | pg_db_bytes=4462.9MB pg_wal_bytes=4878.6MB pg_live_tup=10128705 pg_dead_tup=25458 
+2026/10/30 20:05:27 vt=10-30 08:30 | W    3682 rows/s   3682 calls/s p50=1.3ms p99=136.7ms err=0 | R    8563 rows/s     16 q/s p50=10.1ms p99=434.2ms err=0 | backlog=10178946 lag=0s(virt) | pg_db_bytes=4478.2MB pg_wal_bytes=4908.0MB pg_live_tup=10116541 pg_dead_tup=119387 
+2026/10/30 20:05:37 vt=10-30 08:35 | W    3563 rows/s   3563 calls/s p50=1.5ms p99=169.1ms err=0 | R    8512 rows/s     16 q/s p50=7.8ms p99=1011.2ms err=0 | backlog=10129462 lag=0s(virt) | pg_db_bytes=4493.2MB pg_wal_bytes=4946.4MB pg_live_tup=10055552 pg_dead_tup=46798 
+2026/10/30 20:05:47 vt=10-30 08:40 | W    3698 rows/s   3698 calls/s p50=1.2ms p99=39.6ms err=0 | R    8585 rows/s     16 q/s p50=7.5ms p99=1028.6ms err=0 | backlog=10080595 lag=0s(virt) | pg_db_bytes=4508.8MB pg_wal_bytes=4983.5MB pg_live_tup=10059416 pg_dead_tup=47221 
+2026/10/30 20:05:57 vt=10-30 08:45 | W    3791 rows/s   3791 calls/s p50=1.4ms p99=166.0ms err=0 | R    8538 rows/s     16 q/s p50=8.4ms p99=704.5ms err=0 | backlog=10033128 lag=0s(virt) | pg_db_bytes=4524.9MB pg_wal_bytes=5021.1MB pg_live_tup=10010686 pg_dead_tup=47256 
+2026/10/30 20:06:10 vt=10-30 08:50 | W    2490 rows/s   2490 calls/s p50=7.0ms p99=346.6ms err=0 | R    6858 rows/s     13 q/s p50=8.2ms p99=327.2ms err=0 | backlog=9989449 lag=55s(virt) | pg_db_bytes=4535.2MB pg_wal_bytes=5049.8MB pg_live_tup=9967888 pg_dead_tup=33958 
+2026/10/30 20:06:17 vt=10-30 08:55 | W    3241 rows/s   3241 calls/s p50=1.2ms p99=311.8ms err=0 | R   10260 rows/s     19 q/s p50=6.8ms p99=4829.2ms err=0 | backlog=9919257 lag=0s(virt) | pg_db_bytes=4549.0MB pg_wal_bytes=5087.2MB pg_live_tup=9910544 pg_dead_tup=34090 
+2026/10/30 20:06:27 vt=10-30 09:00 | W    3771 rows/s   3771 calls/s p50=1.3ms p99=70.5ms err=0 | R    8539 rows/s     16 q/s p50=9.9ms p99=678.9ms err=0 | backlog=9871582 lag=0s(virt) | pg_db_bytes=4564.4MB pg_wal_bytes=5124.8MB pg_live_tup=9858385 pg_dead_tup=40204 
+2026/10/30 20:06:37 vt=10-30 09:05 | W    3816 rows/s   3816 calls/s p50=4.0ms p99=153.3ms err=0 | R    8458 rows/s     16 q/s p50=35.8ms p99=481.3ms err=0 | backlog=9825163 lag=0s(virt) | pg_db_bytes=4151.9MB pg_wal_bytes=5180.6MB pg_live_tup=9818542 pg_dead_tup=67410 
+2026/10/30 20:06:47 vt=10-30 09:10 | W    3919 rows/s   3919 calls/s p50=1.2ms p99=119.1ms err=0 | R    8452 rows/s     15 q/s p50=18.1ms p99=400.4ms err=0 | backlog=9779836 lag=0s(virt) | pg_db_bytes=4168.4MB pg_wal_bytes=5219.0MB pg_live_tup=9774422 pg_dead_tup=150058 
+2026/10/30 20:06:57 vt=10-30 09:15 | W    3482 rows/s   3482 calls/s p50=1.3ms p99=95.6ms err=0 | R    8435 rows/s     16 q/s p50=11.6ms p99=382.2ms err=0 | backlog=9730306 lag=0s(virt) | pg_db_bytes=4183.3MB pg_wal_bytes=5258.6MB pg_live_tup=9727954 pg_dead_tup=30664 
+2026/10/30 20:07:07 vt=10-30 09:20 | W    4133 rows/s   4133 calls/s p50=1.1ms p99=92.4ms err=0 | R    8456 rows/s     16 q/s p50=8.8ms p99=813.1ms err=0 | backlog=9687070 lag=0s(virt) | pg_db_bytes=4201.0MB pg_wal_bytes=5290.4MB pg_live_tup=9680990 pg_dead_tup=117780 
+2026/10/30 20:07:17 vt=10-30 09:25 | W    3352 rows/s   3352 calls/s p50=3.2ms p99=287.7ms err=0 | R    8409 rows/s     16 q/s p50=7.3ms p99=1092.6ms err=0 | backlog=9636494 lag=0s(virt) | pg_db_bytes=4215.0MB pg_wal_bytes=5326.9MB pg_live_tup=9630507 pg_dead_tup=34203 
+2026/10/30 20:07:27 vt=10-30 09:30 | W    3596 rows/s   3596 calls/s p50=1.9ms p99=136.7ms err=0 | R    8411 rows/s     16 q/s p50=9.4ms p99=578.0ms err=0 | backlog=9588347 lag=0s(virt) | pg_db_bytes=4230.0MB pg_wal_bytes=5356.4MB pg_live_tup=9581436 pg_dead_tup=118315 
+2026/10/30 20:07:37 vt=10-30 09:35 | W    4078 rows/s   4078 calls/s p50=1.2ms p99=54.6ms err=0 | R    8422 rows/s     16 q/s p50=7.9ms p99=1068.0ms err=0 | backlog=9544907 lag=0s(virt) | pg_db_bytes=4246.9MB pg_wal_bytes=5397.4MB pg_live_tup=9537385 pg_dead_tup=33655 
+2026/10/30 20:07:47 vt=10-30 09:40 | W    3854 rows/s   3854 calls/s p50=1.5ms p99=47.0ms err=0 | R    8489 rows/s     16 q/s p50=8.1ms p99=520.2ms err=0 | backlog=9498563 lag=0s(virt) | pg_db_bytes=4263.5MB pg_wal_bytes=5427.6MB pg_live_tup=9491903 pg_dead_tup=118570 
+2026/10/30 20:07:58 vt=10-30 09:45 | W    3174 rows/s   3174 calls/s p50=1.5ms p99=127.8ms err=0 | R    8450 rows/s     16 q/s p50=6.8ms p99=961.5ms err=0 | backlog=9445806 lag=0s(virt) | pg_db_bytes=4276.9MB pg_wal_bytes=5463.9MB pg_live_tup=9430860 pg_dead_tup=42092 
+2026/10/30 20:08:07 vt=10-30 09:50 | W    3602 rows/s   3602 calls/s p50=1.6ms p99=95.6ms err=0 | R    8462 rows/s     16 q/s p50=8.1ms p99=1139.7ms err=0 | backlog=9397212 lag=0s(virt) | pg_db_bytes=4292.3MB pg_wal_bytes=5499.8MB pg_live_tup=9374468 pg_dead_tup=47027 
+2026/10/30 20:08:17 vt=10-30 09:55 | W    3290 rows/s   3290 calls/s p50=1.5ms p99=48.0ms err=0 | R    8416 rows/s     16 q/s p50=8.3ms p99=1735.7ms err=0 | backlog=9345951 lag=0s(virt) | pg_db_bytes=4306.2MB pg_wal_bytes=5534.5MB pg_live_tup=9345264 pg_dead_tup=28127 
+2026/10/30 20:08:27 SUMMARY postgres [batch=1 consume=delete]: prefill=10199147 (233851/s) written=1122892 (3742/s, p99=123.8ms) read=2021223 (avg 6736/s, peak 10260/s, 14 q/s, p99=847.4ms) max_lag=55s(virt) errs w=0 r=0 size_max: pg_db_bytes=4564.4MB pg_wal_bytes=5534.5MB pg_live_tup=10343421 pg_dead_tup=150058 
+2026/10/30 20:08:27 saved /results/postgres-20261030-230237.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 131.8, "cpu_max": 424.4, "mem_max_mb": 790, "disk_max_mb": 8748}
+ Image test-bench-postgres Building 
+ Image test-bench-postgres Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Creating 
+ Volume test_pg-data Created 
+ Volume test_pg-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-postgres Creating 
+ Container tb-postgres Created 
+ Container tb-postgres Starting 
+ Container tb-postgres Started 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container tb-postgres Running 
+ Container tb-postgres Waiting 
+ Container tb-postgres Healthy 
+ Container test-bench-postgres-run-20f926af24da Creating 
+ Container test-bench-postgres-run-20f926af24da Created 
+2026/10/30 20:08:41 prefill: 1000296 tasks, 635668 rows/s
+2026/10/30 20:08:45 prefill: 2000094 tasks, 381392 rows/s
+2026/10/30 20:08:51 prefill: 3000141 tasks, 268971 rows/s
+2026/10/30 20:08:55 prefill: 4000156 tasks, 267116 rows/s
+2026/10/30 20:09:00 prefill: 5000169 tasks, 251310 rows/s
+2026/10/30 20:09:08 prefill: 6000068 tasks, 210865 rows/s
+2026/10/30 20:09:13 prefill: 7000340 tasks, 207482 rows/s
+2026/10/30 20:09:14 prefill done: 7086740 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 34s, 208678 rows/s (batch=500), size: pg_db_bytes=2979.7MB pg_wal_bytes=3124.4MB pg_live_tup=6748944 pg_dead_tup=0 
+2026/10/30 20:09:14 run=postgres-20261030-230833 backend=postgres role=drain virtual_start=2026-10-30 07:30 speed=x100000 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 20:09:16 vt=11-01 15:06 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   88259 rows/s    361 q/s p50=0.2ms p99=96.8ms err=0 | backlog=6910221 lag=197564s(virt) | pg_db_bytes=2980.6MB pg_wal_bytes=3146.0MB pg_live_tup=6795261 pg_dead_tup=21473 
+2026/10/30 20:09:18 vt=11-03 22:42 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  136796 rows/s    187 q/s p50=5.5ms p99=115.1ms err=0 | backlog=6636629 lag=396292s(virt) | pg_db_bytes=2981.9MB pg_wal_bytes=3178.8MB pg_live_tup=6443700 pg_dead_tup=375946 
+2026/10/30 20:09:20 vt=11-06 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  132626 rows/s    183 q/s p50=7.8ms p99=123.8ms err=0 | backlog=6371377 lag=594649s(virt) | pg_db_bytes=2689.8MB pg_wal_bytes=3212.5MB pg_live_tup=6199315 pg_dead_tup=1391 
+2026/10/30 20:09:22 vt=11-08 13:43 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  230786 rows/s    331 q/s p50=6.4ms p99=137.7ms err=0 | backlog=5909805 lag=792169s(virt) | pg_db_bytes=2691.2MB pg_wal_bytes=3269.6MB pg_live_tup=5950618 pg_dead_tup=309151 
+2026/10/30 20:09:24 vt=11-10 21:21 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  146050 rows/s    212 q/s p50=5.1ms p99=173.8ms err=0 | backlog=5617705 lag=990688s(virt) | pg_db_bytes=2411.9MB pg_wal_bytes=3304.4MB pg_live_tup=5770025 pg_dead_tup=52997 
+2026/10/30 20:09:26 vt=11-13 04:50 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  329012 rows/s    498 q/s p50=4.7ms p99=56.6ms err=0 | backlog=4959682 lag=1186800s(virt) | pg_db_bytes=2145.2MB pg_wal_bytes=3386.7MB pg_live_tup=5210670 pg_dead_tup=0 
+2026/10/30 20:09:28 vt=11-15 12:26 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  195534 rows/s    308 q/s p50=6.0ms p99=114.6ms err=0 | backlog=4568613 lag=1384601s(virt) | pg_db_bytes=2146.5MB pg_wal_bytes=3432.2MB pg_live_tup=4780850 pg_dead_tup=395860 
+2026/10/30 20:09:30 vt=11-17 19:56 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  222072 rows/s    363 q/s p50=4.9ms p99=82.4ms err=0 | backlog=4124470 lag=1582430s(virt) | pg_db_bytes=1892.1MB pg_wal_bytes=3492.4MB pg_live_tup=4430075 pg_dead_tup=87195 
+2026/10/30 20:09:32 vt=11-20 03:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  398085 rows/s    684 q/s p50=3.9ms p99=33.8ms err=0 | backlog=3328300 lag=1776581s(virt) | pg_db_bytes=1417.0MB pg_wal_bytes=3585.7MB pg_live_tup=3363505 pg_dead_tup=0 
+2026/10/30 20:09:34 vt=11-22 11:03 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  421159 rows/s    793 q/s p50=3.5ms p99=28.2ms err=0 | backlog=2485982 lag=1970725s(virt) | pg_db_bytes=1200.9MB pg_wal_bytes=3687.4MB pg_live_tup=2723196 pg_dead_tup=91927 
+2026/10/30 20:09:36 vt=11-24 18:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  183722 rows/s    372 q/s p50=5.4ms p99=55.2ms err=0 | backlog=2118537 lag=2167827s(virt) | pg_db_bytes=996.6MB pg_wal_bytes=3731.8MB pg_live_tup=2217896 pg_dead_tup=104327 
+2026/10/30 20:09:38 vt=11-27 02:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  149326 rows/s    313 q/s p50=7.2ms p99=99.1ms err=0 | backlog=1819884 lag=2365560s(virt) | pg_db_bytes=804.7MB pg_wal_bytes=3767.6MB pg_live_tup=1853969 pg_dead_tup=6313 
+2026/10/30 20:09:40 vt=11-29 09:46 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  192696 rows/s    429 q/s p50=3.9ms p99=39.9ms err=0 | backlog=1434492 lag=2562485s(virt) | pg_db_bytes=806.2MB pg_wal_bytes=3813.4MB pg_live_tup=1598388 pg_dead_tup=261894 
+2026/10/30 20:09:42 vt=12-01 17:17 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  146601 rows/s    350 q/s p50=7.4ms p99=52.3ms err=0 | backlog=1141289 lag=2759764s(virt) | pg_db_bytes=626.6MB pg_wal_bytes=3850.9MB pg_live_tup=1259803 pg_dead_tup=169274 
+2026/10/30 20:09:44 vt=12-04 00:58 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   61706 rows/s    149 q/s p50=5.3ms p99=265.2ms err=0 | backlog=1017877 lag=2959023s(virt) | pg_db_bytes=459.3MB pg_wal_bytes=3868.5MB pg_live_tup=1027558 pg_dead_tup=393 
+2026/10/30 20:09:46 vt=12-06 08:25 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R   69806 rows/s    180 q/s p50=8.8ms p99=367.4ms err=0 | backlog=878266 lag=3157279s(virt) | pg_db_bytes=460.0MB pg_wal_bytes=3886.7MB pg_live_tup=958370 pg_dead_tup=69581 
+2026/10/30 20:09:48 vt=12-08 15:57 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  165169 rows/s    437 q/s p50=5.1ms p99=83.0ms err=0 | backlog=547929 lag=3353899s(virt) | pg_db_bytes=305.7MB pg_wal_bytes=3927.0MB pg_live_tup=651572 pg_dead_tup=4001 
+2026/10/30 20:09:50 vt=12-10 23:30 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  261913 rows/s    773 q/s p50=2.5ms p99=40.2ms err=0 | backlog=24103 lag=3548112s(virt) | pg_db_bytes=163.6MB pg_wal_bytes=3988.6MB pg_live_tup=183583 pg_dead_tup=129648 
+2026/10/30 20:09:50 SUMMARY postgres [DRAIN workers=4 page=1000 consume=delete]: prefill=7086740 (208678/s) written=0 (0/s, p99=0.0ms) read=7086740 (avg 196467/s, peak 421159/s, 401 q/s, p99=82.4ms) max_lag=3548112s(virt) errs w=0 r=0 size_max: pg_db_bytes=2981.9MB pg_wal_bytes=3988.6MB pg_live_tup=6795261 pg_dead_tup=395860 
+2026/10/30 20:09:50 saved /results/postgres-20261030-230833.json
+DB resources (tb-postgres, CPU% = 100 на ядро): {"cpu_avg": 187.5, "cpu_max": 435.1, "mem_max_mb": 674, "disk_max_mb": 5907}

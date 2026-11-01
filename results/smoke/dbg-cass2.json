@@ -1,0 +1,110 @@
+{
+  "run_id": "dbg-cass2",
+  "backend": "cassandra",
+  "variant": "DRAIN workers=4 page=1000 consume=ttl",
+  "config": {
+    "Backend": "cassandra",
+    "Role": "drain",
+    "RunID": "dbg-cass2",
+    "Duration": 60000000000,
+    "ReportInterval": 5000000000,
+    "ResultsDir": "/results",
+    "Speed": 100000,
+    "VirtualStart": "2026-10-30T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 5000,
+    "WriteBatch": 1,
+    "Writers": 64,
+    "PayloadBytes": 300,
+    "Shards": 16,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "cassandra"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false
+  },
+  "seconds": 9.470213123,
+  "prefilled": 212720,
+  "prefill_rps": 16712.29303888967,
+  "written": 0,
+  "read": 212720,
+  "write_rps_avg": 0,
+  "read_rps_avg": 22462.007690552793,
+  "read_rps_peak": 29158.785904642893,
+  "read_qps_avg": 1475.2571899431791,
+  "write_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "read_lat": {
+    "count": 13971,
+    "p50_ms": 2.691,
+    "p95_ms": 6.083,
+    "p99_ms": 7.063,
+    "p999_ms": 12.767,
+    "max_ms": 67.199
+  },
+  "bucket_lat": {
+    "count": 13971,
+    "p50_ms": 2.691,
+    "p95_ms": 6.083,
+    "p99_ms": 7.063,
+    "p999_ms": 12.767,
+    "max_ms": 67.199
+  },
+  "max_lag_virtual_s": 468858.3341,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {},
+  "rows": [
+    {
+      "elapsed_s": 5.000002417,
+      "virtual_time": "11-05 02:24",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 29158.785904642893,
+      "read_qps": 1670.3991925290302,
+      "read_lat": {
+        "count": 8352,
+        "p50_ms": 2.305,
+        "p95_ms": 5.779,
+        "p99_ms": 6.619,
+        "p999_ms": 13.407,
+        "max_ms": 67.199
+      },
+      "backlog": 66926,
+      "lag_virtual_s": 468858.3341,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {}
+    }
+  ]
+}

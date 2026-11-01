@@ -1,0 +1,7 @@
+		SSTable count: 20
+		Old SSTable count: 0
+		Space used (live): 1818073017
+		Number of partitions (estimate): 27925
+		Average tombstones per slice (last five minutes): NaN
+		Maximum tombstones per slice (last five minutes): 0
+		Droppable tombstone ratio: 0.00000

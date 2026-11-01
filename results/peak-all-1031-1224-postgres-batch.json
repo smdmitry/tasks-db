@@ -1,0 +1,508 @@
+{
+  "run_id": "peak-all-1031-1224-postgres-batch",
+  "backend": "postgres",
+  "variant": "batch=100 payload=random copy consume=drop",
+  "config": {
+    "Backend": "postgres",
+    "Role": "producer",
+    "RunID": "peak-all-1031-1224-postgres-batch",
+    "Duration": 60000000000,
+    "ReportInterval": 5000000000,
+    "ResultsDir": "/results",
+    "Speed": 60,
+    "VirtualStart": "2026-10-31T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 0,
+    "WriteBatch": 100,
+    "Writers": 64,
+    "PayloadBytes": 300,
+    "PayloadRandom": true,
+    "Shards": 16,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false,
+    "MongoURI": "mongodb://mongodb:27017",
+    "MongoPool": 64,
+    "MongoConsumeMode": "drop",
+    "TarantoolAddr": "tarantool:3301",
+    "TarantoolConns": 8,
+    "TarantoolConsumeMode": "drop",
+    "RabbitURL": "amqp://guest:guest@rabbitmq:5672/",
+    "RabbitConns": 8,
+    "RocketNamesrv": "rocketmq-namesrv:9876",
+    "RocketBroker": "rocketmq:10911",
+    "RocketQueues": 16,
+    "PrefillETA": 180000000000
+  },
+  "seconds": 60.892220311,
+  "prefilled": 0,
+  "prefill_rps": 0,
+  "prefill_errs": 0,
+  "written": 14435800,
+  "read": 0,
+  "write_rps_avg": 237071.3356529096,
+  "read_rps_avg": 0,
+  "read_rps_peak": 0,
+  "read_qps_avg": 0,
+  "write_lat": {
+    "count": 144358,
+    "p50_ms": 11.015,
+    "p95_ms": 72.767,
+    "p99_ms": 336.127,
+    "p999_ms": 933.375,
+    "max_ms": 1723.391
+  },
+  "read_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "bucket_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "max_lag_virtual_s": 0,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {
+    "pg_db_bytes": 6043113139,
+    "pg_dead_tup": 0,
+    "pg_live_tup": 13993259,
+    "pg_wal_bytes": 6514157680
+  },
+  "rows": [
+    {
+      "elapsed_s": 5.000003751,
+      "virtual_time": "10-31 07:35",
+      "write_rps": 490499.63202717603,
+      "write_call_rps": 4904.99632027176,
+      "write_lat": {
+        "count": 24525,
+        "p50_ms": 8.911,
+        "p95_ms": 31.503,
+        "p99_ms": 76.991,
+        "p999_ms": 185.599,
+        "max_ms": 198.015
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 2452500,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 1047918259,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 2292442,
+        "pg_wal_bytes": 1102529224
+      }
+    },
+    {
+      "elapsed_s": 10.0000075,
+      "virtual_time": "10-31 07:40",
+      "write_rps": 128819.90341083641,
+      "write_call_rps": 1288.1990341083642,
+      "write_lat": {
+        "count": 6441,
+        "p50_ms": 8.847,
+        "p95_ms": 240.767,
+        "p99_ms": 757.247,
+        "p999_ms": 1254.399,
+        "max_ms": 1723.391
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 3096600,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 1309603507,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 3298294,
+        "pg_wal_bytes": 1384123104
+      }
+    },
+    {
+      "elapsed_s": 15.000004209,
+      "virtual_time": "10-31 07:45",
+      "write_rps": 392080.2580672258,
+      "write_call_rps": 3920.8025806722585,
+      "write_lat": {
+        "count": 19604,
+        "p50_ms": 8.495,
+        "p95_ms": 38.207,
+        "p99_ms": 248.063,
+        "p999_ms": 632.831,
+        "max_ms": 1203.199
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 5057000,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 2131670707,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 4967428,
+        "pg_wal_bytes": 2260965664
+      }
+    },
+    {
+      "elapsed_s": 20.000001959,
+      "virtual_time": "10-31 07:50",
+      "write_rps": 334960.1507320678,
+      "write_call_rps": 3349.601507320678,
+      "write_lat": {
+        "count": 16748,
+        "p50_ms": 9.159,
+        "p95_ms": 47.231,
+        "p99_ms": 138.111,
+        "p999_ms": 817.151,
+        "max_ms": 818.687
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 6731800,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 2826106547,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 6649847,
+        "pg_wal_bytes": 3005751208
+      }
+    },
+    {
+      "elapsed_s": 25.000005751,
+      "virtual_time": "10-31 07:55",
+      "write_rps": 213859.837808699,
+      "write_call_rps": 2138.59837808699,
+      "write_lat": {
+        "count": 10693,
+        "p50_ms": 17.711,
+        "p95_ms": 59.007,
+        "p99_ms": 363.519,
+        "p999_ms": 928.767,
+        "max_ms": 939.007
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 7801100,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 3282884275,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 7866869,
+        "pg_wal_bytes": 3486854368
+      }
+    },
+    {
+      "elapsed_s": 30.000005042,
+      "virtual_time": "10-31 08:00",
+      "write_rps": 207000.02935260415,
+      "write_call_rps": 2070.000293526042,
+      "write_lat": {
+        "count": 10350,
+        "p50_ms": 10.623,
+        "p95_ms": 81.535,
+        "p99_ms": 636.927,
+        "p999_ms": 691.711,
+        "max_ms": 692.735
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 8836100,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 3713685171,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 8901089,
+        "pg_wal_bytes": 3946145552
+      }
+    },
+    {
+      "elapsed_s": 35.000002334,
+      "virtual_time": "10-31 08:05",
+      "write_rps": 229040.1240481312,
+      "write_call_rps": 2290.401240481312,
+      "write_lat": {
+        "count": 11452,
+        "p50_ms": 16.575,
+        "p95_ms": 81.855,
+        "p99_ms": 227.455,
+        "p999_ms": 293.887,
+        "max_ms": 304.383
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 9981300,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 4191590067,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 9842266,
+        "pg_wal_bytes": 4457686352
+      }
+    },
+    {
+      "elapsed_s": 40.000002668,
+      "virtual_time": "10-31 08:10",
+      "write_rps": 218559.98540019296,
+      "write_call_rps": 2185.5998540019295,
+      "write_lat": {
+        "count": 10928,
+        "p50_ms": 14.215,
+        "p95_ms": 87.423,
+        "p99_ms": 300.543,
+        "p999_ms": 375.551,
+        "max_ms": 393.727
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 11074100,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 4640937651,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 10871292,
+        "pg_wal_bytes": 4995305592
+      }
+    },
+    {
+      "elapsed_s": 45.000002084,
+      "virtual_time": "10-31 08:15",
+      "write_rps": 169180.0197602263,
+      "write_call_rps": 1691.800197602263,
+      "write_lat": {
+        "count": 8459,
+        "p50_ms": 14.007,
+        "p95_ms": 127.871,
+        "p99_ms": 530.431,
+        "p999_ms": 560.639,
+        "max_ms": 571.391
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 11920000,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 5010855603,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 11714343,
+        "pg_wal_bytes": 5388134856
+      }
+    },
+    {
+      "elapsed_s": 50.00000175,
+      "virtual_time": "10-31 08:20",
+      "write_rps": 99040.00661587245,
+      "write_call_rps": 990.4000661587245,
+      "write_lat": {
+        "count": 4952,
+        "p50_ms": 13.279,
+        "p95_ms": 324.607,
+        "p99_ms": 941.567,
+        "p999_ms": 1001.983,
+        "max_ms": 1371.135
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 12415200,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 5213632179,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 12219732,
+        "pg_wal_bytes": 5609892672
+      }
+    },
+    {
+      "elapsed_s": 55.000002667,
+      "virtual_time": "10-31 08:25",
+      "write_rps": 229139.9579757317,
+      "write_call_rps": 2291.399579757317,
+      "write_lat": {
+        "count": 11457,
+        "p50_ms": 11.687,
+        "p95_ms": 77.887,
+        "p99_ms": 487.679,
+        "p999_ms": 967.679,
+        "max_ms": 1250.303
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 13560900,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 5682435763,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 13114830,
+        "pg_wal_bytes": 6124595400
+      }
+    },
+    {
+      "elapsed_s": 60.000003417,
+      "virtual_time": "10-31 08:30",
+      "write_rps": 174979.97375300393,
+      "write_call_rps": 1749.7997375300395,
+      "write_lat": {
+        "count": 8749,
+        "p50_ms": 11.919,
+        "p95_ms": 102.015,
+        "p99_ms": 367.103,
+        "p999_ms": 1009.663,
+        "max_ms": 1010.687
+      },
+      "read_rps": 0,
+      "read_qps": 0,
+      "read_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "backlog": 14435800,
+      "lag_virtual_s": 0,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "pg_db_bytes": 6043113139,
+        "pg_dead_tup": 0,
+        "pg_live_tup": 13993259,
+        "pg_wal_bytes": 6514157680
+      }
+    }
+  ]
+}

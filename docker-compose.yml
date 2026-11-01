@@ -1,0 +1,399 @@
+# Бенчмарк отложенных задач (ADR notifications/2026-10-29-replacement-tasks):
+# часовая партиция + минутный бакет, задачи на 08-22, консюмер вычитывает прошедшие бакеты.
+#
+# Каждая БД — отдельный профиль, гоняем по очереди: ./run.sh scylla|cassandra|postgres|redis|mongodb|tarantool|rabbitmq|rocketmq
+# Всем БД одинаковые CPU (DB_CPUS). Дисковым БД и брокерам (всем, кроме Redis) RAM урезана до DISK_DB_MEM,
+# чтобы данные не помещались в кэш (лимит cgroup включает и page cache). Redis — in-memory, ему REDIS_MEM.
+
+x-disk-db-limits: &disk-db-limits
+  deploy:
+    resources:
+      limits:
+        cpus: "${DB_CPUS:-4}"
+        memory: "${DISK_DB_MEM:-1536m}"
+
+x-redis-limits: &redis-limits
+  deploy:
+    resources:
+      limits:
+        cpus: "${DB_CPUS:-4}"
+        memory: "${REDIS_MEM:-6g}"
+
+x-bench: &bench
+  build: ./bench
+  volumes:
+    - ./results:/results
+  deploy:
+    resources:
+      limits:
+        cpus: "${BENCH_CPUS:-4}"
+        memory: 2g
+  environment: &bench-env
+    DURATION: ${DURATION:-10m}
+    REPORT_INTERVAL: ${REPORT_INTERVAL:-10s}
+    SPEED: ${SPEED:-60}
+    VIRTUAL_START: ${VIRTUAL_START:-}
+    TZ_NAME: ${TZ_NAME:-Europe/Moscow}
+    HOUR_FROM: ${HOUR_FROM:-8}
+    HOUR_TO: ${HOUR_TO:-22}
+    HORIZON_HOURS: ${HORIZON_HOURS:-24}
+    ROLE: ${ROLE:-both}
+    WRITE_RPS: ${WRITE_RPS:-5000}
+    WRITE_BATCH: ${WRITE_BATCH:-1}
+    WRITERS: ${WRITERS:-64}
+    PAYLOAD_BYTES: ${PAYLOAD_BYTES:-300}
+    PAYLOAD_BYTES_MAX: ${PAYLOAD_BYTES_MAX:-0}
+    PAYLOAD_RANDOM: ${PAYLOAD_RANDOM:-true}
+    MAX_WRITES: ${MAX_WRITES:-0}
+    SHARDS: ${SHARDS:-16}
+    CONSUMER_WORKERS: ${CONSUMER_WORKERS:-4}
+    READ_PAGE_LIMIT: ${READ_PAGE_LIMIT:-1000}
+    READ_QPS: ${READ_QPS:-0}
+    CONSUMER_GRACE: ${CONSUMER_GRACE:-5s}
+    PREFILL: ${PREFILL:-auto}
+    PREFILL_BATCH: ${PREFILL_BATCH:-500}
+    RUN_ID: ${RUN_ID:-}
+
+services:
+  # ---------------- ScyllaDB ----------------
+  scylla:
+    profiles: [scylla]
+    image: scylladb/scylla:${SCYLLA_VERSION:-6.2}
+    container_name: tb-scylla
+    command: >
+      --smp ${DB_CPUS:-4} --memory ${SCYLLA_MEM:-1G} --reserve-memory 300M
+      --overprovisioned 1 --developer-mode 1 --reactor-backend=epoll
+      --api-address 0.0.0.0
+    volumes:
+      - scylla-data:/var/lib/scylla
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'SELECT now() FROM system.local' >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 10s
+      retries: 60
+    <<: *disk-db-limits
+
+  bench-scylla:
+    profiles: [scylla]
+    <<: *bench
+    depends_on:
+      scylla: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: scylla
+      SCYLLA_HOSTS: scylla
+      SCYLLA_RF: ${SCYLLA_RF:-1}
+      SCYLLA_CONSISTENCY: ${SCYLLA_CONSISTENCY:-QUORUM}
+      SCYLLA_CONSUME_MODE: ${SCYLLA_CONSUME_MODE:-ttl}
+
+  # ---------------- Cassandra ----------------
+  cassandra:
+    profiles: [cassandra]
+    image: cassandra:${CASSANDRA_VERSION:-5.0}
+    container_name: tb-cassandra
+    environment:
+      MAX_HEAP_SIZE: ${CASSANDRA_HEAP:-768M}
+      HEAP_NEWSIZE: 200M
+      CASSANDRA_CLUSTER_NAME: bench
+    volumes:
+      - cassandra-data:/var/lib/cassandra
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'SELECT now() FROM system.local' >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 10s
+      retries: 60
+    <<: *disk-db-limits
+
+  bench-cassandra:
+    profiles: [cassandra]
+    <<: *bench
+    depends_on:
+      cassandra: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: cassandra
+      SCYLLA_HOSTS: cassandra
+      SCYLLA_RF: ${SCYLLA_RF:-1}
+      SCYLLA_CONSISTENCY: ${SCYLLA_CONSISTENCY:-QUORUM}
+      SCYLLA_CONSUME_MODE: ${SCYLLA_CONSUME_MODE:-ttl}
+
+  # ---------------- PostgreSQL ----------------
+  postgres:
+    profiles: [postgres]
+    image: postgres:${PG_VERSION:-17}
+    container_name: tb-postgres
+    environment:
+      POSTGRES_USER: bench
+      POSTGRES_PASSWORD: bench
+      POSTGRES_DB: bench
+    shm_size: 512m
+    command: >
+      postgres
+      -c max_connections=300
+      -c shared_buffers=${PG_SHARED_BUFFERS:-384MB}
+      -c effective_cache_size=1GB
+      -c work_mem=16MB
+      -c maintenance_work_mem=256MB
+      -c synchronous_commit=${PG_SYNC_COMMIT:-on}
+      -c wal_compression=on
+      -c max_wal_size=8GB
+      -c checkpoint_timeout=10min
+      -c checkpoint_completion_target=0.9
+      -c autovacuum_naptime=10s
+      -c autovacuum_vacuum_cost_limit=2000
+      -c track_io_timing=on
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bench -d bench"]
+      interval: 3s
+      timeout: 5s
+      retries: 60
+    <<: *disk-db-limits
+
+  bench-postgres:
+    profiles: [postgres]
+    <<: *bench
+    depends_on:
+      postgres: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: postgres
+      PG_DSN: postgres://bench:bench@postgres:5432/bench?sslmode=disable
+      PG_POOL: ${PG_POOL:-64}
+      PG_WRITE_MODE: ${PG_WRITE_MODE:-copy}
+      PG_CONSUME_MODE: ${PG_CONSUME_MODE:-drop}
+
+  # ---------------- Redis ----------------
+  redis:
+    profiles: [redis]
+    image: redis:${REDIS_VERSION:-7.4}
+    container_name: tb-redis
+    command: >
+      redis-server
+      --appendonly ${REDIS_AOF:-yes} --appendfsync everysec
+      --save ""
+      --maxmemory ${REDIS_MAXMEM:-5gb} --maxmemory-policy noeviction
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 60
+    <<: *redis-limits
+
+  bench-redis:
+    profiles: [redis]
+    <<: *bench
+    depends_on:
+      redis: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: redis
+      REDIS_ADDR: redis:6379
+      REDIS_POOL: ${REDIS_POOL:-64}
+      REDIS_TTL: ${REDIS_TTL:-172800}
+
+  # ---------------- MongoDB ----------------
+  mongodb:
+    profiles: [mongodb]
+    image: mongo:${MONGO_VERSION:-8.0}
+    container_name: tb-mongodb
+    # standalone без реплики, кэш WiredTiger урезан под лимит контейнера
+    command: ["mongod", "--bind_ip_all", "--wiredTigerCacheSizeGB", "${MONGO_CACHE_GB:-0.5}"]
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "bash", "-c", "</dev/tcp/127.0.0.1/27017"]
+      interval: 3s
+      timeout: 3s
+      retries: 60
+    <<: *disk-db-limits
+
+  bench-mongodb:
+    profiles: [mongodb]
+    <<: *bench
+    depends_on:
+      mongodb: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: mongodb
+      MONGO_URI: mongodb://mongodb:27017
+      MONGO_POOL: ${MONGO_POOL:-64}
+      MONGO_CONSUME_MODE: ${MONGO_CONSUME_MODE:-drop}
+
+  # ---------------- Tarantool (vinyl) ----------------
+  tarantool:
+    profiles: [tarantool]
+    image: tarantool/tarantool:${TARANTOOL_VERSION:-2.11}
+    container_name: tb-tarantool
+    entrypoint: ["tarantool", "/opt/bench/init.lua"]
+    environment:
+      VINYL_MEMORY: ${VINYL_MEMORY:-268435456}
+      VINYL_CACHE: ${VINYL_CACHE:-134217728}
+    volumes:
+      - ./tarantool/init.lua:/opt/bench/init.lua:ro
+      - tarantool-data:/var/lib/tarantool
+    healthcheck:
+      test: ["CMD", "test", "-f", "/tmp/ready"]
+      interval: 2s
+      timeout: 2s
+      retries: 60
+    <<: *disk-db-limits
+
+  bench-tarantool:
+    profiles: [tarantool]
+    <<: *bench
+    depends_on:
+      tarantool: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: tarantool
+      TARANTOOL_ADDR: tarantool:3301
+      TARANTOOL_CONNS: ${TARANTOOL_CONNS:-8}
+      TARANTOOL_CONSUME_MODE: ${TARANTOOL_CONSUME_MODE:-drop}
+
+  # ---------------- RabbitMQ ----------------
+  rabbitmq:
+    profiles: [rabbitmq]
+    image: rabbitmq:${RABBIT_VERSION:-4.0}
+    container_name: tb-rabbitmq
+    hostname: rabbitmq
+    volumes:
+      - ./rabbitmq/${RABBIT_CONF:-rabbitmq.conf}:/etc/rabbitmq/conf.d/90-bench.conf:ro
+      - rabbit-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "bash", "-c", "</dev/tcp/127.0.0.1/5672"]
+      interval: 3s
+      timeout: 3s
+      retries: 100
+    <<: *disk-db-limits
+
+  bench-rabbitmq:
+    profiles: [rabbitmq]
+    <<: *bench
+    depends_on:
+      rabbitmq: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: rabbitmq
+      RABBIT_URL: amqp://guest:guest@rabbitmq:5672/
+      RABBIT_CONNS: ${RABBIT_CONNS:-8}
+      # очередь на бакет: 15 ч × 60 мин × SHARDS очередей на сутки вперёд
+      SHARDS: ${RABBIT_SHARDS:-4}
+
+  # ---------------- RocketMQ ----------------
+  rocketmq-namesrv:
+    profiles: [rocketmq]
+    image: apache/rocketmq:${ROCKETMQ_VERSION:-5.3.1}
+    container_name: tb-rocketmq-namesrv
+    command: ["./mqnamesrv"]
+    environment:
+      HEAP_OPTS: "-Xms256m -Xmx256m -Xmn128m"
+    healthcheck:
+      test: ["CMD", "bash", "-c", "</dev/tcp/127.0.0.1/9876"]
+      interval: 3s
+      timeout: 3s
+      retries: 60
+
+  rocketmq:
+    profiles: [rocketmq]
+    image: apache/rocketmq:${ROCKETMQ_VERSION:-5.3.1}
+    container_name: tb-rocketmq
+    hostname: rocketmq
+    user: "0" # именованный том создаётся root'ом
+    command: ["./mqbroker", "-n", "rocketmq-namesrv:9876", "-c", "/opt/bench/broker.conf"]
+    environment:
+      HEAP_OPTS: "-Xms${ROCKETMQ_HEAP:-512m} -Xmx${ROCKETMQ_HEAP:-512m} -Xmn256m -XX:MaxDirectMemorySize=256m"
+    volumes:
+      - ./rocketmq/broker.conf:/opt/bench/broker.conf:ro
+      - rocketmq-data:/home/rocketmq/store
+    depends_on:
+      rocketmq-namesrv: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "bash", "-c", "</dev/tcp/127.0.0.1/10911"]
+      interval: 3s
+      timeout: 3s
+      retries: 100
+    <<: *disk-db-limits
+
+  bench-rocketmq:
+    profiles: [rocketmq]
+    <<: *bench
+    depends_on:
+      rocketmq: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: rocketmq
+      ROCKET_NAMESRV: rocketmq-namesrv:9876
+      ROCKET_BROKER: rocketmq:10911
+      ROCKET_QUEUES: ${ROCKET_QUEUES:-16}
+      PREFILL_ETA: ${PREFILL_ETA:-3m}
+
+  # ---------------- Kafka (KRaft, один узел) ----------------
+  # Кольцо топиков-слотов по KAFKA_SLOT (1h / 5m), прочитанный слот чистится DeleteRecords.
+  kafka:
+    profiles: [kafka]
+    image: apache/kafka:${KAFKA_VERSION:-3.9.1}
+    container_name: tb-kafka
+    hostname: kafka
+    user: "0" # именованный том создаётся root'ом
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+      # сегменты ниже log start offset (после DeleteRecords) удаляются этой проверкой
+      KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 10000
+      KAFKA_LOG_SEGMENT_DELETE_DELAY_MS: 1000
+      KAFKA_NUM_IO_THREADS: 8
+      KAFKA_HEAP_OPTS: "-Xms${KAFKA_HEAP:-768m} -Xmx${KAFKA_HEAP:-768m}"
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 20s
+      retries: 60
+    <<: *disk-db-limits
+
+  bench-kafka:
+    profiles: [kafka]
+    <<: *bench
+    depends_on:
+      kafka: { condition: service_healthy }
+    environment:
+      <<: *bench-env
+      BACKEND: kafka
+      KAFKA_BROKERS: kafka:9092
+      KAFKA_SLOT: ${KAFKA_SLOT:-1h}
+      KAFKA_PARTITIONS: ${KAFKA_PARTITIONS:-4}
+      KAFKA_SEGMENT_BYTES: ${KAFKA_SEGMENT_BYTES:-33554432}
+
+  # Сводная таблица по results/: docker compose --profile report run --rm report
+  report:
+    profiles: [report]
+    build: ./bench
+    volumes:
+      - ./results:/results
+    command: ["report", "/results"]
+
+volumes:
+  scylla-data:
+  cassandra-data:
+  pg-data:
+  redis-data:
+  mongo-data:
+  tarantool-data:
+  rabbit-data:
+  rocketmq-data:
+  kafka-data:

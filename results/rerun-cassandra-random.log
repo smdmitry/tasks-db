@@ -1,0 +1,289 @@
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-9abf2747d2ed Creating 
+ Container test-bench-cassandra-run-9abf2747d2ed Created 
+2026/10/30 20:17:24 prefill: 1000184 tasks, 30364 rows/s
+2026/10/30 20:17:35 prefill: 2000060 tasks, 45870 rows/s
+2026/10/30 20:17:42 prefill: 3000082 tasks, 58803 rows/s
+2026/10/30 20:17:52 prefill: 4000079 tasks, 65546 rows/s
+2026/10/30 20:17:59 prefill: 5000221 tasks, 73366 rows/s
+2026/10/30 20:18:06 prefill: 6000213 tasks, 79774 rows/s
+2026/10/30 20:18:16 prefill: 7000298 tasks, 82884 rows/s
+2026/10/30 20:18:23 prefill: 8000070 tasks, 87173 rows/s
+2026/10/30 20:18:32 prefill: 9000245 tasks, 89678 rows/s
+2026/10/30 20:18:38 prefill: 10000139 tasks, 93173 rows/s
+2026/10/30 20:18:40 prefill done: 10200280 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 1m49s, 93898 rows/s (batch=500), size: 
+2026/10/30 20:18:40 run=cassandra-20261030-231541 backend=cassandra role=both virtual_start=2026-10-30 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 20:18:50 vt=10-30 07:35 | W    5048 rows/s   5048 calls/s p50=1.7ms p99=7.1ms err=0 | R       0 rows/s      6 q/s p50=2.2ms p99=14.7ms err=0 | backlog=10250763 lag=0s(virt) | 
+2026/10/30 20:19:00 vt=10-30 07:40 | W    5000 rows/s   5000 calls/s p50=1.7ms p99=6.4ms err=0 | R       0 rows/s      8 q/s p50=1.9ms p99=6.2ms err=0 | backlog=10300763 lag=0s(virt) | 
+2026/10/30 20:19:10 vt=10-30 07:45 | W    5000 rows/s   5000 calls/s p50=1.7ms p99=6.6ms err=0 | R       0 rows/s      8 q/s p50=1.6ms p99=5.4ms err=0 | backlog=10350766 lag=0s(virt) | 
+2026/10/30 20:19:20 vt=10-30 07:50 | W    4999 rows/s   4999 calls/s p50=1.8ms p99=6.5ms err=0 | R       0 rows/s      8 q/s p50=1.7ms p99=6.0ms err=0 | backlog=10400760 lag=0s(virt) | 
+2026/10/30 20:19:30 vt=10-30 07:55 | W    5001 rows/s   5001 calls/s p50=1.5ms p99=6.5ms err=0 | R       0 rows/s      8 q/s p50=2.2ms p99=7.3ms err=0 | backlog=10450774 lag=0s(virt) | 
+2026/10/30 20:19:40 vt=10-30 08:00 | W    5000 rows/s   5000 calls/s p50=1.4ms p99=6.8ms err=0 | R       0 rows/s      8 q/s p50=1.7ms p99=6.2ms err=0 | backlog=10500770 lag=0s(virt) | 
+2026/10/30 20:19:50 vt=10-30 08:05 | W    5000 rows/s   5000 calls/s p50=1.5ms p99=6.6ms err=0 | R    6822 rows/s     14 q/s p50=4.8ms p99=68.2ms err=0 | backlog=10482554 lag=0s(virt) | 
+2026/10/30 20:20:00 vt=10-30 08:10 | W    5001 rows/s   5001 calls/s p50=1.5ms p99=6.7ms err=0 | R    8593 rows/s     16 q/s p50=4.3ms p99=23.9ms err=0 | backlog=10446630 lag=0s(virt) | 
+2026/10/30 20:20:10 vt=10-30 08:15 | W    4999 rows/s   4999 calls/s p50=1.5ms p99=6.9ms err=0 | R    8537 rows/s     16 q/s p50=4.8ms p99=27.2ms err=0 | backlog=10411244 lag=0s(virt) | 
+2026/10/30 20:20:20 vt=10-30 08:20 | W    5001 rows/s   5001 calls/s p50=1.4ms p99=6.4ms err=0 | R    8569 rows/s     16 q/s p50=3.9ms p99=16.9ms err=0 | backlog=10375565 lag=0s(virt) | 
+2026/10/30 20:20:30 vt=10-30 08:25 | W    5001 rows/s   5001 calls/s p50=1.4ms p99=6.6ms err=0 | R    8554 rows/s     16 q/s p50=3.9ms p99=29.4ms err=0 | backlog=10340035 lag=0s(virt) | 
+2026/10/30 20:20:40 vt=10-30 08:30 | W    4999 rows/s   4999 calls/s p50=1.4ms p99=7.1ms err=0 | R    8571 rows/s     16 q/s p50=3.4ms p99=21.2ms err=0 | backlog=10304311 lag=0s(virt) | 
+2026/10/30 20:20:50 vt=10-30 08:35 | W    5002 rows/s   5002 calls/s p50=1.4ms p99=6.6ms err=0 | R    8568 rows/s     16 q/s p50=3.8ms p99=19.3ms err=0 | backlog=10268652 lag=0s(virt) | 
+2026/10/30 20:21:00 vt=10-30 08:40 | W    4998 rows/s   4998 calls/s p50=1.4ms p99=7.0ms err=0 | R    8571 rows/s     16 q/s p50=3.8ms p99=20.0ms err=0 | backlog=10232925 lag=0s(virt) | 
+2026/10/30 20:21:10 vt=10-30 08:45 | W    5001 rows/s   5001 calls/s p50=1.4ms p99=6.7ms err=0 | R    8591 rows/s     16 q/s p50=4.4ms p99=25.2ms err=0 | backlog=10197034 lag=0s(virt) | 
+2026/10/30 20:21:20 vt=10-30 08:50 | W    4999 rows/s   4999 calls/s p50=1.5ms p99=6.8ms err=0 | R    8527 rows/s     16 q/s p50=4.8ms p99=22.5ms err=0 | backlog=10161760 lag=0s(virt) | 
+2026/10/30 20:21:30 vt=10-30 08:55 | W    5001 rows/s   5001 calls/s p50=1.4ms p99=6.8ms err=0 | R    8618 rows/s     16 q/s p50=4.0ms p99=31.0ms err=0 | backlog=10125594 lag=0s(virt) | 
+2026/10/30 20:21:40 vt=10-30 09:00 | W    5000 rows/s   5000 calls/s p50=1.5ms p99=7.3ms err=0 | R    8611 rows/s     16 q/s p50=4.1ms p99=28.9ms err=0 | backlog=10089479 lag=0s(virt) | 
+2026/10/30 20:21:50 vt=10-30 09:05 | W    4999 rows/s   4999 calls/s p50=1.4ms p99=7.0ms err=0 | R    8554 rows/s     16 q/s p50=4.6ms p99=24.7ms err=0 | backlog=10053931 lag=0s(virt) | 
+2026/10/30 20:22:00 vt=10-30 09:10 | W    5000 rows/s   5000 calls/s p50=1.4ms p99=6.7ms err=0 | R    8578 rows/s     16 q/s p50=4.5ms p99=27.1ms err=0 | backlog=10018151 lag=0s(virt) | 
+2026/10/30 20:22:10 vt=10-30 09:15 | W    5002 rows/s   5002 calls/s p50=1.4ms p99=7.0ms err=0 | R    8598 rows/s     16 q/s p50=3.8ms p99=27.3ms err=0 | backlog=9982187 lag=0s(virt) | 
+2026/10/30 20:22:20 vt=10-30 09:20 | W    5000 rows/s   5000 calls/s p50=1.4ms p99=7.3ms err=0 | R    8579 rows/s     16 q/s p50=4.5ms p99=35.1ms err=0 | backlog=9946395 lag=0s(virt) | 
+2026/10/30 20:22:30 vt=10-30 09:25 | W    5000 rows/s   5000 calls/s p50=1.4ms p99=6.9ms err=0 | R    8557 rows/s     16 q/s p50=4.7ms p99=26.5ms err=0 | backlog=9910826 lag=0s(virt) | 
+2026/10/30 20:22:40 vt=10-30 09:30 | W    4998 rows/s   4998 calls/s p50=1.4ms p99=6.9ms err=0 | R    8576 rows/s     16 q/s p50=4.8ms p99=22.0ms err=0 | backlog=9875051 lag=0s(virt) | 
+2026/10/30 20:22:50 vt=10-30 09:35 | W    5001 rows/s   5001 calls/s p50=1.4ms p99=6.9ms err=0 | R    8585 rows/s     16 q/s p50=4.0ms p99=24.0ms err=0 | backlog=9839211 lag=0s(virt) | 
+2026/10/30 20:23:00 vt=10-30 09:40 | W    4999 rows/s   4999 calls/s p50=1.4ms p99=6.7ms err=0 | R    8547 rows/s     16 q/s p50=4.4ms p99=23.7ms err=0 | backlog=9803738 lag=0s(virt) | 
+2026/10/30 20:23:10 vt=10-30 09:45 | W    5003 rows/s   5003 calls/s p50=1.4ms p99=6.8ms err=0 | R    8594 rows/s     16 q/s p50=3.8ms p99=20.0ms err=0 | backlog=9767824 lag=0s(virt) | 
+2026/10/30 20:23:20 vt=10-30 09:50 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=6.8ms err=0 | R    8548 rows/s     16 q/s p50=3.9ms p99=21.4ms err=0 | backlog=9732347 lag=0s(virt) | 
+2026/10/30 20:23:30 vt=10-30 09:55 | W    5001 rows/s   5001 calls/s p50=1.3ms p99=6.8ms err=0 | R    8522 rows/s     16 q/s p50=4.0ms p99=21.6ms err=0 | backlog=9697136 lag=0s(virt) | 
+2026/10/30 20:23:40 vt=10-30 10:00 | W    4998 rows/s   4998 calls/s p50=1.6ms p99=7.3ms err=0 | R    8601 rows/s     16 q/s p50=3.3ms p99=17.2ms err=0 | backlog=9661103 lag=0s(virt) | 
+2026/10/30 20:23:40 SUMMARY cassandra [batch=1 payload=random consume=ttl]: prefill=10200280 (93898/s) written=1500554 (5002/s, p99=6.8ms) read=2039706 (avg 6799/s, peak 8618/s, 14 q/s, p99=25.6ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 20:23:40 saved /results/cassandra-20261030-231541.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 150.7, "cpu_max": 421.1, "mem_max_mb": 1536, "disk_max_mb": 5576}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-26345a1a23af Creating 
+ Container test-bench-cassandra-run-26345a1a23af Created 
+2026/10/30 20:25:27 prefill: 1000072 tasks, 25016 rows/s
+2026/10/30 20:25:37 prefill: 2000208 tasks, 40288 rows/s
+2026/10/30 20:25:44 prefill: 3000123 tasks, 53002 rows/s
+2026/10/30 20:25:51 prefill: 4000150 tasks, 62867 rows/s
+2026/10/30 20:25:58 prefill: 5000336 tasks, 70803 rows/s
+2026/10/30 20:26:06 prefill: 6000035 tasks, 76506 rows/s
+2026/10/30 20:26:12 prefill: 7000380 tasks, 82047 rows/s
+2026/10/30 20:26:20 prefill: 8000271 tasks, 85999 rows/s
+2026/10/30 20:26:27 prefill: 9000279 tasks, 90104 rows/s
+2026/10/30 20:26:36 prefill: 10000009 tasks, 92149 rows/s
+2026/10/30 20:26:37 prefill done: 10199974 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 1m50s, 92896 rows/s (batch=500), size: 
+2026/10/30 20:26:37 run=cassandra-20261030-232346 backend=cassandra role=both virtual_start=2026-10-30 07:30 speed=x30 duration=5m0s write_rps=5000 batch=100 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 20:26:47 vt=10-30 07:35 | W    5040 rows/s     50 calls/s p50=2.4ms p99=8.5ms err=0 | R       0 rows/s      6 q/s p50=1.9ms p99=12.4ms err=0 | backlog=10250374 lag=0s(virt) | 
+2026/10/30 20:26:57 vt=10-30 07:40 | W    4990 rows/s     50 calls/s p50=2.7ms p99=6.9ms err=0 | R       0 rows/s      8 q/s p50=2.2ms p99=6.1ms err=0 | backlog=10300274 lag=0s(virt) | 
+2026/10/30 20:27:07 vt=10-30 07:45 | W    4480 rows/s     45 calls/s p50=3.1ms p99=2738.2ms err=0 | R       0 rows/s      8 q/s p50=3.1ms p99=759.3ms err=0 | backlog=10345074 lag=0s(virt) | 
+2026/10/30 20:27:17 vt=10-30 07:50 | W    5000 rows/s     50 calls/s p50=2.5ms p99=12.6ms err=0 | R       0 rows/s      8 q/s p50=3.6ms p99=8.3ms err=0 | backlog=10395074 lag=0s(virt) | 
+2026/10/30 20:27:27 vt=10-30 07:55 | W    4990 rows/s     50 calls/s p50=5.2ms p99=10.3ms err=0 | R       0 rows/s      8 q/s p50=3.2ms p99=7.2ms err=0 | backlog=10444974 lag=0s(virt) | 
+2026/10/30 20:27:37 vt=10-30 08:00 | W    5010 rows/s     50 calls/s p50=5.7ms p99=12.2ms err=0 | R       0 rows/s      8 q/s p50=4.4ms p99=18.9ms err=0 | backlog=10495074 lag=0s(virt) | 
+2026/10/30 20:27:47 vt=10-30 08:05 | W    4990 rows/s     50 calls/s p50=4.6ms p99=13.6ms err=0 | R    6836 rows/s     14 q/s p50=4.3ms p99=48.6ms err=0 | backlog=10476610 lag=0s(virt) | 
+2026/10/30 20:27:57 vt=10-30 08:10 | W    5000 rows/s     50 calls/s p50=5.5ms p99=13.4ms err=0 | R    8552 rows/s     16 q/s p50=4.0ms p99=36.4ms err=0 | backlog=10441086 lag=0s(virt) | 
+2026/10/30 20:28:07 vt=10-30 08:15 | W    5000 rows/s     50 calls/s p50=5.3ms p99=12.4ms err=0 | R    8519 rows/s     16 q/s p50=3.6ms p99=21.8ms err=0 | backlog=10405894 lag=0s(virt) | 
+2026/10/30 20:28:17 vt=10-30 08:20 | W    5000 rows/s     50 calls/s p50=5.5ms p99=11.5ms err=0 | R    8588 rows/s     16 q/s p50=4.4ms p99=21.9ms err=0 | backlog=10370010 lag=0s(virt) | 
+2026/10/30 20:28:27 vt=10-30 08:25 | W    5000 rows/s     50 calls/s p50=5.5ms p99=11.9ms err=0 | R    8565 rows/s     16 q/s p50=3.9ms p99=23.5ms err=0 | backlog=10334360 lag=0s(virt) | 
+2026/10/30 20:28:37 vt=10-30 08:30 | W    5000 rows/s     50 calls/s p50=5.5ms p99=13.2ms err=0 | R    8552 rows/s     16 q/s p50=4.2ms p99=22.8ms err=0 | backlog=10298839 lag=0s(virt) | 
+2026/10/30 20:28:47 vt=10-30 08:35 | W    5000 rows/s     50 calls/s p50=6.0ms p99=14.0ms err=0 | R    8559 rows/s     16 q/s p50=3.9ms p99=24.5ms err=0 | backlog=10263246 lag=0s(virt) | 
+2026/10/30 20:28:57 vt=10-30 08:40 | W    3880 rows/s     39 calls/s p50=5.3ms p99=11.4ms err=0 | R    8553 rows/s     16 q/s p50=4.1ms p99=21.3ms err=0 | backlog=10216519 lag=0s(virt) | 
+2026/10/30 20:29:07 vt=10-30 08:45 | W    5360 rows/s     54 calls/s p50=3.9ms p99=3078.1ms err=0 | R    8613 rows/s     16 q/s p50=4.0ms p99=495.4ms err=0 | backlog=10183991 lag=0s(virt) | 
+2026/10/30 20:29:17 vt=10-30 08:50 | W    5000 rows/s     50 calls/s p50=5.2ms p99=14.7ms err=0 | R    8502 rows/s     16 q/s p50=5.0ms p99=23.4ms err=0 | backlog=10148973 lag=0s(virt) | 
+2026/10/30 20:29:27 vt=10-30 08:55 | W    5000 rows/s     50 calls/s p50=5.5ms p99=11.0ms err=0 | R    8578 rows/s     16 q/s p50=4.5ms p99=20.7ms err=0 | backlog=10113191 lag=0s(virt) | 
+2026/10/30 20:29:37 vt=10-30 09:00 | W    5000 rows/s     50 calls/s p50=5.7ms p99=11.7ms err=0 | R    8598 rows/s     16 q/s p50=4.2ms p99=23.8ms err=0 | backlog=10077215 lag=0s(virt) | 
+2026/10/30 20:29:47 vt=10-30 09:05 | W    5000 rows/s     50 calls/s p50=5.8ms p99=11.8ms err=0 | R    8613 rows/s     16 q/s p50=5.0ms p99=28.6ms err=0 | backlog=10041083 lag=0s(virt) | 
+2026/10/30 20:29:57 vt=10-30 09:10 | W    5000 rows/s     50 calls/s p50=5.7ms p99=13.9ms err=0 | R    8562 rows/s     16 q/s p50=5.4ms p99=25.0ms err=0 | backlog=10005461 lag=0s(virt) | 
+2026/10/30 20:30:07 vt=10-30 09:15 | W    5000 rows/s     50 calls/s p50=5.4ms p99=10.7ms err=0 | R    8575 rows/s     16 q/s p50=4.9ms p99=28.2ms err=0 | backlog=9969714 lag=0s(virt) | 
+2026/10/30 20:30:17 vt=10-30 09:20 | W    5000 rows/s     50 calls/s p50=4.8ms p99=14.2ms err=0 | R    8585 rows/s     16 q/s p50=4.9ms p99=28.1ms err=0 | backlog=9933867 lag=0s(virt) | 
+2026/10/30 20:30:27 vt=10-30 09:25 | W    5000 rows/s     50 calls/s p50=5.5ms p99=14.1ms err=0 | R    8566 rows/s     16 q/s p50=5.2ms p99=24.4ms err=0 | backlog=9898202 lag=0s(virt) | 
+2026/10/30 20:30:37 vt=10-30 09:30 | W    5000 rows/s     50 calls/s p50=5.5ms p99=12.0ms err=0 | R    8584 rows/s     16 q/s p50=5.2ms p99=26.7ms err=0 | backlog=9862366 lag=0s(virt) | 
+2026/10/30 20:30:47 vt=10-30 09:35 | W    5000 rows/s     50 calls/s p50=3.5ms p99=10.6ms err=0 | R    8574 rows/s     16 q/s p50=4.2ms p99=24.1ms err=0 | backlog=9826624 lag=0s(virt) | 
+2026/10/30 20:30:57 vt=10-30 09:40 | W    5000 rows/s     50 calls/s p50=3.0ms p99=8.0ms err=0 | R    8609 rows/s     16 q/s p50=4.6ms p99=20.1ms err=0 | backlog=9790538 lag=0s(virt) | 
+2026/10/30 20:31:07 vt=10-30 09:45 | W    5000 rows/s     50 calls/s p50=3.3ms p99=7.6ms err=0 | R    8582 rows/s     16 q/s p50=4.5ms p99=20.1ms err=0 | backlog=9754720 lag=0s(virt) | 
+2026/10/30 20:31:17 vt=10-30 09:50 | W    5000 rows/s     50 calls/s p50=4.3ms p99=11.0ms err=0 | R    8528 rows/s     16 q/s p50=4.0ms p99=18.8ms err=0 | backlog=9719439 lag=0s(virt) | 
+2026/10/30 20:31:27 vt=10-30 09:55 | W    5000 rows/s     50 calls/s p50=4.3ms p99=12.4ms err=0 | R    8590 rows/s     16 q/s p50=4.7ms p99=24.2ms err=0 | backlog=9683534 lag=0s(virt) | 
+2026/10/30 20:31:37 vt=10-30 10:00 | W    5000 rows/s     50 calls/s p50=4.3ms p99=10.6ms err=0 | R    8585 rows/s     16 q/s p50=5.0ms p99=23.8ms err=0 | backlog=9647685 lag=0s(virt) | 
+2026/10/30 20:31:37 SUMMARY cassandra [batch=100 payload=random consume=ttl]: prefill=10199974 (92896/s) written=1487500 (4958/s, p99=28.6ms) read=2039689 (avg 6799/s, peak 8613/s, 14 q/s, p99=26.1ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 20:31:37 saved /results/cassandra-20261030-232346.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 131.2, "cpu_max": 438.0, "mem_max_mb": 1530, "disk_max_mb": 5584}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-ab4b0d3624e8 Creating 
+ Container test-bench-cassandra-run-ab4b0d3624e8 Created 
+2026/10/30 20:33:13 prefill: 1000206 tasks, 34626 rows/s
+2026/10/30 20:33:20 prefill: 2000299 tasks, 55419 rows/s
+2026/10/30 20:33:27 prefill: 3000067 tasks, 69490 rows/s
+2026/10/30 20:33:40 prefill: 4000105 tasks, 72281 rows/s
+2026/10/30 20:33:47 prefill: 5000210 tasks, 79967 rows/s
+2026/10/30 20:33:55 prefill: 6000312 tasks, 84926 rows/s
+2026/10/30 20:34:03 prefill: 7000290 tasks, 89165 rows/s
+2026/10/30 20:34:15 prefill: 8000160 tasks, 87787 rows/s
+2026/10/30 20:34:23 prefill: 9000147 tasks, 90890 rows/s
+2026/10/30 20:34:31 prefill: 10000291 tasks, 93656 rows/s
+2026/10/30 20:34:32 prefill done: 10199563 tasks (из 14400000 сгенерированных), ошибок батчей 0, за 1m48s, 94257 rows/s (batch=500), size: 
+2026/10/30 20:34:32 run=cassandra-20261030-233143 backend=cassandra role=both virtual_start=2026-10-30 07:30 speed=x30 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 20:34:42 vt=10-30 07:35 | W    5048 rows/s   5048 calls/s p50=1.7ms p99=6.5ms err=0 | R       0 rows/s      6 q/s p50=2.1ms p99=8.9ms err=0 | backlog=10250047 lag=0s(virt) | 
+2026/10/30 20:34:52 vt=10-30 07:40 | W    4999 rows/s   4999 calls/s p50=1.7ms p99=6.7ms err=0 | R       0 rows/s      8 q/s p50=2.3ms p99=7.2ms err=0 | backlog=10300037 lag=0s(virt) | 
+2026/10/30 20:35:02 vt=10-30 07:45 | W    5000 rows/s   5000 calls/s p50=1.8ms p99=6.7ms err=0 | R       0 rows/s      8 q/s p50=1.5ms p99=4.6ms err=0 | backlog=10350034 lag=0s(virt) | 
+2026/10/30 20:35:12 vt=10-30 07:50 | W    5001 rows/s   5001 calls/s p50=1.8ms p99=6.8ms err=0 | R       0 rows/s      8 q/s p50=2.3ms p99=10.1ms err=0 | backlog=10400045 lag=0s(virt) | 
+2026/10/30 20:35:22 vt=10-30 07:55 | W    5001 rows/s   5001 calls/s p50=1.5ms p99=6.5ms err=0 | R       0 rows/s      8 q/s p50=1.8ms p99=6.4ms err=0 | backlog=10450059 lag=0s(virt) | 
+2026/10/30 20:35:32 vt=10-30 08:00 | W    5000 rows/s   5000 calls/s p50=1.4ms p99=6.7ms err=0 | R       0 rows/s      8 q/s p50=1.4ms p99=7.3ms err=0 | backlog=10500057 lag=0s(virt) | 
+2026/10/30 20:35:42 vt=10-30 08:05 | W    5001 rows/s   5001 calls/s p50=1.6ms p99=6.6ms err=0 | R    6880 rows/s     14 q/s p50=5.0ms p99=49.4ms err=0 | backlog=10481262 lag=0s(virt) | 
+2026/10/30 20:35:52 vt=10-30 08:10 | W    4999 rows/s   4999 calls/s p50=1.4ms p99=6.7ms err=0 | R    8547 rows/s     16 q/s p50=7.4ms p99=34.4ms err=0 | backlog=10445790 lag=0s(virt) | 
+2026/10/30 20:36:02 vt=10-30 08:15 | W    5000 rows/s   5000 calls/s p50=1.7ms p99=6.9ms err=0 | R    8603 rows/s     16 q/s p50=6.4ms p99=25.5ms err=0 | backlog=10409761 lag=0s(virt) | 
+2026/10/30 20:36:12 vt=10-30 08:20 | W    5000 rows/s   5000 calls/s p50=1.4ms p99=6.7ms err=0 | R    8585 rows/s     16 q/s p50=6.2ms p99=33.5ms err=0 | backlog=10373913 lag=0s(virt) | 
+2026/10/30 20:36:22 vt=10-30 08:25 | W    5001 rows/s   5001 calls/s p50=1.3ms p99=6.5ms err=0 | R    8632 rows/s     16 q/s p50=4.5ms p99=22.1ms err=0 | backlog=10337594 lag=0s(virt) | 
+2026/10/30 20:36:32 vt=10-30 08:30 | W    4999 rows/s   4999 calls/s p50=1.3ms p99=6.4ms err=0 | R    8543 rows/s     16 q/s p50=5.0ms p99=22.3ms err=0 | backlog=10302161 lag=0s(virt) | 
+2026/10/30 20:36:42 vt=10-30 08:35 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=6.8ms err=0 | R    8560 rows/s     16 q/s p50=5.2ms p99=24.3ms err=0 | backlog=10266561 lag=0s(virt) | 
+2026/10/30 20:36:52 vt=10-30 08:40 | W    5001 rows/s   5001 calls/s p50=1.3ms p99=6.7ms err=0 | R    8580 rows/s     16 q/s p50=5.5ms p99=30.0ms err=0 | backlog=10230775 lag=0s(virt) | 
+2026/10/30 20:37:02 vt=10-30 08:45 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=7.0ms err=0 | R    8518 rows/s     16 q/s p50=5.1ms p99=24.8ms err=0 | backlog=10195600 lag=0s(virt) | 
+2026/10/30 20:37:12 vt=10-30 08:50 | W    4998 rows/s   4998 calls/s p50=1.4ms p99=6.5ms err=0 | R    8581 rows/s     16 q/s p50=4.5ms p99=25.2ms err=0 | backlog=10159773 lag=0s(virt) | 
+2026/10/30 20:37:22 vt=10-30 08:55 | W    5003 rows/s   5003 calls/s p50=1.4ms p99=6.6ms err=0 | R    8530 rows/s     16 q/s p50=4.4ms p99=24.3ms err=0 | backlog=10124500 lag=0s(virt) | 
+2026/10/30 20:37:32 vt=10-30 09:00 | W    4998 rows/s   4998 calls/s p50=1.3ms p99=6.5ms err=0 | R    8566 rows/s     16 q/s p50=5.4ms p99=21.3ms err=0 | backlog=10088829 lag=0s(virt) | 
+2026/10/30 20:37:42 vt=10-30 09:05 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=6.5ms err=0 | R    8563 rows/s     16 q/s p50=5.0ms p99=26.2ms err=0 | backlog=10053201 lag=0s(virt) | 
+2026/10/30 20:37:52 vt=10-30 09:10 | W    5002 rows/s   5002 calls/s p50=1.4ms p99=6.9ms err=0 | R    8546 rows/s     16 q/s p50=4.4ms p99=25.5ms err=0 | backlog=10017765 lag=0s(virt) | 
+2026/10/30 20:38:02 vt=10-30 09:15 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=6.7ms err=0 | R    8596 rows/s     16 q/s p50=5.3ms p99=21.4ms err=0 | backlog=9981807 lag=0s(virt) | 
+2026/10/30 20:38:12 vt=10-30 09:20 | W    4999 rows/s   4999 calls/s p50=1.3ms p99=6.6ms err=0 | R    8595 rows/s     16 q/s p50=4.5ms p99=24.3ms err=0 | backlog=9945852 lag=0s(virt) | 
+2026/10/30 20:38:22 vt=10-30 09:25 | W    5002 rows/s   5002 calls/s p50=1.3ms p99=6.5ms err=0 | R    8566 rows/s     16 q/s p50=4.5ms p99=16.2ms err=0 | backlog=9910217 lag=0s(virt) | 
+2026/10/30 20:38:32 vt=10-30 09:30 | W    4997 rows/s   4997 calls/s p50=1.3ms p99=6.5ms err=0 | R    8577 rows/s     16 q/s p50=3.6ms p99=39.9ms err=0 | backlog=9874425 lag=0s(virt) | 
+2026/10/30 20:38:42 vt=10-30 09:35 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=6.6ms err=0 | R    8532 rows/s     16 q/s p50=4.0ms p99=26.6ms err=0 | backlog=9839111 lag=0s(virt) | 
+2026/10/30 20:38:52 vt=10-30 09:40 | W    5001 rows/s   5001 calls/s p50=1.3ms p99=6.5ms err=0 | R    8566 rows/s     16 q/s p50=4.1ms p99=19.3ms err=0 | backlog=9803463 lag=0s(virt) | 
+2026/10/30 20:39:02 vt=10-30 09:45 | W    5000 rows/s   5000 calls/s p50=1.3ms p99=6.8ms err=0 | R    8548 rows/s     16 q/s p50=4.3ms p99=23.6ms err=0 | backlog=9767985 lag=0s(virt) | 
+2026/10/30 20:39:12 vt=10-30 09:50 | W    4101 rows/s   4101 calls/s p50=1.3ms p99=7.8ms err=0 | R    8575 rows/s     16 q/s p50=4.4ms p99=25.1ms err=0 | backlog=9723252 lag=0s(virt) | 
+2026/10/30 20:39:22 vt=10-30 09:55 | W    4999 rows/s   4999 calls/s p50=1.4ms p99=6.7ms err=0 | R    8555 rows/s     16 q/s p50=4.1ms p99=26.2ms err=0 | backlog=9687697 lag=0s(virt) | 
+2026/10/30 20:39:32 vt=10-30 10:00 | W    5001 rows/s   5001 calls/s p50=1.4ms p99=6.5ms err=0 | R    8641 rows/s     16 q/s p50=3.6ms p99=17.2ms err=0 | backlog=9651297 lag=0s(virt) | 
+2026/10/30 20:39:32 SUMMARY cassandra [batch=1 payload=random consume=delete]: prefill=10199563 (94257/s) written=1491550 (4972/s, p99=6.7ms) read=2039805 (avg 6799/s, peak 8641/s, 14 q/s, p99=26.5ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 20:39:32 saved /results/cassandra-20261030-233143.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 150.3, "cpu_max": 435.8, "mem_max_mb": 1511, "disk_max_mb": 5700}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-d1d450e1e380 Creating 
+ Container test-bench-cassandra-run-d1d450e1e380 Created 
+2026/10/30 20:40:40 run=cassandra-20261030-233939 backend=cassandra role=producer virtual_start=2026-10-30 07:30 speed=x60 duration=5m0s write_rps=0 batch=1 writers=256 shards=16 consumers=4 page=1000
+2026/10/30 20:40:50 vt=10-30 07:40 | W   20246 rows/s  20246 calls/s p50=3.7ms p99=78.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=202458 lag=0s(virt) | 
+2026/10/30 20:41:00 vt=10-30 07:50 | W  155131 rows/s 155131 calls/s p50=1.2ms p99=9.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=1753770 lag=0s(virt) | 
+2026/10/30 20:41:10 vt=10-30 08:00 | W  189658 rows/s 189658 calls/s p50=1.1ms p99=6.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=3650348 lag=0s(virt) | 
+2026/10/30 20:41:20 vt=10-30 08:10 | W  152835 rows/s 152835 calls/s p50=1.1ms p99=7.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=5178702 lag=0s(virt) | 
+2026/10/30 20:41:30 vt=10-30 08:20 | W  157896 rows/s 157896 calls/s p50=1.1ms p99=6.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=6757666 lag=0s(virt) | 
+2026/10/30 20:41:40 vt=10-30 08:30 | W  188187 rows/s 188187 calls/s p50=1.1ms p99=5.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=8639536 lag=0s(virt) | 
+2026/10/30 20:41:50 vt=10-30 08:40 | W  135646 rows/s 135646 calls/s p50=1.2ms p99=6.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=9995995 lag=0s(virt) | 
+2026/10/30 20:42:00 vt=10-30 08:50 | W  183825 rows/s 183825 calls/s p50=1.1ms p99=6.7ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=11834242 lag=0s(virt) | 
+2026/10/30 20:42:10 vt=10-30 09:00 | W  181966 rows/s 181966 calls/s p50=1.2ms p99=6.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=13653903 lag=0s(virt) | 
+2026/10/30 20:42:20 vt=10-30 09:10 | W  156665 rows/s 156665 calls/s p50=1.1ms p99=7.0ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=15220550 lag=0s(virt) | 
+2026/10/30 20:42:30 vt=10-30 09:20 | W  157267 rows/s 157267 calls/s p50=1.1ms p99=6.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=16793217 lag=0s(virt) | 
+2026/10/30 20:42:40 vt=10-30 09:30 | W  189135 rows/s 189135 calls/s p50=1.1ms p99=6.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=18684562 lag=0s(virt) | 
+2026/10/30 20:42:50 vt=10-30 09:40 | W  187525 rows/s 187525 calls/s p50=1.1ms p99=6.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=20559809 lag=0s(virt) | 
+2026/10/30 20:43:00 vt=10-30 09:50 | W  153497 rows/s 153497 calls/s p50=1.1ms p99=7.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=22094778 lag=0s(virt) | 
+2026/10/30 20:43:10 vt=10-30 10:00 | W  184606 rows/s 184606 calls/s p50=1.1ms p99=6.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=23940833 lag=0s(virt) | 
+2026/10/30 20:43:20 vt=10-30 10:10 | W  170547 rows/s 170547 calls/s p50=1.1ms p99=6.8ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=25646306 lag=0s(virt) | 
+2026/10/30 20:43:30 vt=10-30 10:20 | W  172286 rows/s 172286 calls/s p50=1.2ms p99=7.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=27369168 lag=0s(virt) | 
+2026/10/30 20:43:40 vt=10-30 10:30 | W  183756 rows/s 183756 calls/s p50=1.1ms p99=7.1ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=29206728 lag=0s(virt) | 
+2026/10/30 20:43:50 vt=10-30 10:40 | W  173131 rows/s 173131 calls/s p50=1.2ms p99=8.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=30938040 lag=0s(virt) | 
+2026/10/30 20:44:00 vt=10-30 10:50 | W  174542 rows/s 174542 calls/s p50=1.2ms p99=7.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=32683460 lag=0s(virt) | 
+2026/10/30 20:44:10 vt=10-30 11:00 | W  163843 rows/s 163843 calls/s p50=1.1ms p99=7.9ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=34321888 lag=0s(virt) | 
+2026/10/30 20:44:20 vt=10-30 11:10 | W  180165 rows/s 180165 calls/s p50=1.1ms p99=7.5ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=36123538 lag=0s(virt) | 
+2026/10/30 20:44:30 vt=10-30 11:20 | W  143732 rows/s 143732 calls/s p50=1.2ms p99=9.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=37560855 lag=0s(virt) | 
+2026/10/30 20:44:40 vt=10-30 11:30 | W  161690 rows/s 161690 calls/s p50=1.3ms p99=9.2ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=39177750 lag=0s(virt) | 
+2026/10/30 20:44:50 vt=10-30 11:40 | W  170788 rows/s 170788 calls/s p50=1.2ms p99=7.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=40885635 lag=0s(virt) | 
+2026/10/30 20:45:00 vt=10-30 11:50 | W  111457 rows/s 111457 calls/s p50=1.3ms p99=10.4ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=42000204 lag=0s(virt) | 
+2026/10/30 20:45:10 vt=10-30 12:00 | W  133975 rows/s 133975 calls/s p50=1.2ms p99=14.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=43339951 lag=0s(virt) | 
+2026/10/30 20:45:20 vt=10-30 12:10 | W  126051 rows/s 126051 calls/s p50=1.3ms p99=11.6ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=44600462 lag=0s(virt) | 
+2026/10/30 20:45:30 vt=10-30 12:20 | W  123781 rows/s 123781 calls/s p50=1.3ms p99=10.3ms err=0 | R       0 rows/s      0 q/s p50=0.0ms p99=0.0ms err=0 | backlog=45838277 lag=0s(virt) | 
+2026/10/30 20:45:40 SUMMARY cassandra [batch=1 payload=random consume=ttl]: prefill=0 (0/s) written=47351306 (157834/s, p99=8.3ms) read=0 (avg 0/s, peak 0/s, 0 q/s, p99=0.0ms) max_lag=0s(virt) errs w=0 r=0 size_max: 
+2026/10/30 20:45:40 saved /results/cassandra-20261030-233939.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 361.1, "cpu_max": 487.9, "mem_max_mb": 1536, "disk_max_mb": 20428}
+ Image test-bench-cassandra Building 
+ Image test-bench-cassandra Built 
+ Network test_default Creating 
+ Network test_default Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Creating 
+ Volume test_cassandra-data Created 
+ Volume test_cassandra-data Created 
+ Network test_default Created 
+ Network test_default Created 
+ Container tb-cassandra Creating 
+ Container tb-cassandra Created 
+ Container tb-cassandra Starting 
+ Container tb-cassandra Started 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container tb-cassandra Running 
+ Container tb-cassandra Waiting 
+ Container tb-cassandra Healthy 
+ Container test-bench-cassandra-run-326cbe3079dc Creating 
+ Container test-bench-cassandra-run-326cbe3079dc Created 
+2026/10/30 20:47:21 prefill: 1000225 tasks, 34152 rows/s
+2026/10/30 20:47:31 prefill: 2000139 tasks, 51288 rows/s
+2026/10/30 20:47:39 prefill: 3000134 tasks, 63896 rows/s
+2026/10/30 20:47:46 prefill: 4000001 tasks, 73924 rows/s
+2026/10/30 20:47:54 prefill: 5000269 tasks, 80647 rows/s
+2026/10/30 20:48:01 prefill: 6000344 tasks, 86804 rows/s
+2026/10/30 20:48:08 prefill: 7000187 tasks, 91691 rows/s
+2026/10/30 20:48:08 prefill done: 7080663 tasks (из 10000000 сгенерированных), ошибок батчей 0, за 1m17s, 92221 rows/s (batch=500), size: 
+2026/10/30 20:48:08 run=cassandra-20261030-234549 backend=cassandra role=drain virtual_start=2026-10-30 07:30 speed=x100000 duration=5m0s write_rps=5000 batch=1 writers=64 shards=16 consumers=4 page=1000
+2026/10/30 20:48:10 vt=11-01 15:04 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  620627 rows/s   1108 q/s p50=3.1ms p99=13.0ms err=0 | backlog=5839408 lag=191788s(virt) | 
+2026/10/30 20:48:12 vt=11-03 22:37 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  943740 rows/s   1474 q/s p50=2.5ms p99=6.4ms err=0 | backlog=3951927 lag=380812s(virt) | 
+2026/10/30 20:48:14 vt=11-06 06:10 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  933162 rows/s   1744 q/s p50=2.1ms p99=5.6ms err=0 | backlog=2085604 lag=567870s(virt) | 
+2026/10/30 20:48:16 vt=11-08 13:44 | W       0 rows/s      0 calls/s p50=0.0ms p99=0.0ms err=0 | R  812097 rows/s   1944 q/s p50=1.8ms p99=5.4ms err=0 | backlog=461409 lag=753310s(virt) | 
+2026/10/30 20:48:17 SUMMARY cassandra [DRAIN workers=4 page=1000 payload=random consume=ttl]: prefill=7080663 (92221/s) written=0 (0/s, p99=0.0ms) read=7080663 (avg 812761/s, peak 943740/s, 1611 q/s, p99=7.0ms) max_lag=753310s(virt) errs w=0 r=0 size_max: 
+2026/10/30 20:48:17 saved /results/cassandra-20261030-234549.json
+DB resources (tb-cassandra, CPU% = 100 на ядро): {"cpu_avg": 252.6, "cpu_max": 413.0, "mem_max_mb": 1520, "disk_max_mb": 3214}

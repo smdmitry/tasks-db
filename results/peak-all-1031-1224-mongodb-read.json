@@ -1,0 +1,198 @@
+{
+  "run_id": "peak-all-1031-1224-mongodb-read",
+  "backend": "mongodb",
+  "variant": "DRAIN workers=4 page=1000 payload=random consume=drop",
+  "config": {
+    "Backend": "mongodb",
+    "Role": "drain",
+    "RunID": "peak-all-1031-1224-mongodb-read",
+    "Duration": 60000000000,
+    "ReportInterval": 2000000000,
+    "ResultsDir": "/results",
+    "Speed": 100000,
+    "VirtualStart": "2026-10-31T07:30:00+03:00",
+    "Location": {},
+    "HourFrom": 8,
+    "HourTo": 22,
+    "HorizonHours": 24,
+    "WriteRPS": 5000,
+    "WriteBatch": 1,
+    "Writers": 64,
+    "PayloadBytes": 300,
+    "PayloadRandom": true,
+    "Shards": 16,
+    "ConsumerWorkers": 4,
+    "ReadPageLimit": 1000,
+    "ReadQPS": 0,
+    "ConsumerGrace": 5000000000,
+    "ScyllaHosts": [
+      "scylla"
+    ],
+    "ScyllaConsistency": "QUORUM",
+    "ScyllaConsumeMode": "ttl",
+    "ScyllaTTL": 172800,
+    "PGDSN": "postgres://bench:bench@postgres:5432/bench?sslmode=disable",
+    "PGPoolSize": 64,
+    "PGWriteMode": "copy",
+    "PGConsumeMode": "drop",
+    "RedisAddr": "redis:6379",
+    "RedisPool": 64,
+    "RedisTTL": 172800,
+    "RedisCluster": false,
+    "MongoURI": "mongodb://mongodb:27017",
+    "MongoPool": 64,
+    "MongoConsumeMode": "drop",
+    "TarantoolAddr": "tarantool:3301",
+    "TarantoolConns": 8,
+    "TarantoolConsumeMode": "drop",
+    "RabbitURL": "amqp://guest:guest@rabbitmq:5672/",
+    "RabbitConns": 8,
+    "RocketNamesrv": "rocketmq-namesrv:9876",
+    "RocketBroker": "rocketmq:10911",
+    "RocketQueues": 16,
+    "PrefillETA": 180000000000
+  },
+  "seconds": 6.496365558,
+  "prefilled": 3544423,
+  "prefill_rps": 136449.83570369534,
+  "prefill_errs": 0,
+  "written": 0,
+  "read": 3544423,
+  "write_rps_avg": 0,
+  "read_rps_avg": 545600.9161361298,
+  "read_rps_peak": 580769.725543571,
+  "read_qps_avg": 2166.4421243457373,
+  "write_lat": {
+    "count": 0,
+    "p50_ms": 0,
+    "p95_ms": 0,
+    "p99_ms": 0,
+    "p999_ms": 0,
+    "max_ms": 0
+  },
+  "read_lat": {
+    "count": 14074,
+    "p50_ms": 1.332,
+    "p95_ms": 4.959,
+    "p99_ms": 7.247,
+    "p999_ms": 11.663,
+    "max_ms": 38.399
+  },
+  "bucket_lat": {
+    "count": 14074,
+    "p50_ms": 1.332,
+    "p95_ms": 4.963,
+    "p99_ms": 7.247,
+    "p999_ms": 11.663,
+    "max_ms": 38.399
+  },
+  "max_lag_virtual_s": 552043.4734,
+  "write_errs": 0,
+  "read_errs": 0,
+  "max_size": {
+    "mongo_docs": 2538693,
+    "mongo_index_bytes": 67506176,
+    "mongo_storage_bytes": 911626240
+  },
+  "rows": [
+    {
+      "elapsed_s": 2.000002667,
+      "virtual_time": "11-02 15:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 580769.725543571,
+      "read_qps": 1924.4974336826722,
+      "read_lat": {
+        "count": 3852,
+        "p50_ms": 1.545,
+        "p95_ms": 5.407,
+        "p99_ms": 8.199,
+        "p999_ms": 14.167,
+        "max_ms": 38.399
+      },
+      "backlog": 2382882,
+      "lag_virtual_s": 186030.1693,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 2538693,
+        "mongo_index_bytes": 67506176,
+        "mongo_storage_bytes": 911626240
+      }
+    },
+    {
+      "elapsed_s": 4.000002416,
+      "virtual_time": "11-04 22:42",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 564569.5708534811,
+      "read_qps": 1974.000247737031,
+      "read_lat": {
+        "count": 3945,
+        "p50_ms": 1.513,
+        "p95_ms": 5.083,
+        "p99_ms": 7.115,
+        "p999_ms": 11.007,
+        "max_ms": 15.879
+      },
+      "backlog": 1253743,
+      "lag_virtual_s": 371123.9643,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 1406174,
+        "mongo_index_bytes": 38199296,
+        "mongo_storage_bytes": 507924480
+      }
+    },
+    {
+      "elapsed_s": 6.000001875,
+      "virtual_time": "11-07 06:10",
+      "write_rps": 0,
+      "write_call_rps": 0,
+      "write_lat": {
+        "count": 0,
+        "p50_ms": 0,
+        "p95_ms": 0,
+        "p99_ms": 0,
+        "p999_ms": 0,
+        "max_ms": 0
+      },
+      "read_rps": 535020.6447230844,
+      "read_qps": 2505.000677602683,
+      "read_lat": {
+        "count": 5010,
+        "p50_ms": 1.128,
+        "p95_ms": 4.463,
+        "p99_ms": 6.219,
+        "p999_ms": 11.351,
+        "max_ms": 16.111
+      },
+      "backlog": 183702,
+      "lag_virtual_s": 552043.4734,
+      "write_errs": 0,
+      "read_errs": 0,
+      "size": {
+        "mongo_docs": 326941,
+        "mongo_index_bytes": 10088448,
+        "mongo_storage_bytes": 118751232
+      }
+    }
+  ]
+}
